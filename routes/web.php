@@ -19,9 +19,17 @@ Route::get('/clients', function () {
     return Inertia::render('clients');
 })->name('clients');
 
+Route::get('/clients/{name}', function ($name) {
+    return Inertia::render('clients/name', ['name' => $name]);
+})->name('clients');
+
 Route::get('/calendar', function () {
     return Inertia::render('calendar');
 })->name('calendar');
+
+Route::get('/display-calendar', function () {
+    return Inertia::render('display-calendar');
+})->name('display-calendar');
 
 Route::get('/settings', function () {
     return Inertia::render('settings');

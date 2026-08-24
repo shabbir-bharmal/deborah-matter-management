@@ -34,6 +34,7 @@ export function buildReport(input: {
     events: TimelineEvent[];
     savedFindings: Record<string, FindingOutcome>;
     config?: ReportConfig;
+    autoFill?: Record<string, string[]>;
 }): ReportSection[] {
     const { matter, allegations, interviews, evidenceItems, events, savedFindings, config } = input;
     const includedSections = config?.includedSections ?? {};
@@ -125,6 +126,19 @@ export function buildReport(input: {
     ];
 
     const selected = allSections.filter((section) => includedSections[section.id] ?? true);
+
+    // Auto-fill (report auto-fill POC): append accepted lines from uploaded
+    // supporting files to their matching sections, without displacing
+    // generated content.
+    const autoFill = input.autoFill;
+    if (autoFill) {
+        for (const section of selected) {
+            const extra = autoFill[section.id];
+            if (extra && extra.length > 0) {
+                section.bullets = [...section.bullets, ...extra];
+            }
+        }
+    }
 
     const executiveSummary = config?.executiveSummary.trim();
     if (executiveSummary) {

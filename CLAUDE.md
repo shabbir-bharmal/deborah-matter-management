@@ -1,19 +1,19 @@
 # Project
 
-Workplace investigation management platform. Current phase: **standalone React SPA prototype** specified in `Workplace_Investigation_Technical_Implementation_Plan.docx` and phased in `PLAN.md` — static/mock data only, no backend/auth/DB. The Laravel 12 + Inertia scaffold stays intact but dormant as the seed for the future production API (doc §10).
+Workplace investigation management platform. Current phase: **standalone React SPA prototype** — static/mock data only, no backend/auth/DB. The Laravel 12 + Inertia scaffold stays intact but dormant as the seed for the future production API.
 
 ## Codebase ownership
 
-- `resources/js/src/**` — the React SPA prototype: React Router, Zustand or Context state, Recharts, React Hook Form + Zod. All prototype work goes here.
+- `resources/js/src/**` — the React SPA prototype: React Router (`src/routes`), Zustand stores as hook files in `src/hooks`, Recharts, React Hook Form + Zod. All prototype work goes here.
 - `app/`, `routes/`, the rest of `resources/js/**`, `database/`, `vite.config.js` — dormant Laravel 12 + Inertia starter. Don't extend it or wire prototype code into it.
 - The SPA builds via its own `vite.spa.config.js` (root: `resources/js/src`, output: `public/spa`) so the Laravel build keeps working; never modify `vite.config.js` for SPA needs.
 
 ## Prototype conventions
 
-- Directory layout is fixed by doc §4, rooted at `resources/js/src/{components,pages,layouts,data,types,routes,hooks,lib,assets}`.
+- Directory layout is fixed, rooted at `resources/js/src/{components,pages,layouts,data,types,routes,hooks,lib,assets}`.
 - Import alias inside the SPA is `~/` → `resources/js/src` (vite.spa.config.js + tsconfig paths). `@/` still belongs to the dormant Inertia app — don't use it in SPA code.
 - Mock data lives in `src/data` as normalized TypeScript objects (relationships referenced by ID) behind service-style selectors shaped like future API responses — components never import raw datasets directly.
-- Domain types in `src/types` mirror doc §6: Investigation, Allegation, Witness, Interview, Evidence, TimelineEvent, Document.
+- Domain types in `src/types`: Investigation, Allegation, Witness, Interview, Evidence, TimelineEvent, Document.
 - UI: shadcn/ui-style primitives (copy needed ones from `resources/js/components/ui` into `src/components/ui` — no imports across the Laravel/SPA boundary), lucide-react icons, `cn()` class merging.
 - Tailwind v4 is CSS-first (no `tailwind.config.js` anywhere): give the SPA its own CSS entry carrying the `@theme` tokens; don't restyle the SPA by editing `resources/css/app.css`.
 
@@ -25,7 +25,7 @@ Workplace investigation management platform. Current phase: **standalone React S
 - Typecheck: `npx tsc --noEmit` (covers both apps; no npm script). Requires Node ≥18 — use nvm (e.g. `nvm use 22`); the default shell node is v14 and breaks ESLint/Vite.
 - Laravel tests: `php artisan test --compact` (Pest 3; in-memory SQLite per `phpunit.xml`; `RefreshDatabase` auto-applied to all Feature tests in `tests/Pest.php`).
 - SPA tests: `npm run test:spa` (Vitest + Testing Library, happy-dom; config in `vitest.config.ts`, setup in `resources/js/src/test/setup.ts`). Route smoke tests render the real router — keep them passing when touching routes or workspace components.
-- No CI (`.github/` is empty) and no pre-commit hooks — local verification is the only gate.
+- No CI (no `.github/` directory) and no pre-commit hooks — local verification is the only gate.
 
 ## Auto-managed files (read before editing this file)
 

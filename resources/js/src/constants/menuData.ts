@@ -20,6 +20,7 @@ export const NAV_ITEMS: NavItemData[] = [
     { label: 'Investigations', href: '/investigations' },
     { label: 'Clients', href: '/clients' },
     { label: 'Calendar', href: '/calendar' },
+    { label: 'Display Calendar', href: '/display-calendar' },
     { label: 'Settings', href: '/settings' },
 ];
 
@@ -35,14 +36,13 @@ export const ARIA_LABELS = {
 
 export const WORKSPACE_TABS = [
     { id: 'overview', label: 'Overview' },
-    { id: 'timeline', label: 'Timeline' },
-    { id: 'allegations', label: 'Allegations' },
-    { id: 'witnesses', label: 'Witnesses' },
-    { id: 'interviews', label: 'Interviews' },
-    { id: 'evidence', label: 'Evidence' },
-    { id: 'findings', label: 'Findings' },
     { id: 'documents', label: 'Documents' },
+    { id: 'evidence', label: 'Evidence' },
+    { id: 'interviews', label: 'Interviews' },
+    { id: 'findings', label: 'Findings' },
+    { id: 'timeline', label: 'Timeline' },
     { id: 'reports', label: 'Reports' },
+    { id: 'notes', label: 'Notes' },
 ] as const;
 
 export const COMMON = {
@@ -140,6 +140,23 @@ export const PAGE_TEXT = {
             pastDue: 'Past due',
         },
     },
+    displayCalendar: {
+        title: 'Display Calendar',
+        subtitle: 'Month view of all upcoming interviews and matter deadlines across every active matter.',
+        today: 'Today',
+        legend: {
+            interview: 'Interview',
+            deadline: 'Matter deadline',
+        },
+        selectedDay: 'Events on',
+        noSelection: 'Select a highlighted day to see its events.',
+        noEvents: 'No events on this day.',
+        more: 'more',
+        upcomingTitle: 'All upcoming events',
+        upcomingDescription: 'Interviews and matter deadlines, soonest first.',
+        empty: 'No interviews or deadlines to display.',
+        weekDays: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    },
     settings: {
         title: 'Settings',
         subtitle: 'Prototype preferences.',
@@ -169,6 +186,8 @@ export const PAGE_TEXT = {
                 targetCompletion: 'Target completion',
                 completed: 'Completed',
             },
+            allegationsSummaryTitle: 'Allegations',
+            witnessesSummaryTitle: 'Witnesses',
         },
         timeline: {
             title: 'Timeline',
@@ -216,6 +235,16 @@ export const PAGE_TEXT = {
         documents: {
             empty: 'No documents recorded.',
             created: 'Created',
+        },
+        notes: {
+            title: 'Notes',
+            description: 'Administrative notes about this matter.',
+            addHeading: 'Add a note',
+            placeholder: 'Record an administrative note about this matter…',
+            add: 'Add note',
+            empty: 'No notes recorded for this matter yet.',
+            delete: 'Delete note',
+            sessionNote: 'Notes are held in mock state for this browser session.',
         },
         reports: {
             draft: 'Draft',

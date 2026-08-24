@@ -8,6 +8,9 @@ export interface ReportConfig {
     executiveSummary: string;
 }
 
+/** Accepted auto-fill content keyed by existing report section id. */
+export type ReportAutoFillValues = Record<string, string[]>;
+
 export const defaultReportConfig: ReportConfig = {
     includedSections: {},
     title: '',
@@ -17,14 +20,17 @@ export const defaultReportConfig: ReportConfig = {
 interface ReportStore {
     statusByInvestigation: Record<string, ReportStatus>;
     configByInvestigation: Record<string, ReportConfig>;
+    autoFillByInvestigation: Record<string, ReportAutoFillValues>;
     markFinal: (investigationId: string) => void;
     updateConfig: (investigationId: string, patch: Partial<ReportConfig>) => void;
     toggleSection: (investigationId: string, sectionId: string) => void;
+    setAutoFill: (investigationId: string, values: ReportAutoFillValues) => void;
 }
 
 export const useReportStore = create<ReportStore>()((set) => ({
     statusByInvestigation: {},
     configByInvestigation: {},
+    autoFillByInvestigation: {},
     markFinal: (investigationId) => set((state) => ({ statusByInvestigation: { ...state.statusByInvestigation, [investigationId]: 'final' } })),
     updateConfig: (investigationId, patch) =>
         set((state) => {
@@ -41,6 +47,8 @@ export const useReportStore = create<ReportStore>()((set) => ({
                 configByInvestigation: { ...state.configByInvestigation, [investigationId]: { ...current, includedSections } },
             };
         }),
+    setAutoFill: (investigationId, values) =>
+        set((state) => ({ autoFillByInvestigation: { ...state.autoFillByInvestigation, [investigationId]: values } })),
 }));
 
 export function useReportStatus(investigationId: string): ReportStatus {

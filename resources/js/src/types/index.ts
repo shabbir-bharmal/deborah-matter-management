@@ -171,3 +171,24 @@ export interface AppNotification {
     date: string;
     href: string;
 }
+
+export type CalendarEventKind = 'interview' | 'deadline';
+
+export interface CalendarEvent {
+    id: string;
+    kind: CalendarEventKind;
+    date: string;
+    time?: string;
+    title: string;
+    subtitle: string;
+    reference: string;
+    href: string;
+}
+
+export interface MatterNote {
+    id: string;
+    investigationId: string;
+    author: string;
+    body: string;
+    createdAt: string;
+}

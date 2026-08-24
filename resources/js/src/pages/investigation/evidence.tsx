@@ -149,9 +149,9 @@ export default function Evidence() {
                                     {relatedAllegations(selected).map((allegation) => (
                                         <RelatedChip
                                             key={allegation.id}
-                                            to={`/investigations/${matter.id}/allegations?focus=${allegation.id}`}
+                                            to={`/investigations/${matter.id}`}
                                             label={`${allegation.title} (${allegationStatusLabels[allegation.status]})`}
-                                            hint={`Open allegation ${allegation.title}`}
+                                            hint={`View allegation ${allegation.title} in the overview`}
                                         />
                                     ))}
                                 </div>

@@ -1,36 +1,76 @@
-import { ArrowLeft, CalendarClock, FileText } from 'lucide-react';
+import { ArrowLeft, CalendarClock, Check, FileText } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import { Badge } from '~/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
+import { PAGE_TEXT } from '~/constants/menuData';
 import { getClientPortal } from '~/data/selectors';
 import { investigationStatusBadgeClass, investigationStatusLabels } from '~/lib/status';
+import { cn } from '~/lib/utils';
 import type { ClientPortal } from '~/types';
 
-const stages = ['Intake', 'Planning', 'Fieldwork', 'Findings & report', 'Completed'];
+const stages = PAGE_TEXT.clientPortal.milestones;
 
 function formatDate(iso: string) {
     return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
+const DOT_SIZE = 16;
+const CONNECTOR_GAP = 8;
+
 function Milestones({ stageIndex }: { stageIndex: number }) {
+    const connectorInset = `calc(50% + ${DOT_SIZE / 2 + CONNECTOR_GAP}px)`;
     return (
-        <ol className="flex flex-wrap items-start gap-x-2 gap-y-3">
-            {stages.map((stage, index) => (
-                <li key={stage} className="flex items-center gap-2">
-                    <span className="flex flex-col items-center gap-1">
-                        <span
-                            className={
-                                index <= stageIndex ? 'bg-primary size-3 rounded-full' : 'border-muted size-3 rounded-full border-2 bg-transparent'
-                            }
-                        />
-                        <span className={index <= stageIndex ? 'text-xs font-medium' : 'text-muted-foreground text-xs'}>{stage}</span>
-                    </span>
-                    {index < stages.length - 1 && <span className="bg-border mt-1.5 h-px w-6" aria-hidden />}
-                </li>
-            ))}
-        </ol>
+        <div className="-mx-1 overflow-x-auto pb-1">
+            <ol aria-label="Matter milestones" className="flex min-w-md items-start px-1">
+                {stages.map((stage, index) => {
+                    const isComplete = index < stageIndex;
+                    const isCurrent = index === stageIndex;
+                    return (
+                        <li
+                            key={stage}
+                            aria-current={isCurrent ? 'step' : undefined}
+                            className="relative flex flex-1 flex-col items-center gap-1.5 px-1 text-center"
+                        >
+                            {index < stages.length - 1 && (
+                                <span
+                                    aria-hidden
+                                    style={{ height: 2, left: connectorInset, right: `calc(-50% + ${DOT_SIZE / 2 + CONNECTOR_GAP}px)` }}
+                                    className={cn('absolute rounded-full', isComplete ? 'bg-primary' : 'bg-border')}
+                                />
+                            )}
+                            <span
+                                style={{ width: DOT_SIZE }}
+                                className={cn(
+                                    'relative z-10 flex items-center justify-center rounded-full border-2',
+                                    isComplete && 'bg-primary border-primary',
+                                    isCurrent && 'border-primary bg-background',
+                                    !isComplete && !isCurrent && 'bg-muted/40',
+                                )}
+                            >
+                                {isComplete ? (
+                                    <Check className="text-primary-foreground size-2.5" />
+                                ) : isCurrent ? (
+                                    <span className="bg-primary size-1.5 rounded-full" />
+                                ) : null}
+                            </span>
+                            <span
+                                className={cn(
+                                    'max-w-28 text-xs leading-tight',
+                                    isCurrent && 'text-foreground font-semibold',
+                                    isComplete && 'text-foreground',
+                                    !isComplete && !isCurrent && 'text-muted-foreground',
+                                )}
+                            >
+                                {isCurrent && <span className="sr-only">Current stage: </span>}
+                                {stage}
+                            </span>
+                        </li>
+                    );
+                })}
+            </ol>
+        </div>
     );
 }
 
@@ -95,7 +135,10 @@ export default function ClientPortal() {
                             </CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-4">
-                            <Milestones stageIndex={matter.stageIndex} />
+                            <div>
+                                <p className="text-muted-foreground mb-2 text-xs font-medium tracking-wide uppercase">Milestones</p>
+                                <Milestones stageIndex={matter.stageIndex} />
+                            </div>
 
                             <div className="grid gap-4 md:grid-cols-3">
                                 <div>

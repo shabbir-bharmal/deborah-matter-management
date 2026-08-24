@@ -1,7 +1,8 @@
-import { CalendarDays, ClipboardList, LayoutDashboard, Menu, Scale, Settings, Users } from 'lucide-react';
+import { CalendarClock, CalendarDays, ClipboardList, LayoutDashboard, Menu, Scale, Settings, Users } from 'lucide-react';
 import { useState } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 
+import Breadcrumbs from '~/components/layout/breadcrumbs';
 import NotificationBell from '~/components/layout/notification-bell';
 import ProfileMenu from '~/components/layout/profile-menu';
 import ThemeToggle from '~/components/layout/theme-toggle';
@@ -15,6 +16,7 @@ const navIcons = {
     Investigations: ClipboardList,
     Clients: Users,
     Calendar: CalendarDays,
+    'Display Calendar': CalendarClock,
     Settings: Settings,
 } as const;
 
@@ -107,6 +109,7 @@ export default function AppLayout() {
                 </header>
 
                 <main className="flex-1 p-4 md:p-6">
+                    <Breadcrumbs />
                     <Outlet />
                 </main>
             </div>

@@ -8,6 +8,7 @@ import { witnesses } from '~/data/witnesses';
 import type {
     Allegation,
     AppNotification,
+    CalendarEvent,
     ClientPortal,
     ClientSummary,
     DashboardSnapshot,
@@ -204,6 +205,47 @@ export async function getDashboardSnapshot(): Promise<DashboardSnapshot> {
         recentActivity,
         pendingActions,
     };
+}
+
+export async function getCalendarEvents(): Promise<CalendarEvent[]> {
+    await delay();
+
+    const events: CalendarEvent[] = [];
+
+    for (const interview of interviews) {
+        if (interview.status !== 'scheduled' && interview.status !== 'rescheduled') {
+            continue;
+        }
+        const investigation = investigations.find((candidate) => candidate.id === interview.investigationId);
+        const joined = joinWitness(interview);
+        events.push({
+            id: `interview-${interview.id}`,
+            kind: 'interview',
+            date: interview.scheduledAt.slice(0, 10),
+            time: interview.scheduledAt.slice(11, 16),
+            title: `Interview — ${joined.witnessName}`,
+            subtitle: joined.witnessRole,
+            reference: investigation?.referenceNumber ?? '',
+            href: `/investigations/${interview.investigationId}/interviews`,
+        });
+    }
+
+    for (const matter of investigations) {
+        if (!ACTIVE_STATUSES.includes(matter.status)) {
+            continue;
+        }
+        events.push({
+            id: `deadline-${matter.id}`,
+            kind: 'deadline',
+            date: matter.targetCompletionDate,
+            title: `Deadline — ${matter.title}`,
+            subtitle: matter.client,
+            reference: matter.referenceNumber,
+            href: `/investigations/${matter.id}`,
+        });
+    }
+
+    return events.sort((a, b) => (a.date + (a.time ?? '')).localeCompare(b.date + (b.time ?? '')));
 }
 
 export async function getNotifications(): Promise<AppNotification[]> {

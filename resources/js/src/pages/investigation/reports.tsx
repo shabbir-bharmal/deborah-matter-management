@@ -15,6 +15,9 @@ import {
     getInterviewsByInvestigation,
     getTimelineEventsByInvestigation,
 } from '~/data/selectors';
+import { AutoFillPanel } from '~/features/reportAutoFill';
+import { draftToReportSections } from '~/features/reportAutoFill/mapping/reportHandoff';
+import type { ReportDraft } from '~/features/reportAutoFill/types/reportAutoFill';
 import { useInvestigationFindings } from '~/hooks/use-findings-store';
 import { useInvestigation } from '~/hooks/use-investigation';
 import { defaultReportConfig, useReportConfig, useReportStatus, useReportStore } from '~/hooks/use-report-store';
@@ -93,6 +96,8 @@ export default function Reports() {
     const markFinal = useReportStore((state) => state.markFinal);
     const updateConfig = useReportStore((state) => state.updateConfig);
     const toggleSection = useReportStore((state) => state.toggleSection);
+    const setAutoFill = useReportStore((state) => state.setAutoFill);
+    const autoFillValues = useReportStore((state) => state.autoFillByInvestigation[matter.id]);
     const [mode, setMode] = useState<'customize' | 'final'>('customize');
     const [confirmingFinal, setConfirmingFinal] = useState(false);
     const [data, setData] = useState<{
@@ -124,7 +129,14 @@ export default function Reports() {
     }
 
     const isFinal = reportStatus === 'final';
-    const sections = buildReport({ matter, ...data, savedFindings, config: config ?? defaultReportConfig });
+    const sections = buildReport({ matter, ...data, savedFindings, config: config ?? defaultReportConfig, autoFill: autoFillValues });
+
+    const handleAutoFillAccept = (draft: ReportDraft) => {
+        setAutoFill(matter.id, draftToReportSections(draft));
+        toast.success('Auto-fill accepted', {
+            description: `${matter.referenceNumber} — mapped content was appended to the report sections.`,
+        });
+    };
     const reportTitle = config.title.trim() || matter.title;
 
     const finalize = () => {
@@ -135,6 +147,7 @@ export default function Reports() {
 
     return (
         <div className="space-y-4">
+            {mode === 'customize' && <AutoFillPanel matterId={matter.id} onAccept={handleAutoFillAccept} />}
             <Dialog open={confirmingFinal} onOpenChange={setConfirmingFinal}>
                 <DialogContent className="sm:max-w-md">
                     <DialogHeader>

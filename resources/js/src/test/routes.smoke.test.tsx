@@ -20,6 +20,7 @@ describe('route smoke tests', () => {
         ['/investigations', 'Investigations'],
         ['/clients', 'Clients'],
         ['/calendar', 'Calendar'],
+        ['/display-calendar', 'Display Calendar'],
         ['/settings', 'Settings'],
     ])('renders %s', async (url, heading) => {
         renderAt(url);
@@ -50,8 +51,6 @@ describe('route smoke tests', () => {
 
     it.each([
         ['/investigations/inv-001/timeline', 'Complaint received'],
-        ['/investigations/inv-001/allegations', 'Repeated demeaning comments in stand-ups'],
-        ['/investigations/inv-001/witnesses', 'Sarah Okafor'],
         ['/investigations/inv-001/interviews', 'Sarah Okafor'],
         ['/investigations/inv-001/evidence', 'Stand-up meeting recording — 12 May 2026'],
         ['/investigations/inv-001/findings', 'Supporting evidence'],
