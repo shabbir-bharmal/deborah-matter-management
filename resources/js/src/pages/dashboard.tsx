@@ -55,9 +55,24 @@ export default function Dashboard() {
     }
 
     const statCards = [
-        { label: PAGE_TEXT.dashboard.stats.activeMatters, value: snapshot.activeMatterCount, icon: ClipboardList, to: '/investigations' },
-        { label: PAGE_TEXT.dashboard.stats.completedClosed, value: snapshot.completedMatterCount, icon: CheckCircle2, to: '/investigations' },
-        { label: PAGE_TEXT.dashboard.stats.pastTargetDate, value: snapshot.overdueMatterCount, icon: AlertTriangle, to: '/investigations' },
+        {
+            label: PAGE_TEXT.dashboard.stats.activeMatters,
+            value: snapshot.activeMatterCount,
+            icon: ClipboardList,
+            to: '/investigations?filter=active',
+        },
+        {
+            label: PAGE_TEXT.dashboard.stats.completedClosed,
+            value: snapshot.completedMatterCount,
+            icon: CheckCircle2,
+            to: '/investigations?filter=completed',
+        },
+        {
+            label: PAGE_TEXT.dashboard.stats.pastTargetDate,
+            value: snapshot.overdueMatterCount,
+            icon: AlertTriangle,
+            to: '/investigations?filter=active',
+        },
     ];
 
     return (
@@ -67,7 +82,10 @@ export default function Dashboard() {
                     <h1 className="text-2xl font-semibold tracking-tight">{PAGE_TEXT.dashboard.title}</h1>
                     <p className="text-muted-foreground text-sm">{PAGE_TEXT.dashboard.subtitle}</p>
                 </div>
-                <Link to="/investigations" className="hover:bg-accent inline-flex items-center gap-1 rounded-md border px-3 py-2 text-sm font-medium">
+                <Link
+                    to="/investigations"
+                    className="hover:bg-accent inline-flex items-center gap-1 rounded-md border px-2 py-2 text-xs font-medium md:text-sm"
+                >
                     {PAGE_TEXT.dashboard.quickLinks} <ArrowRight className="size-4" />
                 </Link>
             </div>

@@ -16,7 +16,7 @@ import {
     getTimelineEventsByInvestigation,
 } from '~/data/selectors';
 import { AutoFillPanel } from '~/features/reportAutoFill';
-import { draftToReportSections } from '~/features/reportAutoFill/mapping/reportHandoff';
+import { draftToCustomReportSections, draftToReportSections } from '~/features/reportAutoFill/mapping/reportHandoff';
 import type { ReportDraft } from '~/features/reportAutoFill/types/reportAutoFill';
 import { useInvestigationFindings } from '~/hooks/use-findings-store';
 import { useInvestigation } from '~/hooks/use-investigation';
@@ -97,7 +97,9 @@ export default function Reports() {
     const updateConfig = useReportStore((state) => state.updateConfig);
     const toggleSection = useReportStore((state) => state.toggleSection);
     const setAutoFill = useReportStore((state) => state.setAutoFill);
+    const setCustomAutoFill = useReportStore((state) => state.setCustomAutoFill);
     const autoFillValues = useReportStore((state) => state.autoFillByInvestigation[matter.id]);
+    const customAutoFillSections = useReportStore((state) => state.customAutoFillByInvestigation[matter.id]);
     const [mode, setMode] = useState<'customize' | 'final'>('customize');
     const [confirmingFinal, setConfirmingFinal] = useState(false);
     const [data, setData] = useState<{
@@ -129,10 +131,18 @@ export default function Reports() {
     }
 
     const isFinal = reportStatus === 'final';
-    const sections = buildReport({ matter, ...data, savedFindings, config: config ?? defaultReportConfig, autoFill: autoFillValues });
+    const sections = buildReport({
+        matter,
+        ...data,
+        savedFindings,
+        config: config ?? defaultReportConfig,
+        autoFill: autoFillValues,
+        autoFillSections: customAutoFillSections,
+    });
 
     const handleAutoFillAccept = (draft: ReportDraft) => {
         setAutoFill(matter.id, draftToReportSections(draft));
+        setCustomAutoFill(matter.id, draftToCustomReportSections(draft));
         toast.success('Auto-fill accepted', {
             description: `${matter.referenceNumber} — mapped content was appended to the report sections.`,
         });

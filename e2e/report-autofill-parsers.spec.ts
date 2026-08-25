@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { expect, test } from '@playwright/test';
 
 import { parseCsv } from '~/features/reportAutoFill/parsers/csvParser';
 import { parseDocx } from '~/features/reportAutoFill/parsers/docxParser';
@@ -9,65 +9,6 @@ import { normalizeText } from '~/features/reportAutoFill/utils/textNormalize';
 function makeFile(name: string, content: string, type = ''): File {
     return new File([content], name, { type });
 }
-
-describe('parser router', () => {
-    it('detects file types by extension and MIME', () => {
-        expect(detectFileType(makeFile('a.docx', ''))).toBe('docx');
-        expect(detectFileType(makeFile('b.pdf', ''))).toBe('pdf');
-        expect(detectFileType(makeFile('c.csv', '', 'text/csv'))).toBe('csv');
-        expect(detectFileType(makeFile('d.png', '', 'image/png'))).toBeNull();
-        // MIME wins nothing when extension disagrees with an unknown MIME
-        expect(detectFileType(makeFile('e.docx', '', 'application/octet-stream'))).toBe('docx');
-    });
-
-    it('routes to the right parser and rejects unknown types', async () => {
-        const csvFile = makeFile('r.csv', 'name,date\nJane,2026-01-05\n');
-        const result = await parseUploadedFile({ id: 'f1', file: csvFile, type: 'csv', status: 'queued' });
-        expect(result.fileType).toBe('csv');
-
-        await expect(parseUploadedFile({ id: 'f2', file: makeFile('x.txt', 'hi'), type: 'pdf' as never, status: 'queued' })).rejects.toThrow();
-    });
-});
-
-describe('csv parser', () => {
-    it('parses rows with trimmed headers and skips empty lines', async () => {
-        const result = await parseCsv(makeFile('w.csv', ' Name , Role , Date \nJane Doe,Manager,2026-01-05\n\n'), 'f1');
-        expect(result.rows).toEqual([{ Name: 'Jane Doe', Role: 'Manager', Date: '2026-01-05' }]);
-    });
-
-    it('throws a readable error for garbage CSV with no rows', async () => {
-        await expect(parseCsv(makeFile('bad.csv', '"unclosed\n'), 'f1')).rejects.toThrow(/CSV could not be parsed|/i);
-    });
-});
-
-describe('docx parser', () => {
-    it('extracts raw text from a minimal docx document', async () => {
-        const buffer = await buildDocx('<w:p><w:r><w:t>Summary</w:t></w:r></w:p><w:p><w:r><w:t>The matter concerns harassment.</w:t></w:r></w:p>');
-        const file = new File([buffer.buffer as ArrayBuffer], 'report.docx', { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
-        const result = await parseDocx(file, 'f1');
-        expect(result.rawText).toContain('Summary');
-        expect(result.rawText).toContain('The matter concerns harassment.');
-    });
-
-    it('surfaces an error for a corrupted docx instead of crashing the caller', async () => {
-        const file = new File(['not a real docx'], 'broken.docx', {
-            type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-        });
-        await expect(parseDocx(file, 'f1')).rejects.toThrow(/DOCX could not be parsed|could not be read/i);
-    });
-});
-
-describe('text + scoring utils', () => {
-    it('normalizes whitespace and blank lines', () => {
-        expect(normalizeText('  A\r\n\r\n\r\n  B  \n  C ')).toBe('A\n\nB\nC');
-    });
-
-    it('scores lines by strong/weak keyword hits', () => {
-        expect(scoreLine('allegation of harassment substantiated', ['harassment'], ['substantiated'])).toBe(2);
-        expect(scoreLine('mentioning retaliation only', ['harassment'], ['retaliation'])).toBe(1);
-        expect(countKeywordHits('nothing here', ['harassment'])).toBe(0);
-    });
-});
 
 /** Builds a tiny but valid .docx (zip) containing the given document.xml body. */
 async function buildDocx(bodyXml: string): Promise<Uint8Array> {
@@ -83,3 +24,63 @@ async function buildDocx(bodyXml: string): Promise<Uint8Array> {
         'word/document.xml': strToU8(documentXml),
     });
 }
+
+test.describe('parser router', () => {
+    test('detects file types by extension and MIME', () => {
+        expect(detectFileType(makeFile('a.docx', ''))).toBe('docx');
+        expect(detectFileType(makeFile('b.pdf', ''))).toBe('pdf');
+        expect(detectFileType(makeFile('c.csv', '', 'text/csv'))).toBe('csv');
+        expect(detectFileType(makeFile('d.png', '', 'image/png'))).toBeNull();
+        expect(detectFileType(makeFile('e.docx', '', 'application/octet-stream'))).toBe('docx');
+    });
+
+    test('routes to the right parser and rejects unknown types', async () => {
+        const csvFile = makeFile('r.csv', 'name,date\nJane,2026-01-05\n');
+        const result = await parseUploadedFile({ id: 'f1', file: csvFile, type: 'csv', status: 'queued' });
+        expect(result.fileType).toBe('csv');
+
+        await expect(parseUploadedFile({ id: 'f2', file: makeFile('x.txt', 'hi'), type: 'pdf' as never, status: 'queued' })).rejects.toThrow();
+    });
+});
+
+test.describe('csv parser', () => {
+    test('parses rows with trimmed headers and skips empty lines', async () => {
+        const result = await parseCsv(makeFile('w.csv', ' Name , Role , Date \nJane Doe,Manager,2026-01-05\n\n'), 'f1');
+        expect(result.rows).toEqual([{ Name: 'Jane Doe', Role: 'Manager', Date: '2026-01-05' }]);
+    });
+
+    test('throws a readable error for garbage CSV with no rows', async () => {
+        await expect(parseCsv(makeFile('bad.csv', '"unclosed\n'), 'f1')).rejects.toThrow(/CSV could not be parsed|/i);
+    });
+});
+
+test.describe('docx parser', () => {
+    test('extracts raw text from a minimal docx document', async () => {
+        const buffer = await buildDocx('<w:p><w:r><w:t>Summary</w:t></w:r></w:p><w:p><w:r><w:t>The matter concerns harassment.</w:t></w:r></w:p>');
+        const file = new File([buffer.buffer as ArrayBuffer], 'report.docx', {
+            type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        });
+        const result = await parseDocx(file, 'f1');
+        expect(result.rawText).toContain('Summary');
+        expect(result.rawText).toContain('The matter concerns harassment.');
+    });
+
+    test('surfaces an error for a corrupted docx instead of crashing the caller', async () => {
+        const file = new File(['not a real docx'], 'broken.docx', {
+            type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        });
+        await expect(parseDocx(file, 'f1')).rejects.toThrow(/DOCX could not be parsed|could not be read/i);
+    });
+});
+
+test.describe('text + scoring utils', () => {
+    test('normalizes whitespace and blank lines', () => {
+        expect(normalizeText('  A\r\n\r\n\r\n  B  \n  C ')).toBe('A\n\nB\nC');
+    });
+
+    test('scores lines by strong/weak keyword hits', () => {
+        expect(scoreLine('allegation of harassment substantiated', ['harassment'], ['substantiated'])).toBe(2);
+        expect(scoreLine('mentioning retaliation only', ['harassment'], ['retaliation'])).toBe(1);
+        expect(countKeywordHits('nothing here', ['harassment'])).toBe(0);
+    });
+});

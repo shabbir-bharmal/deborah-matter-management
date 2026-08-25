@@ -1,9 +1,10 @@
 import { Search } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 
 import { Badge } from '~/components/ui/badge';
 import { Input } from '~/components/ui/input';
+import Pagination, { PAGE_SIZES } from '~/components/ui/pagination';
 import { Skeleton } from '~/components/ui/skeleton';
 import { PAGE_TEXT } from '~/constants/menuData';
 import { getInvestigations } from '~/data/selectors';
@@ -27,8 +28,32 @@ function formatDate(iso: string) {
 
 export default function Investigations() {
     const [matters, setMatters] = useState<Investigation[] | null>(null);
-    const [query, setQuery] = useState('');
-    const [filter, setFilter] = useState<StatusFilter>('all');
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    const updateParams = (patch: Record<string, string | undefined>) => {
+        const params = new URLSearchParams(searchParams);
+        for (const [key, value] of Object.entries(patch)) {
+            if (!value) {
+                params.delete(key);
+            } else {
+                params.set(key, value);
+            }
+        }
+        setSearchParams(params);
+    };
+
+    const filterParam = searchParams.get('filter');
+    const filter: StatusFilter = filterParam === 'active' || filterParam === 'completed' ? filterParam : 'all';
+    // Filter changes reset back to the first page.
+    const setFilter = (value: StatusFilter) => {
+        updateParams({ filter: value === 'all' ? undefined : value, page: undefined });
+    };
+
+    const query = searchParams.get('q') ?? '';
+    const setQuery = (value: string) => {
+        // Search changes also reset pagination.
+        updateParams({ q: value || undefined, page: undefined });
+    };
 
     useEffect(() => {
         let cancelled = false;
@@ -58,6 +83,21 @@ export default function Investigations() {
         });
     }, [matters, query, filter]);
 
+    const sizeParam = Number(searchParams.get('pageSize'));
+    const pageSize: number = PAGE_SIZES.includes(sizeParam) ? sizeParam : 10;
+    const totalPages = Math.max(1, Math.ceil(visible.length / pageSize));
+    const requestedPage = Number(searchParams.get('page')) || 1;
+    const page = Math.min(Math.max(1, requestedPage), totalPages);
+
+    const setPage = (value: number) => {
+        updateParams({ page: value > 1 ? String(value) : undefined });
+    };
+    const setPageSize = (size: number) => {
+        updateParams({ pageSize: size !== 10 ? String(size) : undefined, page: undefined });
+    };
+
+    const pagedItems = visible.slice((page - 1) * pageSize, page * pageSize);
+
     return (
         <div className="space-y-4">
             <div>
@@ -65,17 +105,17 @@ export default function Investigations() {
                 <p className="text-muted-foreground text-sm">{PAGE_TEXT.investigations.subtitle}</p>
             </div>
 
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <div className="relative w-full max-w-sm">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-10">
+                <div className="relative w-full sm:max-w-sm">
                     <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
                     <Input
                         value={query}
                         onChange={(event) => setQuery(event.target.value)}
                         placeholder={PAGE_TEXT.investigations.searchPlaceholder}
-                        className="pl-9"
+                        className="w-full pl-9"
                     />
                 </div>
-                <div className="flex gap-1 rounded-lg border p-1">
+                <div className="flex w-full gap-1 rounded-lg border p-1 sm:w-fit">
                     {filters.map((item) => (
                         <button
                             key={item.value}
@@ -83,8 +123,8 @@ export default function Investigations() {
                             onClick={() => setFilter(item.value)}
                             className={
                                 filter === item.value
-                                    ? 'bg-primary text-primary-foreground rounded-md px-3 py-1.5 text-sm font-medium'
-                                    : 'text-muted-foreground hover:bg-accent hover:text-foreground rounded-md px-3 py-1.5 text-sm font-medium'
+                                    ? 'bg-primary text-primary-foreground flex-1 rounded-md px-3 py-1.5 text-sm font-medium sm:flex-none'
+                                    : 'text-muted-foreground hover:bg-accent hover:text-foreground flex-1 rounded-md px-3 py-1.5 text-sm font-medium sm:flex-none'
                             }
                         >
                             {item.label}
@@ -105,11 +145,12 @@ export default function Investigations() {
                 <div className="bg-card text-muted-foreground rounded-xl border p-8 text-center text-sm">{PAGE_TEXT.investigations.empty}</div>
             )}
 
-            <div className="space-y-2">
-                {visible.map((matter) => (
+            <div className="space-y-2" data-testid="matter-list">
+                {pagedItems.map((matter) => (
                     <Link
                         key={matter.id}
                         to={`/investigations/${matter.id}`}
+                        data-testid="matter-row"
                         className="bg-card hover:bg-accent block rounded-xl border p-4 transition-colors"
                     >
                         <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
@@ -138,6 +179,10 @@ export default function Investigations() {
                     </Link>
                 ))}
             </div>
+
+            {matters && visible.length > 0 && (
+                <Pagination page={page} pageSize={pageSize} totalCount={visible.length} onPageChange={setPage} onPageSizeChange={setPageSize} />
+            )}
         </div>
     );
 }

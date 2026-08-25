@@ -2,11 +2,11 @@ import { ChevronDown, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
 import { Card, CardContent, CardHeader, CardTitle } from '~/components/ui/card';
-import type { MappedField, ReportSectionKey } from '../types/reportAutoFill';
+import type { MappedField } from '../types/reportAutoFill';
 import MappedFieldRow from './MappedFieldRow';
 
 interface ReportSectionCardProps {
-    sectionKey: ReportSectionKey;
+    sectionKey: string;
     title: string;
     fields: MappedField[];
     onChange: (index: number, value: string) => void;

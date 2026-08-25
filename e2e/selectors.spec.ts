@@ -1,5 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import { expect, test } from '@playwright/test';
 
+import { investigations } from '~/data/investigations';
 import {
     getAllegationsByInvestigation,
     getClientPortal,
@@ -13,18 +14,22 @@ import {
     getWitnessesByInvestigation,
 } from '~/data/selectors';
 
-describe('selectors', () => {
-    it('returns all investigations', async () => {
+const ACTIVE = ['open', 'in_progress', 'review'];
+const activeCount = investigations.filter((matter) => ACTIVE.includes(matter.status)).length;
+const completedCount = investigations.length - activeCount;
+
+test.describe('selectors', () => {
+    test('returns all investigations', async () => {
         const all = await getInvestigations();
-        expect(all).toHaveLength(6);
+        expect(all).toHaveLength(investigations.length);
     });
 
-    it('finds an investigation by id and returns undefined for unknown ids', async () => {
+    test('finds an investigation by id and returns undefined for unknown ids', async () => {
         expect((await getInvestigation('inv-001'))?.referenceNumber).toBe('INV-2026-001');
         expect(await getInvestigation('nope')).toBeUndefined();
     });
 
-    it('joins witness details onto interviews', async () => {
+    test('joins witness details onto interviews', async () => {
         const interviews = await getInterviewsByInvestigation('inv-001');
         expect(interviews.length).toBeGreaterThan(0);
         for (const interview of interviews) {
@@ -33,7 +38,7 @@ describe('selectors', () => {
         }
     });
 
-    it('filters child entities by investigation', async () => {
+    test('filters child entities by investigation', async () => {
         const [allegations, witnesses, evidence, events] = await Promise.all([
             getAllegationsByInvestigation('inv-001'),
             getWitnessesByInvestigation('inv-001'),
@@ -44,18 +49,16 @@ describe('selectors', () => {
         expect(witnesses).toHaveLength(5);
         expect(evidence).toHaveLength(6);
         expect(events).toHaveLength(10);
-        // Timeline must be chronological ascending
         const dates = events.map((event) => event.date);
         expect([...dates].sort()).toEqual(dates);
     });
 
-    it('builds a consistent dashboard snapshot', async () => {
+    test('builds a consistent dashboard snapshot', async () => {
         const snapshot = await getDashboardSnapshot();
-        expect(snapshot.activeMatterCount).toBe(4); // open + in_progress + review
-        expect(snapshot.completedMatterCount).toBe(2); // completed + closed
-        expect(snapshot.statusCounts.reduce((sum, entry) => sum + entry.count, 0)).toBe(6);
+        expect(snapshot.activeMatterCount).toBe(activeCount);
+        expect(snapshot.completedMatterCount).toBe(completedCount);
+        expect(snapshot.statusCounts.reduce((sum, entry) => sum + entry.count, 0)).toBe(investigations.length);
         expect(snapshot.priorityCounts.reduce((sum, entry) => sum + entry.count, 0)).toBe(snapshot.activeMatterCount);
-        // Upcoming interviews only include scheduled/rescheduled with future dates
         for (const interview of snapshot.upcomingInterviews) {
             expect(['scheduled', 'rescheduled']).toContain(interview.status);
             expect(interview.investigationReference).not.toBe('');
@@ -63,18 +66,20 @@ describe('selectors', () => {
         expect(snapshot.recentActivity.length).toBeLessThanOrEqual(6);
     });
 
-    it('derives client summaries from investigations', async () => {
+    test('derives client summaries from investigations', async () => {
         const clients = await getClients();
         const northwind = clients.find((client) => client.name === 'Northwind Logistics');
+        const expectedNorthwind = investigations.filter((matter) => matter.client === 'Northwind Logistics');
         expect(northwind).toBeDefined();
-        expect(northwind?.matterCount).toBe(2);
-        expect(northwind?.activeCount).toBe(2);
+        expect(northwind?.matterCount).toBe(expectedNorthwind.length);
+        expect(northwind?.activeCount).toBe(expectedNorthwind.filter((matter) => ACTIVE.includes(matter.status)).length);
     });
 
-    it('builds the client portal with shared documents only', async () => {
+    test('builds the client portal with shared documents only', async () => {
         const portal = await getClientPortal('northwind-logistics');
+        const expectedMatters = investigations.filter((matter) => matter.client === 'Northwind Logistics');
         expect(portal?.name).toBe('Northwind Logistics');
-        expect(portal?.matters).toHaveLength(2);
+        expect(portal?.matters).toHaveLength(expectedMatters.length);
         for (const matter of portal?.matters ?? []) {
             for (const document of matter.sharedDocuments) {
                 expect(document.status).toBe('shared');

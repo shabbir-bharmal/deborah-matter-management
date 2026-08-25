@@ -11,6 +11,13 @@ export const SECTION_KEY_TO_REPORT_SECTION: Record<ReportSectionKey, string> = {
     conclusion: 'conclusion',
 };
 
+/** A file-derived section that has no canonical report counterpart. */
+export interface CustomReportSectionInput {
+    id: string;
+    heading: string;
+    bullets: string[];
+}
+
 /**
  * Convert an accepted ReportDraft into the shape the existing report
  * generator consumes: existing section id → list of bullet lines.
@@ -24,4 +31,15 @@ export function draftToReportSections(draft: ReportDraft): ReportAutoFillValues 
         }
     }
     return values;
+}
+
+/** Custom (file-created) sections, ready for the report generator to append. */
+export function draftToCustomReportSections(draft: ReportDraft): CustomReportSectionInput[] {
+    return draft.customSections
+        .map((section, index) => ({
+            id: `auto-custom-${index}`,
+            heading: section.name,
+            bullets: section.fields.map((field) => field.value.trim()).filter(Boolean),
+        }))
+        .filter((section) => section.bullets.length > 0);
 }

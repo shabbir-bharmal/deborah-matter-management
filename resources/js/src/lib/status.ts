@@ -19,6 +19,12 @@ export const investigationTypeLabels: Record<InvestigationType, string> = {
     conflict_of_interest: 'Conflict of Interest',
     policy_violation: 'Policy Violation',
     retaliation: 'Retaliation',
+    data_privacy: 'Data Privacy',
+    fraud: 'Fraud',
+    safety_violation: 'Safety Violation',
+    substance_abuse: 'Substance Abuse',
+    theft: 'Theft',
+    workplace_violence: 'Workplace Violence',
 };
 
 export const investigationStatusLabels: Record<InvestigationStatus, string> = {
@@ -96,6 +102,13 @@ export const allegationCategoryLabels: Record<AllegationCategory, string> = {
     misconduct: 'Misconduct',
     retaliation: 'Retaliation',
     policy_violation: 'Policy Violation',
+    conflict_of_interest: 'Conflict of Interest',
+    data_privacy: 'Data Privacy',
+    fraud: 'Fraud',
+    safety_violation: 'Safety Violation',
+    substance_abuse: 'Substance Abuse',
+    theft: 'Theft',
+    workplace_violence: 'Workplace Violence',
 };
 
 export const allegationStatusBadgeClass: Record<AllegationStatus, string> = {
@@ -109,6 +122,7 @@ export const allegationStatusBadgeClass: Record<AllegationStatus, string> = {
 export const findingOutcomeLabels: Record<FindingOutcome, string> = {
     substantiated: 'Substantiated',
     not_substantiated: 'Not Substantiated',
+    unsubstantiated: 'Unsubstantiated',
     inconclusive: 'Inconclusive',
 };
 

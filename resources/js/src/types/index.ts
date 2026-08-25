@@ -2,7 +2,19 @@ export type InvestigationStatus = 'open' | 'in_progress' | 'review' | 'completed
 
 export type InvestigationPriority = 'low' | 'medium' | 'high' | 'critical';
 
-export type InvestigationType = 'harassment' | 'discrimination' | 'misconduct' | 'conflict_of_interest' | 'policy_violation' | 'retaliation';
+export type InvestigationType =
+    | 'harassment'
+    | 'discrimination'
+    | 'misconduct'
+    | 'conflict_of_interest'
+    | 'policy_violation'
+    | 'retaliation'
+    | 'data_privacy'
+    | 'theft'
+    | 'substance_abuse'
+    | 'workplace_violence'
+    | 'safety_violation'
+    | 'fraud';
 
 export interface Investigation {
     id: string;
@@ -21,9 +33,21 @@ export interface Investigation {
 
 export type AllegationStatus = 'pending' | 'under_review' | 'substantiated' | 'not_substantiated' | 'unfounded';
 
-export type AllegationCategory = 'harassment' | 'discrimination' | 'misconduct' | 'retaliation' | 'policy_violation';
+export type AllegationCategory =
+    | 'harassment'
+    | 'discrimination'
+    | 'misconduct'
+    | 'retaliation'
+    | 'policy_violation'
+    | 'conflict_of_interest'
+    | 'data_privacy'
+    | 'fraud'
+    | 'safety_violation'
+    | 'substance_abuse'
+    | 'theft'
+    | 'workplace_violence';
 
-export type FindingOutcome = 'substantiated' | 'not_substantiated' | 'inconclusive';
+export type FindingOutcome = 'substantiated' | 'not_substantiated' | 'unsubstantiated' | 'inconclusive';
 
 export interface Allegation {
     id: string;

@@ -9,6 +9,15 @@ export const BRAND = {
     sidebarNote: 'Prototype — mock data only',
 } as const;
 
+export const FOOTER = {
+    tagline: 'Workplace investigation management for modern teams.',
+    navigateHeading: 'Navigate',
+    contactHeading: 'Contact',
+    contactEmail: 'compliance@prototype.local',
+    confidentiality: 'Confidential — for authorised investigators only.',
+    rights: 'All rights reserved.',
+} as const;
+
 export interface NavItemData {
     label: string;
     href: string;
@@ -68,6 +77,13 @@ export const PROFILE = {
 } as const;
 
 export const PAGE_TEXT = {
+    pagination: {
+        rowsPerPage: 'Per page',
+        showing: 'Showing',
+        of: 'of',
+        previous: 'Previous page',
+        next: 'Next page',
+    },
     dashboard: {
         title: 'Dashboard',
         subtitle: 'Overview of active investigations and upcoming work.',
@@ -154,6 +170,8 @@ export const PAGE_TEXT = {
         more: 'more',
         upcomingTitle: 'All upcoming events',
         upcomingDescription: 'Interviews and matter deadlines, soonest first.',
+        filterLabel: 'Show',
+        filterAll: 'All',
         empty: 'No interviews or deadlines to display.',
         weekDays: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     },

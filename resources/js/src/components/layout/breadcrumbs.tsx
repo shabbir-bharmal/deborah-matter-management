@@ -92,7 +92,7 @@ export default function Breadcrumbs() {
     }
 
     return (
-        <div className="mb-3">
+        <div className="mb-6">
             <Breadcrumb>
                 <BreadcrumbList>
                     {crumbs.map((crumb, index) => (

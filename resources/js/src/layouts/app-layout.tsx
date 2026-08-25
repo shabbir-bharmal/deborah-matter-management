@@ -2,6 +2,7 @@ import { CalendarClock, CalendarDays, ClipboardList, LayoutDashboard, Menu, Scal
 import { useState } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 
+import AppFooter from '~/components/layout/app-footer';
 import Breadcrumbs from '~/components/layout/breadcrumbs';
 import NotificationBell from '~/components/layout/notification-bell';
 import ProfileMenu from '~/components/layout/profile-menu';
@@ -63,56 +64,60 @@ export default function AppLayout() {
     const [navOpen, setNavOpen] = useState(false);
 
     return (
-        <div className="bg-background flex min-h-screen">
-            {/* Persistent sidebar — desktop */}
-            <aside className="bg-sidebar sticky top-0 hidden h-screen w-64 shrink-0 flex-col border-r lg:flex print:hidden">
-                <Brand />
-                <nav aria-label={ARIA_LABELS.mainNav} className="flex flex-1 flex-col gap-1 p-3">
-                    <NavItems />
-                </nav>
-                <p className="text-muted-foreground border-t p-3 text-xs">{BRAND.sidebarNote}</p>
-            </aside>
+        <div className="bg-background flex min-h-screen flex-col">
+            <div className="flex flex-1">
+                {/* Persistent sidebar — desktop */}
+                <aside className="bg-sidebar sticky top-0 hidden h-screen w-64 shrink-0 flex-col border-r lg:flex print:hidden">
+                    <Brand />
+                    <nav aria-label={ARIA_LABELS.mainNav} className="flex flex-1 flex-col gap-1 p-3">
+                        <NavItems />
+                    </nav>
+                    <p className="text-muted-foreground border-t p-3 text-xs">{BRAND.sidebarNote}</p>
+                </aside>
 
-            <div className="flex min-w-0 flex-1 flex-col">
-                {/* Top bar — all breakpoints */}
-                <header className="bg-background sticky top-0 z-20 flex h-14 items-center gap-2 border-b px-3 md:px-6 print:hidden">
-                    {/* Hamburger + drawer — mobile and tablet (< lg) */}
-                    <Sheet open={navOpen} onOpenChange={setNavOpen}>
-                        <SheetTrigger asChild>
-                            <Button variant="ghost" size="icon" className="lg:hidden" aria-label={ARIA_LABELS.openMenu}>
-                                <Menu className="size-5" />
-                            </Button>
-                        </SheetTrigger>
-                        <SheetContent side="left" className="w-80 p-0">
-                            <SheetHeader className="border-b px-4 py-4 text-left">
-                                <SheetTitle className="flex items-center gap-2.5 text-base font-semibold tracking-tight">
-                                    <Scale className="text-sidebar-primary size-6 shrink-0" />
-                                    {BRAND.name}
-                                </SheetTitle>
-                            </SheetHeader>
-                            <nav aria-label={ARIA_LABELS.mobileNav} className="flex flex-col gap-1 p-3">
-                                <NavItems onNavigate={() => setNavOpen(false)} />
-                            </nav>
-                        </SheetContent>
-                    </Sheet>
+                <div className="flex min-w-0 flex-1 flex-col">
+                    {/* Top bar — all breakpoints */}
+                    <header className="bg-background sticky top-0 z-20 flex h-14 items-center gap-2 border-b px-3 md:px-6 print:hidden">
+                        {/* Hamburger + drawer — mobile and tablet (< lg) */}
+                        <Sheet open={navOpen} onOpenChange={setNavOpen}>
+                            <SheetTrigger asChild>
+                                <Button variant="ghost" size="icon" className="lg:hidden" aria-label={ARIA_LABELS.openMenu}>
+                                    <Menu className="size-5" />
+                                </Button>
+                            </SheetTrigger>
+                            <SheetContent side="left" className="w-80 p-0">
+                                <SheetHeader className="border-b px-4 py-4 text-left">
+                                    <SheetTitle className="flex items-center gap-2.5 text-base font-semibold tracking-tight">
+                                        <Scale className="text-sidebar-primary size-6 shrink-0" />
+                                        {BRAND.name}
+                                    </SheetTitle>
+                                </SheetHeader>
+                                <nav aria-label={ARIA_LABELS.mobileNav} className="flex flex-col gap-1 p-3">
+                                    <NavItems onNavigate={() => setNavOpen(false)} />
+                                </nav>
+                            </SheetContent>
+                        </Sheet>
 
-                    <Link to="/" className="flex items-center gap-2 lg:hidden" aria-label={ARIA_LABELS.goToDashboard}>
-                        <Scale className="text-sidebar-primary size-5" />
-                        <span className="hidden text-sm font-semibold sm:inline">{BRAND.name}</span>
-                    </Link>
+                        <Link to="/" className="flex items-center gap-2 lg:hidden" aria-label={ARIA_LABELS.goToDashboard}>
+                            <Scale className="text-sidebar-primary size-5" />
+                            <span className="hidden text-sm font-semibold sm:inline">{BRAND.name}</span>
+                        </Link>
 
-                    <div className="ml-auto flex shrink-0 items-center gap-1.5">
-                        <ThemeToggle />
-                        <NotificationBell />
-                        <ProfileMenu />
-                    </div>
-                </header>
+                        <div className="ml-auto flex shrink-0 items-center gap-1.5">
+                            <ThemeToggle />
+                            <NotificationBell />
+                            <ProfileMenu />
+                        </div>
+                    </header>
 
-                <main className="flex-1 p-4 md:p-6">
-                    <Breadcrumbs />
-                    <Outlet />
-                </main>
+                    <main className="example-class-added flex-1 p-4 md:p-6">
+                        <Breadcrumbs />
+                        <Outlet />
+                    </main>
+                </div>
             </div>
+
+            <AppFooter />
         </div>
     );
 }

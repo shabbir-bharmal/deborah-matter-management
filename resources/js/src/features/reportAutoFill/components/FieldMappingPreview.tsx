@@ -17,14 +17,16 @@ export const SECTION_TITLES: Record<ReportSectionKey, string> = {
 
 interface FieldMappingPreviewProps {
     draft: ReportDraft;
-    onChange: (sectionKey: ReportSectionKey, index: number, value: string) => void;
-    onClear: (sectionKey: ReportSectionKey, index: number) => void;
+    onChange: (sectionKey: string, index: number, value: string) => void;
+    onClear: (sectionKey: string, index: number) => void;
     onAccept?: (draft: ReportDraft) => void;
 }
 
 export default function FieldMappingPreview({ draft, onChange, onClear, onAccept }: FieldMappingPreviewProps) {
     const [showUnmapped, setShowUnmapped] = useState(false);
-    const totalFields = REPORT_SECTION_KEYS.reduce((total, key) => total + draft.sections[key].length, 0);
+    const totalFields =
+        REPORT_SECTION_KEYS.reduce((total, key) => total + draft.sections[key].length, 0) +
+        draft.customSections.reduce((total, section) => total + section.fields.length, 0);
 
     return (
         <div className="space-y-3" data-testid="field-mapping-preview">
@@ -47,6 +49,17 @@ export default function FieldMappingPreview({ draft, onChange, onClear, onAccept
                     fields={draft.sections[key]}
                     onChange={(index, value) => onChange(key, index, value)}
                     onClear={(index) => onClear(key, index)}
+                />
+            ))}
+
+            {draft.customSections.map((section) => (
+                <ReportSectionCard
+                    key={section.name}
+                    sectionKey={section.name}
+                    title={section.name}
+                    fields={section.fields}
+                    onChange={(index, value) => onChange(section.name, index, value)}
+                    onClear={(index) => onClear(section.name, index)}
                 />
             ))}
 

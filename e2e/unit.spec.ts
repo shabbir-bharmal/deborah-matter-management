@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from 'vitest';
+import { expect, test } from '@playwright/test';
 
 import { allegations } from '~/data/allegations';
 import { evidence } from '~/data/evidence';
@@ -29,12 +29,12 @@ function input(savedFindings: Record<string, FindingOutcome> = {}, config?: Para
     };
 }
 
-describe('buildReport', () => {
-    beforeEach(() => {
+test.describe('buildReport', () => {
+    test.beforeEach(() => {
         useFindingsStore.setState({ byInvestigation: {} });
     });
 
-    it('produces numbered sections in order', () => {
+    test('produces numbered sections in order', () => {
         const sections = buildReport(input());
         expect(sections.map((section) => section.heading)).toEqual([
             '1. Matter summary',
@@ -46,7 +46,7 @@ describe('buildReport', () => {
         ]);
     });
 
-    it('renumbers when sections are excluded and injects the executive summary first', () => {
+    test('renumbers when sections are excluded and injects the executive summary first', () => {
         const sections = buildReport(
             input(
                 {},
@@ -63,28 +63,27 @@ describe('buildReport', () => {
         expect(sections.some((section) => section.heading.endsWith('Allegations and findings'))).toBe(true);
     });
 
-    it('prefers session finding overrides over seeded findings', () => {
+    test('prefers session finding overrides over seeded findings', () => {
         const override: Record<string, FindingOutcome> = { 'alg-001': 'not_substantiated' };
         const sections = buildReport(input(override));
         const allegationBullets = sections.find((section) => section.id === 'allegations')?.bullets ?? [];
         expect(allegationBullets.some((bullet) => bullet.includes('finding: not substantiated'))).toBe(true);
     });
 
-    it('conclusion reflects pending work', () => {
+    test('conclusion reflects pending work', () => {
         const sections = buildReport(input());
         const conclusion = sections.find((section) => section.id === 'conclusion');
         expect(conclusion?.paragraphs.join(' ')).toMatch(/remain pending/);
     });
 });
 
-describe('findings store', () => {
-    beforeEach(() => {
+test.describe('findings store', () => {
+    test.beforeEach(() => {
         useFindingsStore.setState({ byInvestigation: {} });
     });
 
-    it('records, replaces, and clears finding overrides per allegation', () => {
-        const store = useFindingsStore.getState();
-        store.setFinding('inv-001', 'alg-002', 'substantiated');
+    test('records, replaces, and clears finding overrides per allegation', () => {
+        useFindingsStore.getState().setFinding('inv-001', 'alg-002', 'substantiated');
         expect(useFindingsStore.getState().byInvestigation['inv-001']?.findings['alg-002']).toBe('substantiated');
 
         useFindingsStore.getState().setFinding('inv-001', 'alg-002', 'inconclusive');
@@ -94,7 +93,7 @@ describe('findings store', () => {
         expect(useFindingsStore.getState().byInvestigation['inv-001']?.findings['alg-002']).toBeUndefined();
     });
 
-    it('keeps investigations isolated from each other', () => {
+    test('keeps investigations isolated from each other', () => {
         useFindingsStore.getState().setFinding('inv-001', 'alg-001', 'substantiated');
         useFindingsStore.getState().setNotes('inv-002', 'alg-005', 'note');
         expect(useFindingsStore.getState().byInvestigation['inv-001']?.findings['alg-001']).toBe('substantiated');

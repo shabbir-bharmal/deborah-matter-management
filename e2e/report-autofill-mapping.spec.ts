@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { expect, test } from '@playwright/test';
 
 import { buildReportDraft } from '~/features/reportAutoFill/mapping/mappingEngine';
 import type { ExtractionResult } from '~/features/reportAutoFill/types/reportAutoFill';
@@ -31,8 +31,8 @@ const csvWitnesses: ExtractionResult = {
     ],
 };
 
-describe('mapping engine', () => {
-    it('maps summary and conclusion paragraphs to the correct sections with high confidence', () => {
+test.describe('mapping engine', () => {
+    test('maps summary and conclusion paragraphs to the correct sections with high confidence', () => {
         const draft = buildReportDraft('inv-001', [docxSample]);
 
         expect(draft.sections.matterSummary).toHaveLength(1);
@@ -44,7 +44,7 @@ describe('mapping engine', () => {
         expect(draft.sections.conclusion[0].confidence).toBe('high');
     });
 
-    it('maps allegation lines with category + status as high confidence and category-only as medium', () => {
+    test('maps allegation lines with category + status as high confidence and category-only as medium', () => {
         const draft = buildReportDraft('inv-001', [docxSample]);
         const allegations = draft.sections.allegationsAndFindings;
 
@@ -53,7 +53,7 @@ describe('mapping engine', () => {
         expect(allegations.every((field) => field.sourceFileId === 'f-docx')).toBe(true);
     });
 
-    it('maps CSV witness rows into interviewee, date, and notes fields', () => {
+    test('maps CSV witness rows into interviewee, date, and notes fields', () => {
         const draft = buildReportDraft('inv-001', [csvWitnesses]);
         const interviews = draft.sections.witnessInterviews;
         const labels = interviews.map((field) => field.fieldLabel);
@@ -64,7 +64,7 @@ describe('mapping engine', () => {
         expect(interviews.find((field) => field.fieldLabel === 'Interviewee — John Smith')?.value).toBe('John Smith, Manager');
     });
 
-    it('extracts "Interview with" mentions from text into witness interviews', () => {
+    test('extracts "Interview with" mentions from text into witness interviews', () => {
         const draft = buildReportDraft('inv-001', [docxSample]);
         const interviews = draft.sections.witnessInterviews;
 
@@ -72,7 +72,7 @@ describe('mapping engine', () => {
         expect(interviews.some((field) => field.value === 'David Reyes')).toBe(true);
     });
 
-    it('extracts evidence lines into evidenceReviewed', () => {
+    test('extracts evidence lines into evidenceReviewed', () => {
         const draft = buildReportDraft('inv-001', [docxSample]);
         const evidence = draft.sections.evidenceReviewed;
 
@@ -81,7 +81,7 @@ describe('mapping engine', () => {
         expect(evidence[0].confidence).toBe('high');
     });
 
-    it('extracts dated lines into keyTimelineEvents with traceable sources', () => {
+    test('extracts dated lines into keyTimelineEvents with traceable sources', () => {
         const draft = buildReportDraft('inv-001', [docxSample]);
         const timeline = draft.sections.keyTimelineEvents;
 
@@ -92,7 +92,7 @@ describe('mapping engine', () => {
         }
     });
 
-    it('collects leftover content in unmappedNotes instead of dropping it', () => {
+    test('collects leftover content in unmappedNotes instead of dropping it', () => {
         const noisy: ExtractionResult = {
             fileId: 'f-noise',
             fileName: 'notes.docx',
@@ -109,7 +109,7 @@ describe('mapping engine', () => {
         expect(draft.unmappedNotes.every((note) => !note.includes('Relevant summary paragraph'))).toBe(true);
     });
 
-    it('merges multiple files without cross-contaminating sources', () => {
+    test('merges multiple files without cross-contaminating sources', () => {
         const draft = buildReportDraft('inv-001', [docxSample, csvWitnesses]);
 
         const allFields = Object.values(draft.sections).flat();

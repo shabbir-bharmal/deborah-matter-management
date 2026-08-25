@@ -1,10 +1,9 @@
-import { ArrowLeft } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useParams } from 'react-router-dom';
 
 import AiAssistant from '~/components/investigation/ai-assistant';
 import { Badge } from '~/components/ui/badge';
-import { COMMON, WORKSPACE_TABS } from '~/constants/menuData';
+import { WORKSPACE_TABS } from '~/constants/menuData';
 import { getInvestigation } from '~/data/selectors';
 import { investigationStatusBadgeClass, investigationStatusLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
 import type { Investigation } from '~/types';
@@ -44,9 +43,6 @@ export default function InvestigationWorkspace() {
 
     return (
         <div className="space-y-4">
-            <Link to="/investigations" className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 text-sm">
-                <ArrowLeft className="size-4" /> {COMMON.backToAllMatters}
-            </Link>
 
             <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 <span className="text-muted-foreground font-mono text-xs">{matter.referenceNumber}</span>

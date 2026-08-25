@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { expect, test } from '@playwright/test';
 
 import { buildReportDraft } from '~/features/reportAutoFill/mapping/mappingEngine';
 import { draftToReportSections, SECTION_KEY_TO_REPORT_SECTION } from '~/features/reportAutoFill/mapping/reportHandoff';
@@ -31,14 +31,14 @@ const matter = {
     description: 'Investigation into repeated allegations of verbal harassment.',
 };
 
-describe('report hand-off', () => {
-    it('maps auto-fill section keys onto existing report section ids', () => {
+test.describe('report hand-off', () => {
+    test('maps auto-fill section keys onto existing report section ids', () => {
         expect(SECTION_KEY_TO_REPORT_SECTION.matterSummary).toBe('summary');
         expect(SECTION_KEY_TO_REPORT_SECTION.keyTimelineEvents).toBe('timeline');
         expect(SECTION_KEY_TO_REPORT_SECTION.conclusion).toBe('conclusion');
     });
 
-    it('converts an accepted draft into section-id keyed bullet lines', () => {
+    test('converts an accepted draft into section-id keyed bullet lines', () => {
         const draft = buildReportDraft('inv-001', [sample]);
         const values = draftToReportSections(draft);
 
@@ -47,7 +47,7 @@ describe('report hand-off', () => {
         expect(values.conclusion[0]).toContain('well supported');
     });
 
-    it('appends accepted values to the generated report sections', () => {
+    test('appends accepted values to the generated report sections', () => {
         const draft = buildReportDraft('inv-001', [sample]);
         const values = draftToReportSections(draft);
 

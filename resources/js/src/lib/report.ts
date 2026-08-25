@@ -35,6 +35,7 @@ export function buildReport(input: {
     savedFindings: Record<string, FindingOutcome>;
     config?: ReportConfig;
     autoFill?: Record<string, string[]>;
+    autoFillSections?: { id: string; heading: string; bullets: string[] }[];
 }): ReportSection[] {
     const { matter, allegations, interviews, evidenceItems, events, savedFindings, config } = input;
     const includedSections = config?.includedSections ?? {};
@@ -136,6 +137,16 @@ export function buildReport(input: {
             const extra = autoFill[section.id];
             if (extra && extra.length > 0) {
                 section.bullets = [...section.bullets, ...extra];
+            }
+        }
+    }
+
+    // Auto-fill custom sections: headings found in uploaded files that had no
+    // canonical counterpart are appended as new report sections.
+    if (input.autoFillSections) {
+        for (const custom of input.autoFillSections) {
+            if (custom.bullets.length > 0) {
+                selected.push({ id: custom.id, heading: custom.heading, paragraphs: [], bullets: custom.bullets });
             }
         }
     }

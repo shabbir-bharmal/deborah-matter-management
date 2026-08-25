@@ -92,69 +92,71 @@ export default function Overview() {
                 </CardContent>
             </Card>
 
-            <Card>
-                <CardHeader>
-                    <CardTitle className="text-base">{PAGE_TEXT.workspace.overview.allegationsSummaryTitle}</CardTitle>
-                    <CardDescription>{allegations ? `${allegations.length} recorded for this matter.` : undefined}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                    {allegations?.length === 0 && <p className="text-muted-foreground text-sm">{PAGE_TEXT.workspace.allegations.empty}</p>}
-                    {allegations?.map((allegation) => (
-                        <button
-                            key={allegation.id}
-                            type="button"
-                            onClick={() => setSelectedAllegation(allegation)}
-                            aria-label={`Open details for ${allegation.title}`}
-                            data-testid={`overview-allegation-${allegation.id}`}
-                            className="hover:bg-accent/50 block w-full rounded-lg border p-3 text-left transition-colors"
-                        >
-                            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-                                <span className="text-sm font-medium">{allegation.title}</span>
-                                <Badge variant="outline">{allegationCategoryLabels[allegation.category]}</Badge>
-                                <Badge variant="outline" className={allegationStatusBadgeClass[allegation.status]}>
-                                    {allegationStatusLabels[allegation.status]}
-                                </Badge>
-                                {currentFindingFor(allegation) && (
-                                    <Badge variant="secondary">
-                                        Finding: {findingOutcomeLabels[currentFindingFor(allegation) as FindingOutcome]}
+            <div className="grid gap-4 lg:grid-cols-[50%_50%]">
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="text-base">{PAGE_TEXT.workspace.overview.allegationsSummaryTitle}</CardTitle>
+                        <CardDescription>{allegations ? `${allegations.length} recorded for this matter.` : undefined}</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-2">
+                        {allegations?.length === 0 && <p className="text-muted-foreground text-sm">{PAGE_TEXT.workspace.allegations.empty}</p>}
+                        {allegations?.map((allegation) => (
+                            <button
+                                key={allegation.id}
+                                type="button"
+                                onClick={() => setSelectedAllegation(allegation)}
+                                aria-label={`Open details for ${allegation.title}`}
+                                data-testid={`overview-allegation-${allegation.id}`}
+                                className="hover:bg-accent/50 block w-full rounded-lg border p-3 text-left transition-colors"
+                            >
+                                <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+                                    <span className="text-sm font-medium">{allegation.title}</span>
+                                    <Badge variant="outline">{allegationCategoryLabels[allegation.category]}</Badge>
+                                    <Badge variant="outline" className={allegationStatusBadgeClass[allegation.status]}>
+                                        {allegationStatusLabels[allegation.status]}
                                     </Badge>
-                                )}
-                            </div>
-                            <p className="text-muted-foreground mt-1.5 line-clamp-2 text-sm">{allegation.description}</p>
-                        </button>
-                    ))}
-                </CardContent>
-            </Card>
+                                    {currentFindingFor(allegation) && (
+                                        <Badge variant="secondary">
+                                            Finding: {findingOutcomeLabels[currentFindingFor(allegation) as FindingOutcome]}
+                                        </Badge>
+                                    )}
+                                </div>
+                                <p className="text-muted-foreground mt-1.5 line-clamp-2 text-sm">{allegation.description}</p>
+                            </button>
+                        ))}
+                    </CardContent>
+                </Card>
 
-            <Card>
-                <CardHeader>
-                    <CardTitle className="text-base">{PAGE_TEXT.workspace.overview.witnessesSummaryTitle}</CardTitle>
-                    <CardDescription>{witnesses ? `${witnesses.length} recorded for this matter.` : undefined}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                    {witnesses?.length === 0 && <p className="text-muted-foreground text-sm">{PAGE_TEXT.workspace.witnesses.empty}</p>}
-                    {witnesses?.map((witness) => (
-                        <button
-                            key={witness.id}
-                            type="button"
-                            onClick={() => setSelectedWitness(witness)}
-                            aria-label={`Open details for ${witness.name}`}
-                            data-testid={`overview-witness-${witness.id}`}
-                            className="hover:bg-accent/50 block w-full rounded-lg border p-3 text-left transition-colors"
-                        >
-                            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-                                <span className="text-sm font-medium">{witness.name}</span>
-                                <span className="text-muted-foreground text-sm">{witness.role}</span>
-                                <Badge variant="outline">{relationshipLabels[witness.relationship]}</Badge>
-                                <Badge variant="outline" className={interviewStatusBadgeClass[witness.interviewStatus]}>
-                                    {interviewStatusLabels[witness.interviewStatus]}
-                                </Badge>
-                                <span className="text-muted-foreground ml-auto text-xs">Interview date: {formatDate(witness.interviewDate)}</span>
-                            </div>
-                        </button>
-                    ))}
-                </CardContent>
-            </Card>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="text-base">{PAGE_TEXT.workspace.overview.witnessesSummaryTitle}</CardTitle>
+                        <CardDescription>{witnesses ? `${witnesses.length} recorded for this matter.` : undefined}</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-2">
+                        {witnesses?.length === 0 && <p className="text-muted-foreground text-sm">{PAGE_TEXT.workspace.witnesses.empty}</p>}
+                        {witnesses?.map((witness) => (
+                            <button
+                                key={witness.id}
+                                type="button"
+                                onClick={() => setSelectedWitness(witness)}
+                                aria-label={`Open details for ${witness.name}`}
+                                data-testid={`overview-witness-${witness.id}`}
+                                className="hover:bg-accent/50 block w-full rounded-lg border p-3 text-left transition-colors"
+                            >
+                                <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+                                    <span className="text-sm font-medium">{witness.name}</span>
+                                    <span className="text-muted-foreground text-sm">{witness.role}</span>
+                                    <Badge variant="outline">{relationshipLabels[witness.relationship]}</Badge>
+                                    <Badge variant="outline" className={interviewStatusBadgeClass[witness.interviewStatus]}>
+                                        {interviewStatusLabels[witness.interviewStatus]}
+                                    </Badge>
+                                    <span className="text-muted-foreground ml-auto text-xs">Interview date: {formatDate(witness.interviewDate)}</span>
+                                </div>
+                            </button>
+                        ))}
+                    </CardContent>
+                </Card>
+            </div>
 
             {loading && <TabSkeleton />}
 

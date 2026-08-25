@@ -34,9 +34,17 @@ export interface MappedField {
     edited: boolean; // true once the user manually changes it
 }
 
+/** A report section created from a heading in an uploaded file that has no canonical counterpart. */
+export interface CustomReportSection {
+    name: string;
+    fields: MappedField[];
+}
+
 export interface ReportDraft {
     matterId: string;
     sections: Record<ReportSectionKey, MappedField[]>;
+    /** Sections created from unrecognized headings in the source files. */
+    customSections: CustomReportSection[];
     unmappedNotes: string[]; // extracted content that didn't confidently map anywhere
 }
 
@@ -60,6 +68,7 @@ export function emptyReportDraft(matterId: string): ReportDraft {
             keyTimelineEvents: [],
             conclusion: [],
         },
+        customSections: [],
         unmappedNotes: [],
     };
 }

@@ -1,4 +1,4 @@
-import { ArrowLeft, CalendarClock, Check, FileText } from 'lucide-react';
+import { CalendarClock, Check, FileText } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
@@ -107,9 +107,6 @@ export default function ClientPortal() {
 
     return (
         <div className="space-y-4">
-            <Link to="/clients" className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 text-sm">
-                <ArrowLeft className="size-4" /> All clients
-            </Link>
 
             <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 <h1 className="text-2xl font-semibold tracking-tight">{portal.name}</h1>
@@ -119,7 +116,7 @@ export default function ClientPortal() {
                 What the client would see: matter status, milestones, upcoming steps, and client-visible documents only.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mt-10">
                 {portal.matters.map((matter) => (
                     <Card key={matter.id}>
                         <CardHeader>
