@@ -31,7 +31,7 @@ class CalendarController extends Controller
                 'title' => 'Interview — '.($interview->witness?->name ?? 'Unknown witness'),
                 'subtitle' => $interview->witness?->role ?? '',
                 'reference' => $interview->investigation->reference_number,
-                'href' => "/investigations/{$interview->investigation_id}/interviews",
+                'href' => "/matters/{$interview->investigation_id}/interviews",
             ]);
 
         $deadlines = (clone $visible)->active()->with('client')->get()
@@ -43,7 +43,7 @@ class CalendarController extends Controller
                 'title' => 'Deadline — '.$matter->title,
                 'subtitle' => $matter->client->name,
                 'reference' => $matter->reference_number,
-                'href' => "/investigations/{$matter->id}",
+                'href' => "/matters/{$matter->id}",
             ]);
 
         $events = $interviews->concat($deadlines)

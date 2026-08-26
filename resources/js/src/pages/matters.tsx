@@ -9,8 +9,8 @@ import Pagination, { PAGE_SIZES } from '~/components/ui/pagination';
 import { Skeleton } from '~/components/ui/skeleton';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '~/components/ui/table';
 import { PAGE_TEXT } from '~/constants/menuData';
-import { getInvestigations } from '~/data/selectors';
-import { investigationStatusBadgeClass, investigationStatusLabels, investigationTypeLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
+import { getMatters } from '~/data/selectors';
+import { matterStatusBadgeClass, matterStatusLabels, matterTypeLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
 import type { Investigation } from '~/types';
 
 type StatusFilter = 'all' | 'active' | 'completed';
@@ -18,7 +18,7 @@ type StatusFilter = 'all' | 'active' | 'completed';
 const ACTIVE_STATUSES: Investigation['status'][] = ['open', 'in_progress', 'review'];
 const COMPLETED_STATUSES: Investigation['status'][] = ['completed', 'closed'];
 
-const TEXT = PAGE_TEXT.investigations;
+const TEXT = PAGE_TEXT.matters;
 
 const filters: { value: StatusFilter; label: string }[] = [
     { value: 'all', label: TEXT.filters.all },
@@ -47,7 +47,7 @@ function Kpi({ icon: Icon, label, value, tone }: { icon: typeof Briefcase; label
     );
 }
 
-export default function Investigations() {
+export default function Matters() {
     const [matters, setMatters] = useState<Investigation[] | null>(null);
     const [searchParams, setSearchParams] = useSearchParams();
     const navigate = useNavigate();
@@ -79,7 +79,7 @@ export default function Investigations() {
 
     useEffect(() => {
         let cancelled = false;
-        getInvestigations().then((result) => {
+        getMatters().then((result) => {
             if (!cancelled) {
                 setMatters(result);
             }
@@ -210,7 +210,7 @@ export default function Investigations() {
                                 <TableRow
                                     key={matter.id}
                                     data-testid="matter-row"
-                                    onClick={() => navigate(`/investigations/${matter.id}`)}
+                                    onClick={() => navigate(`/matters/${matter.id}`)}
                                     className="cursor-pointer"
                                 >
                                     <TableCell className="text-muted-foreground font-mono text-xs whitespace-nowrap">
@@ -218,7 +218,7 @@ export default function Investigations() {
                                     </TableCell>
                                     <TableCell className="max-w-72 font-medium">
                                         <Link
-                                            to={`/investigations/${matter.id}`}
+                                            to={`/matters/${matter.id}`}
                                             onClick={(event) => event.stopPropagation()}
                                             className="underline-offset-2 hover:underline"
                                         >
@@ -227,11 +227,11 @@ export default function Investigations() {
                                     </TableCell>
                                     <TableCell className="text-muted-foreground hidden text-sm md:table-cell">{matter.client}</TableCell>
                                     <TableCell className="text-muted-foreground hidden text-sm lg:table-cell">
-                                        {investigationTypeLabels[matter.type]}
+                                        {matterTypeLabels[matter.type]}
                                     </TableCell>
                                     <TableCell>
-                                        <Badge variant="outline" className={investigationStatusBadgeClass[matter.status]}>
-                                            {investigationStatusLabels[matter.status]}
+                                        <Badge variant="outline" className={matterStatusBadgeClass[matter.status]}>
+                                            {matterStatusLabels[matter.status]}
                                         </Badge>
                                     </TableCell>
                                     <TableCell>

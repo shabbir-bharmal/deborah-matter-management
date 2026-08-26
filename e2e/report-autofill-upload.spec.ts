@@ -5,7 +5,7 @@ function csvFile(name: string, content: string) {
 }
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('/investigations/inv-001/reports');
+    await page.goto('/matters/inv-001/reports');
 });
 
 test.describe('report auto-fill upload UI', () => {

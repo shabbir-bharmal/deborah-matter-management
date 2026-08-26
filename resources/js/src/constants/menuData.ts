@@ -28,7 +28,7 @@ export interface NavItemData {
 
 export const NAV_ITEMS: NavItemData[] = [
     { label: 'Dashboard', href: '/', end: true, permission: 'dashboard.view' },
-    { label: 'Investigations', href: '/investigations', permission: 'investigations.view' },
+    { label: 'Matters', href: '/matters', permission: 'investigations.view' },
     { label: 'Clients', href: '/clients', permission: 'clients.view' },
     { label: 'Calendar', href: '/calendar', permission: 'calendar.view' },
     { label: 'Display Calendar', href: '/display-calendar', permission: 'calendar.view' },
@@ -120,8 +120,8 @@ export const PAGE_TEXT = {
             statusSummary: 'Status summary',
         },
     },
-    investigations: {
-        title: 'Investigations',
+    matters: {
+        title: 'Matters',
         subtitle: 'All matters — active and completed.',
         searchPlaceholder: 'Search reference, title, client…',
         filters: {

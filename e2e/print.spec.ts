@@ -14,7 +14,7 @@ const printCalls = (page: import('@playwright/test').Page) => page.evaluate(() =
 test.describe('report print / PDF functionality', () => {
     test.beforeEach(async ({ page }) => {
         await stubPrintDialog(page);
-        await page.goto('/investigations/inv-001/reports');
+        await page.goto('/matters/inv-001/reports');
     });
 
     test('calls window.print() when the Print / PDF button is clicked', async ({ page }) => {

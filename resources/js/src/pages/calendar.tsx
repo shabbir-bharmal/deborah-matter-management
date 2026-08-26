@@ -6,8 +6,8 @@ import { Badge } from '~/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
 import { Skeleton } from '~/components/ui/skeleton';
 import { PAGE_TEXT } from '~/constants/menuData';
-import { getDashboardSnapshot, getInvestigations } from '~/data/selectors';
-import { interviewStatusBadgeClass, interviewStatusLabels, investigationStatusBadgeClass, investigationStatusLabels } from '~/lib/status';
+import { getDashboardSnapshot, getMatters } from '~/data/selectors';
+import { interviewStatusBadgeClass, interviewStatusLabels, matterStatusBadgeClass, matterStatusLabels } from '~/lib/status';
 import type { DashboardSnapshot, Investigation } from '~/types';
 
 function formatDate(iso: string) {
@@ -20,7 +20,7 @@ export default function Calendar() {
 
     useEffect(() => {
         let cancelled = false;
-        Promise.all([getDashboardSnapshot(), getInvestigations()]).then(([snapshotResult, mattersResult]) => {
+        Promise.all([getDashboardSnapshot(), getMatters()]).then(([snapshotResult, mattersResult]) => {
             if (!cancelled) {
                 setSnapshot(snapshotResult);
                 setMatters(mattersResult);
@@ -67,7 +67,7 @@ export default function Calendar() {
                     {snapshot.upcomingInterviews.map((interview) => (
                         <Link
                             key={interview.id}
-                            to={`/investigations/${interview.investigationId}/interviews`}
+                            to={`/matters/${interview.investigationId}/interviews`}
                             className="hover:bg-accent flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg border p-3 transition-colors"
                         >
                             <span className="w-28 shrink-0 text-sm font-medium tabular-nums">{formatDate(interview.scheduledAt)}</span>
@@ -94,7 +94,7 @@ export default function Calendar() {
                         return (
                             <Link
                                 key={matter.id}
-                                to={`/investigations/${matter.id}`}
+                                to={`/matters/${matter.id}`}
                                 className="hover:bg-accent flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg border p-3 transition-colors"
                             >
                                 <CalendarDays className="text-muted-foreground size-4 shrink-0" />
@@ -105,8 +105,8 @@ export default function Calendar() {
                                         {PAGE_TEXT.calendar.deadlinesCard.pastDue}
                                     </Badge>
                                 )}
-                                <Badge variant="outline" className={`ml-auto ${investigationStatusBadgeClass[matter.status]}`}>
-                                    {investigationStatusLabels[matter.status]}
+                                <Badge variant="outline" className={`ml-auto ${matterStatusBadgeClass[matter.status]}`}>
+                                    {matterStatusLabels[matter.status]}
                                 </Badge>
                             </Link>
                         );

@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test.describe('overview allegations and witnesses dialogs', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/investigations/inv-001');
+        await page.goto('/matters/inv-001');
     });
 
     test('renders allegation and witness summary rows in the overview', async ({ page }) => {
@@ -21,7 +21,7 @@ test.describe('overview allegations and witnesses dialogs', () => {
         await expect(page.getByText(/Related witnesses/i)).toBeVisible();
 
         const evidenceChip = dialog.getByRole('link', { name: /Stand-up meeting recording/i }).first();
-        await expect(evidenceChip).toHaveAttribute('href', '/investigations/inv-001/evidence?focus=evd-001');
+        await expect(evidenceChip).toHaveAttribute('href', '/matters/inv-001/evidence?focus=evd-001');
     });
 
     test('chains between dialogs: allegation → witness via related witness chip', async ({ page }) => {

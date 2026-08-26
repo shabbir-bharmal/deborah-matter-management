@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-import RelatedChip from '~/components/investigation/related-chip';
-import TabSkeleton from '~/components/investigation/tab-skeleton';
+import RelatedChip from '~/components/matter/related-chip';
+import TabSkeleton from '~/components/matter/tab-skeleton';
 import { Badge } from '~/components/ui/badge';
 import { Card, CardContent } from '~/components/ui/card';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '~/components/ui/dialog';
 import { PAGE_TEXT } from '~/constants/menuData';
-import { getAllegationsByInvestigation, getInterviewsByInvestigation } from '~/data/selectors';
+import { getAllegationsByMatter, getInterviewsByMatter } from '~/data/selectors';
 import { useInvestigation } from '~/hooks/use-investigation';
 import { allegationStatusLabels, interviewStatusBadgeClass, interviewStatusLabels } from '~/lib/status';
 import type { Allegation, InterviewWithWitness } from '~/types';
@@ -25,7 +25,7 @@ export default function Interviews() {
 
     useEffect(() => {
         let cancelled = false;
-        Promise.all([getInterviewsByInvestigation(matter.id), getAllegationsByInvestigation(matter.id)]).then(([interviewList, allegationList]) => {
+        Promise.all([getInterviewsByMatter(matter.id), getAllegationsByMatter(matter.id)]).then(([interviewList, allegationList]) => {
             if (cancelled) {
                 return;
             }
@@ -136,7 +136,7 @@ export default function Interviews() {
                                     {relatedAllegations(selected).map((allegation) => (
                                         <RelatedChip
                                             key={allegation.id}
-                                            to={`/investigations/${matter.id}`}
+                                            to={`/matters/${matter.id}`}
                                             label={`${allegation.title} (${allegationStatusLabels[allegation.status]})`}
                                             hint={`View allegation ${allegation.title} in the overview`}
                                         />

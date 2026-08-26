@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useParams } from 'react-router-dom';
 
-import AiAssistant from '~/components/investigation/ai-assistant';
+import AiAssistant from '~/components/matter/ai-assistant';
 import { Badge } from '~/components/ui/badge';
 import { WORKSPACE_TAB_PERMISSIONS, WORKSPACE_TABS } from '~/constants/menuData';
-import { getInvestigation } from '~/data/selectors';
+import { getMatter } from '~/data/selectors';
 import { useAuthStore } from '~/hooks/use-auth';
-import { investigationStatusBadgeClass, investigationStatusLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
+import { matterStatusBadgeClass, matterStatusLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
 import type { Investigation } from '~/types';
 
-export default function InvestigationWorkspace() {
+export default function MatterWorkspace() {
     const { id } = useParams<{ id: string }>();
     const [matter, setMatter] = useState<Investigation | null | undefined>(undefined);
     const permissions = useAuthStore((state) => state.user?.permissions ?? []);
@@ -17,7 +17,7 @@ export default function InvestigationWorkspace() {
 
     useEffect(() => {
         let cancelled = false;
-        getInvestigation(id ?? '').then((result) => {
+        getMatter(id ?? '').then((result) => {
             if (!cancelled) {
                 setMatter(result ?? null);
             }
@@ -35,7 +35,7 @@ export default function InvestigationWorkspace() {
         return (
             <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">Matter not found.</p>
-                <Link to="/investigations" className="text-sm font-medium underline">
+                <Link to="/matters" className="text-sm font-medium underline">
                     Back to all matters
                 </Link>
             </div>
@@ -47,8 +47,8 @@ export default function InvestigationWorkspace() {
             <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 <span className="text-muted-foreground font-mono text-xs">{matter.referenceNumber}</span>
                 <h1 className="text-2xl font-semibold tracking-tight">{matter.title}</h1>
-                <Badge variant="outline" className={investigationStatusBadgeClass[matter.status]}>
-                    {investigationStatusLabels[matter.status]}
+                <Badge variant="outline" className={matterStatusBadgeClass[matter.status]}>
+                    {matterStatusLabels[matter.status]}
                 </Badge>
                 <Badge variant="outline" className={priorityBadgeClass[matter.priority]}>
                     {priorityLabels[matter.priority]}

@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/com
 import { Skeleton } from '~/components/ui/skeleton';
 import { PAGE_TEXT } from '~/constants/menuData';
 import { getDashboardSnapshot } from '~/data/selectors';
-import { investigationStatusBadgeClass, investigationStatusLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
+import { matterStatusBadgeClass, matterStatusLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
 import type { DashboardSnapshot } from '~/types';
 
 function formatDate(iso: string) {
@@ -59,19 +59,19 @@ export default function Dashboard() {
             label: PAGE_TEXT.dashboard.stats.activeMatters,
             value: snapshot.activeMatterCount,
             icon: ClipboardList,
-            to: '/investigations?filter=active',
+            to: '/matters?filter=active',
         },
         {
             label: PAGE_TEXT.dashboard.stats.completedClosed,
             value: snapshot.completedMatterCount,
             icon: CheckCircle2,
-            to: '/investigations?filter=completed',
+            to: '/matters?filter=completed',
         },
         {
             label: PAGE_TEXT.dashboard.stats.pastTargetDate,
             value: snapshot.overdueMatterCount,
             icon: AlertTriangle,
-            to: '/investigations?filter=active',
+            to: '/matters?filter=active',
         },
     ];
 
@@ -83,7 +83,7 @@ export default function Dashboard() {
                     <p className="text-muted-foreground text-sm">{PAGE_TEXT.dashboard.subtitle}</p>
                 </div>
                 <Link
-                    to="/investigations"
+                    to="/matters"
                     className="hover:bg-accent inline-flex items-center gap-1 rounded-md border px-2 py-2 text-xs font-medium md:text-sm"
                 >
                     {PAGE_TEXT.dashboard.quickLinks} <ArrowRight className="size-4" />
@@ -117,7 +117,7 @@ export default function Dashboard() {
                     <CardContent>
                         <div className="h-56">
                             <ResponsiveContainer width="100%" height="100%">
-                                <BarChart data={snapshot.statusCounts.map((entry) => ({ ...entry, label: investigationStatusLabels[entry.status] }))}>
+                                <BarChart data={snapshot.statusCounts.map((entry) => ({ ...entry, label: matterStatusLabels[entry.status] }))}>
                                     <CartesianGrid strokeDasharray="3 3" vertical={false} />
                                     <XAxis dataKey="label" tickLine={false} axisLine={false} fontSize={12} />
                                     <YAxis allowDecimals={false} tickLine={false} axisLine={false} fontSize={12} width={24} />
@@ -181,7 +181,7 @@ export default function Dashboard() {
                         {snapshot.upcomingInterviews.map((interview) => (
                             <Link
                                 key={interview.id}
-                                to={`/investigations/${interview.investigationId}`}
+                                to={`/matters/${interview.investigationId}`}
                                 className="hover:bg-accent flex items-start gap-3 rounded-lg border p-3 transition-colors"
                             >
                                 <CalendarClock className="text-muted-foreground mt-0.5 size-4 shrink-0" />
@@ -205,7 +205,7 @@ export default function Dashboard() {
                         {snapshot.recentActivity.map(({ event, investigationReference }) => (
                             <Link
                                 key={event.id}
-                                to={`/investigations/${event.investigationId}`}
+                                to={`/matters/${event.investigationId}`}
                                 className="hover:bg-accent block rounded-lg border p-3 transition-colors"
                             >
                                 <div className="flex items-center justify-between gap-3">
@@ -227,8 +227,8 @@ export default function Dashboard() {
                 </CardHeader>
                 <CardContent className="flex flex-wrap gap-2">
                     {snapshot.statusCounts.map((entry) => (
-                        <Badge key={entry.status} variant="outline" className={investigationStatusBadgeClass[entry.status]}>
-                            {investigationStatusLabels[entry.status]}: {entry.count}
+                        <Badge key={entry.status} variant="outline" className={matterStatusBadgeClass[entry.status]}>
+                            {matterStatusLabels[entry.status]}: {entry.count}
                         </Badge>
                     ))}
                 </CardContent>

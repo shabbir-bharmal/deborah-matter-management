@@ -12,7 +12,7 @@ import type {
     Witness,
 } from '~/types';
 
-export const investigationTypeLabels: Record<InvestigationType, string> = {
+export const matterTypeLabels: Record<InvestigationType, string> = {
     harassment: 'Harassment',
     discrimination: 'Discrimination',
     misconduct: 'Misconduct',
@@ -27,7 +27,7 @@ export const investigationTypeLabels: Record<InvestigationType, string> = {
     workplace_violence: 'Workplace Violence',
 };
 
-export const investigationStatusLabels: Record<InvestigationStatus, string> = {
+export const matterStatusLabels: Record<InvestigationStatus, string> = {
     open: 'Open',
     in_progress: 'In Progress',
     review: 'In Review',
@@ -35,7 +35,7 @@ export const investigationStatusLabels: Record<InvestigationStatus, string> = {
     closed: 'Closed',
 };
 
-export const investigationStatusBadgeClass: Record<InvestigationStatus, string> = {
+export const matterStatusBadgeClass: Record<InvestigationStatus, string> = {
     open: 'bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300',
     in_progress: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-300',
     review: 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300',

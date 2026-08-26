@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Badge } from '~/components/ui/badge';
 import { Button } from '~/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '~/components/ui/dialog';
-import { getAllegationsByInvestigation, getEvidenceByInvestigation, getInterviewsByInvestigation } from '~/data/selectors';
+import { getAllegationsByMatter, getEvidenceByMatter, getInterviewsByMatter } from '~/data/selectors';
 import { allegationStatusLabels } from '~/lib/status';
 import type { Allegation, Evidence as EvidenceItem, InterviewWithWitness, Investigation } from '~/types';
 
@@ -43,7 +43,7 @@ export default function AiAssistant({ matter }: { matter: Investigation }) {
             return;
         }
         let cancelled = false;
-        Promise.all([getAllegationsByInvestigation(matter.id), getInterviewsByInvestigation(matter.id), getEvidenceByInvestigation(matter.id)]).then(
+        Promise.all([getAllegationsByMatter(matter.id), getInterviewsByMatter(matter.id), getEvidenceByMatter(matter.id)]).then(
             ([allegations, interviews, evidenceItems]) => {
                 if (!cancelled) {
                     setStats({ allegations, interviews, evidenceItems });

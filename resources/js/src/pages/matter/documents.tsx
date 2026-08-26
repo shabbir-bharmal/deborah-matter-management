@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
-import TabSkeleton from '~/components/investigation/tab-skeleton';
+import TabSkeleton from '~/components/matter/tab-skeleton';
 import { Badge } from '~/components/ui/badge';
 import { Card, CardContent } from '~/components/ui/card';
 import { PAGE_TEXT } from '~/constants/menuData';
-import { getDocumentsByInvestigation } from '~/data/selectors';
+import { getDocumentsByMatter } from '~/data/selectors';
 import { useInvestigation } from '~/hooks/use-investigation';
 import { documentStatusBadgeClass, documentStatusLabels, documentTypeLabels } from '~/lib/status';
 import type { InvestigationDocument } from '~/types';
@@ -19,7 +19,7 @@ export default function Documents() {
 
     useEffect(() => {
         let cancelled = false;
-        getDocumentsByInvestigation(matter.id).then((result) => {
+        getDocumentsByMatter(matter.id).then((result) => {
             if (!cancelled) {
                 setDocuments(result);
             }

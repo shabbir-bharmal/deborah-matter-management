@@ -11,18 +11,18 @@ test.describe('breadcrumbs', () => {
         await expect(breadcrumb(page).getByText('Dashboard')).toBeVisible();
     });
 
-    test('renders Dashboard > Investigations on the investigations list', async ({ page }) => {
-        await page.goto('/investigations');
-        await expect(page.getByRole('heading', { name: 'Investigations' })).toBeVisible();
+    test('renders Dashboard > Matters on the matters list', async ({ page }) => {
+        await page.goto('/matters');
+        await expect(page.getByRole('heading', { name: 'Matters' })).toBeVisible();
         const nav = breadcrumb(page);
         await expect(nav.getByRole('link', { name: 'Dashboard' })).toHaveAttribute('href', '/');
-        await expect(nav.getByText('Investigations')).toBeVisible();
+        await expect(nav.getByText('Matters')).toBeVisible();
     });
 
     test('renders matter title and tab inside the workspace', async ({ page }) => {
-        await page.goto('/investigations/inv-001/interviews');
+        await page.goto('/matters/inv-001/interviews');
         const nav = breadcrumb(page);
-        await expect(nav.getByRole('link', { name: 'Investigations' })).toHaveAttribute('href', '/investigations');
+        await expect(nav.getByRole('link', { name: 'Matters' })).toHaveAttribute('href', '/matters');
         await expect(nav.getByText('Harassment allegations — Engineering department')).toBeVisible();
         await expect(nav.getByText('Interviews')).toBeVisible();
     });

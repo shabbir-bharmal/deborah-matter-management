@@ -3,11 +3,11 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'sonner';
 
-import TabSkeleton from '~/components/investigation/tab-skeleton';
+import TabSkeleton from '~/components/matter/tab-skeleton';
 import { Badge } from '~/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
 import { COMMON, PAGE_TEXT } from '~/constants/menuData';
-import { getAllegationsByInvestigation, getEvidenceByInvestigation } from '~/data/selectors';
+import { getAllegationsByMatter, getEvidenceByMatter } from '~/data/selectors';
 import { useCan } from '~/hooks/use-auth';
 import { useFindingsStore, useInvestigationFindings } from '~/hooks/use-findings-store';
 import { useInvestigation } from '~/hooks/use-investigation';
@@ -52,7 +52,7 @@ export default function Findings() {
 
     useEffect(() => {
         let cancelled = false;
-        Promise.all([getAllegationsByInvestigation(matter.id), getEvidenceByInvestigation(matter.id)]).then(([allegationList, evidenceList]) => {
+        Promise.all([getAllegationsByMatter(matter.id), getEvidenceByMatter(matter.id)]).then(([allegationList, evidenceList]) => {
             if (cancelled) {
                 return;
             }

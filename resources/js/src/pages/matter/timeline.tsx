@@ -2,12 +2,12 @@ import { FilePlus2, Flag, FolderOpen, Mail, Mic, SearchCheck, Users } from 'luci
 import { useState } from 'react';
 
 import { useEffect } from 'react';
-import TabSkeleton from '~/components/investigation/tab-skeleton';
+import TabSkeleton from '~/components/matter/tab-skeleton';
 import { Badge } from '~/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '~/components/ui/dialog';
 import { PAGE_TEXT } from '~/constants/menuData';
-import { getTimelineEventsByInvestigation } from '~/data/selectors';
+import { getTimelineEventsByMatter } from '~/data/selectors';
 import { useInvestigation } from '~/hooks/use-investigation';
 import type { TimelineEvent, TimelineEventType } from '~/types';
 
@@ -83,7 +83,7 @@ export default function Timeline() {
 
     useEffect(() => {
         let cancelled = false;
-        getTimelineEventsByInvestigation(matter.id).then((result) => {
+        getTimelineEventsByMatter(matter.id).then((result) => {
             if (!cancelled) {
                 setEvents(result);
             }

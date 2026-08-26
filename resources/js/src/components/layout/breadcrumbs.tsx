@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from '~/components/ui/breadcrumb';
 import { NAV_ITEMS, WORKSPACE_TABS } from '~/constants/menuData';
-import { getClients, getInvestigation } from '~/data/selectors';
+import { getClients, getMatter } from '~/data/selectors';
 
 interface Crumb {
     label: string;
@@ -22,7 +22,7 @@ export default function Breadcrumbs() {
     const { pathname } = useLocation();
     const segments = useMemo(() => pathname.split('/').filter(Boolean), [pathname]);
 
-    const matterId = segments[0] === 'investigations' && segments[1] ? segments[1] : null;
+    const matterId = segments[0] === 'matters' && segments[1] ? segments[1] : null;
     const clientSlug = segments[0] === 'clients' && segments[1] ? segments[1] : null;
 
     const [matterTitle, setMatterTitle] = useState<string | null>(null);
@@ -35,7 +35,7 @@ export default function Breadcrumbs() {
         }
         let cancelled = false;
         setMatterTitle(null);
-        getInvestigation(matterId).then((matter) => {
+        getMatter(matterId).then((matter) => {
             if (!cancelled) {
                 setMatterTitle(matter?.title ?? matterId);
             }
@@ -75,7 +75,7 @@ export default function Breadcrumbs() {
             crumbs.push({ label: labelForSegment(segments[index]), href: segments.length > 1 ? href : undefined });
             continue;
         }
-        if (segments[0] === 'investigations' && index === 1) {
+        if (segments[0] === 'matters' && index === 1) {
             crumbs.push({ label: matterTitle ?? segments[index], href: segments.length > 2 ? href : undefined });
             continue;
         }
@@ -83,7 +83,7 @@ export default function Breadcrumbs() {
             crumbs.push({ label: clientName ?? segments[index], href: segments.length > 2 ? href : undefined });
             continue;
         }
-        if (segments[0] === 'investigations' && index === 2) {
+        if (segments[0] === 'matters' && index === 2) {
             const tab = WORKSPACE_TABS.find((entry) => entry.id === segments[index]);
             crumbs.push({ label: tab?.label ?? segments[index] });
             continue;

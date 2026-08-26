@@ -1,4 +1,4 @@
-import { CalendarClock, CalendarDays, ClipboardList, LayoutDashboard, Menu, Scale, Settings, ShieldCheck, Users } from 'lucide-react';
+import { Briefcase, CalendarClock, CalendarDays, LayoutDashboard, Menu, Scale, Settings, ShieldCheck, Users } from 'lucide-react';
 import { useState } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ import { cn } from '~/lib/utils';
 
 const navIcons = {
     Dashboard: LayoutDashboard,
-    Investigations: ClipboardList,
+    Matters: Briefcase,
     Clients: Users,
     Calendar: CalendarDays,
     'Display Calendar': CalendarClock,

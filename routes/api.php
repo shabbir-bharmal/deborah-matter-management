@@ -32,13 +32,13 @@ Route::middleware('auth')->group(function () {
     Route::get('clients', [ClientController::class, 'index'])->middleware('can:clients.view');
     Route::get('clients/{client}', [ClientController::class, 'show'])->middleware('can:clients.view');
 
-    Route::get('investigations', [InvestigationController::class, 'index'])->middleware('can:viewAny,'.Investigation::class);
+    Route::get('matters', [InvestigationController::class, 'index'])->middleware('can:viewAny,'.Investigation::class);
 
     /**
      * Everything below hangs off one matter: `can:view,investigation` enforces
      * both the permission and the client-portal scoping in one place.
      */
-    Route::middleware('can:view,investigation')->prefix('investigations/{investigation}')->group(function () {
+    Route::middleware('can:view,investigation')->prefix('matters/{investigation}')->group(function () {
         Route::get('/', [InvestigationController::class, 'show']);
         Route::get('allegations', [AllegationController::class, 'index'])->middleware('can:allegations.view');
         Route::get('witnesses', [WitnessController::class, 'index'])->middleware('can:witnesses.view');

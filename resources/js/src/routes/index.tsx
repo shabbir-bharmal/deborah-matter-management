@@ -10,16 +10,16 @@ import ClientPortal from '~/pages/client-portal';
 import Clients from '~/pages/clients';
 import Dashboard from '~/pages/dashboard';
 import DisplayCalendar from '~/pages/display-calendar';
-import InvestigationWorkspace from '~/pages/investigation-workspace';
-import Documents from '~/pages/investigation/documents';
-import Evidence from '~/pages/investigation/evidence';
-import Findings from '~/pages/investigation/findings';
-import Interviews from '~/pages/investigation/interviews';
-import Notes from '~/pages/investigation/notes';
-import Overview from '~/pages/investigation/overview';
-import Reports from '~/pages/investigation/reports';
-import Timeline from '~/pages/investigation/timeline';
-import Investigations from '~/pages/investigations';
+import MatterWorkspace from '~/pages/matter-workspace';
+import Documents from '~/pages/matter/documents';
+import Evidence from '~/pages/matter/evidence';
+import Findings from '~/pages/matter/findings';
+import Interviews from '~/pages/matter/interviews';
+import Notes from '~/pages/matter/notes';
+import Overview from '~/pages/matter/overview';
+import Reports from '~/pages/matter/reports';
+import Timeline from '~/pages/matter/timeline';
+import Matters from '~/pages/matters';
 import Login from '~/pages/login';
 import NotFound from '~/pages/not-found';
 import Settings from '~/pages/settings';
@@ -34,10 +34,10 @@ export const routes = [
                 element: <AppLayout />,
                 children: [
                     { index: true, element: <Dashboard /> },
-                    { path: 'investigations', element: <Investigations /> },
+                    { path: 'matters', element: <Matters /> },
                     {
-                        path: 'investigations/:id',
-                        element: <InvestigationWorkspace />,
+                        path: 'matters/:id',
+                        element: <MatterWorkspace />,
                         children: [
                             { index: true, element: <Navigate to="overview" replace /> },
                             { path: 'overview', element: <Overview /> },

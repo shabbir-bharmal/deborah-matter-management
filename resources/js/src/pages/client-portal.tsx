@@ -6,7 +6,7 @@ import { Badge } from '~/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
 import { PAGE_TEXT } from '~/constants/menuData';
 import { getClientPortal } from '~/data/selectors';
-import { investigationStatusBadgeClass, investigationStatusLabels } from '~/lib/status';
+import { matterStatusBadgeClass, matterStatusLabels } from '~/lib/status';
 import { cn } from '~/lib/utils';
 import type { ClientPortal } from '~/types';
 
@@ -122,8 +122,8 @@ export default function ClientPortal() {
                             <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                                 <span className="text-muted-foreground font-mono text-xs">{matter.referenceNumber}</span>
                                 <CardTitle className="text-base">{matter.title}</CardTitle>
-                                <Badge variant="outline" className={investigationStatusBadgeClass[matter.status]}>
-                                    {investigationStatusLabels[matter.status]}
+                                <Badge variant="outline" className={matterStatusBadgeClass[matter.status]}>
+                                    {matterStatusLabels[matter.status]}
                                 </Badge>
                             </div>
                             <CardDescription>

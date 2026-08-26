@@ -47,6 +47,7 @@ const kindBadgeClass: Record<CalendarEvent['kind'], string> = {
 };
 
 function EventRow({ event }: { event: CalendarEvent }) {
+    console.log('EventRow', event);
     return (
         <Link
             to={event.href}

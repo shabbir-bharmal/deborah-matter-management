@@ -8,7 +8,7 @@ function totalFrom(label: string): number {
 
 test.describe('investigations pagination', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/investigations');
+        await page.goto('/matters');
     });
 
     function rows(page: import('@playwright/test').Page) {
@@ -93,7 +93,7 @@ test.describe('investigations pagination', () => {
     });
 
     test('an out-of-range page param falls back to the last available page', async ({ page }) => {
-        await page.goto('/investigations?page=999');
+        await page.goto('/matters?page=999');
         const label = await showingText(page);
         // The range must end exactly at the total, never beyond it.
         const end = Number(label.match(/-(\d+) of/)?.[1]);

@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import RelatedChip from '~/components/investigation/related-chip';
-import TabSkeleton from '~/components/investigation/tab-skeleton';
+import RelatedChip from '~/components/matter/related-chip';
+import TabSkeleton from '~/components/matter/tab-skeleton';
 import { Badge } from '~/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '~/components/ui/dialog';
 import { PAGE_TEXT } from '~/constants/menuData';
-import { getAllegationsByInvestigation, getEvidenceByInvestigation, getWitnessesByInvestigation } from '~/data/selectors';
+import { getAllegationsByMatter, getEvidenceByMatter, getWitnessesByMatter } from '~/data/selectors';
 import { useInvestigationFindings } from '~/hooks/use-findings-store';
 import { useInvestigation } from '~/hooks/use-investigation';
 import {
@@ -17,7 +17,7 @@ import {
     findingOutcomeLabels,
     interviewStatusBadgeClass,
     interviewStatusLabels,
-    investigationTypeLabels,
+    matterTypeLabels,
     relationshipLabels,
 } from '~/lib/status';
 import type { Allegation, Evidence, FindingOutcome, Witness } from '~/types';
@@ -40,7 +40,7 @@ export default function Overview() {
 
     useEffect(() => {
         let cancelled = false;
-        Promise.all([getAllegationsByInvestigation(matter.id), getWitnessesByInvestigation(matter.id), getEvidenceByInvestigation(matter.id)]).then(
+        Promise.all([getAllegationsByMatter(matter.id), getWitnessesByMatter(matter.id), getEvidenceByMatter(matter.id)]).then(
             ([allegationList, witnessList, evidenceList]) => {
                 if (cancelled) {
                     return;
@@ -61,7 +61,7 @@ export default function Overview() {
     const fields = PAGE_TEXT.workspace.overview.fields;
     const details = [
         { label: fields.client, value: matter.client },
-        { label: fields.type, value: investigationTypeLabels[matter.type] },
+        { label: fields.type, value: matterTypeLabels[matter.type] },
         { label: fields.investigator, value: matter.investigator },
         { label: fields.opened, value: formatDate(matter.openedAt) },
         { label: fields.targetCompletion, value: formatDate(matter.targetCompletionDate) },
@@ -205,7 +205,7 @@ export default function Overview() {
                                         {selectedAllegation.relatedEvidenceIds.map((id) => (
                                             <RelatedChip
                                                 key={id}
-                                                to={`/investigations/${matter.id}/evidence?focus=${id}`}
+                                                to={`/matters/${matter.id}/evidence?focus=${id}`}
                                                 label={evidenceTitle(id)}
                                                 hint={`Open evidence ${evidenceTitle(id)}`}
                                             />
@@ -213,7 +213,7 @@ export default function Overview() {
                                     </div>
                                 </div>
                                 <Link
-                                    to={`/investigations/${matter.id}/findings`}
+                                    to={`/matters/${matter.id}/findings`}
                                     className="inline-block text-sm font-medium underline-offset-2 hover:underline"
                                 >
                                     Review finding in Findings tab →

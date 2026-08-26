@@ -8,11 +8,11 @@ test.describe('responsive layout and header', () => {
 
         await page.getByRole('button', { name: 'Open navigation menu' }).click();
         const drawer = page.getByRole('dialog');
-        await expect(drawer.getByText('Investigations')).toBeVisible();
+        await expect(drawer.getByText('Matters')).toBeVisible();
 
-        await drawer.getByText('Investigations').click();
-        await expect(page.getByRole('heading', { name: 'Investigations' })).toBeVisible();
-        await expect(page).toHaveURL(/\/investigations$/);
+        await drawer.getByText('Matters').click();
+        await expect(page.getByRole('heading', { name: 'Matters' })).toBeVisible();
+        await expect(page).toHaveURL(/\/matters$/);
         await expect(page.getByRole('dialog')).toHaveCount(0);
     });
 
@@ -90,7 +90,7 @@ test.describe('header', () => {
 
 test.describe('regression: matter navigation from the investigations list', () => {
     test('opens the workspace instead of an error when a matter row is clicked', async ({ page }) => {
-        await page.goto('/investigations');
+        await page.goto('/matters');
 
         const row = page.getByText('Harassment allegations — Engineering department');
         await expect(row).toBeVisible();
@@ -98,16 +98,16 @@ test.describe('regression: matter navigation from the investigations list', () =
         await row.click();
         await expect(page.getByText('Target completion')).toBeVisible();
         await expect(page.getByText('Matter not found.')).toHaveCount(0);
-        await expect(page).toHaveURL(/\/investigations\/inv-001\/overview$/);
+        await expect(page).toHaveURL(/\/matters\/inv-001\/overview$/);
     });
 
     test('navigates between workspace tabs without crashing', async ({ page }) => {
-        await page.goto('/investigations/inv-001');
+        await page.goto('/matters/inv-001');
         await expect(page.getByText('Target completion')).toBeVisible();
 
         await page.getByRole('link', { name: 'Timeline' }).click();
         await expect(page.getByText('Complaint received').first()).toBeVisible();
-        await expect(page).toHaveURL(/\/investigations\/inv-001\/timeline$/);
+        await expect(page).toHaveURL(/\/matters\/inv-001\/timeline$/);
 
         await page.getByRole('link', { name: 'Findings' }).click();
         await expect(page.getByText('Supporting evidence').first()).toBeVisible();

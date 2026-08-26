@@ -10,10 +10,10 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
 import {
-    getAllegationsByInvestigation,
-    getEvidenceByInvestigation,
-    getInterviewsByInvestigation,
-    getTimelineEventsByInvestigation,
+    getAllegationsByMatter,
+    getEvidenceByMatter,
+    getInterviewsByMatter,
+    getTimelineEventsByMatter,
 } from '~/data/selectors';
 import { AutoFillPanel } from '~/features/reportAutoFill';
 import { draftToCustomReportSections, draftToReportSections } from '~/features/reportAutoFill/mapping/reportHandoff';
@@ -112,10 +112,10 @@ export default function Reports() {
     useEffect(() => {
         let cancelled = false;
         Promise.all([
-            getAllegationsByInvestigation(matter.id),
-            getInterviewsByInvestigation(matter.id),
-            getEvidenceByInvestigation(matter.id),
-            getTimelineEventsByInvestigation(matter.id),
+        getAllegationsByMatter(matter.id),
+        getInterviewsByMatter(matter.id),
+        getEvidenceByMatter(matter.id),
+        getTimelineEventsByMatter(matter.id),
         ]).then(([allegations, interviews, evidenceItems, events]) => {
             if (!cancelled) {
                 setData({ allegations, interviews, evidenceItems, events });

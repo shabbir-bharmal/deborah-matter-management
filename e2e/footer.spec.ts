@@ -15,11 +15,11 @@ test.describe('site footer', () => {
     });
 
     test('appears on inner pages too, not just the dashboard', async ({ page }) => {
-        for (const url of ['/investigations', '/clients', '/calendar', '/display-calendar', '/settings']) {
+        for (const url of ['/matters', '/clients', '/calendar', '/display-calendar', '/settings']) {
             await page.goto(url);
             await expect(page.getByRole('contentinfo')).toBeVisible();
         }
-        await page.goto('/investigations/inv-001');
+        await page.goto('/matters/inv-001');
         await expect(page.getByRole('contentinfo')).toBeVisible();
     });
 

@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test.describe('matter notes tab', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/investigations/inv-001/notes');
+        await page.goto('/matters/inv-001/notes');
     });
 
     test('deep-links to the notes tab with an empty state', async ({ page }) => {

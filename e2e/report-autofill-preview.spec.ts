@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 const WITNESS_CSV = 'Name,Role,Date,Notes\nJane Roe,Complainant,2026-07-01,Consistent account.\n';
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('/investigations/inv-001/reports');
+    await page.goto('/matters/inv-001/reports');
     await page.getByTestId('file-input').setInputFiles([{ name: 'witnesses.csv', mimeType: 'text/csv', buffer: Buffer.from(WITNESS_CSV) }]);
     await expect(page.getByTestId('field-mapping-preview')).toBeVisible();
 });

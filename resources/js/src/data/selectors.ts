@@ -24,40 +24,40 @@ import type {
     Witness,
 } from '~/types';
 
-export function getInvestigations(): Promise<Investigation[]> {
-    return api.get<Investigation[]>('/investigations');
+export function getMatters(): Promise<Investigation[]> {
+    return api.get<Investigation[]>('/matters');
 }
 
-export async function getInvestigation(id: string): Promise<Investigation | undefined> {
+export async function getMatter(id: string): Promise<Investigation | undefined> {
     try {
-        return await api.get<Investigation>(`/investigations/${id}`);
+        return await api.get<Investigation>(`/matters/${id}`);
     } catch {
         return undefined;
     }
 }
 
-export function getAllegationsByInvestigation(investigationId: string): Promise<Allegation[]> {
-    return api.get<Allegation[]>(`/investigations/${investigationId}/allegations`);
+export function getAllegationsByMatter(matterId: string): Promise<Allegation[]> {
+    return api.get<Allegation[]>(`/matters/${matterId}/allegations`);
 }
 
-export function getWitnessesByInvestigation(investigationId: string): Promise<Witness[]> {
-    return api.get<Witness[]>(`/investigations/${investigationId}/witnesses`);
+export function getWitnessesByMatter(matterId: string): Promise<Witness[]> {
+    return api.get<Witness[]>(`/matters/${matterId}/witnesses`);
 }
 
-export function getInterviewsByInvestigation(investigationId: string): Promise<InterviewWithWitness[]> {
-    return api.get<InterviewWithWitness[]>(`/investigations/${investigationId}/interviews`);
+export function getInterviewsByMatter(matterId: string): Promise<InterviewWithWitness[]> {
+    return api.get<InterviewWithWitness[]>(`/matters/${matterId}/interviews`);
 }
 
-export function getEvidenceByInvestigation(investigationId: string): Promise<Evidence[]> {
-    return api.get<Evidence[]>(`/investigations/${investigationId}/evidence`);
+export function getEvidenceByMatter(matterId: string): Promise<Evidence[]> {
+    return api.get<Evidence[]>(`/matters/${matterId}/evidence`);
 }
 
-export function getTimelineEventsByInvestigation(investigationId: string): Promise<TimelineEvent[]> {
-    return api.get<TimelineEvent[]>(`/investigations/${investigationId}/timeline-events`);
+export function getTimelineEventsByMatter(matterId: string): Promise<TimelineEvent[]> {
+    return api.get<TimelineEvent[]>(`/matters/${matterId}/timeline-events`);
 }
 
-export function getDocumentsByInvestigation(investigationId: string): Promise<InvestigationDocument[]> {
-    return api.get<InvestigationDocument[]>(`/investigations/${investigationId}/documents`);
+export function getDocumentsByMatter(matterId: string): Promise<InvestigationDocument[]> {
+    return api.get<InvestigationDocument[]>(`/matters/${matterId}/documents`);
 }
 
 export function getClients(): Promise<ClientSummary[]> {
@@ -84,24 +84,24 @@ export function getNotifications(): Promise<AppNotification[]> {
     return api.get<AppNotification[]>('/notifications');
 }
 
-export function getNotes(investigationId: string): Promise<MatterNote[]> {
-    return api.get<MatterNote[]>(`/investigations/${investigationId}/notes`);
+export function getNotes(matterId: string): Promise<MatterNote[]> {
+    return api.get<MatterNote[]>(`/matters/${matterId}/notes`);
 }
 
-export function createNote(investigationId: string, body: string): Promise<MatterNote> {
-    return api.post<MatterNote>(`/investigations/${investigationId}/notes`, { body });
+export function createNote(matterId: string, body: string): Promise<MatterNote> {
+    return api.post<MatterNote>(`/matters/${matterId}/notes`, { body });
 }
 
 export function deleteNote(noteId: string): Promise<void> {
     return api.delete(`/notes/${noteId}`);
 }
 
-export function getReport(investigationId: string): Promise<InvestigationReport> {
-    return api.get<InvestigationReport>(`/investigations/${investigationId}/report`);
+export function getReport(matterId: string): Promise<InvestigationReport> {
+    return api.get<InvestigationReport>(`/matters/${matterId}/report`);
 }
 
-export function saveReport(investigationId: string, patch: Partial<InvestigationReport>): Promise<InvestigationReport> {
-    return api.put<InvestigationReport>(`/investigations/${investigationId}/report`, patch);
+export function saveReport(matterId: string, patch: Partial<InvestigationReport>): Promise<InvestigationReport> {
+    return api.put<InvestigationReport>(`/matters/${matterId}/report`, patch);
 }
 
 export function saveFinding(allegationId: string, finding: FindingOutcome | null, findingNotes?: string): Promise<Allegation> {
