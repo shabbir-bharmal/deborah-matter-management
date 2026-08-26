@@ -103,11 +103,7 @@ function mergeDraft(previous: ReportDraft | null, fresh: ReportDraft, liveSource
     return merged;
 }
 
-function mergeCustomSections(
-    previous: CustomReportSection[],
-    fresh: CustomReportSection[],
-    liveSourceIds: Set<string>,
-): CustomReportSection[] {
+function mergeCustomSections(previous: CustomReportSection[], fresh: CustomReportSection[], liveSourceIds: Set<string>): CustomReportSection[] {
     const merged: CustomReportSection[] = [];
     const freshByName = new Map(fresh.map((section) => [section.name, section]));
     const handled = new Set<string>();

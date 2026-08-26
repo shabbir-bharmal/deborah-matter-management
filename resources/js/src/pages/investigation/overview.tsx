@@ -92,7 +92,7 @@ export default function Overview() {
                 </CardContent>
             </Card>
 
-            <div className="grid gap-4 lg:grid-cols-[50%_50%]">
+            <div className="grid gap-4 lg:grid-cols-2">
                 <Card>
                     <CardHeader>
                         <CardTitle className="text-base">{PAGE_TEXT.workspace.overview.allegationsSummaryTitle}</CardTitle>

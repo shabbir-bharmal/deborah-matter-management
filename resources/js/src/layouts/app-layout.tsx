@@ -72,7 +72,6 @@ export default function AppLayout() {
                     <nav aria-label={ARIA_LABELS.mainNav} className="flex flex-1 flex-col gap-1 p-3">
                         <NavItems />
                     </nav>
-                    <p className="text-muted-foreground border-t p-3 text-xs">{BRAND.sidebarNote}</p>
                 </aside>
 
                 <div className="flex min-w-0 flex-1 flex-col">

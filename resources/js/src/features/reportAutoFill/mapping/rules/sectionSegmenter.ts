@@ -48,8 +48,13 @@ const HEADING_SYNONYMS: Record<string, ReportSectionKey> = {
     recommendations: 'conclusion',
 };
 
-const SYNONYMAlternation = Object.keys(HEADING_SYNONYMS)
+/**
+ * Makes each letter of a synonym case-insensitive WITHOUT the /i flag, so
+ * the [A-Z] lookahead in the marker stays case-sensitive.
+ */
+const SYNONYM_PATTERN = Object.keys(HEADING_SYNONYMS)
     .sort((a, b) => b.length - a.length)
+    .map((synonym) => synonym.replace(/[a-z]/g, (ch) => `[${ch}${ch.toUpperCase()}]`))
     .join('|');
 
 /**
@@ -60,13 +65,13 @@ const SYNONYMAlternation = Object.keys(HEADING_SYNONYMS)
  */
 const INLINE_HEADING_MARKER = new RegExp(
     // Known synonym heading followed by sentence-start content (uppercase,
-    // digit, or punctuation - the /i flag makes [a-z] match uppercase too,
-    // so a negative lookahead cannot be used here).
+    // digit, or punctuation). The synonym letters carry their own case
+    // classes so the [A-Z] lookahead stays case-sensitive.
     // Generic (custom) numbered headings are intentionally NOT split inline -
     // "1. HR Recommendations Provide..." is ambiguous - they are detected
     // when they stand on their own line (see isHeadingLine).
-    `((?:\\d+\\s*[.:-]\\s*)?(?:${SYNONYMAlternation}))(?:[:.])?[ \\t]+(?=[A-Z0-9(-])`,
-    'gi',
+    `((?:\\d+\\s*[.:-]\\s*)?(?:${SYNONYM_PATTERN}))(?:[:.])?[ \\t]+(?=[A-Z0-9(-])`,
+    'g',
 );
 
 /** Split flattened text into lines at heading markers embedded mid-line. */

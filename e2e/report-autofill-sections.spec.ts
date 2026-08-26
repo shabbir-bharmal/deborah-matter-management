@@ -3,8 +3,8 @@
 import { buildReportDraft } from '~/features/reportAutoFill/mapping/mappingEngine';
 import { draftToCustomReportSections, draftToReportSections } from '~/features/reportAutoFill/mapping/reportHandoff';
 import { segmentByHeadings } from '~/features/reportAutoFill/mapping/rules/sectionSegmenter';
-import { buildReport } from '~/lib/report';
 import type { ExtractionResult } from '~/features/reportAutoFill/types/reportAutoFill';
+import { buildReport } from '~/lib/report';
 
 /**
  * Regression for the misplacement bug: a flattened report print-out whose

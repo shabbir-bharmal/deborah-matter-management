@@ -1,10 +1,10 @@
 import { emptyReportDraft, type ExtractionResult, type MappedField, type ReportDraft, type ReportSectionKey } from '../types/reportAutoFill';
 import { mapAllegations } from './rules/allegationRules';
 import { mapEvidence } from './rules/evidenceRules';
+import { makeField, paragraphsOf, truncate } from './rules/ruleHelpers';
 import { segmentByHeadings } from './rules/sectionSegmenter';
 import { mapConclusion, mapSummary } from './rules/summaryRules';
 import { mapTimeline } from './rules/timelineRules';
-import { makeField, paragraphsOf, truncate } from './rules/ruleHelpers';
 import { mapWitnessInterviews } from './rules/witnessInterviewRules';
 
 /** Display labels for the canonical report sections. */
@@ -29,6 +29,14 @@ const MAX_LINE_LENGTH = 600;
  * that name. Keyword rules run only over leftover content without headings,
  * so a single multi-section document can never be dumped into one section.
  */
+/** Per-section structured rules applied to segmented content. */
+const SECTION_RULES: Partial<Record<ReportSectionKey, (extractions: ExtractionResult[]) => MappedField[]>> = {
+    witnessInterviews: mapWitnessInterviews,
+    evidenceReviewed: mapEvidence,
+    keyTimelineEvents: mapTimeline,
+    allegationsAndFindings: mapAllegations,
+};
+
 export function buildReportDraft(matterId: string, extractions: ExtractionResult[]): ReportDraft {
     const draft = emptyReportDraft(matterId);
     const unknownLines: string[] = [];
@@ -59,10 +67,7 @@ export function buildReportDraft(matterId: string, extractions: ExtractionResult
             if (segment.isCustom) {
                 appendCustomSection(draft, segment.key, segment.lines, extraction);
             } else {
-                const key = segment.key as ReportSectionKey;
-                for (const field of fieldsFromLines(segment.lines, key, CANONICAL_SECTION_LABELS[key], extraction)) {
-                    pushCanonical(draft, field);
-                }
+                appendCanonicalSegment(draft, segment.key as ReportSectionKey, segment.lines, extraction);
             }
         }
     }
@@ -109,6 +114,33 @@ function appendCustomSection(draft: ReportDraft, name: string, lines: string[], 
 
 function fieldsFromLines(lines: string[], sectionKey: ReportSectionKey, label: string, extraction: ExtractionResult): MappedField[] {
     return lines.map((line) => makeField(sectionKey, label, line, 'high', { ...extraction, excerpt: line }));
+}
+
+/**
+ * Append a canonical segment: run the section's structured rule first (for
+ * precise field labels like "Interviewee — Jane Roe"); if it yields nothing,
+ * fall back to one field per line.
+ */
+function appendCanonicalSegment(draft: ReportDraft, sectionKey: ReportSectionKey, lines: string[], extraction: ExtractionResult): void {
+    const label = CANONICAL_SECTION_LABELS[sectionKey];
+    const rule = SECTION_RULES[sectionKey];
+    let fields: MappedField[] = [];
+
+    if (rule) {
+        const pseudo: ExtractionResult = {
+            fileId: extraction.fileId,
+            fileName: extraction.fileName,
+            fileType: extraction.fileType,
+            rawText: lines.join('\n'),
+        };
+        fields = rule([pseudo]);
+    }
+    if (fields.length === 0) {
+        fields = fieldsFromLines(lines, sectionKey, label, extraction);
+    }
+    for (const field of fields) {
+        pushCanonical(draft, field);
+    }
 }
 
 /** Very long unsegmented lines are sentence-split so keyword rules stay precise. */
