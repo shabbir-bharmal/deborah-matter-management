@@ -1,31 +1,40 @@
 # Project
 
-Workplace investigation management platform. Current phase: **standalone React SPA prototype** — static/mock data only, no backend/auth/DB. The Laravel 12 + Inertia scaffold stays intact but dormant as the seed for the future production API.
+Workplace investigation management platform: a **React SPA on a Laravel 12 API**. Real database, seeded demo matters, session (Sanctum) authentication, and role/permission authorization. The mock-data phase is over — `resources/js/src/data/*.ts` now only feeds the seeders.
 
-## Codebase ownership
+## Architecture
 
-- `resources/js/src/**` — the React SPA prototype: React Router (`src/routes`), Zustand stores as hook files in `src/hooks`, Recharts, React Hook Form + Zod. All prototype work goes here.
-- `app/`, `routes/`, the rest of `resources/js/**`, `database/`, `vite.config.js` — dormant Laravel 12 + Inertia starter. Don't extend it or wire prototype code into it.
-- The SPA builds via its own `vite.spa.config.js` (root: `resources/js/src`, output: `public/spa`) so the Laravel build keeps working; never modify `vite.config.js` for SPA needs.
+- **Backend** — Laravel 12 API under `routes/api.php` (`/api/*`), controllers in `app/Http/Controllers/Api`, responses shaped by API Resources in `app/Http/Resources` (camelCase keys that mirror `resources/js/src/types`).
+- **Frontend** — React 19 SPA in `resources/js/src` (React Router, Zustand stores in `src/hooks`, Recharts, React Hook Form). Builds via `vite.spa.config.js` (root `resources/js/src`, output `public/spa`); never modify `vite.config.js` for SPA needs.
+- **Auth** — cookie/session auth via Sanctum's stateful API middleware (`bootstrap/app.php`). `POST /api/login`, `POST /api/logout`, `GET /api/user`. The SPA restores the session in `components/require-auth.tsx` and keeps it in `hooks/use-auth.ts`.
+- **Authorization** — spatie/laravel-permission. Abilities are `module.action` strings (`evidence.view`, `findings.update`); routes gate with `can:` middleware, matter-scoped routes with `can:view,investigation` (see `app/Policies/InvestigationPolicy.php`, which also scopes client-portal users to their own client). The SPA gates nav, workspace tabs and buttons on `user.permissions` via `useCan()`.
+- **The dormant Inertia starter** (`resources/js/pages`, `routes/auth.php`, `routes/settings.php`, `app/Http/Controllers/Auth`) is untouched and unused by the SPA. Don't extend it, and don't wire SPA code into it.
 
-## Prototype conventions
+## Conventions
 
-- Directory layout is fixed, rooted at `resources/js/src/{components,pages,layouts,data,types,routes,hooks,lib,assets}`.
-- Import alias inside the SPA is `~/` → `resources/js/src` (vite.spa.config.js + tsconfig paths). `@/` still belongs to the dormant Inertia app — don't use it in SPA code.
-- Mock data lives in `src/data` as normalized TypeScript objects (relationships referenced by ID) behind service-style selectors shaped like future API responses — components never import raw datasets directly.
-- Domain types in `src/types`: Investigation, Allegation, Witness, Interview, Evidence, TimelineEvent, Document.
-- UI: shadcn/ui-style primitives (copy needed ones from `resources/js/components/ui` into `src/components/ui` — no imports across the Laravel/SPA boundary), lucide-react icons, `cn()` class merging.
-- Tailwind v4 is CSS-first (no `tailwind.config.js` anywhere): give the SPA its own CSS entry carrying the `@theme` tokens; don't restyle the SPA by editing `resources/css/app.css`.
+- Directory layout is fixed: `resources/js/src/{components,pages,layouts,data,types,routes,hooks,lib,assets,constants,features}`.
+- Import alias inside the SPA is `~/` → `resources/js/src`. `@/` belongs to the dormant Inertia app — don't use it in SPA code.
+- All SPA data access goes through `src/data/selectors.ts`, which wraps `src/lib/api.ts` (fetch + credentials + XSRF header). Components never call `fetch` directly.
+- Domain types live in `src/types` and must stay in step with the API Resources.
+- All user-facing strings live in `src/constants/menuData.ts`.
+- UI: shadcn/ui-style primitives in `src/components/ui` (copy needed ones from `resources/js/components/ui` — no imports across the Laravel/SPA boundary), lucide-react icons, `cn()` class merging. Tailwind v4 is CSS-first; the SPA's tokens live in `src/index.css`.
+- Layout borrows the wzn-admin information architecture: top tab header, KPI tiles, filter bar, dense tables.
+
+## Data and seeding
+
+- `database/seeders/data/*.json` is generated from the SPA datasets by `node scripts/dump-mock-data.mjs`. Edit the TypeScript datasets, re-run the script, then re-seed — never hand-edit the JSON.
+- `php artisan migrate:fresh --seed` builds 20 clients, 56 matters and their allegations/witnesses/interviews/evidence/timeline/documents, plus roles, permissions and demo logins.
+- Demo accounts (password `password`): `admin@investigations.test` (admin), `<investigator-name>@investigations.test` (investigator), `portal@<client-slug>.test` (client portal).
 
 ## Commands
 
-- SPA: `npm run dev:spa` (port 5174), `npm run build:spa` (outputs to `public/spa`). `npm run dev`/`build` serve the Laravel entry only.
-- `composer dev` — full Laravel stack (`artisan serve` + `queue:listen` + `pail` + `vite`); unused by the prototype.
-- Lint/format: `npm run lint` (ESLint with `--fix`), `npm run format` (Prettier — covers `resources/`, which includes the SPA).
-- Typecheck: `npx tsc --noEmit` (covers both apps; no npm script). Requires Node ≥18 — use nvm (e.g. `nvm use 22`); the default shell node is v14 and breaks ESLint/Vite.
-- Laravel tests: `php artisan test --compact` (Pest 3; in-memory SQLite per `phpunit.xml`; `RefreshDatabase` auto-applied to all Feature tests in `tests/Pest.php`).
-- SPA tests: `npm run test:spa` (Vitest + Testing Library, happy-dom; config in `vitest.config.ts`, setup in `resources/js/src/test/setup.ts`). Route smoke tests render the real router — keep them passing when touching routes or workspace components.
-- No CI (no `.github/` directory) and no pre-commit hooks — local verification is the only gate.
+- SPA dev: `npm run dev:spa` (port 5174). It proxies `/api` and `/sanctum` to `https://deborah-matter-management.test`; override with `SPA_API_PROXY` (e.g. `SPA_API_PROXY=http://127.0.0.1:8000`).
+- SPA build: `npm run build:spa` (outputs to `public/spa`). `npm run dev`/`build` serve the Laravel/Inertia entry only.
+- Lint/format: `npm run lint` (ESLint `--fix`), `npm run format` (Prettier), `vendor/bin/pint` for PHP.
+- Typecheck: `npx tsc --noEmit` (covers both apps).
+- Laravel tests: `php artisan test --compact` (Pest 3; in-memory SQLite; `RefreshDatabase` auto-applied to Feature tests). API tests live in `tests/Feature/Api`; they seed `RolePermissionSeeder` and send an `Origin` header so Sanctum treats the request as stateful.
+- E2E: `npm run test:spa` (Playwright). Requires a running, seeded Laravel app; `e2e/auth.setup.ts` signs in once and stores the session for the other specs.
+- No CI and no pre-commit hooks — local verification is the only gate.
 
 ## Auto-managed files (read before editing this file)
 
