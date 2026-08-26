@@ -1,5 +1,6 @@
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
+import process from 'node:process';
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 
