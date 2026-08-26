@@ -3,12 +3,13 @@
 namespace Database\Factories;
 
 use App\Models\Client;
+use App\Models\Investigation;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends Factory<\App\Models\Investigation>
+ * @extends Factory<Investigation>
  */
 class InvestigationFactory extends Factory
 {

@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\Client;
 use App\Models\User;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Str;
 
 /**
  * Demo logins. Investigator accounts come from InvestigationSeeder — this adds

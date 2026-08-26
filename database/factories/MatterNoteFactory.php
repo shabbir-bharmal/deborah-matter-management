@@ -3,11 +3,12 @@
 namespace Database\Factories;
 
 use App\Models\Investigation;
+use App\Models\MatterNote;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<\App\Models\MatterNote>
+ * @extends Factory<MatterNote>
  */
 class MatterNoteFactory extends Factory
 {

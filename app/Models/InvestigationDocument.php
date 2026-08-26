@@ -2,13 +2,14 @@
 
 namespace App\Models;
 
+use Database\Factories\InvestigationDocumentFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class InvestigationDocument extends Model
 {
-    /** @use HasFactory<\Database\Factories\InvestigationDocumentFactory> */
+    /** @use HasFactory<InvestigationDocumentFactory> */
     use HasFactory;
 
     public $incrementing = false;

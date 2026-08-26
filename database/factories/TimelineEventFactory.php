@@ -3,11 +3,12 @@
 namespace Database\Factories;
 
 use App\Models\Investigation;
+use App\Models\TimelineEvent;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends Factory<\App\Models\TimelineEvent>
+ * @extends Factory<TimelineEvent>
  */
 class TimelineEventFactory extends Factory
 {

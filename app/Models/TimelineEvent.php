@@ -2,13 +2,14 @@
 
 namespace App\Models;
 
+use Database\Factories\TimelineEventFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class TimelineEvent extends Model
 {
-    /** @use HasFactory<\Database\Factories\TimelineEventFactory> */
+    /** @use HasFactory<TimelineEventFactory> */
     use HasFactory;
 
     public $incrementing = false;

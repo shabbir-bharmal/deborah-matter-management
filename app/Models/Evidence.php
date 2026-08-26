@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Database\Factories\EvidenceFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -9,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Evidence extends Model
 {
-    /** @use HasFactory<\Database\Factories\EvidenceFactory> */
+    /** @use HasFactory<EvidenceFactory> */
     use HasFactory;
 
     protected $table = 'evidence';

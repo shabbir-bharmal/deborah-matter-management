@@ -2,11 +2,12 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Witness;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
- * @mixin \App\Models\Witness
+ * @mixin Witness
  */
 class WitnessResource extends JsonResource
 {

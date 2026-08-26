@@ -2,13 +2,14 @@
 
 namespace Database\Factories;
 
+use App\Models\Interview;
 use App\Models\User;
 use App\Models\Witness;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends Factory<\App\Models\Interview>
+ * @extends Factory<Interview>
  */
 class InterviewFactory extends Factory
 {

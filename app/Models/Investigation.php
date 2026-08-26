@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Database\Factories\InvestigationFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -11,7 +12,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Investigation extends Model
 {
-    /** @use HasFactory<\Database\Factories\InvestigationFactory> */
+    /** @use HasFactory<InvestigationFactory> */
     use HasFactory;
 
     public const ACTIVE_STATUSES = ['open', 'in_progress', 'review'];

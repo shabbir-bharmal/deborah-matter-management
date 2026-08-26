@@ -2,12 +2,13 @@
 
 namespace Database\Factories;
 
+use App\Models\Allegation;
 use App\Models\Investigation;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends Factory<\App\Models\Allegation>
+ * @extends Factory<Allegation>
  */
 class AllegationFactory extends Factory
 {

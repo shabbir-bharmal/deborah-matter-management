@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -185,7 +186,7 @@ class InvestigationSeeder extends Seeder
 
         DB::table('model_has_roles')->insert(array_map(fn (int $id): array => [
             'role_id' => DB::table('roles')->where('name', 'investigator')->value('id'),
-            'model_type' => \App\Models\User::class,
+            'model_type' => User::class,
             'model_id' => $id,
         ], array_values($this->staff)));
     }

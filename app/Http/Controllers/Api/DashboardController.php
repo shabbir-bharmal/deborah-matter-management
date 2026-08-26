@@ -11,6 +11,7 @@ use App\Models\Interview;
 use App\Models\Investigation;
 use App\Models\TimelineEvent;
 use App\Models\Witness;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
@@ -83,7 +84,7 @@ class DashboardController extends Controller
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Builder<Investigation>  $query
+     * @param  Builder<Investigation>  $query
      * @param  list<string>  $values
      * @return list<array{status?: string, priority?: string, count: int}>
      */

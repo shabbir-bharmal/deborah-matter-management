@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Interview;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -9,7 +10,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * Always carries the witness name/role — the SPA consumes this as
  * `InterviewWithWitness` everywhere it renders an interview.
  *
- * @mixin \App\Models\Interview
+ * @mixin Interview
  */
 class InterviewResource extends JsonResource
 {

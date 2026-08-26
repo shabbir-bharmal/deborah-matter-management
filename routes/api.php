@@ -16,6 +16,7 @@ use App\Http\Controllers\Api\RoleController;
 use App\Http\Controllers\Api\TimelineEventController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\WitnessController;
+use App\Models\Investigation;
 use Illuminate\Support\Facades\Route;
 
 Route::post('login', [AuthController::class, 'login'])->middleware('guest')->name('api.login');
@@ -31,7 +32,7 @@ Route::middleware('auth')->group(function () {
     Route::get('clients', [ClientController::class, 'index'])->middleware('can:clients.view');
     Route::get('clients/{client}', [ClientController::class, 'show'])->middleware('can:clients.view');
 
-    Route::get('investigations', [InvestigationController::class, 'index'])->middleware('can:viewAny,'.App\Models\Investigation::class);
+    Route::get('investigations', [InvestigationController::class, 'index'])->middleware('can:viewAny,'.Investigation::class);
 
     /**
      * Everything below hangs off one matter: `can:view,investigation` enforces

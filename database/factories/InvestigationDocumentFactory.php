@@ -3,11 +3,12 @@
 namespace Database\Factories;
 
 use App\Models\Investigation;
+use App\Models\InvestigationDocument;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends Factory<\App\Models\InvestigationDocument>
+ * @extends Factory<InvestigationDocument>
  */
 class InvestigationDocumentFactory extends Factory
 {
