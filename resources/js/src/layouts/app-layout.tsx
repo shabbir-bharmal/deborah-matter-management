@@ -1,4 +1,4 @@
-import { CalendarClock, CalendarDays, ClipboardList, LayoutDashboard, Menu, Scale, Settings, Users } from 'lucide-react';
+import { CalendarClock, CalendarDays, ClipboardList, LayoutDashboard, Menu, Scale, Settings, ShieldCheck, Users } from 'lucide-react';
 import { useState } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 
@@ -19,6 +19,7 @@ const navIcons = {
     Clients: Users,
     Calendar: CalendarDays,
     'Display Calendar': CalendarClock,
+    Administration: ShieldCheck,
     Settings: Settings,
 } as const;
 

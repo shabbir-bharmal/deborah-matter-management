@@ -2,6 +2,9 @@ import { createBrowserRouter, createMemoryRouter, Navigate } from 'react-router-
 
 import RequireAuth from '~/components/require-auth';
 import AppLayout from '~/layouts/app-layout';
+import Admin from '~/pages/admin';
+import AdminRoles from '~/pages/admin/roles';
+import AdminUsers from '~/pages/admin/users';
 import Calendar from '~/pages/calendar';
 import ClientPortal from '~/pages/client-portal';
 import Clients from '~/pages/clients';
@@ -51,6 +54,15 @@ export const routes = [
                     { path: 'clients/:clientId', element: <ClientPortal /> },
                     { path: 'calendar', element: <Calendar /> },
                     { path: 'display-calendar', element: <DisplayCalendar /> },
+                    {
+                        path: 'admin',
+                        element: <Admin />,
+                        children: [
+                            { index: true, element: <Navigate to="users" replace /> },
+                            { path: 'users', element: <AdminUsers /> },
+                            { path: 'roles', element: <AdminRoles /> },
+                        ],
+                    },
                     { path: 'settings', element: <Settings /> },
                     { path: '*', element: <NotFound /> },
                 ],
