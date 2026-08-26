@@ -123,7 +123,12 @@ export default function AdminUsers() {
                 <CardContent className="flex flex-col gap-3 p-3 sm:flex-row sm:items-center sm:justify-between">
                     <div className="relative w-full sm:max-w-sm">
                         <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
-                        <Input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={TEXT.searchPlaceholder} className="pl-9" />
+                        <Input
+                            value={query}
+                            onChange={(event) => setQuery(event.target.value)}
+                            placeholder={TEXT.searchPlaceholder}
+                            className="pl-9"
+                        />
                     </div>
                     {canCreate && (
                         <Button onClick={openCreate} size="sm">

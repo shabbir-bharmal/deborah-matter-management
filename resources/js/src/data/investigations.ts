@@ -93,8 +93,7 @@ export const investigations: Investigation[] = [
         investigator: 'Marcus Chen',
         openedAt: '2026-04-06',
         targetCompletionDate: '2026-06-27',
-        description:
-            'Client data shared over personal email accounts, contrary to internal information-handling and conduct policy.',
+        description: 'Client data shared over personal email accounts, contrary to internal information-handling and conduct policy.',
     },
     {
         id: 'inv-102',
@@ -107,8 +106,7 @@ export const investigations: Investigation[] = [
         investigator: 'Tobias Renner',
         openedAt: '2025-10-31',
         targetCompletionDate: '2026-02-05',
-        description:
-            'Claim that the contract renewal systematically disadvantaged candidates from a protected group.',
+        description: 'Claim that the contract renewal systematically disadvantaged candidates from a protected group.',
     },
     {
         id: 'inv-103',
@@ -135,8 +133,7 @@ export const investigations: Investigation[] = [
         investigator: 'Deborah Whitfield',
         openedAt: '2026-08-13',
         targetCompletionDate: '2026-10-10',
-        description:
-            'Export of sensitive data to unapproved systems, involving client or employee records outside approved systems.',
+        description: 'Export of sensitive data to unapproved systems, involving client or employee records outside approved systems.',
     },
     {
         id: 'inv-105',
@@ -149,8 +146,7 @@ export const investigations: Investigation[] = [
         investigator: 'Elena Vasquez',
         openedAt: '2025-11-11',
         targetCompletionDate: '2026-01-31',
-        description:
-            'Alleged unexplained inventory shrinkage, reported by a former employee within the it function.',
+        description: 'Alleged unexplained inventory shrinkage, reported by a former employee within the it function.',
     },
     {
         id: 'inv-106',
@@ -206,8 +202,7 @@ export const investigations: Investigation[] = [
         investigator: 'Tobias Renner',
         openedAt: '2026-06-12',
         targetCompletionDate: '2026-08-01',
-        description:
-            'Alleged removal of company equipment without authorization, reported by multiple team members within the engineering function.',
+        description: 'Alleged removal of company equipment without authorization, reported by multiple team members within the engineering function.',
     },
     {
         id: 'inv-110',
@@ -220,8 +215,7 @@ export const investigations: Investigation[] = [
         investigator: 'Tobias Renner',
         openedAt: '2026-01-27',
         targetCompletionDate: '2026-03-22',
-        description:
-            'Alleged falsification of expense reports by employees within the facilities function over three quarters.',
+        description: 'Alleged falsification of expense reports by employees within the facilities function over three quarters.',
     },
     {
         id: 'inv-111',
@@ -235,8 +229,7 @@ export const investigations: Investigation[] = [
         openedAt: '2025-10-03',
         targetCompletionDate: '2025-11-26',
         completedAt: '2025-11-15',
-        description:
-            'Report of intimidating and threatening behavior within the human resources function, referred for immediate review.',
+        description: 'Report of intimidating and threatening behavior within the human resources function, referred for immediate review.',
     },
     {
         id: 'inv-112',
@@ -264,8 +257,7 @@ export const investigations: Investigation[] = [
         investigator: 'Deborah Whitfield',
         openedAt: '2026-07-18',
         targetCompletionDate: '2026-09-10',
-        description:
-            'A procurement lead awarded business to a firm owned by a close personal connection, without disclosure.',
+        description: 'A procurement lead awarded business to a firm owned by a close personal connection, without disclosure.',
     },
     {
         id: 'inv-114',
@@ -278,8 +270,7 @@ export const investigations: Investigation[] = [
         investigator: 'Grace Lindqvist',
         openedAt: '2026-05-31',
         targetCompletionDate: '2026-07-22',
-        description:
-            'A regional director awarded business to a firm owned by a close personal connection, without disclosure.',
+        description: 'A regional director awarded business to a firm owned by a close personal connection, without disclosure.',
     },
     {
         id: 'inv-115',
@@ -292,8 +283,7 @@ export const investigations: Investigation[] = [
         investigator: 'Anika Desai',
         openedAt: '2025-12-22',
         targetCompletionDate: '2026-03-10',
-        description:
-            'Alleged removal of company equipment without authorization, reported by a contractor within the operations function.',
+        description: 'Alleged removal of company equipment without authorization, reported by a contractor within the operations function.',
     },
     {
         id: 'inv-116',
@@ -321,8 +311,7 @@ export const investigations: Investigation[] = [
         openedAt: '2026-04-01',
         targetCompletionDate: '2026-07-01',
         completedAt: '2026-05-02',
-        description:
-            'Access to client records outside job scope, involving client or employee records outside approved systems.',
+        description: 'Access to client records outside job scope, involving client or employee records outside approved systems.',
     },
     {
         id: 'inv-118',
@@ -335,8 +324,7 @@ export const investigations: Investigation[] = [
         investigator: 'Elena Vasquez',
         openedAt: '2025-11-22',
         targetCompletionDate: '2026-01-20',
-        description:
-            'A senior buyer awarded business to a firm owned by a close personal connection, without disclosure.',
+        description: 'A senior buyer awarded business to a firm owned by a close personal connection, without disclosure.',
     },
     {
         id: 'inv-119',
@@ -349,8 +337,7 @@ export const investigations: Investigation[] = [
         investigator: 'Tobias Renner',
         openedAt: '2026-01-11',
         targetCompletionDate: '2026-03-27',
-        description:
-            'Alleged removal of company equipment without authorization, reported by multiple team members within the it function.',
+        description: 'Alleged removal of company equipment without authorization, reported by multiple team members within the it function.',
     },
     {
         id: 'inv-120',
@@ -377,8 +364,7 @@ export const investigations: Investigation[] = [
         investigator: 'Priya Raman',
         openedAt: '2026-05-11',
         targetCompletionDate: '2026-08-19',
-        description:
-            'Alleged falsification of expense reports by employees within the legal function over the past fiscal year.',
+        description: 'Alleged falsification of expense reports by employees within the legal function over the past fiscal year.',
     },
     {
         id: 'inv-122',
@@ -391,8 +377,7 @@ export const investigations: Investigation[] = [
         investigator: 'Tobias Renner',
         openedAt: '2025-12-07',
         targetCompletionDate: '2026-01-24',
-        description:
-            'A regional director awarded business to a firm owned by a close personal connection, without disclosure.',
+        description: 'A regional director awarded business to a firm owned by a close personal connection, without disclosure.',
     },
     {
         id: 'inv-123',
@@ -405,8 +390,7 @@ export const investigations: Investigation[] = [
         investigator: 'Priya Raman',
         openedAt: '2025-12-12',
         targetCompletionDate: '2026-02-25',
-        description:
-            'Reported unsafe operation of machinery within the finance function, raising concerns under workplace safety policy.',
+        description: 'Reported unsafe operation of machinery within the finance function, raising concerns under workplace safety policy.',
     },
     {
         id: 'inv-124',
@@ -420,8 +404,7 @@ export const investigations: Investigation[] = [
         openedAt: '2026-02-19',
         targetCompletionDate: '2026-04-07',
         completedAt: '2026-03-24',
-        description:
-            'Report of intimidating and threatening behavior within the legal function, referred for immediate review.',
+        description: 'Report of intimidating and threatening behavior within the legal function, referred for immediate review.',
     },
     {
         id: 'inv-125',
@@ -434,8 +417,7 @@ export const investigations: Investigation[] = [
         investigator: 'Anika Desai',
         openedAt: '2026-06-17',
         targetCompletionDate: '2026-08-16',
-        description:
-            'Alleged misappropriation of company assets, reported by a former employee within the marketing function.',
+        description: 'Alleged misappropriation of company assets, reported by a former employee within the marketing function.',
     },
     {
         id: 'inv-126',
@@ -449,8 +431,7 @@ export const investigations: Investigation[] = [
         openedAt: '2026-02-01',
         targetCompletionDate: '2026-04-14',
         completedAt: '2026-03-07',
-        description:
-            'Alleged removal of company equipment without authorization, reported by a junior colleague within the finance function.',
+        description: 'Alleged removal of company equipment without authorization, reported by a junior colleague within the finance function.',
     },
     {
         id: 'inv-127',
@@ -507,8 +488,7 @@ export const investigations: Investigation[] = [
         investigator: 'Tobias Renner',
         openedAt: '2025-12-16',
         targetCompletionDate: '2026-03-05',
-        description:
-            'Investigation into allegations of demeaning remarks in team settings by a compliance team member toward a former employee.',
+        description: 'Investigation into allegations of demeaning remarks in team settings by a compliance team member toward a former employee.',
     },
     {
         id: 'inv-131',
@@ -521,8 +501,7 @@ export const investigations: Investigation[] = [
         investigator: 'Samuel Okafor',
         openedAt: '2025-10-09',
         targetCompletionDate: '2026-01-02',
-        description:
-            'Claim that the promotion process systematically disadvantaged candidates from a protected group.',
+        description: 'Claim that the promotion process systematically disadvantaged candidates from a protected group.',
     },
     {
         id: 'inv-132',
@@ -535,8 +514,7 @@ export const investigations: Investigation[] = [
         investigator: 'Tobias Renner',
         openedAt: '2026-02-15',
         targetCompletionDate: '2026-05-10',
-        description:
-            'Claim that the hiring process systematically disadvantaged candidates from a protected group.',
+        description: 'Claim that the hiring process systematically disadvantaged candidates from a protected group.',
     },
     {
         id: 'inv-133',
@@ -549,8 +527,7 @@ export const investigations: Investigation[] = [
         investigator: 'Elena Vasquez',
         openedAt: '2026-02-26',
         targetCompletionDate: '2026-05-10',
-        description:
-            'Alleged breach of professional conduct standards by employees within the operations function over the past fiscal year.',
+        description: 'Alleged breach of professional conduct standards by employees within the operations function over the past fiscal year.',
     },
     {
         id: 'inv-134',
@@ -592,8 +569,7 @@ export const investigations: Investigation[] = [
         openedAt: '2026-02-28',
         targetCompletionDate: '2026-04-16',
         completedAt: '2026-04-13',
-        description:
-            'Suspected submission of fraudulent invoices within the finance function, identified during routine review.',
+        description: 'Suspected submission of fraudulent invoices within the finance function, identified during routine review.',
     },
     {
         id: 'inv-137',
@@ -621,8 +597,7 @@ export const investigations: Investigation[] = [
         investigator: 'Deborah Whitfield',
         openedAt: '2025-11-16',
         targetCompletionDate: '2026-01-16',
-        description:
-            'Claim that the expense approval process systematically disadvantaged candidates from a protected group.',
+        description: 'Claim that the expense approval process systematically disadvantaged candidates from a protected group.',
     },
     {
         id: 'inv-139',
@@ -635,8 +610,7 @@ export const investigations: Investigation[] = [
         investigator: 'Priya Raman',
         openedAt: '2026-08-02',
         targetCompletionDate: '2026-10-10',
-        description:
-            'Suspected manipulation of financial records within the engineering function, identified during routine review.',
+        description: 'Suspected manipulation of financial records within the engineering function, identified during routine review.',
     },
     {
         id: 'inv-140',
@@ -664,8 +638,7 @@ export const investigations: Investigation[] = [
         investigator: 'Anika Desai',
         openedAt: '2026-07-13',
         targetCompletionDate: '2026-08-30',
-        description:
-            'Investigation into allegations of demeaning remarks in team settings by a engineering team member toward a direct report.',
+        description: 'Investigation into allegations of demeaning remarks in team settings by a engineering team member toward a direct report.',
     },
     {
         id: 'inv-142',
@@ -679,8 +652,7 @@ export const investigations: Investigation[] = [
         openedAt: '2026-05-31',
         targetCompletionDate: '2026-07-31',
         completedAt: '2026-07-04',
-        description:
-            'Complainant reports demotion shortly after filing a complaint shortly after filing an internal complaint or report.',
+        description: 'Complainant reports demotion shortly after filing a complaint shortly after filing an internal complaint or report.',
     },
     {
         id: 'inv-143',
@@ -709,8 +681,7 @@ export const investigations: Investigation[] = [
         openedAt: '2025-11-01',
         targetCompletionDate: '2026-01-16',
         completedAt: '2025-12-18',
-        description:
-            'Complainant reports exclusion from key meetings and projects shortly after filing an internal complaint or report.',
+        description: 'Complainant reports exclusion from key meetings and projects shortly after filing an internal complaint or report.',
     },
     {
         id: 'inv-145',
@@ -738,8 +709,7 @@ export const investigations: Investigation[] = [
         investigator: 'Marcus Chen',
         openedAt: '2025-12-12',
         targetCompletionDate: '2026-03-14',
-        description:
-            'Reported unsafe operation of machinery within the customer support function, raising concerns under workplace safety policy.',
+        description: 'Reported unsafe operation of machinery within the customer support function, raising concerns under workplace safety policy.',
     },
     {
         id: 'inv-147',
@@ -752,8 +722,7 @@ export const investigations: Investigation[] = [
         investigator: 'Anika Desai',
         openedAt: '2026-04-20',
         targetCompletionDate: '2026-06-05',
-        description:
-            'Access to client records outside job scope, involving client or employee records outside approved systems.',
+        description: 'Access to client records outside job scope, involving client or employee records outside approved systems.',
     },
     {
         id: 'inv-148',
@@ -766,8 +735,7 @@ export const investigations: Investigation[] = [
         investigator: 'Marcus Chen',
         openedAt: '2026-03-19',
         targetCompletionDate: '2026-05-03',
-        description:
-            'Suspected manipulation of financial records within the operations function, identified during routine review.',
+        description: 'Suspected manipulation of financial records within the operations function, identified during routine review.',
     },
     {
         id: 'inv-149',
@@ -780,8 +748,7 @@ export const investigations: Investigation[] = [
         investigator: 'Marcus Chen',
         openedAt: '2026-04-20',
         targetCompletionDate: '2026-06-28',
-        description:
-            'A regional director awarded business to a firm owned by a close personal connection, without disclosure.',
+        description: 'A regional director awarded business to a firm owned by a close personal connection, without disclosure.',
     },
     {
         id: 'inv-150',
@@ -794,7 +761,6 @@ export const investigations: Investigation[] = [
         investigator: 'Samuel Okafor',
         openedAt: '2026-05-12',
         targetCompletionDate: '2026-07-28',
-        description:
-            'Investigation into allegations of repeated inappropriate comments by a operations team member toward a contractor.',
+        description: 'Investigation into allegations of repeated inappropriate comments by a operations team member toward a contractor.',
     },
 ];

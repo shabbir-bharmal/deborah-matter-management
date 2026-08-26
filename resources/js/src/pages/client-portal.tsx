@@ -107,7 +107,6 @@ export default function ClientPortal() {
 
     return (
         <div className="space-y-4">
-
             <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 <h1 className="text-2xl font-semibold tracking-tight">{portal.name}</h1>
                 <Badge variant="outline">Client portal concept</Badge>
@@ -116,7 +115,7 @@ export default function ClientPortal() {
                 What the client would see: matter status, milestones, upcoming steps, and client-visible documents only.
             </p>
 
-            <div className="space-y-4 mt-10">
+            <div className="mt-10 space-y-4">
                 {portal.matters.map((matter) => (
                     <Card key={matter.id}>
                         <CardHeader>

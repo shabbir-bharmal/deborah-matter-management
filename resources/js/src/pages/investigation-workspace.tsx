@@ -44,7 +44,6 @@ export default function InvestigationWorkspace() {
 
     return (
         <div className="space-y-4">
-
             <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 <span className="text-muted-foreground font-mono text-xs">{matter.referenceNumber}</span>
                 <h1 className="text-2xl font-semibold tracking-tight">{matter.title}</h1>

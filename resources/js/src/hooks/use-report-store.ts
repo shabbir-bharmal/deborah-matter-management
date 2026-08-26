@@ -103,11 +103,7 @@ export const useReportStore = create<ReportStore>()((set, get) => ({
         const current = get().configByInvestigation[investigationId] ?? defaultReportConfig;
         const next = { ...current, ...patch };
         set((state) => ({ configByInvestigation: { ...state.configByInvestigation, [investigationId]: next } }));
-        persist(
-            investigationId,
-            { title: next.title, executiveSummary: next.executiveSummary, includedSections: next.includedSections },
-            600,
-        );
+        persist(investigationId, { title: next.title, executiveSummary: next.executiveSummary, includedSections: next.includedSections }, 600);
     },
     toggleSection: (investigationId, sectionId) => {
         const current = get().configByInvestigation[investigationId] ?? defaultReportConfig;

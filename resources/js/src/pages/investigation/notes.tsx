@@ -67,28 +67,28 @@ export default function Notes() {
             <p className="text-muted-foreground text-sm">{TEXT.description}</p>
 
             {canCreate && (
-            <Card>
-                <CardContent className="p-4">
-                    <form onSubmit={onSubmit} className="space-y-3">
-                        <label htmlFor="note-body" className="text-sm font-medium">
-                            {TEXT.addHeading}
-                        </label>
-                        <textarea
-                            id="note-body"
-                            rows={3}
-                            placeholder={TEXT.placeholder}
-                            {...register('body', { required: true })}
-                            className="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex min-h-20 w-full rounded-md border px-3 py-2 text-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
-                        />
-                        <div className="flex items-center justify-between gap-2">
-                            <span className="text-muted-foreground text-xs">{user?.name}</span>
-                            <Button type="submit" size="sm" disabled={!body?.trim()}>
-                                {TEXT.add}
-                            </Button>
-                        </div>
-                    </form>
-                </CardContent>
-            </Card>
+                <Card>
+                    <CardContent className="p-4">
+                        <form onSubmit={onSubmit} className="space-y-3">
+                            <label htmlFor="note-body" className="text-sm font-medium">
+                                {TEXT.addHeading}
+                            </label>
+                            <textarea
+                                id="note-body"
+                                rows={3}
+                                placeholder={TEXT.placeholder}
+                                {...register('body', { required: true })}
+                                className="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex min-h-20 w-full rounded-md border px-3 py-2 text-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
+                            />
+                            <div className="flex items-center justify-between gap-2">
+                                <span className="text-muted-foreground text-xs">{user?.name}</span>
+                                <Button type="submit" size="sm" disabled={!body?.trim()}>
+                                    {TEXT.add}
+                                </Button>
+                            </div>
+                        </form>
+                    </CardContent>
+                </Card>
             )}
 
             {notes.length === 0 ? (

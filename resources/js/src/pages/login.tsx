@@ -75,16 +75,27 @@ export default function Login() {
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
                         <div className="space-y-2">
                             <Label htmlFor="email">{LOGIN_TEXT.emailLabel}</Label>
-                            <Input id="email" type="email" autoComplete="username" autoFocus {...register('email', {
+                            <Input
+                                id="email"
+                                type="email"
+                                autoComplete="username"
+                                autoFocus
+                                {...register('email', {
                                     required: LOGIN_TEXT.errors.emailRequired,
                                     pattern: { value: /^[^@\s]+@[^@\s]+\.[^@\s]+$/, message: LOGIN_TEXT.errors.emailInvalid },
-                                })} />
+                                })}
+                            />
                             {errors.email && <p className="text-destructive text-xs">{errors.email.message}</p>}
                         </div>
 
                         <div className="space-y-2">
                             <Label htmlFor="password">{LOGIN_TEXT.passwordLabel}</Label>
-                            <Input id="password" type="password" autoComplete="current-password" {...register('password', { required: LOGIN_TEXT.errors.passwordRequired })} />
+                            <Input
+                                id="password"
+                                type="password"
+                                autoComplete="current-password"
+                                {...register('password', { required: LOGIN_TEXT.errors.passwordRequired })}
+                            />
                             {errors.password && <p className="text-destructive text-xs">{errors.password.message}</p>}
                         </div>
 

@@ -89,8 +89,7 @@ export const allegations: Allegation[] = [
         id: 'alg-009',
         investigationId: 'inv-018',
         title: 'Bypassed required approval step',
-        description:
-            'Internal policy was allegedly not followed regarding handling of sensitive information.',
+        description: 'Internal policy was allegedly not followed regarding handling of sensitive information.',
         category: 'policy_violation',
         status: 'not_substantiated',
         finding: 'inconclusive',
@@ -101,8 +100,7 @@ export const allegations: Allegation[] = [
         id: 'alg-010',
         investigationId: 'inv-101',
         title: 'Bypassed required approval step',
-        description:
-            'Internal policy was allegedly not followed regarding handling of sensitive information.',
+        description: 'Internal policy was allegedly not followed regarding handling of sensitive information.',
         category: 'policy_violation',
         status: 'pending',
         relatedWitnessIds: ['wit-011', 'wit-012'],
@@ -112,8 +110,7 @@ export const allegations: Allegation[] = [
         id: 'alg-011',
         investigationId: 'inv-102',
         title: 'Exclusionary decision-making',
-        description:
-            'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
+        description: 'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
         category: 'discrimination',
         status: 'pending',
         relatedWitnessIds: ['wit-013', 'wit-014'],
@@ -123,8 +120,7 @@ export const allegations: Allegation[] = [
         id: 'alg-012',
         investigationId: 'inv-102',
         title: 'Exclusionary decision-making',
-        description:
-            'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
+        description: 'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
         category: 'discrimination',
         status: 'under_review',
         relatedWitnessIds: ['wit-013', 'wit-014'],
@@ -134,8 +130,7 @@ export const allegations: Allegation[] = [
         id: 'alg-013',
         investigationId: 'inv-103',
         title: 'Comments about Omar Achebe in team setting',
-        description:
-            'Complainant alleges Nia Adeyemi made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Nia Adeyemi made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'pending',
         relatedWitnessIds: ['wit-015', 'wit-016', 'wit-017'],
@@ -145,8 +140,7 @@ export const allegations: Allegation[] = [
         id: 'alg-014',
         investigationId: 'inv-103',
         title: 'Comments about Omar Achebe in team setting',
-        description:
-            'Complainant alleges Nia Adeyemi made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Nia Adeyemi made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'under_review',
         relatedWitnessIds: ['wit-015', 'wit-016', 'wit-017'],
@@ -156,8 +150,7 @@ export const allegations: Allegation[] = [
         id: 'alg-015',
         investigationId: 'inv-104',
         title: 'Data exported to unapproved system',
-        description:
-            'Records indicate access to data outside the scope of Nils Castellano\'s role.',
+        description: "Records indicate access to data outside the scope of Nils Castellano's role.",
         category: 'data_privacy',
         status: 'pending',
         relatedWitnessIds: ['wit-018', 'wit-019', 'wit-020'],
@@ -167,8 +160,7 @@ export const allegations: Allegation[] = [
         id: 'alg-016',
         investigationId: 'inv-105',
         title: 'Unexplained inventory loss',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'under_review',
         relatedWitnessIds: ['wit-021', 'wit-022', 'wit-023'],
@@ -178,8 +170,7 @@ export const allegations: Allegation[] = [
         id: 'alg-017',
         investigationId: 'inv-105',
         title: 'Unexplained inventory loss',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'under_review',
         relatedWitnessIds: ['wit-021', 'wit-022', 'wit-023'],
@@ -189,8 +180,7 @@ export const allegations: Allegation[] = [
         id: 'alg-018',
         investigationId: 'inv-106',
         title: 'Prohibited substance found on-site',
-        description:
-            'Concerns raised regarding Yara Salgado\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Yara Salgado's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'pending',
         relatedWitnessIds: ['wit-024', 'wit-025'],
@@ -200,8 +190,7 @@ export const allegations: Allegation[] = [
         id: 'alg-019',
         investigationId: 'inv-107',
         title: 'Pattern of demeaning remarks',
-        description:
-            'Complainant alleges Lars Rao made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Lars Rao made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'substantiated',
         finding: 'substantiated',
@@ -212,8 +201,7 @@ export const allegations: Allegation[] = [
         id: 'alg-020',
         investigationId: 'inv-107',
         title: 'Pattern of demeaning remarks',
-        description:
-            'Complainant alleges Lars Rao made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Lars Rao made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'substantiated',
         finding: 'substantiated',
@@ -224,8 +212,7 @@ export const allegations: Allegation[] = [
         id: 'alg-021',
         investigationId: 'inv-108',
         title: 'Prohibited substance found on-site',
-        description:
-            'Concerns raised regarding Gideon Doyle\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Gideon Doyle's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'under_review',
         relatedWitnessIds: ['wit-028', 'wit-029'],
@@ -235,8 +222,7 @@ export const allegations: Allegation[] = [
         id: 'alg-022',
         investigationId: 'inv-109',
         title: 'Unauthorized removal of company property',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'under_review',
         relatedWitnessIds: ['wit-030', 'wit-031'],
@@ -246,8 +232,7 @@ export const allegations: Allegation[] = [
         id: 'alg-023',
         investigationId: 'inv-110',
         title: 'Falsified records submitted',
-        description:
-            'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
+        description: 'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
         category: 'misconduct',
         status: 'under_review',
         relatedWitnessIds: ['wit-032', 'wit-033'],
@@ -257,8 +242,7 @@ export const allegations: Allegation[] = [
         id: 'alg-024',
         investigationId: 'inv-111',
         title: 'Physical altercation reported',
-        description:
-            'Incident reported involving Coen Achebe and a colleague, referred for prompt review.',
+        description: 'Incident reported involving Coen Achebe and a colleague, referred for prompt review.',
         category: 'workplace_violence',
         status: 'substantiated',
         finding: 'substantiated',
@@ -269,8 +253,7 @@ export const allegations: Allegation[] = [
         id: 'alg-025',
         investigationId: 'inv-111',
         title: 'Physical altercation reported',
-        description:
-            'Incident reported involving Coen Achebe and a colleague, referred for prompt review.',
+        description: 'Incident reported involving Coen Achebe and a colleague, referred for prompt review.',
         category: 'workplace_violence',
         status: 'substantiated',
         finding: 'substantiated',
@@ -281,8 +264,7 @@ export const allegations: Allegation[] = [
         id: 'alg-026',
         investigationId: 'inv-112',
         title: 'Apparent impairment during working hours',
-        description:
-            'Concerns raised regarding Nia Chinweze\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Nia Chinweze's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'substantiated',
         finding: 'substantiated',
@@ -293,8 +275,7 @@ export const allegations: Allegation[] = [
         id: 'alg-027',
         investigationId: 'inv-112',
         title: 'Apparent impairment during working hours',
-        description:
-            'Concerns raised regarding Nia Chinweze\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Nia Chinweze's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'not_substantiated',
         finding: 'unsubstantiated',
@@ -305,8 +286,7 @@ export const allegations: Allegation[] = [
         id: 'alg-028',
         investigationId: 'inv-113',
         title: 'Failure to disclose competing interest',
-        description:
-            'Relationship between Adaeze Menon and the awarded vendor was not disclosed as required by policy.',
+        description: 'Relationship between Adaeze Menon and the awarded vendor was not disclosed as required by policy.',
         category: 'conflict_of_interest',
         status: 'under_review',
         relatedWitnessIds: ['wit-038', 'wit-039'],
@@ -316,8 +296,7 @@ export const allegations: Allegation[] = [
         id: 'alg-029',
         investigationId: 'inv-113',
         title: 'Undisclosed personal relationship with vendor',
-        description:
-            'Relationship between Adaeze Menon and the awarded vendor was not disclosed as required by policy.',
+        description: 'Relationship between Adaeze Menon and the awarded vendor was not disclosed as required by policy.',
         category: 'conflict_of_interest',
         status: 'under_review',
         relatedWitnessIds: ['wit-038', 'wit-039'],
@@ -327,8 +306,7 @@ export const allegations: Allegation[] = [
         id: 'alg-030',
         investigationId: 'inv-114',
         title: 'Undisclosed personal relationship with vendor',
-        description:
-            'Relationship between Sylvie Beaumont and the awarded vendor was not disclosed as required by policy.',
+        description: 'Relationship between Sylvie Beaumont and the awarded vendor was not disclosed as required by policy.',
         category: 'conflict_of_interest',
         status: 'under_review',
         relatedWitnessIds: ['wit-040', 'wit-041', 'wit-042'],
@@ -338,8 +316,7 @@ export const allegations: Allegation[] = [
         id: 'alg-031',
         investigationId: 'inv-114',
         title: 'Undisclosed personal relationship with vendor',
-        description:
-            'Relationship between Sylvie Beaumont and the awarded vendor was not disclosed as required by policy.',
+        description: 'Relationship between Sylvie Beaumont and the awarded vendor was not disclosed as required by policy.',
         category: 'conflict_of_interest',
         status: 'under_review',
         relatedWitnessIds: ['wit-040', 'wit-041', 'wit-042'],
@@ -349,8 +326,7 @@ export const allegations: Allegation[] = [
         id: 'alg-032',
         investigationId: 'inv-115',
         title: 'Unexplained inventory loss',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'pending',
         relatedWitnessIds: ['wit-043', 'wit-044'],
@@ -360,8 +336,7 @@ export const allegations: Allegation[] = [
         id: 'alg-033',
         investigationId: 'inv-115',
         title: 'Unauthorized removal of company property',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'pending',
         relatedWitnessIds: ['wit-043', 'wit-044'],
@@ -371,8 +346,7 @@ export const allegations: Allegation[] = [
         id: 'alg-034',
         investigationId: 'inv-116',
         title: 'Apparent impairment during working hours',
-        description:
-            'Concerns raised regarding Yara Doran\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Yara Doran's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'under_review',
         relatedWitnessIds: ['wit-045', 'wit-046'],
@@ -382,8 +356,7 @@ export const allegations: Allegation[] = [
         id: 'alg-035',
         investigationId: 'inv-117',
         title: 'Unauthorized access to records',
-        description:
-            'Records indicate access to data outside the scope of Ingeborg Fahey\'s role.',
+        description: "Records indicate access to data outside the scope of Ingeborg Fahey's role.",
         category: 'data_privacy',
         status: 'not_substantiated',
         finding: 'unsubstantiated',
@@ -394,8 +367,7 @@ export const allegations: Allegation[] = [
         id: 'alg-036',
         investigationId: 'inv-118',
         title: 'Undisclosed personal relationship with vendor',
-        description:
-            'Relationship between Fatima Prescott and the awarded vendor was not disclosed as required by policy.',
+        description: 'Relationship between Fatima Prescott and the awarded vendor was not disclosed as required by policy.',
         category: 'conflict_of_interest',
         status: 'under_review',
         relatedWitnessIds: ['wit-050', 'wit-051'],
@@ -405,8 +377,7 @@ export const allegations: Allegation[] = [
         id: 'alg-037',
         investigationId: 'inv-119',
         title: 'Unexplained inventory loss',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'under_review',
         relatedWitnessIds: ['wit-052', 'wit-053'],
@@ -416,8 +387,7 @@ export const allegations: Allegation[] = [
         id: 'alg-038',
         investigationId: 'inv-119',
         title: 'Unauthorized removal of company property',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'under_review',
         relatedWitnessIds: ['wit-052', 'wit-053'],
@@ -427,8 +397,7 @@ export const allegations: Allegation[] = [
         id: 'alg-039',
         investigationId: 'inv-120',
         title: 'Prohibited substance found on-site',
-        description:
-            'Concerns raised regarding Ingrid Aasen\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Ingrid Aasen's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'pending',
         relatedWitnessIds: ['wit-054', 'wit-055'],
@@ -438,8 +407,7 @@ export const allegations: Allegation[] = [
         id: 'alg-040',
         investigationId: 'inv-121',
         title: 'Breach of professional conduct standard',
-        description:
-            'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
+        description: 'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
         category: 'misconduct',
         status: 'pending',
         relatedWitnessIds: ['wit-056', 'wit-057'],
@@ -449,8 +417,7 @@ export const allegations: Allegation[] = [
         id: 'alg-041',
         investigationId: 'inv-121',
         title: 'Falsified records submitted',
-        description:
-            'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
+        description: 'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
         category: 'misconduct',
         status: 'pending',
         relatedWitnessIds: ['wit-056', 'wit-057'],
@@ -460,8 +427,7 @@ export const allegations: Allegation[] = [
         id: 'alg-042',
         investigationId: 'inv-122',
         title: 'Failure to disclose competing interest',
-        description:
-            'Relationship between Zara Haddix and the awarded vendor was not disclosed as required by policy.',
+        description: 'Relationship between Zara Haddix and the awarded vendor was not disclosed as required by policy.',
         category: 'conflict_of_interest',
         status: 'under_review',
         relatedWitnessIds: ['wit-058', 'wit-059'],
@@ -471,8 +437,7 @@ export const allegations: Allegation[] = [
         id: 'alg-043',
         investigationId: 'inv-123',
         title: 'Disabled required safety control',
-        description:
-            'Reported conduct raises concerns under the organization\'s safety policy.',
+        description: "Reported conduct raises concerns under the organization's safety policy.",
         category: 'safety_violation',
         status: 'pending',
         relatedWitnessIds: ['wit-060', 'wit-061'],
@@ -482,8 +447,7 @@ export const allegations: Allegation[] = [
         id: 'alg-044',
         investigationId: 'inv-124',
         title: 'Threatening conduct toward Ingrid Krantz',
-        description:
-            'Incident reported involving Yuki Haddix and a colleague, referred for prompt review.',
+        description: 'Incident reported involving Yuki Haddix and a colleague, referred for prompt review.',
         category: 'workplace_violence',
         status: 'substantiated',
         finding: 'substantiated',
@@ -494,8 +458,7 @@ export const allegations: Allegation[] = [
         id: 'alg-045',
         investigationId: 'inv-124',
         title: 'Threatening conduct toward Ingrid Krantz',
-        description:
-            'Incident reported involving Yuki Haddix and a colleague, referred for prompt review.',
+        description: 'Incident reported involving Yuki Haddix and a colleague, referred for prompt review.',
         category: 'workplace_violence',
         status: 'not_substantiated',
         finding: 'inconclusive',
@@ -506,8 +469,7 @@ export const allegations: Allegation[] = [
         id: 'alg-046',
         investigationId: 'inv-125',
         title: 'Unexplained inventory loss',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'under_review',
         relatedWitnessIds: ['wit-064', 'wit-065', 'wit-066'],
@@ -517,8 +479,7 @@ export const allegations: Allegation[] = [
         id: 'alg-047',
         investigationId: 'inv-125',
         title: 'Unexplained inventory loss',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'under_review',
         relatedWitnessIds: ['wit-064', 'wit-065', 'wit-066'],
@@ -528,8 +489,7 @@ export const allegations: Allegation[] = [
         id: 'alg-048',
         investigationId: 'inv-126',
         title: 'Unauthorized removal of company property',
-        description:
-            'Property or inventory reported missing without an approved disposition record.',
+        description: 'Property or inventory reported missing without an approved disposition record.',
         category: 'theft',
         status: 'substantiated',
         finding: 'substantiated',
@@ -540,8 +500,7 @@ export const allegations: Allegation[] = [
         id: 'alg-049',
         investigationId: 'inv-127',
         title: 'Apparent impairment during working hours',
-        description:
-            'Concerns raised regarding Bianca Menon\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Bianca Menon's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'under_review',
         relatedWitnessIds: ['wit-070', 'wit-071'],
@@ -551,8 +510,7 @@ export const allegations: Allegation[] = [
         id: 'alg-050',
         investigationId: 'inv-128',
         title: 'Apparent impairment during working hours',
-        description:
-            'Concerns raised regarding Nadia Osei\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Nadia Osei's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'substantiated',
         finding: 'substantiated',
@@ -563,8 +521,7 @@ export const allegations: Allegation[] = [
         id: 'alg-051',
         investigationId: 'inv-129',
         title: 'Apparent impairment during working hours',
-        description:
-            'Concerns raised regarding Kian Fahey\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Kian Fahey's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'substantiated',
         finding: 'substantiated',
@@ -575,8 +532,7 @@ export const allegations: Allegation[] = [
         id: 'alg-052',
         investigationId: 'inv-129',
         title: 'Prohibited substance found on-site',
-        description:
-            'Concerns raised regarding Kian Fahey\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Kian Fahey's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'not_substantiated',
         finding: 'inconclusive',
@@ -587,8 +543,7 @@ export const allegations: Allegation[] = [
         id: 'alg-053',
         investigationId: 'inv-130',
         title: 'Comments about Kian Vance in team setting',
-        description:
-            'Complainant alleges Malik Solheim made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Malik Solheim made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'under_review',
         relatedWitnessIds: ['wit-076', 'wit-077'],
@@ -598,8 +553,7 @@ export const allegations: Allegation[] = [
         id: 'alg-054',
         investigationId: 'inv-130',
         title: 'Pattern of demeaning remarks',
-        description:
-            'Complainant alleges Malik Solheim made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Malik Solheim made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'under_review',
         relatedWitnessIds: ['wit-076', 'wit-077'],
@@ -609,8 +563,7 @@ export const allegations: Allegation[] = [
         id: 'alg-055',
         investigationId: 'inv-131',
         title: 'Disparate treatment during the process',
-        description:
-            'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
+        description: 'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
         category: 'discrimination',
         status: 'under_review',
         relatedWitnessIds: ['wit-078', 'wit-079', 'wit-080'],
@@ -620,8 +573,7 @@ export const allegations: Allegation[] = [
         id: 'alg-056',
         investigationId: 'inv-132',
         title: 'Biased evaluation criteria applied',
-        description:
-            'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
+        description: 'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
         category: 'discrimination',
         status: 'pending',
         relatedWitnessIds: ['wit-081', 'wit-082', 'wit-083'],
@@ -631,8 +583,7 @@ export const allegations: Allegation[] = [
         id: 'alg-057',
         investigationId: 'inv-133',
         title: 'Falsified records submitted',
-        description:
-            'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
+        description: 'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
         category: 'misconduct',
         status: 'under_review',
         relatedWitnessIds: ['wit-084', 'wit-085', 'wit-086'],
@@ -642,8 +593,7 @@ export const allegations: Allegation[] = [
         id: 'alg-058',
         investigationId: 'inv-133',
         title: 'Falsified records submitted',
-        description:
-            'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
+        description: 'Records reviewed to date suggest inconsistencies inconsistent with standard practice.',
         category: 'misconduct',
         status: 'pending',
         relatedWitnessIds: ['wit-084', 'wit-085', 'wit-086'],
@@ -653,8 +603,7 @@ export const allegations: Allegation[] = [
         id: 'alg-059',
         investigationId: 'inv-134',
         title: 'Intimidating behaviour toward Diego Prescott',
-        description:
-            'Complainant alleges Xavier Osei made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Xavier Osei made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'pending',
         relatedWitnessIds: ['wit-087', 'wit-088', 'wit-089'],
@@ -664,8 +613,7 @@ export const allegations: Allegation[] = [
         id: 'alg-060',
         investigationId: 'inv-134',
         title: 'Pattern of demeaning remarks',
-        description:
-            'Complainant alleges Xavier Osei made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Xavier Osei made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'pending',
         relatedWitnessIds: ['wit-087', 'wit-088', 'wit-089'],
@@ -675,8 +623,7 @@ export const allegations: Allegation[] = [
         id: 'alg-061',
         investigationId: 'inv-135',
         title: 'Failure to follow safety procedure',
-        description:
-            'Reported conduct raises concerns under the organization\'s safety policy.',
+        description: "Reported conduct raises concerns under the organization's safety policy.",
         category: 'safety_violation',
         status: 'under_review',
         relatedWitnessIds: ['wit-090', 'wit-091'],
@@ -686,8 +633,7 @@ export const allegations: Allegation[] = [
         id: 'alg-062',
         investigationId: 'inv-136',
         title: 'Fraudulent invoice submission',
-        description:
-            'Financial records reviewed show discrepancies consistent with the allegation.',
+        description: 'Financial records reviewed show discrepancies consistent with the allegation.',
         category: 'fraud',
         status: 'not_substantiated',
         finding: 'unsubstantiated',
@@ -698,8 +644,7 @@ export const allegations: Allegation[] = [
         id: 'alg-063',
         investigationId: 'inv-137',
         title: 'Intimidating behaviour toward Noor Solheim',
-        description:
-            'Complainant alleges Rafael Vance made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Rafael Vance made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'substantiated',
         finding: 'substantiated',
@@ -710,8 +655,7 @@ export const allegations: Allegation[] = [
         id: 'alg-064',
         investigationId: 'inv-137',
         title: 'Comments about Noor Solheim in team setting',
-        description:
-            'Complainant alleges Rafael Vance made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Rafael Vance made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'not_substantiated',
         finding: 'inconclusive',
@@ -722,8 +666,7 @@ export const allegations: Allegation[] = [
         id: 'alg-065',
         investigationId: 'inv-138',
         title: 'Exclusionary decision-making',
-        description:
-            'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
+        description: 'Complainant alleges the process was influenced by factors unrelated to merit or qualifications.',
         category: 'discrimination',
         status: 'pending',
         relatedWitnessIds: ['wit-097', 'wit-098'],
@@ -733,8 +676,7 @@ export const allegations: Allegation[] = [
         id: 'alg-066',
         investigationId: 'inv-139',
         title: 'Fraudulent invoice submission',
-        description:
-            'Financial records reviewed show discrepancies consistent with the allegation.',
+        description: 'Financial records reviewed show discrepancies consistent with the allegation.',
         category: 'fraud',
         status: 'pending',
         relatedWitnessIds: ['wit-099', 'wit-100'],
@@ -744,8 +686,7 @@ export const allegations: Allegation[] = [
         id: 'alg-067',
         investigationId: 'inv-139',
         title: 'Fraudulent invoice submission',
-        description:
-            'Financial records reviewed show discrepancies consistent with the allegation.',
+        description: 'Financial records reviewed show discrepancies consistent with the allegation.',
         category: 'fraud',
         status: 'under_review',
         relatedWitnessIds: ['wit-099', 'wit-100'],
@@ -755,8 +696,7 @@ export const allegations: Allegation[] = [
         id: 'alg-068',
         investigationId: 'inv-140',
         title: 'Apparent impairment during working hours',
-        description:
-            'Concerns raised regarding Freya Qureshi\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Freya Qureshi's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'not_substantiated',
         finding: 'unsubstantiated',
@@ -767,8 +707,7 @@ export const allegations: Allegation[] = [
         id: 'alg-069',
         investigationId: 'inv-141',
         title: 'Pattern of demeaning remarks',
-        description:
-            'Complainant alleges Sylvie Devries made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Sylvie Devries made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'under_review',
         relatedWitnessIds: ['wit-104', 'wit-105', 'wit-106'],
@@ -778,8 +717,7 @@ export const allegations: Allegation[] = [
         id: 'alg-070',
         investigationId: 'inv-142',
         title: 'Exclusion from meetings after report filed',
-        description:
-            'Complainant reports adverse treatment shortly after raising an internal concern.',
+        description: 'Complainant reports adverse treatment shortly after raising an internal concern.',
         category: 'retaliation',
         status: 'substantiated',
         finding: 'substantiated',
@@ -790,8 +728,7 @@ export const allegations: Allegation[] = [
         id: 'alg-071',
         investigationId: 'inv-143',
         title: 'Prohibited substance found on-site',
-        description:
-            'Concerns raised regarding Tariq Chinweze\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Tariq Chinweze's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'substantiated',
         finding: 'substantiated',
@@ -802,8 +739,7 @@ export const allegations: Allegation[] = [
         id: 'alg-072',
         investigationId: 'inv-143',
         title: 'Apparent impairment during working hours',
-        description:
-            'Concerns raised regarding Tariq Chinweze\'s conduct and apparent impairment on shift.',
+        description: "Concerns raised regarding Tariq Chinweze's conduct and apparent impairment on shift.",
         category: 'substance_abuse',
         status: 'substantiated',
         finding: 'substantiated',
@@ -814,8 +750,7 @@ export const allegations: Allegation[] = [
         id: 'alg-073',
         investigationId: 'inv-144',
         title: 'Adverse action following internal complaint',
-        description:
-            'Complainant reports adverse treatment shortly after raising an internal concern.',
+        description: 'Complainant reports adverse treatment shortly after raising an internal concern.',
         category: 'retaliation',
         status: 'substantiated',
         finding: 'substantiated',
@@ -826,8 +761,7 @@ export const allegations: Allegation[] = [
         id: 'alg-074',
         investigationId: 'inv-145',
         title: 'Adverse action following internal complaint',
-        description:
-            'Complainant reports adverse treatment shortly after raising an internal concern.',
+        description: 'Complainant reports adverse treatment shortly after raising an internal concern.',
         category: 'retaliation',
         status: 'not_substantiated',
         finding: 'unsubstantiated',
@@ -838,8 +772,7 @@ export const allegations: Allegation[] = [
         id: 'alg-075',
         investigationId: 'inv-145',
         title: 'Adverse action following internal complaint',
-        description:
-            'Complainant reports adverse treatment shortly after raising an internal concern.',
+        description: 'Complainant reports adverse treatment shortly after raising an internal concern.',
         category: 'retaliation',
         status: 'substantiated',
         finding: 'substantiated',
@@ -850,8 +783,7 @@ export const allegations: Allegation[] = [
         id: 'alg-076',
         investigationId: 'inv-146',
         title: 'Failure to follow safety procedure',
-        description:
-            'Reported conduct raises concerns under the organization\'s safety policy.',
+        description: "Reported conduct raises concerns under the organization's safety policy.",
         category: 'safety_violation',
         status: 'pending',
         relatedWitnessIds: ['wit-115', 'wit-116', 'wit-117'],
@@ -861,8 +793,7 @@ export const allegations: Allegation[] = [
         id: 'alg-077',
         investigationId: 'inv-146',
         title: 'Disabled required safety control',
-        description:
-            'Reported conduct raises concerns under the organization\'s safety policy.',
+        description: "Reported conduct raises concerns under the organization's safety policy.",
         category: 'safety_violation',
         status: 'under_review',
         relatedWitnessIds: ['wit-115', 'wit-116', 'wit-117'],
@@ -872,8 +803,7 @@ export const allegations: Allegation[] = [
         id: 'alg-078',
         investigationId: 'inv-147',
         title: 'Unauthorized access to records',
-        description:
-            'Records indicate access to data outside the scope of Kwame Brandt\'s role.',
+        description: "Records indicate access to data outside the scope of Kwame Brandt's role.",
         category: 'data_privacy',
         status: 'under_review',
         relatedWitnessIds: ['wit-118', 'wit-119'],
@@ -883,8 +813,7 @@ export const allegations: Allegation[] = [
         id: 'alg-079',
         investigationId: 'inv-148',
         title: 'Fraudulent invoice submission',
-        description:
-            'Financial records reviewed show discrepancies consistent with the allegation.',
+        description: 'Financial records reviewed show discrepancies consistent with the allegation.',
         category: 'fraud',
         status: 'under_review',
         relatedWitnessIds: ['wit-120', 'wit-121'],
@@ -894,8 +823,7 @@ export const allegations: Allegation[] = [
         id: 'alg-080',
         investigationId: 'inv-149',
         title: 'Failure to disclose competing interest',
-        description:
-            'Relationship between Kian Verbeek and the awarded vendor was not disclosed as required by policy.',
+        description: 'Relationship between Kian Verbeek and the awarded vendor was not disclosed as required by policy.',
         category: 'conflict_of_interest',
         status: 'under_review',
         relatedWitnessIds: ['wit-122', 'wit-123', 'wit-124'],
@@ -905,8 +833,7 @@ export const allegations: Allegation[] = [
         id: 'alg-081',
         investigationId: 'inv-150',
         title: 'Intimidating behaviour toward Fatima Chinweze',
-        description:
-            'Complainant alleges Freya Sandoval made repeated inappropriate remarks affecting their ability to work comfortably.',
+        description: 'Complainant alleges Freya Sandoval made repeated inappropriate remarks affecting their ability to work comfortably.',
         category: 'harassment',
         status: 'under_review',
         relatedWitnessIds: ['wit-125', 'wit-126'],

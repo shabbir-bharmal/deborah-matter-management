@@ -133,8 +133,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-03',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-017',
@@ -142,8 +141,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-04',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-018; Priya Raman assigned as investigator.',
+        description: 'Matter opened as INV-2025-018; Priya Raman assigned as investigator.',
     },
     {
         id: 'tl-018',
@@ -151,8 +149,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-08',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-019',
@@ -160,8 +157,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-28',
         type: 'interview',
         title: 'Interview — Callum Bexley',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-020',
@@ -169,8 +165,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-17',
         type: 'interview',
         title: 'Interview — Elin Menon',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-021',
@@ -178,8 +173,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-22',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Correspondence between parties obtained and logged for review.',
+        description: 'Correspondence between parties obtained and logged for review.',
     },
     {
         id: 'tl-022',
@@ -187,8 +181,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-17',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-023',
@@ -196,8 +189,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-22',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-024',
@@ -205,8 +197,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-06',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-025',
@@ -214,8 +205,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-07',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-101; Marcus Chen assigned as investigator.',
+        description: 'Matter opened as INV-2026-101; Marcus Chen assigned as investigator.',
     },
     {
         id: 'tl-026',
@@ -223,8 +213,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-26',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Correspondence between parties obtained and logged for review.',
+        description: 'Correspondence between parties obtained and logged for review.',
     },
     {
         id: 'tl-027',
@@ -232,8 +221,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-31',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-028',
@@ -241,8 +229,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-01',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-102; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2025-102; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-029',
@@ -250,8 +237,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-03',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-030',
@@ -259,8 +245,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-18',
         type: 'interview',
         title: 'Interview — Bram Voss',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-031',
@@ -268,8 +253,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-09',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Incident log obtained and logged for review.',
+        description: 'Incident log obtained and logged for review.',
     },
     {
         id: 'tl-032',
@@ -277,8 +261,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-04',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-033',
@@ -286,8 +269,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-05',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-103; Priya Raman assigned as investigator.',
+        description: 'Matter opened as INV-2026-103; Priya Raman assigned as investigator.',
     },
     {
         id: 'tl-034',
@@ -295,8 +277,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-06',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-035',
@@ -304,8 +285,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-30',
         type: 'interview',
         title: 'Interview — Zara Prescott',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-036',
@@ -313,8 +293,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-16',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Team channel export obtained and logged for review.',
+        description: 'Team channel export obtained and logged for review.',
     },
     {
         id: 'tl-037',
@@ -322,8 +301,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-13',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-038',
@@ -331,8 +309,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-14',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-104; Deborah Whitfield assigned as investigator.',
+        description: 'Matter opened as INV-2026-104; Deborah Whitfield assigned as investigator.',
     },
     {
         id: 'tl-039',
@@ -340,8 +317,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-15',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Incident log obtained and logged for review.',
+        description: 'Incident log obtained and logged for review.',
     },
     {
         id: 'tl-040',
@@ -349,8 +325,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-11',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-041',
@@ -358,8 +333,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-12',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-105; Elena Vasquez assigned as investigator.',
+        description: 'Matter opened as INV-2025-105; Elena Vasquez assigned as investigator.',
     },
     {
         id: 'tl-042',
@@ -367,8 +341,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-17',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-043',
@@ -376,8 +349,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-17',
         type: 'interview',
         title: 'Interview — Zara Voss',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-044',
@@ -385,8 +357,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-10',
         type: 'interview',
         title: 'Interview — Nia Nkemelu',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-045',
@@ -394,8 +365,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-18',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Call recording obtained and logged for review.',
+        description: 'Call recording obtained and logged for review.',
     },
     {
         id: 'tl-046',
@@ -403,8 +373,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-30',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-047',
@@ -412,8 +381,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-24',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-048',
@@ -421,8 +389,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-25',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-106; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2025-106; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-049',
@@ -430,8 +397,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-09',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Team channel export obtained and logged for review.',
+        description: 'Team channel export obtained and logged for review.',
     },
     {
         id: 'tl-050',
@@ -439,8 +405,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-01',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-051',
@@ -448,8 +413,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-02',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-107; Grace Lindqvist assigned as investigator.',
+        description: 'Matter opened as INV-2026-107; Grace Lindqvist assigned as investigator.',
     },
     {
         id: 'tl-052',
@@ -457,8 +421,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-07',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-053',
@@ -466,8 +429,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-26',
         type: 'interview',
         title: 'Interview — Ines Haddix',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-054',
@@ -475,8 +437,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-06',
         type: 'interview',
         title: 'Interview — Lars Rao',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-055',
@@ -484,8 +445,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-27',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Email thread re allegation obtained and logged for review.',
+        description: 'Email thread re allegation obtained and logged for review.',
     },
     {
         id: 'tl-056',
@@ -493,8 +453,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-30',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-057',
@@ -502,8 +461,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-31',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-058',
@@ -511,8 +469,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-27',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-059',
@@ -520,8 +477,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-28',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-108; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2026-108; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-060',
@@ -529,8 +485,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-30',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-061',
@@ -538,8 +493,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-05',
         type: 'interview',
         title: 'Interview — Aisling Vance',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-062',
@@ -547,8 +501,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-09',
         type: 'interview',
         title: 'Interview — Gideon Doyle',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-063',
@@ -556,8 +509,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-05',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Call recording obtained and logged for review.',
+        description: 'Call recording obtained and logged for review.',
     },
     {
         id: 'tl-064',
@@ -565,8 +517,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-11',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-065',
@@ -574,8 +525,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-12',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-066',
@@ -583,8 +533,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-13',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-109; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2026-109; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-067',
@@ -592,8 +541,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-14',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-068',
@@ -601,8 +549,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-14',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Access log report obtained and logged for review.',
+        description: 'Access log report obtained and logged for review.',
     },
     {
         id: 'tl-069',
@@ -610,8 +557,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-27',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-070',
@@ -619,8 +565,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-28',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-110; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2026-110; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-071',
@@ -628,8 +573,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-29',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-072',
@@ -637,8 +581,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-10',
         type: 'interview',
         title: 'Interview — Noor Vance',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-073',
@@ -646,8 +589,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-13',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Team channel export obtained and logged for review.',
+        description: 'Team channel export obtained and logged for review.',
     },
     {
         id: 'tl-074',
@@ -655,8 +597,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-21',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-075',
@@ -664,8 +605,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-03',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-076',
@@ -673,8 +613,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-04',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-111; Samuel Okafor assigned as investigator.',
+        description: 'Matter opened as INV-2025-111; Samuel Okafor assigned as investigator.',
     },
     {
         id: 'tl-077',
@@ -682,8 +621,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-06',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-078',
@@ -691,8 +629,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-09',
         type: 'interview',
         title: 'Interview — Ingrid Reyes',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-079',
@@ -700,8 +637,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-23',
         type: 'interview',
         title: 'Interview — Coen Achebe',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-080',
@@ -709,8 +645,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-29',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Incident log obtained and logged for review.',
+        description: 'Incident log obtained and logged for review.',
     },
     {
         id: 'tl-081',
@@ -718,8 +653,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-14',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-082',
@@ -727,8 +661,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-15',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-083',
@@ -736,8 +669,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-20',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-084',
@@ -745,8 +677,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-21',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-112; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2026-112; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-085',
@@ -754,8 +685,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-22',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-086',
@@ -763,8 +693,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-07',
         type: 'interview',
         title: 'Interview — Owen Farrow',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-087',
@@ -772,8 +701,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-27',
         type: 'interview',
         title: 'Interview — Nia Chinweze',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-088',
@@ -781,8 +709,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-27',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Call recording obtained and logged for review.',
+        description: 'Call recording obtained and logged for review.',
     },
     {
         id: 'tl-089',
@@ -790,8 +717,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-02',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-090',
@@ -799,8 +725,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-04',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-091',
@@ -808,8 +733,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-18',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-092',
@@ -817,8 +741,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-19',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-113; Deborah Whitfield assigned as investigator.',
+        description: 'Matter opened as INV-2026-113; Deborah Whitfield assigned as investigator.',
     },
     {
         id: 'tl-093',
@@ -826,8 +749,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-24',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-094',
@@ -835,8 +757,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-09',
         type: 'interview',
         title: 'Interview — Adaeze Vance',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-095',
@@ -844,8 +765,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-09-05',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Policy acknowledgement record obtained and logged for review.',
+        description: 'Policy acknowledgement record obtained and logged for review.',
     },
     {
         id: 'tl-096',
@@ -853,8 +773,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-09-09',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-097',
@@ -862,8 +781,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-31',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-098',
@@ -871,8 +789,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-01',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-114; Grace Lindqvist assigned as investigator.',
+        description: 'Matter opened as INV-2026-114; Grace Lindqvist assigned as investigator.',
     },
     {
         id: 'tl-099',
@@ -880,8 +797,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-04',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-100',
@@ -889,8 +805,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-15',
         type: 'interview',
         title: 'Interview — Mateo Bexley',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-101',
@@ -898,8 +813,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-15',
         type: 'interview',
         title: 'Interview — Diego Adeyemi',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-102',
@@ -907,8 +821,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-21',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Meeting recording obtained and logged for review.',
+        description: 'Meeting recording obtained and logged for review.',
     },
     {
         id: 'tl-103',
@@ -916,8 +829,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-20',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-104',
@@ -925,8 +837,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-22',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-105',
@@ -934,8 +845,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-23',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-115; Anika Desai assigned as investigator.',
+        description: 'Matter opened as INV-2025-115; Anika Desai assigned as investigator.',
     },
     {
         id: 'tl-106',
@@ -943,8 +853,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-25',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Call recording obtained and logged for review.',
+        description: 'Call recording obtained and logged for review.',
     },
     {
         id: 'tl-107',
@@ -952,8 +861,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-25',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-108',
@@ -961,8 +869,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-26',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-116; Grace Lindqvist assigned as investigator.',
+        description: 'Matter opened as INV-2025-116; Grace Lindqvist assigned as investigator.',
     },
     {
         id: 'tl-109',
@@ -970,8 +877,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-27',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-110',
@@ -979,8 +885,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-05',
         type: 'interview',
         title: 'Interview — Louis Krantz',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-111',
@@ -988,8 +893,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-21',
         type: 'interview',
         title: 'Interview — Yara Doran',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-112',
@@ -997,8 +901,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-16',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Incident log obtained and logged for review.',
+        description: 'Incident log obtained and logged for review.',
     },
     {
         id: 'tl-113',
@@ -1006,8 +909,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-01',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-114',
@@ -1015,8 +917,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-01',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-115',
@@ -1024,8 +925,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-02',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-117; Anika Desai assigned as investigator.',
+        description: 'Matter opened as INV-2026-117; Anika Desai assigned as investigator.',
     },
     {
         id: 'tl-116',
@@ -1033,8 +933,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-03',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-117',
@@ -1042,8 +941,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-08',
         type: 'interview',
         title: 'Interview — Sylvie Halvorsen',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-118',
@@ -1051,8 +949,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-21',
         type: 'interview',
         title: 'Interview — Ingeborg Fahey',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-119',
@@ -1060,8 +957,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-13',
         type: 'interview',
         title: 'Interview — Diego Doran',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-120',
@@ -1069,8 +965,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-24',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Financial system extract obtained and logged for review.',
+        description: 'Financial system extract obtained and logged for review.',
     },
     {
         id: 'tl-121',
@@ -1078,8 +973,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-30',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-122',
@@ -1087,8 +981,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-02',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-123',
@@ -1096,8 +989,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-22',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-124',
@@ -1105,8 +997,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-23',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-118; Elena Vasquez assigned as investigator.',
+        description: 'Matter opened as INV-2025-118; Elena Vasquez assigned as investigator.',
     },
     {
         id: 'tl-125',
@@ -1114,8 +1005,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-24',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-126',
@@ -1123,8 +1013,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-01',
         type: 'interview',
         title: 'Interview — Malik Castellano',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-127',
@@ -1132,8 +1021,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-01',
         type: 'interview',
         title: 'Interview — Fatima Prescott',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-128',
@@ -1141,8 +1029,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-02',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Call recording obtained and logged for review.',
+        description: 'Call recording obtained and logged for review.',
     },
     {
         id: 'tl-129',
@@ -1150,8 +1037,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-16',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-130',
@@ -1159,8 +1045,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-11',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-131',
@@ -1168,8 +1053,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-12',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-119; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2026-119; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-132',
@@ -1177,8 +1061,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-17',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-133',
@@ -1186,8 +1069,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-30',
         type: 'interview',
         title: 'Interview — Ines Fadel',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-134',
@@ -1195,8 +1077,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-30',
         type: 'interview',
         title: 'Interview — Malik Halvorsen',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-135',
@@ -1204,8 +1085,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-11',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Incident log obtained and logged for review.',
+        description: 'Incident log obtained and logged for review.',
     },
     {
         id: 'tl-136',
@@ -1213,8 +1093,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-23',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-137',
@@ -1222,8 +1101,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-15',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-138',
@@ -1231,8 +1109,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-16',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-120; Priya Raman assigned as investigator.',
+        description: 'Matter opened as INV-2025-120; Priya Raman assigned as investigator.',
     },
     {
         id: 'tl-139',
@@ -1240,8 +1117,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-22',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Team channel export obtained and logged for review.',
+        description: 'Team channel export obtained and logged for review.',
     },
     {
         id: 'tl-140',
@@ -1249,8 +1125,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-11',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-141',
@@ -1258,8 +1133,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-12',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-121; Priya Raman assigned as investigator.',
+        description: 'Matter opened as INV-2026-121; Priya Raman assigned as investigator.',
     },
     {
         id: 'tl-142',
@@ -1267,8 +1141,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-20',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Incident log obtained and logged for review.',
+        description: 'Incident log obtained and logged for review.',
     },
     {
         id: 'tl-143',
@@ -1276,8 +1149,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-07',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-144',
@@ -1285,8 +1157,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-08',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-122; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2025-122; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-145',
@@ -1294,8 +1165,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-11',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-146',
@@ -1303,8 +1173,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-30',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Access log report obtained and logged for review.',
+        description: 'Access log report obtained and logged for review.',
     },
     {
         id: 'tl-147',
@@ -1312,8 +1181,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-20',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-148',
@@ -1321,8 +1189,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-12',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-149',
@@ -1330,8 +1197,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-13',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-123; Priya Raman assigned as investigator.',
+        description: 'Matter opened as INV-2025-123; Priya Raman assigned as investigator.',
     },
     {
         id: 'tl-150',
@@ -1339,8 +1205,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-17',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-151',
@@ -1348,8 +1213,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-13',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Direct message export obtained and logged for review.',
+        description: 'Direct message export obtained and logged for review.',
     },
     {
         id: 'tl-152',
@@ -1357,8 +1221,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-19',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-153',
@@ -1366,8 +1229,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-20',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-124; Elena Vasquez assigned as investigator.',
+        description: 'Matter opened as INV-2026-124; Elena Vasquez assigned as investigator.',
     },
     {
         id: 'tl-154',
@@ -1375,8 +1237,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-21',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-155',
@@ -1384,8 +1245,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-26',
         type: 'interview',
         title: 'Interview — Ingrid Krantz',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-156',
@@ -1393,8 +1253,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-24',
         type: 'interview',
         title: 'Interview — Yuki Haddix',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-157',
@@ -1402,8 +1261,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-15',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Correspondence between parties obtained and logged for review.',
+        description: 'Correspondence between parties obtained and logged for review.',
     },
     {
         id: 'tl-158',
@@ -1411,8 +1269,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-22',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-159',
@@ -1420,8 +1277,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-24',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-160',
@@ -1429,8 +1285,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-17',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-161',
@@ -1438,8 +1293,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-18',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-125; Anika Desai assigned as investigator.',
+        description: 'Matter opened as INV-2026-125; Anika Desai assigned as investigator.',
     },
     {
         id: 'tl-162',
@@ -1447,8 +1301,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-21',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-163',
@@ -1456,8 +1309,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-08',
         type: 'interview',
         title: 'Interview — Kwame Voss',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-164',
@@ -1465,8 +1317,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-02',
         type: 'interview',
         title: 'Interview — Nia Farrow',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-165',
@@ -1474,8 +1325,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-09',
         type: 'interview',
         title: 'Interview — Nia Rao',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-166',
@@ -1483,8 +1333,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-23',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Team channel export obtained and logged for review.',
+        description: 'Team channel export obtained and logged for review.',
     },
     {
         id: 'tl-167',
@@ -1492,8 +1341,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-13',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-168',
@@ -1501,8 +1349,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-01',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-169',
@@ -1510,8 +1357,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-02',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-126; Marcus Chen assigned as investigator.',
+        description: 'Matter opened as INV-2026-126; Marcus Chen assigned as investigator.',
     },
     {
         id: 'tl-170',
@@ -1519,8 +1365,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-05',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-171',
@@ -1528,8 +1373,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-18',
         type: 'interview',
         title: 'Interview — Bianca Prescott',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-172',
@@ -1537,8 +1381,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-09',
         type: 'interview',
         title: 'Interview — Coen Solvang',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-173',
@@ -1546,8 +1389,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-08',
         type: 'interview',
         title: 'Interview — Rosa Verbeek',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-174',
@@ -1555,8 +1397,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-18',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Direct message export obtained and logged for review.',
+        description: 'Direct message export obtained and logged for review.',
     },
     {
         id: 'tl-175',
@@ -1564,8 +1405,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-03',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-176',
@@ -1573,8 +1413,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-07',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-177',
@@ -1582,8 +1421,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-18',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-178',
@@ -1591,8 +1429,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-19',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-127; Elena Vasquez assigned as investigator.',
+        description: 'Matter opened as INV-2025-127; Elena Vasquez assigned as investigator.',
     },
     {
         id: 'tl-179',
@@ -1600,8 +1437,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-24',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-180',
@@ -1609,8 +1445,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-05',
         type: 'interview',
         title: 'Interview — Amara Achebe',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-181',
@@ -1618,8 +1453,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-12',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Team channel export obtained and logged for review.',
+        description: 'Team channel export obtained and logged for review.',
     },
     {
         id: 'tl-182',
@@ -1627,8 +1461,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-26',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-183',
@@ -1636,8 +1469,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-17',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-184',
@@ -1645,8 +1477,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-18',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-128; Grace Lindqvist assigned as investigator.',
+        description: 'Matter opened as INV-2025-128; Grace Lindqvist assigned as investigator.',
     },
     {
         id: 'tl-185',
@@ -1654,8 +1485,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-22',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-186',
@@ -1663,8 +1493,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-17',
         type: 'interview',
         title: 'Interview — Felix Bexley',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-187',
@@ -1672,8 +1501,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-30',
         type: 'interview',
         title: 'Interview — Nadia Osei',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-188',
@@ -1681,8 +1509,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-20',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Incident log obtained and logged for review.',
+        description: 'Incident log obtained and logged for review.',
     },
     {
         id: 'tl-189',
@@ -1690,8 +1517,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-06',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-190',
@@ -1699,8 +1525,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-09',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-191',
@@ -1708,8 +1533,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-27',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-192',
@@ -1717,8 +1541,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-28',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-129; Marcus Chen assigned as investigator.',
+        description: 'Matter opened as INV-2025-129; Marcus Chen assigned as investigator.',
     },
     {
         id: 'tl-193',
@@ -1726,8 +1549,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-01',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-194',
@@ -1735,8 +1557,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-19',
         type: 'interview',
         title: 'Interview — Lars Farrow',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-195',
@@ -1744,8 +1565,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-13',
         type: 'interview',
         title: 'Interview — Kian Fahey',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-196',
@@ -1753,8 +1573,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-15',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Policy acknowledgement record obtained and logged for review.',
+        description: 'Policy acknowledgement record obtained and logged for review.',
     },
     {
         id: 'tl-197',
@@ -1762,8 +1581,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-21',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-198',
@@ -1771,8 +1589,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-25',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-199',
@@ -1780,8 +1597,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-16',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-200',
@@ -1789,8 +1605,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-17',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-130; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2025-130; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-201',
@@ -1798,8 +1613,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-20',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-202',
@@ -1807,8 +1621,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-02',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Call recording obtained and logged for review.',
+        description: 'Call recording obtained and logged for review.',
     },
     {
         id: 'tl-203',
@@ -1816,8 +1629,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-09',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-204',
@@ -1825,8 +1637,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-10',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-131; Samuel Okafor assigned as investigator.',
+        description: 'Matter opened as INV-2025-131; Samuel Okafor assigned as investigator.',
     },
     {
         id: 'tl-205',
@@ -1834,8 +1645,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-15',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-206',
@@ -1843,8 +1653,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-14',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Email thread re allegation obtained and logged for review.',
+        description: 'Email thread re allegation obtained and logged for review.',
     },
     {
         id: 'tl-207',
@@ -1852,8 +1661,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-15',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-208',
@@ -1861,8 +1669,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-16',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-132; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2026-132; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-209',
@@ -1870,8 +1677,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-06',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Policy acknowledgement record obtained and logged for review.',
+        description: 'Policy acknowledgement record obtained and logged for review.',
     },
     {
         id: 'tl-210',
@@ -1879,8 +1685,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-26',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-211',
@@ -1888,8 +1693,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-27',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-133; Elena Vasquez assigned as investigator.',
+        description: 'Matter opened as INV-2026-133; Elena Vasquez assigned as investigator.',
     },
     {
         id: 'tl-212',
@@ -1897,8 +1701,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-01',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-213',
@@ -1906,8 +1709,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-12',
         type: 'interview',
         title: 'Interview — Hassan Bexley',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-214',
@@ -1915,8 +1717,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-01',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Direct message export obtained and logged for review.',
+        description: 'Direct message export obtained and logged for review.',
     },
     {
         id: 'tl-215',
@@ -1924,8 +1725,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-03',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-216',
@@ -1933,8 +1733,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-04',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-134; Anika Desai assigned as investigator.',
+        description: 'Matter opened as INV-2026-134; Anika Desai assigned as investigator.',
     },
     {
         id: 'tl-217',
@@ -1942,8 +1741,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-01',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Policy acknowledgement record obtained and logged for review.',
+        description: 'Policy acknowledgement record obtained and logged for review.',
     },
     {
         id: 'tl-218',
@@ -1951,8 +1749,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-27',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-219',
@@ -1960,8 +1757,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-28',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-135; Tobias Renner assigned as investigator.',
+        description: 'Matter opened as INV-2026-135; Tobias Renner assigned as investigator.',
     },
     {
         id: 'tl-220',
@@ -1969,8 +1765,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-30',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-221',
@@ -1978,8 +1773,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-29',
         type: 'interview',
         title: 'Interview — Felix Okorie',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-222',
@@ -1987,8 +1781,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-23',
         type: 'interview',
         title: 'Interview — Petra Achebe',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-223',
@@ -1996,8 +1789,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-31',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Call recording obtained and logged for review.',
+        description: 'Call recording obtained and logged for review.',
     },
     {
         id: 'tl-224',
@@ -2005,8 +1797,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-12',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-225',
@@ -2014,8 +1805,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-28',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-226',
@@ -2023,8 +1813,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-01',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-136; Elena Vasquez assigned as investigator.',
+        description: 'Matter opened as INV-2026-136; Elena Vasquez assigned as investigator.',
     },
     {
         id: 'tl-227',
@@ -2032,8 +1821,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-02',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-228',
@@ -2041,8 +1829,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-02',
         type: 'interview',
         title: 'Interview — Bianca Lindgren',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-229',
@@ -2050,8 +1837,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-08',
         type: 'interview',
         title: 'Interview — Freya Prescott',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-230',
@@ -2059,8 +1845,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-22',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Meeting recording obtained and logged for review.',
+        description: 'Meeting recording obtained and logged for review.',
     },
     {
         id: 'tl-231',
@@ -2068,8 +1853,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-10',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-232',
@@ -2077,8 +1861,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-13',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-233',
@@ -2086,8 +1869,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-08',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-234',
@@ -2095,8 +1877,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-09',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-137; Deborah Whitfield assigned as investigator.',
+        description: 'Matter opened as INV-2026-137; Deborah Whitfield assigned as investigator.',
     },
     {
         id: 'tl-235',
@@ -2104,8 +1885,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-13',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-236',
@@ -2113,8 +1893,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-20',
         type: 'interview',
         title: 'Interview — Noor Solheim',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-237',
@@ -2122,8 +1901,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-14',
         type: 'interview',
         title: 'Interview — Rafael Vance',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-238',
@@ -2131,8 +1909,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-31',
         type: 'interview',
         title: 'Interview — Lars Voss',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-239',
@@ -2140,8 +1917,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-13',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Policy acknowledgement record obtained and logged for review.',
+        description: 'Policy acknowledgement record obtained and logged for review.',
     },
     {
         id: 'tl-240',
@@ -2149,8 +1925,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-16',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-241',
@@ -2158,8 +1933,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-18',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-242',
@@ -2167,8 +1941,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-16',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-243',
@@ -2176,8 +1949,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-17',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-138; Deborah Whitfield assigned as investigator.',
+        description: 'Matter opened as INV-2025-138; Deborah Whitfield assigned as investigator.',
     },
     {
         id: 'tl-244',
@@ -2185,8 +1957,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-21',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-245',
@@ -2194,8 +1965,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-19',
         type: 'interview',
         title: 'Interview — Nils Ito',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-246',
@@ -2203,8 +1973,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-21',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Correspondence between parties obtained and logged for review.',
+        description: 'Correspondence between parties obtained and logged for review.',
     },
     {
         id: 'tl-247',
@@ -2212,8 +1981,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-02',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-248',
@@ -2221,8 +1989,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-03',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-139; Priya Raman assigned as investigator.',
+        description: 'Matter opened as INV-2026-139; Priya Raman assigned as investigator.',
     },
     {
         id: 'tl-249',
@@ -2230,8 +1997,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-07',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-250',
@@ -2239,8 +2005,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-04',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Email thread re allegation obtained and logged for review.',
+        description: 'Email thread re allegation obtained and logged for review.',
     },
     {
         id: 'tl-251',
@@ -2248,8 +2013,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-26',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-252',
@@ -2257,8 +2021,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-27',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-140; Priya Raman assigned as investigator.',
+        description: 'Matter opened as INV-2026-140; Priya Raman assigned as investigator.',
     },
     {
         id: 'tl-253',
@@ -2266,8 +2029,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-28',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-254',
@@ -2275,8 +2037,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-24',
         type: 'interview',
         title: 'Interview — Mateo Nkemelu',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-255',
@@ -2284,8 +2045,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-23',
         type: 'interview',
         title: 'Interview — Freya Qureshi',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-256',
@@ -2293,8 +2053,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-21',
         type: 'interview',
         title: 'Interview — Wren Fonseca',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-257',
@@ -2302,8 +2061,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-09',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Meeting recording obtained and logged for review.',
+        description: 'Meeting recording obtained and logged for review.',
     },
     {
         id: 'tl-258',
@@ -2311,8 +2069,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-07',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-259',
@@ -2320,8 +2077,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-11',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-260',
@@ -2329,8 +2085,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-13',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-261',
@@ -2338,8 +2093,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-14',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-141; Anika Desai assigned as investigator.',
+        description: 'Matter opened as INV-2026-141; Anika Desai assigned as investigator.',
     },
     {
         id: 'tl-262',
@@ -2347,8 +2101,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-17',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-263',
@@ -2356,8 +2109,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-20',
         type: 'interview',
         title: 'Interview — Elin Brandt',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-264',
@@ -2365,8 +2117,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-23',
         type: 'interview',
         title: 'Interview — Sylvie Devries',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-265',
@@ -2374,8 +2125,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-05',
         type: 'interview',
         title: 'Interview — Felix Vance',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-266',
@@ -2383,8 +2133,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-27',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Financial system extract obtained and logged for review.',
+        description: 'Financial system extract obtained and logged for review.',
     },
     {
         id: 'tl-267',
@@ -2392,8 +2141,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-08-29',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-268',
@@ -2401,8 +2149,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-31',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-269',
@@ -2410,8 +2157,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-01',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-142; Marcus Chen assigned as investigator.',
+        description: 'Matter opened as INV-2026-142; Marcus Chen assigned as investigator.',
     },
     {
         id: 'tl-270',
@@ -2419,8 +2165,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-02',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-271',
@@ -2428,8 +2173,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-21',
         type: 'interview',
         title: 'Interview — Freya Watanabe',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-272',
@@ -2437,8 +2181,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-23',
         type: 'interview',
         title: 'Interview — Zara Aasen',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-273',
@@ -2446,8 +2189,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-23',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Financial system extract obtained and logged for review.',
+        description: 'Financial system extract obtained and logged for review.',
     },
     {
         id: 'tl-274',
@@ -2455,8 +2197,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-30',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-275',
@@ -2464,8 +2205,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-04',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-276',
@@ -2473,8 +2213,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-24',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-277',
@@ -2482,8 +2221,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-25',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-143; Samuel Okafor assigned as investigator.',
+        description: 'Matter opened as INV-2025-143; Samuel Okafor assigned as investigator.',
     },
     {
         id: 'tl-278',
@@ -2491,8 +2229,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-10-29',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-279',
@@ -2500,8 +2237,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-07',
         type: 'interview',
         title: 'Interview — Hassan Nasser',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-280',
@@ -2509,8 +2245,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-20',
         type: 'interview',
         title: 'Interview — Tariq Chinweze',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-281',
@@ -2518,8 +2253,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-21',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Direct message export obtained and logged for review.',
+        description: 'Direct message export obtained and logged for review.',
     },
     {
         id: 'tl-282',
@@ -2527,8 +2261,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-31',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-283',
@@ -2536,8 +2269,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-02',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-284',
@@ -2545,8 +2277,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-01',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-285',
@@ -2554,8 +2285,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-02',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-144; Anika Desai assigned as investigator.',
+        description: 'Matter opened as INV-2025-144; Anika Desai assigned as investigator.',
     },
     {
         id: 'tl-286',
@@ -2563,8 +2293,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-05',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-287',
@@ -2572,8 +2301,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-04',
         type: 'interview',
         title: 'Interview — Coen Brandt',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-288',
@@ -2581,8 +2309,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-07',
         type: 'interview',
         title: 'Interview — Bianca Fahey',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-289',
@@ -2590,8 +2317,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-11-16',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Access log report obtained and logged for review.',
+        description: 'Access log report obtained and logged for review.',
     },
     {
         id: 'tl-290',
@@ -2599,8 +2325,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-15',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-291',
@@ -2608,8 +2333,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-18',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-292',
@@ -2617,8 +2341,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-09',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-293',
@@ -2626,8 +2349,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-10',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-145; Elena Vasquez assigned as investigator.',
+        description: 'Matter opened as INV-2026-145; Elena Vasquez assigned as investigator.',
     },
     {
         id: 'tl-294',
@@ -2635,8 +2357,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-11',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-295',
@@ -2644,8 +2365,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-17',
         type: 'interview',
         title: 'Interview — Petra Solvang',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-296',
@@ -2653,8 +2373,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-15',
         type: 'interview',
         title: 'Interview — Xavier Prescott',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-297',
@@ -2662,8 +2381,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-22',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Call recording obtained and logged for review.',
+        description: 'Call recording obtained and logged for review.',
     },
     {
         id: 'tl-298',
@@ -2671,8 +2389,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-19',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-299',
@@ -2680,8 +2397,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-23',
         type: 'milestone',
         title: 'Investigation closed',
-        description:
-            'Final report issued and matter closed.',
+        description: 'Final report issued and matter closed.',
     },
     {
         id: 'tl-300',
@@ -2689,8 +2405,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-12',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-301',
@@ -2698,8 +2413,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-13',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2025-146; Marcus Chen assigned as investigator.',
+        description: 'Matter opened as INV-2025-146; Marcus Chen assigned as investigator.',
     },
     {
         id: 'tl-302',
@@ -2707,8 +2421,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2025-12-16',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-303',
@@ -2716,8 +2429,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-01-21',
         type: 'interview',
         title: 'Interview — Freya Ito',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-304',
@@ -2725,8 +2437,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-02-26',
         type: 'interview',
         title: 'Interview — Junko Sandoval',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-305',
@@ -2734,8 +2445,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-10',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Policy acknowledgement record obtained and logged for review.',
+        description: 'Policy acknowledgement record obtained and logged for review.',
     },
     {
         id: 'tl-306',
@@ -2743,8 +2453,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-20',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-307',
@@ -2752,8 +2461,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-21',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-147; Anika Desai assigned as investigator.',
+        description: 'Matter opened as INV-2026-147; Anika Desai assigned as investigator.',
     },
     {
         id: 'tl-308',
@@ -2761,8 +2469,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-22',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-309',
@@ -2770,8 +2477,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-05',
         type: 'interview',
         title: 'Interview — Kwame Castellano',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-310',
@@ -2779,8 +2485,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-04',
         type: 'interview',
         title: 'Interview — Kwame Brandt',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-311',
@@ -2788,8 +2493,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-02',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Direct message export obtained and logged for review.',
+        description: 'Direct message export obtained and logged for review.',
     },
     {
         id: 'tl-312',
@@ -2797,8 +2501,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-01',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-313',
@@ -2806,8 +2509,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-19',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-314',
@@ -2815,8 +2517,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-20',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-148; Marcus Chen assigned as investigator.',
+        description: 'Matter opened as INV-2026-148; Marcus Chen assigned as investigator.',
     },
     {
         id: 'tl-315',
@@ -2824,8 +2525,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-21',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-316',
@@ -2833,8 +2533,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-03-26',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Call recording obtained and logged for review.',
+        description: 'Call recording obtained and logged for review.',
     },
     {
         id: 'tl-317',
@@ -2842,8 +2541,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-01',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-318',
@@ -2851,8 +2549,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-20',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-319',
@@ -2860,8 +2557,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-21',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-149; Marcus Chen assigned as investigator.',
+        description: 'Matter opened as INV-2026-149; Marcus Chen assigned as investigator.',
     },
     {
         id: 'tl-320',
@@ -2869,8 +2565,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-04-24',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-321',
@@ -2878,8 +2573,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-27',
         type: 'interview',
         title: 'Interview — Ravi Kessler',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-322',
@@ -2887,8 +2581,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-14',
         type: 'interview',
         title: 'Interview — Kian Verbeek',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-323',
@@ -2896,8 +2589,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-17',
         type: 'interview',
         title: 'Interview — Priyanka Nasser',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-324',
@@ -2905,8 +2597,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-17',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Incident log obtained and logged for review.',
+        description: 'Incident log obtained and logged for review.',
     },
     {
         id: 'tl-325',
@@ -2914,8 +2605,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-27',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
     {
         id: 'tl-326',
@@ -2923,8 +2613,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-12',
         type: 'intake',
         title: 'Complaint received',
-        description:
-            'Matter reported and logged for initial review.',
+        description: 'Matter reported and logged for initial review.',
     },
     {
         id: 'tl-327',
@@ -2932,8 +2621,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-13',
         type: 'milestone',
         title: 'Investigation opened',
-        description:
-            'Matter opened as INV-2026-150; Samuel Okafor assigned as investigator.',
+        description: 'Matter opened as INV-2026-150; Samuel Okafor assigned as investigator.',
     },
     {
         id: 'tl-328',
@@ -2941,8 +2629,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-05-15',
         type: 'meeting',
         title: 'Scoping meeting',
-        description:
-            'Scope and interim measures reviewed with relevant stakeholders.',
+        description: 'Scope and interim measures reviewed with relevant stakeholders.',
     },
     {
         id: 'tl-329',
@@ -2950,8 +2637,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-04',
         type: 'interview',
         title: 'Interview — Fatima Chinweze',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-330',
@@ -2959,8 +2645,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-15',
         type: 'interview',
         title: 'Interview — Freya Sandoval',
-        description:
-            'Interview completed and notes filed.',
+        description: 'Interview completed and notes filed.',
     },
     {
         id: 'tl-331',
@@ -2968,8 +2653,7 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-06-29',
         type: 'evidence',
         title: 'Evidence collected',
-        description:
-            'Team channel export obtained and logged for review.',
+        description: 'Team channel export obtained and logged for review.',
     },
     {
         id: 'tl-332',
@@ -2977,7 +2661,6 @@ export const timelineEvents: TimelineEvent[] = [
         date: '2026-07-27',
         type: 'review',
         title: 'Findings under review',
-        description:
-            'Preliminary findings drafted pending final sign-off.',
+        description: 'Preliminary findings drafted pending final sign-off.',
     },
 ];

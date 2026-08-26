@@ -129,13 +129,7 @@ export function getUsers(): Promise<AuthUser[]> {
     return api.get<AuthUser[]>('/users');
 }
 
-export function createUser(payload: {
-    name: string;
-    email: string;
-    password: string;
-    role: string;
-    clientId?: number | null;
-}): Promise<AuthUser> {
+export function createUser(payload: { name: string; email: string; password: string; role: string; clientId?: number | null }): Promise<AuthUser> {
     return api.post<AuthUser>('/users', payload);
 }
 
