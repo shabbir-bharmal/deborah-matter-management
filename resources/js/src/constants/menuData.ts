@@ -32,6 +32,7 @@ export const NAV_ITEMS: NavItemData[] = [
     { label: 'Clients', href: '/clients', permission: 'clients.view' },
     { label: 'Calendar', href: '/calendar', permission: 'calendar.view' },
     { label: 'Display Calendar', href: '/display-calendar', permission: 'calendar.view' },
+    { label: 'Administration', href: '/admin', permission: 'users.view' },
     { label: 'Settings', href: '/settings', permission: 'settings.view' },
 ];
 
@@ -362,5 +363,50 @@ export const LOGIN_TEXT = {
             { email: 'deborah.whitfield@investigations.test', label: 'Investigator' },
         ],
         password: 'Password for all seeded accounts: password',
+    },
+} as const;
+
+export const ADMIN_TEXT = {
+    title: 'Administration',
+    subtitle: 'User accounts, roles and the permissions each role grants.',
+    tabs: {
+        users: 'Users',
+        roles: 'Roles & permissions',
+    },
+    users: {
+        searchPlaceholder: 'Search name, email, role…',
+        add: 'Add user',
+        empty: 'No users match your search.',
+        columns: {
+            name: 'Name',
+            email: 'Email',
+            role: 'Role',
+            client: 'Client',
+            actions: '',
+        },
+        form: {
+            createTitle: 'Add user',
+            editTitle: 'Edit user',
+            name: 'Full name',
+            email: 'Email address',
+            password: 'Password',
+            passwordHintEdit: 'Leave blank to keep the current password.',
+            role: 'Role',
+            client: 'Client (portal users only)',
+            noClient: 'No client — staff account',
+            save: 'Save user',
+            cancel: 'Cancel',
+        },
+        deleteConfirm: 'Delete this user? They will lose access immediately.',
+        created: 'User created',
+        updated: 'User updated',
+        deleted: 'User deleted',
+    },
+    roles: {
+        description: 'Tick an ability to grant it to a role. Changes apply the next time the user loads the app.',
+        userCount: 'users',
+        save: 'Save permissions',
+        saved: 'Permissions updated',
+        allInModule: 'Toggle all',
     },
 } as const;

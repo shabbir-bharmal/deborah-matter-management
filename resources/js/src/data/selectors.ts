@@ -18,6 +18,8 @@ import type {
     InvestigationDocument,
     InvestigationReport,
     MatterNote,
+    RoleMatrix,
+    RoleSummary,
     TimelineEvent,
     Witness,
 } from '~/types';
@@ -119,4 +121,39 @@ export function logout(): Promise<unknown> {
 
 export function getAuthUser(): Promise<AuthUser> {
     return api.get<AuthUser>('/user');
+}
+
+/* Administration — user accounts and the role/permission matrix. */
+
+export function getUsers(): Promise<AuthUser[]> {
+    return api.get<AuthUser[]>('/users');
+}
+
+export function createUser(payload: {
+    name: string;
+    email: string;
+    password: string;
+    role: string;
+    clientId?: number | null;
+}): Promise<AuthUser> {
+    return api.post<AuthUser>('/users', payload);
+}
+
+export function updateUser(
+    id: number,
+    payload: Partial<{ name: string; email: string; password: string; role: string; clientId: number | null }>,
+): Promise<AuthUser> {
+    return api.patch<AuthUser>(`/users/${id}`, payload);
+}
+
+export function deleteUser(id: number): Promise<void> {
+    return api.delete(`/users/${id}`);
+}
+
+export function getRoles(): Promise<RoleMatrix> {
+    return api.get<RoleMatrix>('/roles');
+}
+
+export function updateRolePermissions(roleId: number, permissions: string[]): Promise<RoleSummary> {
+    return api.put<RoleSummary>(`/roles/${roleId}`, { permissions });
 }

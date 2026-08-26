@@ -170,7 +170,9 @@ export interface DashboardSnapshot {
 }
 
 export interface ClientSummary {
+    /** Slug — the SPA routes clients by slug. */
     id: string;
+    clientId?: number;
     name: string;
     matterCount: number;
     activeCount: number;
@@ -248,4 +250,17 @@ export interface InvestigationReport {
     includedSections: Record<string, boolean>;
     autoFill: Record<string, string[]>;
     customSections: ReportCustomSection[];
+}
+
+export interface RoleSummary {
+    id: number;
+    name: string;
+    permissions: string[];
+    userCount: number;
+}
+
+export interface RoleMatrix {
+    roles: RoleSummary[];
+    /** Every ability defined in the system, used as the matrix columns. */
+    permissions: string[];
 }
