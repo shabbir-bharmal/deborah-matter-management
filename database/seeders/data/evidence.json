@@ -1,0 +1,2118 @@
+[
+  {
+    "id": "evd-001",
+    "investigationId": "inv-001",
+    "title": "Stand-up meeting recording — 12 May 2026",
+    "type": "recording",
+    "source": "Collab platform auto-recording",
+    "date": "2026-05-12",
+    "status": "reviewed",
+    "description": "Team stand-up recording containing the remark described by the complainant.",
+    "metadata": {
+      "Duration": "14m 22s",
+      "Location": "Platform archive",
+      "Retention": "Until case closure"
+    },
+    "relatedAllegationIds": [
+      "alg-001"
+    ],
+    "supportsAllegations": [
+      "alg-001"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-002",
+    "investigationId": "inv-001",
+    "title": "Email thread — contract renewal warning",
+    "type": "email",
+    "source": "Marcus Webb (personal records)",
+    "date": "2026-05-30",
+    "status": "in_review",
+    "description": "Thread in which the respondent references “consequences for people who make noise about delivery”.",
+    "metadata": {
+      "Messages": "6",
+      "Participants": "2",
+      "Attachments": "0"
+    },
+    "relatedAllegationIds": [
+      "alg-002"
+    ],
+    "supportsAllegations": [
+      "alg-002"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-003",
+    "investigationId": "inv-001",
+    "title": "Complainant incident log",
+    "type": "document",
+    "source": "Sarah Okafor",
+    "date": "2026-06-10",
+    "status": "reviewed",
+    "description": "Dated log of alleged incidents with attendees, prepared before the complaint was filed.",
+    "metadata": {
+      "Pages": "3",
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-001"
+    ],
+    "supportsAllegations": [
+      "alg-001"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-004",
+    "investigationId": "inv-001",
+    "title": "Chat export — team channel",
+    "type": "chat_log",
+    "source": "Collab platform export",
+    "date": "2026-06-02",
+    "status": "received",
+    "description": "Channel history around the dates in question; includes messages cited by both parties.",
+    "metadata": {
+      "Messages": "1,204",
+      "Range": "Apr–Jun 2026"
+    },
+    "relatedAllegationIds": [
+      "alg-002",
+      "alg-004"
+    ],
+    "supportsAllegations": [
+      "alg-002"
+    ],
+    "contradictsAllegations": [
+      "alg-003"
+    ]
+  },
+  {
+    "id": "evd-005",
+    "investigationId": "inv-001",
+    "title": "Project channel access log",
+    "type": "system_report",
+    "source": "IT administrator",
+    "date": "2026-07-01",
+    "status": "in_review",
+    "description": "Access report showing the complainant’s removal from two project channels on 8 June.",
+    "metadata": {
+      "Systems": "2",
+      "Events": "17"
+    },
+    "relatedAllegationIds": [
+      "alg-003"
+    ],
+    "supportsAllegations": [
+      "alg-003"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-006",
+    "investigationId": "inv-001",
+    "title": "Code of conduct acknowledgement records",
+    "type": "document",
+    "source": "HRIS export",
+    "date": "2026-07-03",
+    "status": "reviewed",
+    "description": "Training and acknowledgement status for the two team members referenced in allegation alg-004.",
+    "metadata": {
+      "Records": "2",
+      "Compliance": "100%"
+    },
+    "relatedAllegationIds": [
+      "alg-004"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": [
+      "alg-004"
+    ]
+  },
+  {
+    "id": "evd-007",
+    "investigationId": "inv-002",
+    "title": "Promotion rubric — two versions",
+    "type": "document",
+    "source": "Tomás Alvarez",
+    "date": "2026-07-22",
+    "status": "in_review",
+    "description": "Rubric dated before and after the reported criteria change, with tracked differences.",
+    "metadata": {
+      "Pages": "8",
+      "Diff": "3 criteria changed"
+    },
+    "relatedAllegationIds": [
+      "alg-005"
+    ],
+    "supportsAllegations": [
+      "alg-005"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-008",
+    "investigationId": "inv-003",
+    "title": "Expense ledger extract Q1–Q3",
+    "type": "system_report",
+    "source": "Finance systems",
+    "date": "2026-05-02",
+    "status": "reviewed",
+    "description": "Expense claims cross-referenced against CRM meeting records.",
+    "metadata": {
+      "Claims": "41",
+      "Flagged": "9"
+    },
+    "relatedAllegationIds": [
+      "alg-006"
+    ],
+    "supportsAllegations": [
+      "alg-006"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-009",
+    "investigationId": "inv-005",
+    "title": "Rostering change records",
+    "type": "system_report",
+    "source": "Workforce management system",
+    "date": "2026-08-04",
+    "status": "received",
+    "description": "Schedule changes for the complainant’s roster in the 30 days following the safety report.",
+    "metadata": {
+      "Changes": "4",
+      "Approver": "Shift manager"
+    },
+    "relatedAllegationIds": [
+      "alg-008"
+    ],
+    "supportsAllegations": [
+      "alg-008"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-010",
+    "investigationId": "inv-018",
+    "title": "Correspondence between parties",
+    "type": "email",
+    "source": "Finance systems",
+    "date": "2025-12-22",
+    "status": "reviewed",
+    "description": "Correspondence between parties collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-009"
+    ],
+    "supportsAllegations": [
+      "alg-009"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-011",
+    "investigationId": "inv-018",
+    "title": "Correspondence between parties",
+    "type": "email",
+    "source": "HR case file",
+    "date": "2026-01-11",
+    "status": "reviewed",
+    "description": "Correspondence between parties collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-009"
+    ],
+    "supportsAllegations": [
+      "alg-009"
+    ],
+    "contradictsAllegations": [
+      "alg-009"
+    ]
+  },
+  {
+    "id": "evd-012",
+    "investigationId": "inv-018",
+    "title": "Access log report",
+    "type": "system_report",
+    "source": "Callum Bexley",
+    "date": "2025-12-01",
+    "status": "reviewed",
+    "description": "Access log report collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-009"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-013",
+    "investigationId": "inv-101",
+    "title": "Correspondence between parties",
+    "type": "email",
+    "source": "Felix Ito",
+    "date": "2026-05-26",
+    "status": "received",
+    "description": "Correspondence between parties collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-010"
+    ],
+    "supportsAllegations": [
+      "alg-010"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-014",
+    "investigationId": "inv-102",
+    "title": "Incident log",
+    "type": "document",
+    "source": "IT systems export",
+    "date": "2025-12-09",
+    "status": "received",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-011"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-015",
+    "investigationId": "inv-103",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "Omar Achebe",
+    "date": "2026-08-16",
+    "status": "received",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-014"
+    ],
+    "supportsAllegations": [
+      "alg-014"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-016",
+    "investigationId": "inv-103",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "HR case file",
+    "date": "2026-07-24",
+    "status": "in_review",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-014"
+    ],
+    "supportsAllegations": [
+      "alg-014"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-017",
+    "investigationId": "inv-103",
+    "title": "Signed statement",
+    "type": "document",
+    "source": "Finance systems",
+    "date": "2026-08-18",
+    "status": "in_review",
+    "description": "Signed statement collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-014"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-018",
+    "investigationId": "inv-104",
+    "title": "Incident log",
+    "type": "document",
+    "source": "Xavier Achebe",
+    "date": "2026-08-15",
+    "status": "received",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-015"
+    ],
+    "supportsAllegations": [
+      "alg-015"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-019",
+    "investigationId": "inv-104",
+    "title": "Financial system extract",
+    "type": "system_report",
+    "source": "Finance systems",
+    "date": "2026-08-31",
+    "status": "received",
+    "description": "Financial system extract collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-015"
+    ],
+    "supportsAllegations": [
+      "alg-015"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-020",
+    "investigationId": "inv-104",
+    "title": "Financial system extract",
+    "type": "system_report",
+    "source": "HR case file",
+    "date": "2026-10-01",
+    "status": "received",
+    "description": "Financial system extract collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-015"
+    ],
+    "supportsAllegations": [
+      "alg-015"
+    ],
+    "contradictsAllegations": [
+      "alg-015"
+    ]
+  },
+  {
+    "id": "evd-021",
+    "investigationId": "inv-105",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "Finance systems",
+    "date": "2025-12-18",
+    "status": "in_review",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-016"
+    ],
+    "supportsAllegations": [
+      "alg-016"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-022",
+    "investigationId": "inv-105",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "Finance systems",
+    "date": "2025-11-22",
+    "status": "received",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-016"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-023",
+    "investigationId": "inv-106",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "Finance systems",
+    "date": "2026-01-09",
+    "status": "received",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-018"
+    ],
+    "supportsAllegations": [
+      "alg-018"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-024",
+    "investigationId": "inv-107",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "Finance systems",
+    "date": "2026-08-27",
+    "status": "reviewed",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-019"
+    ],
+    "supportsAllegations": [
+      "alg-019"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-025",
+    "investigationId": "inv-107",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "HR case file",
+    "date": "2026-08-27",
+    "status": "reviewed",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-020"
+    ],
+    "supportsAllegations": [
+      "alg-020"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-026",
+    "investigationId": "inv-108",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "HR case file",
+    "date": "2026-05-05",
+    "status": "in_review",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-021"
+    ],
+    "supportsAllegations": [
+      "alg-021"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-027",
+    "investigationId": "inv-108",
+    "title": "Policy acknowledgement record",
+    "type": "document",
+    "source": "Finance systems",
+    "date": "2026-04-16",
+    "status": "received",
+    "description": "Policy acknowledgement record collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-021"
+    ],
+    "supportsAllegations": [
+      "alg-021"
+    ],
+    "contradictsAllegations": [
+      "alg-021"
+    ]
+  },
+  {
+    "id": "evd-028",
+    "investigationId": "inv-109",
+    "title": "Access log report",
+    "type": "system_report",
+    "source": "IT systems export",
+    "date": "2026-06-14",
+    "status": "received",
+    "description": "Access log report collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-022"
+    ],
+    "supportsAllegations": [
+      "alg-022"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-029",
+    "investigationId": "inv-109",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "IT systems export",
+    "date": "2026-06-25",
+    "status": "in_review",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-022"
+    ],
+    "supportsAllegations": [
+      "alg-022"
+    ],
+    "contradictsAllegations": [
+      "alg-022"
+    ]
+  },
+  {
+    "id": "evd-030",
+    "investigationId": "inv-110",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "IT systems export",
+    "date": "2026-03-13",
+    "status": "in_review",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-023"
+    ],
+    "supportsAllegations": [
+      "alg-023"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-031",
+    "investigationId": "inv-110",
+    "title": "Access log report",
+    "type": "system_report",
+    "source": "Finance systems",
+    "date": "2026-02-13",
+    "status": "received",
+    "description": "Access log report collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-023"
+    ],
+    "supportsAllegations": [
+      "alg-023"
+    ],
+    "contradictsAllegations": [
+      "alg-023"
+    ]
+  },
+  {
+    "id": "evd-032",
+    "investigationId": "inv-111",
+    "title": "Incident log",
+    "type": "document",
+    "source": "IT systems export",
+    "date": "2025-10-29",
+    "status": "reviewed",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-025"
+    ],
+    "supportsAllegations": [
+      "alg-025"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-033",
+    "investigationId": "inv-111",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "IT systems export",
+    "date": "2025-10-27",
+    "status": "reviewed",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-024"
+    ],
+    "supportsAllegations": [
+      "alg-024"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-034",
+    "investigationId": "inv-112",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "Finance systems",
+    "date": "2026-05-27",
+    "status": "reviewed",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-027"
+    ],
+    "supportsAllegations": [
+      "alg-027"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-035",
+    "investigationId": "inv-113",
+    "title": "Policy acknowledgement record",
+    "type": "document",
+    "source": "Adaeze Vance",
+    "date": "2026-09-05",
+    "status": "received",
+    "description": "Policy acknowledgement record collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-028"
+    ],
+    "supportsAllegations": [
+      "alg-028"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-036",
+    "investigationId": "inv-113",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "HR case file",
+    "date": "2026-08-21",
+    "status": "received",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-029"
+    ],
+    "supportsAllegations": [
+      "alg-029"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-037",
+    "investigationId": "inv-114",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "IT systems export",
+    "date": "2026-07-21",
+    "status": "in_review",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-030"
+    ],
+    "supportsAllegations": [
+      "alg-030"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-038",
+    "investigationId": "inv-114",
+    "title": "Correspondence between parties",
+    "type": "email",
+    "source": "HR case file",
+    "date": "2026-07-12",
+    "status": "received",
+    "description": "Correspondence between parties collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-031"
+    ],
+    "supportsAllegations": [
+      "alg-031"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-039",
+    "investigationId": "inv-114",
+    "title": "Correspondence between parties",
+    "type": "email",
+    "source": "Mateo Bexley",
+    "date": "2026-06-04",
+    "status": "received",
+    "description": "Correspondence between parties collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-030"
+    ],
+    "supportsAllegations": [
+      "alg-030"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-040",
+    "investigationId": "inv-115",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "Finance systems",
+    "date": "2025-12-25",
+    "status": "received",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-032"
+    ],
+    "supportsAllegations": [
+      "alg-032"
+    ],
+    "contradictsAllegations": [
+      "alg-032"
+    ]
+  },
+  {
+    "id": "evd-041",
+    "investigationId": "inv-116",
+    "title": "Incident log",
+    "type": "document",
+    "source": "HR case file",
+    "date": "2026-02-16",
+    "status": "in_review",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-034"
+    ],
+    "supportsAllegations": [
+      "alg-034"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-042",
+    "investigationId": "inv-116",
+    "title": "HRIS record extract",
+    "type": "system_report",
+    "source": "IT systems export",
+    "date": "2026-01-23",
+    "status": "in_review",
+    "description": "HRIS record extract collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-034"
+    ],
+    "supportsAllegations": [
+      "alg-034"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-043",
+    "investigationId": "inv-117",
+    "title": "Financial system extract",
+    "type": "system_report",
+    "source": "Sylvie Halvorsen",
+    "date": "2026-04-24",
+    "status": "reviewed",
+    "description": "Financial system extract collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-035"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-044",
+    "investigationId": "inv-118",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "Malik Castellano",
+    "date": "2025-12-02",
+    "status": "received",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-036"
+    ],
+    "supportsAllegations": [
+      "alg-036"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-045",
+    "investigationId": "inv-118",
+    "title": "Signed statement",
+    "type": "document",
+    "source": "Finance systems",
+    "date": "2025-12-03",
+    "status": "received",
+    "description": "Signed statement collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-036"
+    ],
+    "supportsAllegations": [
+      "alg-036"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-046",
+    "investigationId": "inv-119",
+    "title": "Incident log",
+    "type": "document",
+    "source": "Finance systems",
+    "date": "2026-03-11",
+    "status": "received",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-037"
+    ],
+    "supportsAllegations": [
+      "alg-037"
+    ],
+    "contradictsAllegations": [
+      "alg-037"
+    ]
+  },
+  {
+    "id": "evd-047",
+    "investigationId": "inv-120",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "Ines Krantz",
+    "date": "2025-11-22",
+    "status": "received",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-039"
+    ],
+    "supportsAllegations": [
+      "alg-039"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-048",
+    "investigationId": "inv-120",
+    "title": "Policy acknowledgement record",
+    "type": "document",
+    "source": "IT systems export",
+    "date": "2025-11-20",
+    "status": "received",
+    "description": "Policy acknowledgement record collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-039"
+    ],
+    "supportsAllegations": [
+      "alg-039"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-049",
+    "investigationId": "inv-121",
+    "title": "Incident log",
+    "type": "document",
+    "source": "Gideon Castellano",
+    "date": "2026-06-20",
+    "status": "received",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-040"
+    ],
+    "supportsAllegations": [
+      "alg-040"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-050",
+    "investigationId": "inv-121",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "IT systems export",
+    "date": "2026-05-13",
+    "status": "received",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-040"
+    ],
+    "supportsAllegations": [
+      "alg-040"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-051",
+    "investigationId": "inv-122",
+    "title": "Access log report",
+    "type": "system_report",
+    "source": "Louis Marchetti",
+    "date": "2025-12-30",
+    "status": "in_review",
+    "description": "Access log report collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-042"
+    ],
+    "supportsAllegations": [
+      "alg-042"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-052",
+    "investigationId": "inv-122",
+    "title": "Incident log",
+    "type": "document",
+    "source": "IT systems export",
+    "date": "2026-01-02",
+    "status": "received",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-042"
+    ],
+    "supportsAllegations": [
+      "alg-042"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-053",
+    "investigationId": "inv-123",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "Finance systems",
+    "date": "2026-02-13",
+    "status": "in_review",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-043"
+    ],
+    "supportsAllegations": [
+      "alg-043"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-054",
+    "investigationId": "inv-123",
+    "title": "HRIS record extract",
+    "type": "system_report",
+    "source": "Finance systems",
+    "date": "2026-02-20",
+    "status": "in_review",
+    "description": "HRIS record extract collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-043"
+    ],
+    "supportsAllegations": [
+      "alg-043"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-055",
+    "investigationId": "inv-124",
+    "title": "Correspondence between parties",
+    "type": "email",
+    "source": "HR case file",
+    "date": "2026-03-15",
+    "status": "reviewed",
+    "description": "Correspondence between parties collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-044"
+    ],
+    "supportsAllegations": [
+      "alg-044"
+    ],
+    "contradictsAllegations": [
+      "alg-044"
+    ]
+  },
+  {
+    "id": "evd-056",
+    "investigationId": "inv-124",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "IT systems export",
+    "date": "2026-02-21",
+    "status": "reviewed",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-044"
+    ],
+    "supportsAllegations": [
+      "alg-044"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-057",
+    "investigationId": "inv-125",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "Kwame Voss",
+    "date": "2026-07-23",
+    "status": "received",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-047"
+    ],
+    "supportsAllegations": [
+      "alg-047"
+    ],
+    "contradictsAllegations": [
+      "alg-047"
+    ]
+  },
+  {
+    "id": "evd-058",
+    "investigationId": "inv-126",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "HR case file",
+    "date": "2026-02-18",
+    "status": "reviewed",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-048"
+    ],
+    "supportsAllegations": [
+      "alg-048"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-059",
+    "investigationId": "inv-126",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "Bianca Prescott",
+    "date": "2026-02-24",
+    "status": "reviewed",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-048"
+    ],
+    "supportsAllegations": [
+      "alg-048"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-060",
+    "investigationId": "inv-127",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "IT systems export",
+    "date": "2025-12-12",
+    "status": "received",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-049"
+    ],
+    "supportsAllegations": [
+      "alg-049"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-061",
+    "investigationId": "inv-127",
+    "title": "Access log report",
+    "type": "system_report",
+    "source": "Amara Achebe",
+    "date": "2026-01-13",
+    "status": "in_review",
+    "description": "Access log report collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-049"
+    ],
+    "supportsAllegations": [
+      "alg-049"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-062",
+    "investigationId": "inv-128",
+    "title": "Incident log",
+    "type": "document",
+    "source": "Felix Bexley",
+    "date": "2025-11-20",
+    "status": "reviewed",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-050"
+    ],
+    "supportsAllegations": [
+      "alg-050"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-063",
+    "investigationId": "inv-129",
+    "title": "Policy acknowledgement record",
+    "type": "document",
+    "source": "IT systems export",
+    "date": "2026-01-15",
+    "status": "reviewed",
+    "description": "Policy acknowledgement record collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-052"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-064",
+    "investigationId": "inv-129",
+    "title": "Incident log",
+    "type": "document",
+    "source": "IT systems export",
+    "date": "2025-12-07",
+    "status": "reviewed",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-051"
+    ],
+    "supportsAllegations": [
+      "alg-051"
+    ],
+    "contradictsAllegations": [
+      "alg-051"
+    ]
+  },
+  {
+    "id": "evd-065",
+    "investigationId": "inv-129",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "HR case file",
+    "date": "2025-12-12",
+    "status": "reviewed",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-051"
+    ],
+    "supportsAllegations": [
+      "alg-051"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-066",
+    "investigationId": "inv-130",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "HR case file",
+    "date": "2026-02-02",
+    "status": "received",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-053"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-067",
+    "investigationId": "inv-131",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "Kwame Verbeek",
+    "date": "2025-10-14",
+    "status": "in_review",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-055"
+    ],
+    "supportsAllegations": [
+      "alg-055"
+    ],
+    "contradictsAllegations": [
+      "alg-055"
+    ]
+  },
+  {
+    "id": "evd-068",
+    "investigationId": "inv-131",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "IT systems export",
+    "date": "2025-12-21",
+    "status": "received",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-055"
+    ],
+    "supportsAllegations": [
+      "alg-055"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-069",
+    "investigationId": "inv-131",
+    "title": "Access log report",
+    "type": "system_report",
+    "source": "HR case file",
+    "date": "2025-11-04",
+    "status": "received",
+    "description": "Access log report collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-055"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": [
+      "alg-055"
+    ]
+  },
+  {
+    "id": "evd-070",
+    "investigationId": "inv-132",
+    "title": "Policy acknowledgement record",
+    "type": "document",
+    "source": "Finance systems",
+    "date": "2026-04-06",
+    "status": "received",
+    "description": "Policy acknowledgement record collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-056"
+    ],
+    "supportsAllegations": [
+      "alg-056"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-071",
+    "investigationId": "inv-132",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "Finance systems",
+    "date": "2026-02-27",
+    "status": "received",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-056"
+    ],
+    "supportsAllegations": [
+      "alg-056"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-072",
+    "investigationId": "inv-132",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "HR case file",
+    "date": "2026-03-27",
+    "status": "received",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-056"
+    ],
+    "supportsAllegations": [
+      "alg-056"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-073",
+    "investigationId": "inv-133",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "Finance systems",
+    "date": "2026-04-01",
+    "status": "in_review",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-058"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-074",
+    "investigationId": "inv-133",
+    "title": "Correspondence between parties",
+    "type": "email",
+    "source": "HR case file",
+    "date": "2026-04-25",
+    "status": "in_review",
+    "description": "Correspondence between parties collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-057"
+    ],
+    "supportsAllegations": [
+      "alg-057"
+    ],
+    "contradictsAllegations": [
+      "alg-057"
+    ]
+  },
+  {
+    "id": "evd-075",
+    "investigationId": "inv-134",
+    "title": "Policy acknowledgement record",
+    "type": "document",
+    "source": "Diego Prescott",
+    "date": "2026-03-01",
+    "status": "received",
+    "description": "Policy acknowledgement record collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-060"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-076",
+    "investigationId": "inv-134",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "HR case file",
+    "date": "2026-02-25",
+    "status": "received",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-060"
+    ],
+    "supportsAllegations": [
+      "alg-060"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-077",
+    "investigationId": "inv-135",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "HR case file",
+    "date": "2026-03-31",
+    "status": "received",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-061"
+    ],
+    "supportsAllegations": [
+      "alg-061"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-078",
+    "investigationId": "inv-135",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "Finance systems",
+    "date": "2026-04-28",
+    "status": "received",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-061"
+    ],
+    "supportsAllegations": [
+      "alg-061"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-079",
+    "investigationId": "inv-136",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "HR case file",
+    "date": "2026-03-22",
+    "status": "reviewed",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-062"
+    ],
+    "supportsAllegations": [
+      "alg-062"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-080",
+    "investigationId": "inv-137",
+    "title": "Policy acknowledgement record",
+    "type": "document",
+    "source": "HR case file",
+    "date": "2026-04-13",
+    "status": "reviewed",
+    "description": "Policy acknowledgement record collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-063"
+    ],
+    "supportsAllegations": [
+      "alg-063"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-081",
+    "investigationId": "inv-137",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "IT systems export",
+    "date": "2026-03-24",
+    "status": "reviewed",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-064"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-082",
+    "investigationId": "inv-138",
+    "title": "Correspondence between parties",
+    "type": "email",
+    "source": "Finance systems",
+    "date": "2025-12-21",
+    "status": "received",
+    "description": "Correspondence between parties collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-065"
+    ],
+    "supportsAllegations": [
+      "alg-065"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-083",
+    "investigationId": "inv-139",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "HR case file",
+    "date": "2026-08-04",
+    "status": "in_review",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-066"
+    ],
+    "supportsAllegations": [
+      "alg-066"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-084",
+    "investigationId": "inv-139",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "IT systems export",
+    "date": "2026-09-04",
+    "status": "in_review",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-067"
+    ],
+    "supportsAllegations": [
+      "alg-067"
+    ],
+    "contradictsAllegations": [
+      "alg-067"
+    ]
+  },
+  {
+    "id": "evd-085",
+    "investigationId": "inv-140",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "Mateo Nkemelu",
+    "date": "2026-08-09",
+    "status": "reviewed",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-068"
+    ],
+    "supportsAllegations": [
+      "alg-068"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-086",
+    "investigationId": "inv-140",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "IT systems export",
+    "date": "2026-07-14",
+    "status": "reviewed",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-068"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": [
+      "alg-068"
+    ]
+  },
+  {
+    "id": "evd-087",
+    "investigationId": "inv-141",
+    "title": "Financial system extract",
+    "type": "system_report",
+    "source": "Elin Brandt",
+    "date": "2026-08-27",
+    "status": "in_review",
+    "description": "Financial system extract collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-069"
+    ],
+    "supportsAllegations": [
+      "alg-069"
+    ],
+    "contradictsAllegations": [
+      "alg-069"
+    ]
+  },
+  {
+    "id": "evd-088",
+    "investigationId": "inv-141",
+    "title": "Policy acknowledgement record",
+    "type": "document",
+    "source": "HR case file",
+    "date": "2026-07-28",
+    "status": "received",
+    "description": "Policy acknowledgement record collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-069"
+    ],
+    "supportsAllegations": [
+      "alg-069"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-089",
+    "investigationId": "inv-142",
+    "title": "Financial system extract",
+    "type": "system_report",
+    "source": "HR case file",
+    "date": "2026-06-23",
+    "status": "reviewed",
+    "description": "Financial system extract collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-070"
+    ],
+    "supportsAllegations": [
+      "alg-070"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-090",
+    "investigationId": "inv-143",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "Finance systems",
+    "date": "2025-12-21",
+    "status": "reviewed",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-071"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-091",
+    "investigationId": "inv-143",
+    "title": "Incident log",
+    "type": "document",
+    "source": "HR case file",
+    "date": "2025-10-26",
+    "status": "reviewed",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-071"
+    ],
+    "supportsAllegations": [
+      "alg-071"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-092",
+    "investigationId": "inv-144",
+    "title": "Access log report",
+    "type": "system_report",
+    "source": "IT systems export",
+    "date": "2025-11-16",
+    "status": "reviewed",
+    "description": "Access log report collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-073"
+    ],
+    "supportsAllegations": [
+      "alg-073"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-093",
+    "investigationId": "inv-144",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "HR case file",
+    "date": "2025-12-18",
+    "status": "reviewed",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-073"
+    ],
+    "supportsAllegations": [
+      "alg-073"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-094",
+    "investigationId": "inv-144",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "IT systems export",
+    "date": "2025-12-03",
+    "status": "reviewed",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-073"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": [
+      "alg-073"
+    ]
+  },
+  {
+    "id": "evd-095",
+    "investigationId": "inv-145",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "Petra Solvang",
+    "date": "2026-03-22",
+    "status": "reviewed",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-075"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-096",
+    "investigationId": "inv-145",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "IT systems export",
+    "date": "2026-04-23",
+    "status": "reviewed",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-074"
+    ],
+    "supportsAllegations": [
+      "alg-074"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-097",
+    "investigationId": "inv-146",
+    "title": "Policy acknowledgement record",
+    "type": "document",
+    "source": "Finance systems",
+    "date": "2026-03-10",
+    "status": "received",
+    "description": "Policy acknowledgement record collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-076"
+    ],
+    "supportsAllegations": [
+      "alg-076"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-098",
+    "investigationId": "inv-147",
+    "title": "Direct message export",
+    "type": "chat_log",
+    "source": "Kwame Castellano",
+    "date": "2026-06-02",
+    "status": "in_review",
+    "description": "Direct message export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-078"
+    ],
+    "supportsAllegations": [
+      "alg-078"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-099",
+    "investigationId": "inv-147",
+    "title": "Email thread re allegation",
+    "type": "email",
+    "source": "Finance systems",
+    "date": "2026-06-05",
+    "status": "in_review",
+    "description": "Email thread re allegation collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-078"
+    ],
+    "supportsAllegations": [
+      "alg-078"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-100",
+    "investigationId": "inv-148",
+    "title": "Call recording",
+    "type": "recording",
+    "source": "Wren Rousseau",
+    "date": "2026-03-26",
+    "status": "received",
+    "description": "Call recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-079"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-101",
+    "investigationId": "inv-148",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "Finance systems",
+    "date": "2026-04-05",
+    "status": "in_review",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-079"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-102",
+    "investigationId": "inv-149",
+    "title": "Incident log",
+    "type": "document",
+    "source": "Ravi Kessler",
+    "date": "2026-06-17",
+    "status": "in_review",
+    "description": "Incident log collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-080"
+    ],
+    "supportsAllegations": [
+      "alg-080"
+    ],
+    "contradictsAllegations": []
+  },
+  {
+    "id": "evd-103",
+    "investigationId": "inv-150",
+    "title": "Team channel export",
+    "type": "chat_log",
+    "source": "IT systems export",
+    "date": "2026-06-29",
+    "status": "in_review",
+    "description": "Team channel export collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Log file"
+    },
+    "relatedAllegationIds": [
+      "alg-081"
+    ],
+    "supportsAllegations": [],
+    "contradictsAllegations": [
+      "alg-081"
+    ]
+  },
+  {
+    "id": "evd-104",
+    "investigationId": "inv-150",
+    "title": "Financial system extract",
+    "type": "system_report",
+    "source": "Fatima Chinweze",
+    "date": "2026-07-04",
+    "status": "received",
+    "description": "Financial system extract collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "PDF"
+    },
+    "relatedAllegationIds": [
+      "alg-081"
+    ],
+    "supportsAllegations": [
+      "alg-081"
+    ],
+    "contradictsAllegations": [
+      "alg-081"
+    ]
+  },
+  {
+    "id": "evd-105",
+    "investigationId": "inv-150",
+    "title": "Meeting recording",
+    "type": "recording",
+    "source": "HR case file",
+    "date": "2026-06-16",
+    "status": "in_review",
+    "description": "Meeting recording collected in connection with the matter, relevant to the allegation(s) under review.",
+    "metadata": {
+      "Format": "Export"
+    },
+    "relatedAllegationIds": [
+      "alg-081"
+    ],
+    "supportsAllegations": [
+      "alg-081"
+    ],
+    "contradictsAllegations": []
+  }
+]

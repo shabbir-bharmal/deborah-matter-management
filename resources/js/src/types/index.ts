@@ -29,6 +29,8 @@ export interface Investigation {
     targetCompletionDate: string;
     completedAt?: string;
     description: string;
+    /** Slug used by the client portal route. */
+    clientSlug?: string;
 }
 
 export type AllegationStatus = 'pending' | 'under_review' | 'substantiated' | 'not_substantiated' | 'unfounded';
@@ -56,7 +58,9 @@ export interface Allegation {
     description: string;
     category: AllegationCategory;
     status: AllegationStatus;
-    finding?: FindingOutcome;
+    finding?: FindingOutcome | null;
+    /** Investigator's rationale recorded alongside the finding. */
+    findingNotes?: string | null;
     relatedWitnessIds: string[];
     relatedEvidenceIds: string[];
 }
@@ -215,4 +219,33 @@ export interface MatterNote {
     author: string;
     body: string;
     createdAt: string;
+}
+
+export interface AuthUser {
+    id: number;
+    name: string;
+    email: string;
+    clientId: number | null;
+    clientSlug: string | null;
+    roles: string[];
+    /** Flat `module.action` list the UI gates navigation and actions on. */
+    permissions: string[];
+}
+
+export type ReportStatus = 'draft' | 'final';
+
+export interface ReportCustomSection {
+    id: string;
+    heading: string;
+    bullets: string[];
+}
+
+export interface InvestigationReport {
+    investigationId: string;
+    status: ReportStatus;
+    title: string;
+    executiveSummary: string;
+    includedSections: Record<string, boolean>;
+    autoFill: Record<string, string[]>;
+    customSections: ReportCustomSection[];
 }

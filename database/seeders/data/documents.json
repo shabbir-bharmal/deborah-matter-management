@@ -1,0 +1,578 @@
+[
+  {
+    "id": "doc-001",
+    "investigationId": "inv-001",
+    "name": "Investigation plan v2",
+    "type": "plan",
+    "status": "final",
+    "createdAt": "2026-06-06"
+  },
+  {
+    "id": "doc-002",
+    "investigationId": "inv-001",
+    "name": "Interview transcript — Sarah Okafor",
+    "type": "summary",
+    "status": "shared",
+    "createdAt": "2026-06-20"
+  },
+  {
+    "id": "doc-003",
+    "investigationId": "inv-001",
+    "name": "Interim measures letter — respondent",
+    "type": "correspondence",
+    "status": "shared",
+    "createdAt": "2026-07-15"
+  },
+  {
+    "id": "doc-004",
+    "investigationId": "inv-001",
+    "name": "Draft findings report",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2026-08-12"
+  },
+  {
+    "id": "doc-005",
+    "investigationId": "inv-002",
+    "name": "Investigation plan v1",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-07-16"
+  },
+  {
+    "id": "doc-006",
+    "investigationId": "inv-003",
+    "name": "Final report INV-2026-003",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2026-07-28"
+  },
+  {
+    "id": "doc-007",
+    "investigationId": "inv-018",
+    "name": "Findings report INV-2025-018",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2025-11-25"
+  },
+  {
+    "id": "doc-008",
+    "investigationId": "inv-101",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-05-05"
+  },
+  {
+    "id": "doc-009",
+    "investigationId": "inv-102",
+    "name": "Interview summary — Bram Voss",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2025-12-18"
+  },
+  {
+    "id": "doc-010",
+    "investigationId": "inv-103",
+    "name": "Interview summary — Omar Achebe",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-07-30"
+  },
+  {
+    "id": "doc-011",
+    "investigationId": "inv-103",
+    "name": "Interview summary — Omar Achebe",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-07-28"
+  },
+  {
+    "id": "doc-012",
+    "investigationId": "inv-104",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-09-19"
+  },
+  {
+    "id": "doc-013",
+    "investigationId": "inv-105",
+    "name": "Interview summary — Sylvie Chukwu",
+    "type": "summary",
+    "status": "shared",
+    "createdAt": "2026-01-04"
+  },
+  {
+    "id": "doc-014",
+    "investigationId": "inv-105",
+    "name": "Findings report INV-2025-105",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2025-11-30"
+  },
+  {
+    "id": "doc-015",
+    "investigationId": "inv-106",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-03-07"
+  },
+  {
+    "id": "doc-016",
+    "investigationId": "inv-107",
+    "name": "Findings report INV-2026-107",
+    "type": "report",
+    "status": "final",
+    "createdAt": "2026-08-23"
+  },
+  {
+    "id": "doc-017",
+    "investigationId": "inv-108",
+    "name": "Findings report INV-2026-108",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2026-04-22"
+  },
+  {
+    "id": "doc-018",
+    "investigationId": "inv-108",
+    "name": "Findings report INV-2026-108",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2026-05-03"
+  },
+  {
+    "id": "doc-019",
+    "investigationId": "inv-109",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "shared",
+    "createdAt": "2026-07-11"
+  },
+  {
+    "id": "doc-020",
+    "investigationId": "inv-109",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "shared",
+    "createdAt": "2026-07-23"
+  },
+  {
+    "id": "doc-021",
+    "investigationId": "inv-110",
+    "name": "Interview summary — Petra Torvik",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-03-20"
+  },
+  {
+    "id": "doc-022",
+    "investigationId": "inv-111",
+    "name": "Findings report INV-2025-111",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2025-11-08"
+  },
+  {
+    "id": "doc-023",
+    "investigationId": "inv-112",
+    "name": "Findings report INV-2026-112",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2026-04-26"
+  },
+  {
+    "id": "doc-024",
+    "investigationId": "inv-113",
+    "name": "Interview summary — Adaeze Vance",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-07-23"
+  },
+  {
+    "id": "doc-025",
+    "investigationId": "inv-114",
+    "name": "Findings report INV-2026-114",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2026-07-01"
+  },
+  {
+    "id": "doc-026",
+    "investigationId": "inv-115",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-01-31"
+  },
+  {
+    "id": "doc-027",
+    "investigationId": "inv-116",
+    "name": "Findings report INV-2025-116",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2026-01-16"
+  },
+  {
+    "id": "doc-028",
+    "investigationId": "inv-116",
+    "name": "Findings report INV-2025-116",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2026-02-04"
+  },
+  {
+    "id": "doc-029",
+    "investigationId": "inv-117",
+    "name": "Findings report INV-2026-117",
+    "type": "report",
+    "status": "final",
+    "createdAt": "2026-04-11"
+  },
+  {
+    "id": "doc-030",
+    "investigationId": "inv-118",
+    "name": "Findings report INV-2025-118",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2025-12-24"
+  },
+  {
+    "id": "doc-031",
+    "investigationId": "inv-119",
+    "name": "Findings report INV-2026-119",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2026-01-29"
+  },
+  {
+    "id": "doc-032",
+    "investigationId": "inv-120",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2025-10-22"
+  },
+  {
+    "id": "doc-033",
+    "investigationId": "inv-121",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-08-01"
+  },
+  {
+    "id": "doc-034",
+    "investigationId": "inv-121",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-06-04"
+  },
+  {
+    "id": "doc-035",
+    "investigationId": "inv-122",
+    "name": "Interview summary — Louis Marchetti",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-01-18"
+  },
+  {
+    "id": "doc-036",
+    "investigationId": "inv-122",
+    "name": "Findings report INV-2025-122",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2025-12-22"
+  },
+  {
+    "id": "doc-037",
+    "investigationId": "inv-123",
+    "name": "Interview summary — Nadia Farrow",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-01-31"
+  },
+  {
+    "id": "doc-038",
+    "investigationId": "inv-124",
+    "name": "Findings report INV-2026-124",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2026-03-21"
+  },
+  {
+    "id": "doc-039",
+    "investigationId": "inv-125",
+    "name": "Findings report INV-2026-125",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2026-08-01"
+  },
+  {
+    "id": "doc-040",
+    "investigationId": "inv-126",
+    "name": "Findings report INV-2026-126",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2026-02-22"
+  },
+  {
+    "id": "doc-041",
+    "investigationId": "inv-127",
+    "name": "Interview summary — Amara Achebe",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-01-02"
+  },
+  {
+    "id": "doc-042",
+    "investigationId": "inv-127",
+    "name": "Findings report INV-2025-127",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2025-12-02"
+  },
+  {
+    "id": "doc-043",
+    "investigationId": "inv-128",
+    "name": "Findings report INV-2025-128",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2025-12-21"
+  },
+  {
+    "id": "doc-044",
+    "investigationId": "inv-129",
+    "name": "Findings report INV-2025-129",
+    "type": "report",
+    "status": "final",
+    "createdAt": "2025-12-07"
+  },
+  {
+    "id": "doc-045",
+    "investigationId": "inv-129",
+    "name": "Findings report INV-2025-129",
+    "type": "report",
+    "status": "final",
+    "createdAt": "2026-01-02"
+  },
+  {
+    "id": "doc-046",
+    "investigationId": "inv-130",
+    "name": "Interview summary — Kian Vance",
+    "type": "summary",
+    "status": "shared",
+    "createdAt": "2026-02-28"
+  },
+  {
+    "id": "doc-047",
+    "investigationId": "inv-130",
+    "name": "Interview summary — Kian Vance",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-01-30"
+  },
+  {
+    "id": "doc-048",
+    "investigationId": "inv-131",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "shared",
+    "createdAt": "2025-12-24"
+  },
+  {
+    "id": "doc-049",
+    "investigationId": "inv-132",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "id": "doc-050",
+    "investigationId": "inv-133",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "shared",
+    "createdAt": "2026-03-21"
+  },
+  {
+    "id": "doc-051",
+    "investigationId": "inv-134",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-03-17"
+  },
+  {
+    "id": "doc-052",
+    "investigationId": "inv-134",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-04-10"
+  },
+  {
+    "id": "doc-053",
+    "investigationId": "inv-135",
+    "name": "Interview summary — Felix Okorie",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-04-14"
+  },
+  {
+    "id": "doc-054",
+    "investigationId": "inv-136",
+    "name": "Findings report INV-2026-136",
+    "type": "report",
+    "status": "final",
+    "createdAt": "2026-03-16"
+  },
+  {
+    "id": "doc-055",
+    "investigationId": "inv-137",
+    "name": "Findings report INV-2026-137",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2026-04-16"
+  },
+  {
+    "id": "doc-056",
+    "investigationId": "inv-138",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2025-12-09"
+  },
+  {
+    "id": "doc-057",
+    "investigationId": "inv-139",
+    "name": "Interview summary — Maren Solvang",
+    "type": "summary",
+    "status": "draft",
+    "createdAt": "2026-09-01"
+  },
+  {
+    "id": "doc-058",
+    "investigationId": "inv-139",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-09-17"
+  },
+  {
+    "id": "doc-059",
+    "investigationId": "inv-140",
+    "name": "Findings report INV-2026-140",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2026-07-23"
+  },
+  {
+    "id": "doc-060",
+    "investigationId": "inv-141",
+    "name": "Interview summary — Elin Brandt",
+    "type": "summary",
+    "status": "shared",
+    "createdAt": "2026-08-05"
+  },
+  {
+    "id": "doc-061",
+    "investigationId": "inv-142",
+    "name": "Findings report INV-2026-142",
+    "type": "report",
+    "status": "final",
+    "createdAt": "2026-06-24"
+  },
+  {
+    "id": "doc-062",
+    "investigationId": "inv-143",
+    "name": "Findings report INV-2025-143",
+    "type": "report",
+    "status": "shared",
+    "createdAt": "2025-12-19"
+  },
+  {
+    "id": "doc-063",
+    "investigationId": "inv-144",
+    "name": "Findings report INV-2025-144",
+    "type": "report",
+    "status": "final",
+    "createdAt": "2025-11-15"
+  },
+  {
+    "id": "doc-064",
+    "investigationId": "inv-145",
+    "name": "Findings report INV-2026-145",
+    "type": "report",
+    "status": "final",
+    "createdAt": "2026-03-31"
+  },
+  {
+    "id": "doc-065",
+    "investigationId": "inv-146",
+    "name": "Investigation plan",
+    "type": "plan",
+    "status": "draft",
+    "createdAt": "2026-02-16"
+  },
+  {
+    "id": "doc-066",
+    "investigationId": "inv-147",
+    "name": "Findings report INV-2026-147",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2026-05-27"
+  },
+  {
+    "id": "doc-067",
+    "investigationId": "inv-147",
+    "name": "Interview summary — Kwame Castellano",
+    "type": "summary",
+    "status": "shared",
+    "createdAt": "2026-05-07"
+  },
+  {
+    "id": "doc-068",
+    "investigationId": "inv-148",
+    "name": "Interview summary — Wren Rousseau",
+    "type": "summary",
+    "status": "shared",
+    "createdAt": "2026-04-10"
+  },
+  {
+    "id": "doc-069",
+    "investigationId": "inv-148",
+    "name": "Findings report INV-2026-148",
+    "type": "report",
+    "status": "draft",
+    "createdAt": "2026-04-11"
+  },
+  {
+    "id": "doc-070",
+    "investigationId": "inv-149",
+    "name": "Interview summary — Ravi Kessler",
+    "type": "summary",
+    "status": "shared",
+    "createdAt": "2026-06-19"
+  },
+  {
+    "id": "doc-071",
+    "investigationId": "inv-149",
+    "name": "Interview summary — Ravi Kessler",
+    "type": "summary",
+    "status": "shared",
+    "createdAt": "2026-06-14"
+  },
+  {
+    "id": "doc-072",
+    "investigationId": "inv-150",
+    "name": "Interview summary — Fatima Chinweze",
+    "type": "summary",
+    "status": "shared",
+    "createdAt": "2026-07-15"
+  }
+]

@@ -1,5 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
+/** Session captured by e2e/auth.setup.ts and reused by every spec. */
+const AUTH_STATE = 'e2e/.auth/investigator.json';
+
 export default defineConfig({
     testDir: './e2e',
     fullyParallel: true,
@@ -10,7 +13,14 @@ export default defineConfig({
         baseURL: 'http://localhost:5174',
         trace: 'on-first-retry',
     },
-    projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
+    projects: [
+        { name: 'setup', testMatch: /auth\.setup\.ts/ },
+        {
+            name: 'chromium',
+            use: { ...devices['Desktop Chrome'], storageState: AUTH_STATE },
+            dependencies: ['setup'],
+        },
+    ],
     webServer: {
         command: 'npm run dev:spa',
         url: 'http://localhost:5174',

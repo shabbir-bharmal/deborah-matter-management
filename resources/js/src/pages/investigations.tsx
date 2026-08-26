@@ -1,11 +1,13 @@
-import { Search } from 'lucide-react';
+import { AlertTriangle, Briefcase, Flame, Search, Timer } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 
 import { Badge } from '~/components/ui/badge';
+import { Card, CardContent } from '~/components/ui/card';
 import { Input } from '~/components/ui/input';
 import Pagination, { PAGE_SIZES } from '~/components/ui/pagination';
 import { Skeleton } from '~/components/ui/skeleton';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '~/components/ui/table';
 import { PAGE_TEXT } from '~/constants/menuData';
 import { getInvestigations } from '~/data/selectors';
 import { investigationStatusBadgeClass, investigationStatusLabels, investigationTypeLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
@@ -16,19 +18,39 @@ type StatusFilter = 'all' | 'active' | 'completed';
 const ACTIVE_STATUSES: Investigation['status'][] = ['open', 'in_progress', 'review'];
 const COMPLETED_STATUSES: Investigation['status'][] = ['completed', 'closed'];
 
+const TEXT = PAGE_TEXT.investigations;
+
 const filters: { value: StatusFilter; label: string }[] = [
-    { value: 'all', label: PAGE_TEXT.investigations.filters.all },
-    { value: 'active', label: PAGE_TEXT.investigations.filters.active },
-    { value: 'completed', label: PAGE_TEXT.investigations.filters.completed },
+    { value: 'all', label: TEXT.filters.all },
+    { value: 'active', label: TEXT.filters.active },
+    { value: 'completed', label: TEXT.filters.completed },
 ];
 
 function formatDate(iso: string) {
     return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
+/** Compact metric tile above the matter table. */
+function Kpi({ icon: Icon, label, value, tone }: { icon: typeof Briefcase; label: string; value: number; tone: string }) {
+    return (
+        <Card>
+            <CardContent className="flex items-center gap-3 p-4">
+                <span className={`flex size-9 shrink-0 items-center justify-center rounded-md ${tone}`}>
+                    <Icon className="size-4.5" />
+                </span>
+                <span className="min-w-0">
+                    <span className="block text-xl leading-tight font-semibold">{value}</span>
+                    <span className="text-muted-foreground block truncate text-xs">{label}</span>
+                </span>
+            </CardContent>
+        </Card>
+    );
+}
+
 export default function Investigations() {
     const [matters, setMatters] = useState<Investigation[] | null>(null);
     const [searchParams, setSearchParams] = useSearchParams();
+    const navigate = useNavigate();
 
     const updateParams = (patch: Record<string, string | undefined>) => {
         const params = new URLSearchParams(searchParams);
@@ -83,6 +105,14 @@ export default function Investigations() {
         });
     }, [matters, query, filter]);
 
+    const today = new Date().toISOString().slice(0, 10);
+    const stats = {
+        total: visible.length,
+        active: visible.filter((matter) => ACTIVE_STATUSES.includes(matter.status)).length,
+        overdue: visible.filter((matter) => ACTIVE_STATUSES.includes(matter.status) && matter.targetCompletionDate < today).length,
+        critical: visible.filter((matter) => matter.priority === 'critical').length,
+    };
+
     const sizeParam = Number(searchParams.get('pageSize'));
     const pageSize: number = PAGE_SIZES.includes(sizeParam) ? sizeParam : 10;
     const totalPages = Math.max(1, Math.ceil(visible.length / pageSize));
@@ -101,84 +131,126 @@ export default function Investigations() {
     return (
         <div className="space-y-4">
             <div>
-                <h1 className="text-2xl font-semibold tracking-tight">{PAGE_TEXT.investigations.title}</h1>
-                <p className="text-muted-foreground text-sm">{PAGE_TEXT.investigations.subtitle}</p>
+                <h1 className="text-2xl font-semibold tracking-tight">{TEXT.title}</h1>
+                <p className="text-muted-foreground text-sm">{TEXT.subtitle}</p>
             </div>
 
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-10">
-                <div className="relative w-full sm:max-w-sm">
-                    <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
-                    <Input
-                        value={query}
-                        onChange={(event) => setQuery(event.target.value)}
-                        placeholder={PAGE_TEXT.investigations.searchPlaceholder}
-                        className="w-full pl-9"
-                    />
-                </div>
-                <div className="flex w-full gap-1 rounded-lg border p-1 sm:w-fit">
-                    {filters.map((item) => (
-                        <button
-                            key={item.value}
-                            type="button"
-                            onClick={() => setFilter(item.value)}
-                            className={
-                                filter === item.value
-                                    ? 'bg-primary text-primary-foreground flex-1 rounded-md px-3 py-1.5 text-sm font-medium sm:flex-none'
-                                    : 'text-muted-foreground hover:bg-accent hover:text-foreground flex-1 rounded-md px-3 py-1.5 text-sm font-medium sm:flex-none'
-                            }
-                        >
-                            {item.label}
-                        </button>
-                    ))}
-                </div>
+            <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+                <Kpi icon={Briefcase} label={TEXT.stats.total} value={stats.total} tone="bg-primary/10 text-primary" />
+                <Kpi icon={Timer} label={TEXT.stats.active} value={stats.active} tone="bg-blue-500/10 text-blue-600 dark:text-blue-400" />
+                <Kpi
+                    icon={AlertTriangle}
+                    label={TEXT.stats.overdue}
+                    value={stats.overdue}
+                    tone="bg-amber-500/10 text-amber-600 dark:text-amber-400"
+                />
+                <Kpi icon={Flame} label={TEXT.stats.critical} value={stats.critical} tone="bg-red-500/10 text-red-600 dark:text-red-400" />
             </div>
+
+            {/* Filter bar — search on the left, status segments on the right. */}
+            <Card>
+                <CardContent className="flex flex-col gap-3 p-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="relative w-full sm:max-w-sm">
+                        <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
+                        <Input
+                            value={query}
+                            onChange={(event) => setQuery(event.target.value)}
+                            placeholder={TEXT.searchPlaceholder}
+                            className="w-full pl-9"
+                        />
+                    </div>
+                    <div className="flex w-full gap-1 rounded-lg border p-1 sm:w-fit">
+                        {filters.map((item) => (
+                            <button
+                                key={item.value}
+                                type="button"
+                                onClick={() => setFilter(item.value)}
+                                className={
+                                    filter === item.value
+                                        ? 'bg-primary text-primary-foreground flex-1 rounded-md px-3 py-1.5 text-sm font-medium sm:flex-none'
+                                        : 'text-muted-foreground hover:bg-accent hover:text-foreground flex-1 rounded-md px-3 py-1.5 text-sm font-medium sm:flex-none'
+                                }
+                            >
+                                {item.label}
+                            </button>
+                        ))}
+                    </div>
+                </CardContent>
+            </Card>
 
             {!matters && (
                 <div className="space-y-2" aria-busy="true" aria-label="Loading matters">
                     {Array.from({ length: 4 }).map((_, index) => (
-                        <Skeleton key={index} className="h-20 rounded-xl" />
+                        <Skeleton key={index} className="h-12 rounded-lg" />
                     ))}
                 </div>
             )}
 
             {matters && visible.length === 0 && (
-                <div className="bg-card text-muted-foreground rounded-xl border p-8 text-center text-sm">{PAGE_TEXT.investigations.empty}</div>
+                <div className="bg-card text-muted-foreground rounded-xl border p-8 text-center text-sm">{TEXT.empty}</div>
             )}
 
-            <div className="space-y-2" data-testid="matter-list">
-                {pagedItems.map((matter) => (
-                    <Link
-                        key={matter.id}
-                        to={`/investigations/${matter.id}`}
-                        data-testid="matter-row"
-                        className="bg-card hover:bg-accent block rounded-xl border p-4 transition-colors"
-                    >
-                        <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-                            <span className="text-muted-foreground font-mono text-xs">{matter.referenceNumber}</span>
-                            <span className="font-medium">{matter.title}</span>
-                            <Badge variant="outline" className={investigationStatusBadgeClass[matter.status]}>
-                                {investigationStatusLabels[matter.status]}
-                            </Badge>
-                            <Badge variant="outline" className={priorityBadgeClass[matter.priority]}>
-                                {priorityLabels[matter.priority]}
-                            </Badge>
-                        </div>
-                        <div className="text-muted-foreground mt-2 flex flex-wrap gap-x-6 gap-y-1 text-xs">
-                            <span>{matter.client}</span>
-                            <span>{investigationTypeLabels[matter.type]}</span>
-                            <span>
-                                {PAGE_TEXT.investigations.rowLabels.investigator} {matter.investigator}
-                            </span>
-                            <span>
-                                {PAGE_TEXT.investigations.rowLabels.opened} {formatDate(matter.openedAt)}
-                            </span>
-                            <span>
-                                {PAGE_TEXT.investigations.rowLabels.target} {formatDate(matter.targetCompletionDate)}
-                            </span>
-                        </div>
-                    </Link>
-                ))}
-            </div>
+            {matters && visible.length > 0 && (
+                <Card className="overflow-hidden p-0">
+                    <Table data-testid="matter-list">
+                        <TableHeader>
+                            <TableRow>
+                                <TableHead>{TEXT.columns.reference}</TableHead>
+                                <TableHead>{TEXT.columns.matter}</TableHead>
+                                <TableHead className="hidden md:table-cell">{TEXT.columns.client}</TableHead>
+                                <TableHead className="hidden lg:table-cell">{TEXT.columns.type}</TableHead>
+                                <TableHead>{TEXT.columns.status}</TableHead>
+                                <TableHead>{TEXT.columns.priority}</TableHead>
+                                <TableHead className="hidden xl:table-cell">{TEXT.columns.investigator}</TableHead>
+                                <TableHead className="hidden lg:table-cell">{TEXT.columns.target}</TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {pagedItems.map((matter) => (
+                                <TableRow
+                                    key={matter.id}
+                                    data-testid="matter-row"
+                                    onClick={() => navigate(`/investigations/${matter.id}`)}
+                                    className="cursor-pointer"
+                                >
+                                    <TableCell className="text-muted-foreground font-mono text-xs whitespace-nowrap">
+                                        {matter.referenceNumber}
+                                    </TableCell>
+                                    <TableCell className="max-w-72 font-medium">
+                                        <Link
+                                            to={`/investigations/${matter.id}`}
+                                            onClick={(event) => event.stopPropagation()}
+                                            className="underline-offset-2 hover:underline"
+                                        >
+                                            {matter.title}
+                                        </Link>
+                                    </TableCell>
+                                    <TableCell className="text-muted-foreground hidden text-sm md:table-cell">{matter.client}</TableCell>
+                                    <TableCell className="text-muted-foreground hidden text-sm lg:table-cell">
+                                        {investigationTypeLabels[matter.type]}
+                                    </TableCell>
+                                    <TableCell>
+                                        <Badge variant="outline" className={investigationStatusBadgeClass[matter.status]}>
+                                            {investigationStatusLabels[matter.status]}
+                                        </Badge>
+                                    </TableCell>
+                                    <TableCell>
+                                        <Badge variant="outline" className={priorityBadgeClass[matter.priority]}>
+                                            {priorityLabels[matter.priority]}
+                                        </Badge>
+                                    </TableCell>
+                                    <TableCell className="text-muted-foreground hidden text-sm whitespace-nowrap xl:table-cell">
+                                        {matter.investigator}
+                                    </TableCell>
+                                    <TableCell className="text-muted-foreground hidden text-sm whitespace-nowrap lg:table-cell">
+                                        {formatDate(matter.targetCompletionDate)}
+                                    </TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </Card>
+            )}
 
             {matters && visible.length > 0 && (
                 <Pagination page={page} pageSize={pageSize} totalCount={visible.length} onPageChange={setPage} onPageSizeChange={setPageSize} />

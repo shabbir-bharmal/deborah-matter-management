@@ -32,7 +32,7 @@ export function buildReport(input: {
     interviews: InterviewWithWitness[];
     evidenceItems: Evidence[];
     events: TimelineEvent[];
-    savedFindings: Record<string, FindingOutcome>;
+    savedFindings: Record<string, FindingOutcome | undefined>;
     config?: ReportConfig;
     autoFill?: Record<string, string[]>;
     autoFillSections?: { id: string; heading: string; bullets: string[] }[];
@@ -40,7 +40,7 @@ export function buildReport(input: {
     const { matter, allegations, interviews, evidenceItems, events, savedFindings, config } = input;
     const includedSections = config?.includedSections ?? {};
 
-    const findingFor = (allegation: Allegation): FindingOutcome | undefined => savedFindings[allegation.id] ?? allegation.finding;
+    const findingFor = (allegation: Allegation): FindingOutcome | undefined => savedFindings[allegation.id] ?? allegation.finding ?? undefined;
 
     const counts = {
         substantiated: allegations.filter((allegation) => findingFor(allegation) === 'substantiated').length,

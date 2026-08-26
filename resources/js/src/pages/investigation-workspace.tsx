@@ -3,16 +3,17 @@ import { Link, NavLink, Outlet, useParams } from 'react-router-dom';
 
 import AiAssistant from '~/components/investigation/ai-assistant';
 import { Badge } from '~/components/ui/badge';
-import { WORKSPACE_TABS } from '~/constants/menuData';
+import { WORKSPACE_TAB_PERMISSIONS, WORKSPACE_TABS } from '~/constants/menuData';
 import { getInvestigation } from '~/data/selectors';
+import { useAuthStore } from '~/hooks/use-auth';
 import { investigationStatusBadgeClass, investigationStatusLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
 import type { Investigation } from '~/types';
-
-const tabs = WORKSPACE_TABS;
 
 export default function InvestigationWorkspace() {
     const { id } = useParams<{ id: string }>();
     const [matter, setMatter] = useState<Investigation | null | undefined>(undefined);
+    const permissions = useAuthStore((state) => state.user?.permissions ?? []);
+    const tabs = WORKSPACE_TABS.filter((tab) => permissions.includes(WORKSPACE_TAB_PERMISSIONS[tab.id] ?? ''));
 
     useEffect(() => {
         let cancelled = false;

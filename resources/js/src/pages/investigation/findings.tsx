@@ -6,8 +6,9 @@ import { toast } from 'sonner';
 import TabSkeleton from '~/components/investigation/tab-skeleton';
 import { Badge } from '~/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
-import { PAGE_TEXT } from '~/constants/menuData';
+import { COMMON, PAGE_TEXT } from '~/constants/menuData';
 import { getAllegationsByInvestigation, getEvidenceByInvestigation } from '~/data/selectors';
+import { useCan } from '~/hooks/use-auth';
 import { useFindingsStore, useInvestigationFindings } from '~/hooks/use-findings-store';
 import { useInvestigation } from '~/hooks/use-investigation';
 import { allegationCategoryLabels, allegationStatusBadgeClass, allegationStatusLabels, findingOutcomeLabels } from '~/lib/status';
@@ -42,7 +43,9 @@ export default function Findings() {
     const matter = useInvestigation();
     const setFinding = useFindingsStore((state) => state.setFinding);
     const setNotes = useFindingsStore((state) => state.setNotes);
+    const saveNotes = useFindingsStore((state) => state.saveNotes);
     const saved = useInvestigationFindings(matter.id);
+    const canRecord = useCan('findings.update');
     const notesAtFocus = useRef('');
     const [allegations, setAllegations] = useState<Allegation[] | null>(null);
     const [evidenceItems, setEvidenceItems] = useState<EvidenceItem[]>([]);
@@ -55,6 +58,7 @@ export default function Findings() {
             }
             setAllegations(allegationList);
             setEvidenceItems(evidenceList);
+            useFindingsStore.getState().hydrate(matter.id, allegationList);
         });
         return () => {
             cancelled = true;
@@ -73,7 +77,7 @@ export default function Findings() {
                 const related = evidenceItems.filter((item) => item.relatedAllegationIds.includes(allegation.id));
                 const supporting = related.filter((item) => item.supportsAllegations.includes(allegation.id));
                 const contradicting = related.filter((item) => item.contradictsAllegations.includes(allegation.id));
-                const currentFinding = saved.findings[allegation.id] ?? allegation.finding;
+                const currentFinding = saved.findings[allegation.id] ?? allegation.finding ?? undefined;
                 return (
                     <Card key={allegation.id}>
                         <CardHeader>
@@ -101,11 +105,15 @@ export default function Findings() {
                                         <button
                                             key={option}
                                             type="button"
+                                            disabled={!canRecord}
                                             onClick={() => {
-                                                setFinding(matter.id, allegation.id, option);
-                                                toast.success(`Finding recorded — ${findingOutcomeLabels[option]}`, {
-                                                    description: allegation.title,
-                                                });
+                                                setFinding(matter.id, allegation.id, option)
+                                                    .then(() =>
+                                                        toast.success(`Finding recorded — ${findingOutcomeLabels[option]}`, {
+                                                            description: allegation.title,
+                                                        }),
+                                                    )
+                                                    .catch(() => toast.error(COMMON.saveFailed));
                                             }}
                                             className={cn(
                                                 'inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors',
@@ -122,8 +130,9 @@ export default function Findings() {
                                         <button
                                             type="button"
                                             onClick={() => {
-                                                setFinding(matter.id, allegation.id, undefined);
-                                                toast.info('Finding override cleared', { description: allegation.title });
+                                                setFinding(matter.id, allegation.id, undefined)
+                                                    .then(() => toast.info('Finding cleared', { description: allegation.title }))
+                                                    .catch(() => toast.error(COMMON.saveFailed));
                                             }}
                                             className="text-muted-foreground hover:bg-accent hover:text-foreground inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors"
                                         >
@@ -147,10 +156,14 @@ export default function Findings() {
                                     onFocus={(event) => {
                                         notesAtFocus.current = event.target.value;
                                     }}
+                                    readOnly={!canRecord}
                                     onBlur={(event) => {
-                                        if (event.target.value !== notesAtFocus.current && event.target.value.trim() !== '') {
-                                            toast.success('Notes saved for this session', { description: allegation.title });
+                                        if (event.target.value === notesAtFocus.current) {
+                                            return;
                                         }
+                                        saveNotes(matter.id, allegation.id)
+                                            .then(() => toast.success(COMMON.saved, { description: allegation.title }))
+                                            .catch(() => toast.error(COMMON.saveFailed));
                                     }}
                                     placeholder={PAGE_TEXT.workspace.findings.notesPlaceholder}
                                     rows={3}
@@ -161,7 +174,6 @@ export default function Findings() {
                     </Card>
                 );
             })}
-            <p className="text-muted-foreground text-xs">{PAGE_TEXT.workspace.findings.sessionNote}</p>
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import { ChevronDown, LogOut, Settings, UserRound } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
 import { Avatar, AvatarFallback } from '~/components/ui/avatar';
@@ -12,13 +12,37 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '~/components/ui/dropdown-menu';
-import { COMMON, PROFILE } from '~/constants/menuData';
+import { COMMON } from '~/constants/menuData';
+import { useAuthStore } from '~/hooks/use-auth';
+
+const roleLabels: Record<string, string> = {
+    admin: 'Administrator',
+    investigator: 'Investigator',
+    client: 'Client portal',
+};
 
 export default function ProfileMenu() {
-    const initials = PROFILE.name
+    const user = useAuthStore((state) => state.user);
+    const signOut = useAuthStore((state) => state.signOut);
+    const navigate = useNavigate();
+
+    if (!user) {
+        return null;
+    }
+
+    const initials = user.name
         .split(' ')
         .map((part) => part[0])
+        .slice(0, 2)
         .join('');
+
+    const roleLabel = user.roles.map((role) => roleLabels[role] ?? role).join(', ');
+
+    const handleSignOut = async () => {
+        await signOut();
+        toast.success(COMMON.signedOutTitle, { description: COMMON.signedOutDescription });
+        navigate('/login', { replace: true });
+    };
 
     return (
         <DropdownMenu>
@@ -28,16 +52,16 @@ export default function ProfileMenu() {
                         <AvatarFallback className="bg-primary/10 text-primary text-xs font-semibold">{initials}</AvatarFallback>
                     </Avatar>
                     <span className="hidden text-left leading-tight sm:block">
-                        <span className="block text-sm font-medium">{PROFILE.name}</span>
-                        <span className="text-muted-foreground block text-xs">{PROFILE.role}</span>
+                        <span className="block text-sm font-medium">{user.name}</span>
+                        <span className="text-muted-foreground block text-xs">{roleLabel}</span>
                     </span>
                     <ChevronDown className="text-muted-foreground size-4" />
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-60">
                 <DropdownMenuLabel>
-                    <p className="text-sm font-medium">{PROFILE.name}</p>
-                    <p className="text-muted-foreground text-xs font-normal">{PROFILE.email}</p>
+                    <p className="text-sm font-medium">{user.name}</p>
+                    <p className="text-muted-foreground text-xs font-normal">{user.email}</p>
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
@@ -51,10 +75,7 @@ export default function ProfileMenu() {
                     </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem
-                    className="cursor-pointer"
-                    onSelect={() => toast.info(COMMON.signOutDisabledTitle, { description: COMMON.signOutDisabledDescription })}
-                >
+                <DropdownMenuItem className="cursor-pointer" onSelect={() => void handleSignOut()}>
                     <LogOut className="size-4" /> {COMMON.signOut}
                 </DropdownMenuItem>
             </DropdownMenuContent>

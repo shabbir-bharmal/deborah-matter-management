@@ -6,7 +6,7 @@
 
 export const BRAND = {
     name: 'Investigation Management',
-    sidebarNote: 'Prototype — mock data only',
+    sidebarNote: 'Workplace investigation workspace',
 } as const;
 
 export const FOOTER = {
@@ -22,16 +22,30 @@ export interface NavItemData {
     label: string;
     href: string;
     end?: boolean;
+    /** Ability required to see this entry; omitted means always visible. */
+    permission?: string;
 }
 
 export const NAV_ITEMS: NavItemData[] = [
-    { label: 'Dashboard', href: '/', end: true },
-    { label: 'Investigations', href: '/investigations' },
-    { label: 'Clients', href: '/clients' },
-    { label: 'Calendar', href: '/calendar' },
-    { label: 'Display Calendar', href: '/display-calendar' },
-    { label: 'Settings', href: '/settings' },
+    { label: 'Dashboard', href: '/', end: true, permission: 'dashboard.view' },
+    { label: 'Investigations', href: '/investigations', permission: 'investigations.view' },
+    { label: 'Clients', href: '/clients', permission: 'clients.view' },
+    { label: 'Calendar', href: '/calendar', permission: 'calendar.view' },
+    { label: 'Display Calendar', href: '/display-calendar', permission: 'calendar.view' },
+    { label: 'Settings', href: '/settings', permission: 'settings.view' },
 ];
+
+/** Ability required for each matter workspace tab, keyed by tab id. */
+export const WORKSPACE_TAB_PERMISSIONS: Record<string, string> = {
+    overview: 'investigations.view',
+    documents: 'documents.view',
+    evidence: 'evidence.view',
+    interviews: 'interviews.view',
+    findings: 'findings.view',
+    timeline: 'timeline.view',
+    reports: 'reports.view',
+    notes: 'notes.view',
+};
 
 export const ARIA_LABELS = {
     openMenu: 'Open navigation menu',
@@ -62,18 +76,16 @@ export const COMMON = {
     allCaughtUp: "You're all caught up.",
     printPdf: 'Print / PDF',
     signOut: 'Sign out',
-    signOutDisabledTitle: 'Sign-out is disabled in the prototype',
-    signOutDisabledDescription: 'No authentication in this phase.',
+    signedOutTitle: 'Signed out',
+    signedOutDescription: 'You have been signed out of the workspace.',
+    forbiddenTitle: 'Not available',
+    forbiddenDescription: 'Your role does not include access to this area.',
     profileAndPreferences: 'Profile & preferences',
     settingsLabel: 'Settings',
     loading: 'Loading…',
     none: 'None',
-} as const;
-
-export const PROFILE = {
-    name: 'Deborah Whitfield',
-    role: 'Lead Investigator',
-    email: 'deborah.whitfield@prototype.local',
+    saved: 'Saved',
+    saveFailed: 'Could not save. Please try again.',
 } as const;
 
 export const PAGE_TEXT = {
@@ -119,6 +131,23 @@ export const PAGE_TEXT = {
         empty: 'No matters match your search or filter.',
         rowLabels: {
             investigator: 'Investigator:',
+            opened: 'Opened',
+            target: 'Target',
+        },
+        stats: {
+            total: 'Matters shown',
+            active: 'Active',
+            overdue: 'Past target date',
+            critical: 'Critical priority',
+        },
+        columns: {
+            reference: 'Reference',
+            matter: 'Matter',
+            client: 'Client',
+            type: 'Type',
+            status: 'Status',
+            priority: 'Priority',
+            investigator: 'Investigator',
             opened: 'Opened',
             target: 'Target',
         },
@@ -305,5 +334,33 @@ export const PAGE_TEXT = {
             nextInterviewQuestions: 'Questions for the next interview',
             outstandingActions: 'Outstanding actions',
         },
+    },
+} as const;
+
+export const LOGIN_TEXT = {
+    title: 'Sign in',
+    subtitle: 'Use your investigator or client portal account.',
+    emailLabel: 'Email address',
+    passwordLabel: 'Password',
+    rememberLabel: 'Keep me signed in',
+    submit: 'Sign in',
+    aside: {
+        headline: 'Run every workplace investigation from one workspace.',
+        body: 'Allegations, witnesses, interviews, evidence and findings stay linked from intake through to the final report.',
+        confidentiality: 'Confidential — for authorised investigators only.',
+    },
+    errors: {
+        emailRequired: 'Enter your email address.',
+        emailInvalid: 'Enter a valid email address.',
+        passwordRequired: 'Enter your password.',
+        generic: 'Sign-in failed. Please try again.',
+    },
+    demo: {
+        heading: 'Demo accounts',
+        accounts: [
+            { email: 'admin@investigations.test', label: 'Administrator' },
+            { email: 'deborah.whitfield@investigations.test', label: 'Investigator' },
+        ],
+        password: 'Password for all seeded accounts: password',
     },
 } as const;

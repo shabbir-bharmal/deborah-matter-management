@@ -1,0 +1,1132 @@
+[
+  {
+    "id": "wit-001",
+    "investigationId": "inv-001",
+    "name": "Sarah Okafor",
+    "role": "Senior Engineer",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-06-18",
+    "notes": "Provided dated examples of comments made in stand-ups; identified two colleagues present on each occasion."
+  },
+  {
+    "id": "wit-002",
+    "investigationId": "inv-001",
+    "name": "David Reyes",
+    "role": "Engineering Team Lead",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-08-26",
+    "notes": "Respondent. Requested presence of union representative; confirmed via HR."
+  },
+  {
+    "id": "wit-003",
+    "investigationId": "inv-001",
+    "name": "Priya Nair",
+    "role": "Engineer II",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-06-24",
+    "notes": "Corroborated two of the three cited stand-up incidents; declined to characterise tone."
+  },
+  {
+    "id": "wit-004",
+    "investigationId": "inv-001",
+    "name": "Marcus Webb",
+    "role": "QA Contractor, Brightpath Consulting",
+    "relationship": "third_party",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2026-09-01",
+    "notes": "Initially unavailable; rescheduled through his agency contact."
+  },
+  {
+    "id": "wit-005",
+    "investigationId": "inv-001",
+    "name": "Helen Cho",
+    "role": "Delivery Manager",
+    "relationship": "manager",
+    "interviewStatus": "not_scheduled",
+    "notes": "Aware of team friction; has not witnessed incidents directly."
+  },
+  {
+    "id": "wit-006",
+    "investigationId": "inv-002",
+    "name": "Tomás Alvarez",
+    "role": "Analyst (non-promoted candidate)",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-07-30",
+    "notes": "Supplied scoring rubric versions from before and after the criteria change."
+  },
+  {
+    "id": "wit-007",
+    "investigationId": "inv-003",
+    "name": "Grace Muller",
+    "role": "Finance Business Partner",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-05-12",
+    "notes": "Flagged the expense anomalies during quarterly review."
+  },
+  {
+    "id": "wit-008",
+    "investigationId": "inv-005",
+    "name": "Jamal Peterson",
+    "role": "Warehouse Operative",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-08-27"
+  },
+  {
+    "id": "wit-009",
+    "investigationId": "inv-018",
+    "name": "Callum Bexley",
+    "role": "Department Manager",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-11-28"
+  },
+  {
+    "id": "wit-010",
+    "investigationId": "inv-018",
+    "name": "Elin Menon",
+    "role": "Operations Supervisor",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-11-17"
+  },
+  {
+    "id": "wit-011",
+    "investigationId": "inv-101",
+    "name": "Felix Ito",
+    "role": "Software Engineer",
+    "relationship": "complainant",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-012",
+    "investigationId": "inv-101",
+    "name": "Hassan Doran",
+    "role": "Account Executive",
+    "relationship": "respondent",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-013",
+    "investigationId": "inv-102",
+    "name": "Bram Voss",
+    "role": "Operations Supervisor",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-12-18"
+  },
+  {
+    "id": "wit-014",
+    "investigationId": "inv-102",
+    "name": "Hassan Brandt",
+    "role": "Operations Supervisor",
+    "relationship": "respondent",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2026-02-05"
+  },
+  {
+    "id": "wit-015",
+    "investigationId": "inv-103",
+    "name": "Omar Achebe",
+    "role": "Software Engineer",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-08-13"
+  },
+  {
+    "id": "wit-016",
+    "investigationId": "inv-103",
+    "name": "Nia Adeyemi",
+    "role": "Regional Director",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-08-01"
+  },
+  {
+    "id": "wit-017",
+    "investigationId": "inv-103",
+    "name": "Zara Prescott",
+    "role": "Account Executive",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-07-30"
+  },
+  {
+    "id": "wit-018",
+    "investigationId": "inv-104",
+    "name": "Xavier Achebe",
+    "role": "Procurement Specialist",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-09-27"
+  },
+  {
+    "id": "wit-019",
+    "investigationId": "inv-104",
+    "name": "Nils Castellano",
+    "role": "Project Coordinator",
+    "relationship": "respondent",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-020",
+    "investigationId": "inv-104",
+    "name": "Tess Salgado",
+    "role": "Business Development Manager",
+    "relationship": "coworker",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-08-30"
+  },
+  {
+    "id": "wit-021",
+    "investigationId": "inv-105",
+    "name": "Sylvie Chukwu",
+    "role": "IT Administrator",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2025-12-08"
+  },
+  {
+    "id": "wit-022",
+    "investigationId": "inv-105",
+    "name": "Zara Voss",
+    "role": "HR Business Partner",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-12-17"
+  },
+  {
+    "id": "wit-023",
+    "investigationId": "inv-105",
+    "name": "Nia Nkemelu",
+    "role": "Operations Supervisor",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-01-10"
+  },
+  {
+    "id": "wit-024",
+    "investigationId": "inv-106",
+    "name": "Ingrid Ekwueme",
+    "role": "Quality Assurance Lead",
+    "relationship": "complainant",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-025",
+    "investigationId": "inv-106",
+    "name": "Yara Salgado",
+    "role": "IT Administrator",
+    "relationship": "respondent",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-026",
+    "investigationId": "inv-107",
+    "name": "Ines Haddix",
+    "role": "HR Business Partner",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-08-26"
+  },
+  {
+    "id": "wit-027",
+    "investigationId": "inv-107",
+    "name": "Lars Rao",
+    "role": "Contractor, external agency",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-08-06"
+  },
+  {
+    "id": "wit-028",
+    "investigationId": "inv-108",
+    "name": "Aisling Vance",
+    "role": "Customer Support Lead",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-05-05"
+  },
+  {
+    "id": "wit-029",
+    "investigationId": "inv-108",
+    "name": "Gideon Doyle",
+    "role": "Financial Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-09"
+  },
+  {
+    "id": "wit-030",
+    "investigationId": "inv-109",
+    "name": "Zara Sandoval",
+    "role": "Quality Assurance Lead",
+    "relationship": "complainant",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2026-07-30"
+  },
+  {
+    "id": "wit-031",
+    "investigationId": "inv-109",
+    "name": "Idris Watanabe",
+    "role": "Account Executive",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-06-18"
+  },
+  {
+    "id": "wit-032",
+    "investigationId": "inv-110",
+    "name": "Petra Torvik",
+    "role": "Team Lead",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-03-02"
+  },
+  {
+    "id": "wit-033",
+    "investigationId": "inv-110",
+    "name": "Noor Vance",
+    "role": "Account Executive",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-03-10"
+  },
+  {
+    "id": "wit-034",
+    "investigationId": "inv-111",
+    "name": "Ingrid Reyes",
+    "role": "Procurement Specialist",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-10-09"
+  },
+  {
+    "id": "wit-035",
+    "investigationId": "inv-111",
+    "name": "Coen Achebe",
+    "role": "HR Business Partner",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-10-23"
+  },
+  {
+    "id": "wit-036",
+    "investigationId": "inv-112",
+    "name": "Owen Farrow",
+    "role": "Procurement Specialist",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-05-07"
+  },
+  {
+    "id": "wit-037",
+    "investigationId": "inv-112",
+    "name": "Nia Chinweze",
+    "role": "Warehouse Operative",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-27"
+  },
+  {
+    "id": "wit-038",
+    "investigationId": "inv-113",
+    "name": "Adaeze Vance",
+    "role": "Warehouse Operative",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-08-09"
+  },
+  {
+    "id": "wit-039",
+    "investigationId": "inv-113",
+    "name": "Adaeze Menon",
+    "role": "Procurement Specialist",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-08-18"
+  },
+  {
+    "id": "wit-040",
+    "investigationId": "inv-114",
+    "name": "Mateo Bexley",
+    "role": "Account Executive",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-07-15"
+  },
+  {
+    "id": "wit-041",
+    "investigationId": "inv-114",
+    "name": "Sylvie Beaumont",
+    "role": "Software Engineer",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-06-04"
+  },
+  {
+    "id": "wit-042",
+    "investigationId": "inv-114",
+    "name": "Diego Adeyemi",
+    "role": "Procurement Specialist",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-07-15"
+  },
+  {
+    "id": "wit-043",
+    "investigationId": "inv-115",
+    "name": "Omar Nkemelu",
+    "role": "Quality Assurance Lead",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-01-23"
+  },
+  {
+    "id": "wit-044",
+    "investigationId": "inv-115",
+    "name": "Kian Watanabe",
+    "role": "Financial Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-01-23"
+  },
+  {
+    "id": "wit-045",
+    "investigationId": "inv-116",
+    "name": "Louis Krantz",
+    "role": "Warehouse Operative",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-02-05"
+  },
+  {
+    "id": "wit-046",
+    "investigationId": "inv-116",
+    "name": "Yara Doran",
+    "role": "Senior Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-01-21"
+  },
+  {
+    "id": "wit-047",
+    "investigationId": "inv-117",
+    "name": "Sylvie Halvorsen",
+    "role": "Operations Supervisor",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-08"
+  },
+  {
+    "id": "wit-048",
+    "investigationId": "inv-117",
+    "name": "Ingeborg Fahey",
+    "role": "Financial Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-21"
+  },
+  {
+    "id": "wit-049",
+    "investigationId": "inv-117",
+    "name": "Diego Doran",
+    "role": "Contractor, external agency",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-13"
+  },
+  {
+    "id": "wit-050",
+    "investigationId": "inv-118",
+    "name": "Malik Castellano",
+    "role": "Project Coordinator",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-12-01"
+  },
+  {
+    "id": "wit-051",
+    "investigationId": "inv-118",
+    "name": "Fatima Prescott",
+    "role": "Marketing Coordinator",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-01-01"
+  },
+  {
+    "id": "wit-052",
+    "investigationId": "inv-119",
+    "name": "Ines Fadel",
+    "role": "Sales Manager",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-01-30"
+  },
+  {
+    "id": "wit-053",
+    "investigationId": "inv-119",
+    "name": "Malik Halvorsen",
+    "role": "Contractor, external agency",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-01-30"
+  },
+  {
+    "id": "wit-054",
+    "investigationId": "inv-120",
+    "name": "Ines Krantz",
+    "role": "Sales Manager",
+    "relationship": "complainant",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-055",
+    "investigationId": "inv-120",
+    "name": "Ingrid Aasen",
+    "role": "Sales Manager",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2025-11-30"
+  },
+  {
+    "id": "wit-056",
+    "investigationId": "inv-121",
+    "name": "Gideon Castellano",
+    "role": "Department Manager",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-06-21"
+  },
+  {
+    "id": "wit-057",
+    "investigationId": "inv-121",
+    "name": "Nadia Haddix",
+    "role": "HR Business Partner",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-05-17"
+  },
+  {
+    "id": "wit-058",
+    "investigationId": "inv-122",
+    "name": "Louis Marchetti",
+    "role": "Department Manager",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2025-12-13"
+  },
+  {
+    "id": "wit-059",
+    "investigationId": "inv-122",
+    "name": "Zara Haddix",
+    "role": "Project Coordinator",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-01-16"
+  },
+  {
+    "id": "wit-060",
+    "investigationId": "inv-123",
+    "name": "Nadia Farrow",
+    "role": "Senior Analyst",
+    "relationship": "complainant",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2026-02-24"
+  },
+  {
+    "id": "wit-061",
+    "investigationId": "inv-123",
+    "name": "Ingeborg Doyle",
+    "role": "Senior Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2026-02-08"
+  },
+  {
+    "id": "wit-062",
+    "investigationId": "inv-124",
+    "name": "Ingrid Krantz",
+    "role": "Procurement Specialist",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-02-26"
+  },
+  {
+    "id": "wit-063",
+    "investigationId": "inv-124",
+    "name": "Yuki Haddix",
+    "role": "Account Executive",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-03-24"
+  },
+  {
+    "id": "wit-064",
+    "investigationId": "inv-125",
+    "name": "Kwame Voss",
+    "role": "IT Administrator",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-08-08"
+  },
+  {
+    "id": "wit-065",
+    "investigationId": "inv-125",
+    "name": "Nia Farrow",
+    "role": "Business Development Manager",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-08-02"
+  },
+  {
+    "id": "wit-066",
+    "investigationId": "inv-125",
+    "name": "Nia Rao",
+    "role": "IT Administrator",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-08-09"
+  },
+  {
+    "id": "wit-067",
+    "investigationId": "inv-126",
+    "name": "Bianca Prescott",
+    "role": "HR Business Partner",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-02-18"
+  },
+  {
+    "id": "wit-068",
+    "investigationId": "inv-126",
+    "name": "Coen Solvang",
+    "role": "Contractor, external agency",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-02-09"
+  },
+  {
+    "id": "wit-069",
+    "investigationId": "inv-126",
+    "name": "Rosa Verbeek",
+    "role": "Legal Counsel",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-02-08"
+  },
+  {
+    "id": "wit-070",
+    "investigationId": "inv-127",
+    "name": "Amara Achebe",
+    "role": "Senior Analyst",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-01-05"
+  },
+  {
+    "id": "wit-071",
+    "investigationId": "inv-127",
+    "name": "Bianca Menon",
+    "role": "Marketing Coordinator",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2025-12-21"
+  },
+  {
+    "id": "wit-072",
+    "investigationId": "inv-128",
+    "name": "Felix Bexley",
+    "role": "Warehouse Operative",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-12-17"
+  },
+  {
+    "id": "wit-073",
+    "investigationId": "inv-128",
+    "name": "Nadia Osei",
+    "role": "Financial Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-11-30"
+  },
+  {
+    "id": "wit-074",
+    "investigationId": "inv-129",
+    "name": "Lars Farrow",
+    "role": "Business Development Manager",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-12-19"
+  },
+  {
+    "id": "wit-075",
+    "investigationId": "inv-129",
+    "name": "Kian Fahey",
+    "role": "Senior Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-12-13"
+  },
+  {
+    "id": "wit-076",
+    "investigationId": "inv-130",
+    "name": "Kian Vance",
+    "role": "Operations Supervisor",
+    "relationship": "complainant",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2025-12-27"
+  },
+  {
+    "id": "wit-077",
+    "investigationId": "inv-130",
+    "name": "Malik Solheim",
+    "role": "Department Manager",
+    "relationship": "respondent",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2026-01-18"
+  },
+  {
+    "id": "wit-078",
+    "investigationId": "inv-131",
+    "name": "Kwame Verbeek",
+    "role": "Warehouse Operative",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2025-11-16"
+  },
+  {
+    "id": "wit-079",
+    "investigationId": "inv-131",
+    "name": "Adaeze Fadel",
+    "role": "Team Lead",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2025-10-25"
+  },
+  {
+    "id": "wit-080",
+    "investigationId": "inv-131",
+    "name": "Hassan Marchetti",
+    "role": "Team Lead",
+    "relationship": "coworker",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2025-10-28"
+  },
+  {
+    "id": "wit-081",
+    "investigationId": "inv-132",
+    "name": "Ravi Halvorsen",
+    "role": "Marketing Coordinator",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-03-03"
+  },
+  {
+    "id": "wit-082",
+    "investigationId": "inv-132",
+    "name": "Priyanka Ito",
+    "role": "HR Business Partner",
+    "relationship": "respondent",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-083",
+    "investigationId": "inv-132",
+    "name": "Noor Achebe",
+    "role": "Team Lead",
+    "relationship": "coworker",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-084",
+    "investigationId": "inv-133",
+    "name": "Malik Voss",
+    "role": "Customer Support Lead",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-05-05"
+  },
+  {
+    "id": "wit-085",
+    "investigationId": "inv-133",
+    "name": "Hassan Bexley",
+    "role": "Contractor, external agency",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-12"
+  },
+  {
+    "id": "wit-086",
+    "investigationId": "inv-133",
+    "name": "Ingeborg Beaumont",
+    "role": "Department Manager",
+    "relationship": "coworker",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2026-04-11"
+  },
+  {
+    "id": "wit-087",
+    "investigationId": "inv-134",
+    "name": "Diego Prescott",
+    "role": "Senior Analyst",
+    "relationship": "complainant",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-088",
+    "investigationId": "inv-134",
+    "name": "Xavier Osei",
+    "role": "Team Lead",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-04-08"
+  },
+  {
+    "id": "wit-089",
+    "investigationId": "inv-134",
+    "name": "Rafael Bexley",
+    "role": "Account Executive",
+    "relationship": "coworker",
+    "interviewStatus": "not_scheduled"
+  },
+  {
+    "id": "wit-090",
+    "investigationId": "inv-135",
+    "name": "Felix Okorie",
+    "role": "Sales Manager",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-29"
+  },
+  {
+    "id": "wit-091",
+    "investigationId": "inv-135",
+    "name": "Petra Achebe",
+    "role": "Senior Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-23"
+  },
+  {
+    "id": "wit-092",
+    "investigationId": "inv-136",
+    "name": "Bianca Lindgren",
+    "role": "Facilities Manager",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-02"
+  },
+  {
+    "id": "wit-093",
+    "investigationId": "inv-136",
+    "name": "Freya Prescott",
+    "role": "Data Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-08"
+  },
+  {
+    "id": "wit-094",
+    "investigationId": "inv-137",
+    "name": "Noor Solheim",
+    "role": "Department Manager",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-03-20"
+  },
+  {
+    "id": "wit-095",
+    "investigationId": "inv-137",
+    "name": "Rafael Vance",
+    "role": "Sales Manager",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-14"
+  },
+  {
+    "id": "wit-096",
+    "investigationId": "inv-137",
+    "name": "Lars Voss",
+    "role": "Sales Manager",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-03-31"
+  },
+  {
+    "id": "wit-097",
+    "investigationId": "inv-138",
+    "name": "Noor Devries",
+    "role": "Team Lead",
+    "relationship": "complainant",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2025-12-06"
+  },
+  {
+    "id": "wit-098",
+    "investigationId": "inv-138",
+    "name": "Nils Ito",
+    "role": "Department Manager",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-11-19"
+  },
+  {
+    "id": "wit-099",
+    "investigationId": "inv-139",
+    "name": "Maren Solvang",
+    "role": "Financial Analyst",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-08-21"
+  },
+  {
+    "id": "wit-100",
+    "investigationId": "inv-139",
+    "name": "Ingrid Osei",
+    "role": "Marketing Coordinator",
+    "relationship": "respondent",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2026-09-17"
+  },
+  {
+    "id": "wit-101",
+    "investigationId": "inv-140",
+    "name": "Mateo Nkemelu",
+    "role": "Warehouse Operative",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-07-24"
+  },
+  {
+    "id": "wit-102",
+    "investigationId": "inv-140",
+    "name": "Freya Qureshi",
+    "role": "IT Administrator",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-07-23"
+  },
+  {
+    "id": "wit-103",
+    "investigationId": "inv-140",
+    "name": "Wren Fonseca",
+    "role": "Warehouse Operative",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-07-21"
+  },
+  {
+    "id": "wit-104",
+    "investigationId": "inv-141",
+    "name": "Elin Brandt",
+    "role": "Software Engineer",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-08-20"
+  },
+  {
+    "id": "wit-105",
+    "investigationId": "inv-141",
+    "name": "Sylvie Devries",
+    "role": "Project Coordinator",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-08-23"
+  },
+  {
+    "id": "wit-106",
+    "investigationId": "inv-141",
+    "name": "Felix Vance",
+    "role": "Sales Manager",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-08-05"
+  },
+  {
+    "id": "wit-107",
+    "investigationId": "inv-142",
+    "name": "Freya Watanabe",
+    "role": "Facilities Manager",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-06-21"
+  },
+  {
+    "id": "wit-108",
+    "investigationId": "inv-142",
+    "name": "Zara Aasen",
+    "role": "Procurement Specialist",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-06-23"
+  },
+  {
+    "id": "wit-109",
+    "investigationId": "inv-143",
+    "name": "Hassan Nasser",
+    "role": "Regional Director",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-12-07"
+  },
+  {
+    "id": "wit-110",
+    "investigationId": "inv-143",
+    "name": "Tariq Chinweze",
+    "role": "Account Executive",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-11-20"
+  },
+  {
+    "id": "wit-111",
+    "investigationId": "inv-144",
+    "name": "Coen Brandt",
+    "role": "Legal Counsel",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-11-04"
+  },
+  {
+    "id": "wit-112",
+    "investigationId": "inv-144",
+    "name": "Bianca Fahey",
+    "role": "Financial Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2025-11-07"
+  },
+  {
+    "id": "wit-113",
+    "investigationId": "inv-145",
+    "name": "Petra Solvang",
+    "role": "Customer Support Lead",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-04-17"
+  },
+  {
+    "id": "wit-114",
+    "investigationId": "inv-145",
+    "name": "Xavier Prescott",
+    "role": "Sales Manager",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-03-15"
+  },
+  {
+    "id": "wit-115",
+    "investigationId": "inv-146",
+    "name": "Idris Devries",
+    "role": "Regional Director",
+    "relationship": "complainant",
+    "interviewStatus": "rescheduled",
+    "interviewDate": "2026-02-03"
+  },
+  {
+    "id": "wit-116",
+    "investigationId": "inv-146",
+    "name": "Freya Ito",
+    "role": "Operations Supervisor",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-01-21"
+  },
+  {
+    "id": "wit-117",
+    "investigationId": "inv-146",
+    "name": "Junko Sandoval",
+    "role": "Quality Assurance Lead",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-02-26"
+  },
+  {
+    "id": "wit-118",
+    "investigationId": "inv-147",
+    "name": "Kwame Castellano",
+    "role": "Account Executive",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-05-05"
+  },
+  {
+    "id": "wit-119",
+    "investigationId": "inv-147",
+    "name": "Kwame Brandt",
+    "role": "Senior Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-05-04"
+  },
+  {
+    "id": "wit-120",
+    "investigationId": "inv-148",
+    "name": "Wren Rousseau",
+    "role": "Compliance Officer",
+    "relationship": "complainant",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-04-05"
+  },
+  {
+    "id": "wit-121",
+    "investigationId": "inv-148",
+    "name": "Tess Devries",
+    "role": "Data Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "scheduled",
+    "interviewDate": "2026-03-26"
+  },
+  {
+    "id": "wit-122",
+    "investigationId": "inv-149",
+    "name": "Ravi Kessler",
+    "role": "Sales Manager",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-05-27"
+  },
+  {
+    "id": "wit-123",
+    "investigationId": "inv-149",
+    "name": "Kian Verbeek",
+    "role": "Account Executive",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-05-14"
+  },
+  {
+    "id": "wit-124",
+    "investigationId": "inv-149",
+    "name": "Priyanka Nasser",
+    "role": "Team Lead",
+    "relationship": "coworker",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-05-17"
+  },
+  {
+    "id": "wit-125",
+    "investigationId": "inv-150",
+    "name": "Fatima Chinweze",
+    "role": "Regional Director",
+    "relationship": "complainant",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-07-04"
+  },
+  {
+    "id": "wit-126",
+    "investigationId": "inv-150",
+    "name": "Freya Sandoval",
+    "role": "Senior Analyst",
+    "relationship": "respondent",
+    "interviewStatus": "completed",
+    "interviewDate": "2026-07-15"
+  }
+]

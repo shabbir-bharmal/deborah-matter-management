@@ -1,35 +1,60 @@
 import { create } from 'zustand';
 
-import type { FindingOutcome } from '~/types';
+import { saveFinding } from '~/data/selectors';
+import type { Allegation, FindingOutcome } from '~/types';
 
 interface InvestigationFindings {
-    findings: Record<string, FindingOutcome>;
+    findings: Record<string, FindingOutcome | undefined>;
     notes: Record<string, string>;
 }
 
 interface FindingsStore {
     byInvestigation: Record<string, InvestigationFindings>;
-    setFinding: (investigationId: string, allegationId: string, finding: FindingOutcome | undefined) => void;
+    /** Seeds the store from the allegations the API returned. */
+    hydrate: (investigationId: string, allegations: Allegation[]) => void;
+    setFinding: (investigationId: string, allegationId: string, finding: FindingOutcome | undefined) => Promise<void>;
     setNotes: (investigationId: string, allegationId: string, notes: string) => void;
+    saveNotes: (investigationId: string, allegationId: string) => Promise<void>;
 }
+
+const EMPTY: InvestigationFindings = { findings: {}, notes: {} };
 
 function entryFor(state: FindingsStore, investigationId: string): InvestigationFindings {
-    return state.byInvestigation[investigationId] ?? { findings: {}, notes: {} };
+    return state.byInvestigation[investigationId] ?? EMPTY;
 }
 
-export const useFindingsStore = create<FindingsStore>()((set) => ({
+export const useFindingsStore = create<FindingsStore>()((set, get) => ({
     byInvestigation: {},
-    setFinding: (investigationId, allegationId, finding) =>
+    hydrate: (investigationId, allegations) =>
+        set((state) => ({
+            byInvestigation: {
+                ...state.byInvestigation,
+                [investigationId]: {
+                    findings: Object.fromEntries(allegations.map((item) => [item.id, item.finding ?? undefined])),
+                    notes: Object.fromEntries(allegations.map((item) => [item.id, item.findingNotes ?? ''])),
+                },
+            },
+        })),
+    setFinding: async (investigationId, allegationId, finding) => {
+        const previous = entryFor(get(), investigationId);
         set((state) => {
             const entry = entryFor(state, investigationId);
-            const findings = { ...entry.findings };
-            if (finding === undefined) {
-                delete findings[allegationId];
-            } else {
-                findings[allegationId] = finding;
-            }
-            return { byInvestigation: { ...state.byInvestigation, [investigationId]: { ...entry, findings } } };
-        }),
+            return {
+                byInvestigation: {
+                    ...state.byInvestigation,
+                    [investigationId]: { ...entry, findings: { ...entry.findings, [allegationId]: finding } },
+                },
+            };
+        });
+
+        try {
+            await saveFinding(allegationId, finding ?? null);
+        } catch (error) {
+            // Roll back so the UI never shows a finding the server rejected.
+            set((state) => ({ byInvestigation: { ...state.byInvestigation, [investigationId]: previous } }));
+            throw error;
+        }
+    },
     setNotes: (investigationId, allegationId, notes) =>
         set((state) => {
             const entry = entryFor(state, investigationId);
@@ -40,8 +65,12 @@ export const useFindingsStore = create<FindingsStore>()((set) => ({
                 },
             };
         }),
+    saveNotes: async (investigationId, allegationId) => {
+        const entry = entryFor(get(), investigationId);
+        await saveFinding(allegationId, entry.findings[allegationId] ?? null, entry.notes[allegationId] ?? '');
+    },
 }));
 
 export function useInvestigationFindings(investigationId: string): InvestigationFindings {
-    return useFindingsStore((state) => state.byInvestigation[investigationId]) ?? { findings: {}, notes: {} };
+    return useFindingsStore((state) => state.byInvestigation[investigationId]) ?? EMPTY;
 }

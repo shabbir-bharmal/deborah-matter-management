@@ -18,7 +18,7 @@ import {
 import { AutoFillPanel } from '~/features/reportAutoFill';
 import { draftToCustomReportSections, draftToReportSections } from '~/features/reportAutoFill/mapping/reportHandoff';
 import type { ReportDraft } from '~/features/reportAutoFill/types/reportAutoFill';
-import { useInvestigationFindings } from '~/hooks/use-findings-store';
+import { useFindingsStore, useInvestigationFindings } from '~/hooks/use-findings-store';
 import { useInvestigation } from '~/hooks/use-investigation';
 import { defaultReportConfig, useReportConfig, useReportStatus, useReportStore } from '~/hooks/use-report-store';
 import { buildReport, reportSectionDefs, type ReportSection } from '~/lib/report';
@@ -119,8 +119,10 @@ export default function Reports() {
         ]).then(([allegations, interviews, evidenceItems, events]) => {
             if (!cancelled) {
                 setData({ allegations, interviews, evidenceItems, events });
+                useFindingsStore.getState().hydrate(matter.id, allegations);
             }
         });
+        void useReportStore.getState().load(matter.id);
         return () => {
             cancelled = true;
         };

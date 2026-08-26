@@ -1,0 +1,1408 @@
+[
+  {
+    "id": "int-001",
+    "investigationId": "inv-001",
+    "witnessId": "wit-001",
+    "scheduledAt": "2026-06-18T10:00:00",
+    "status": "completed",
+    "interviewer": "Deborah Whitfield",
+    "notes": "Complainant articulate and consistent; timeline of incidents matches calendar invites.",
+    "transcriptExcerpt": [
+      "Q: Can you describe what was said during the 12 May stand-up?",
+      "A: He said my work was “embarrassing” in front of the whole team, again. It’s the third time that sprint.",
+      "Q: Was anyone else present?",
+      "A: Priya and Jonas were both on the call. The recording might still be in the system."
+    ],
+    "relatedAllegationIds": [
+      "alg-001",
+      "alg-003"
+    ]
+  },
+  {
+    "id": "int-002",
+    "investigationId": "inv-001",
+    "witnessId": "wit-003",
+    "scheduledAt": "2026-06-24T14:30:00",
+    "status": "completed",
+    "interviewer": "Deborah Whitfield",
+    "notes": "Corroborates incidents on 12 May and 28 May; unsure about tone of the 3 June remark.",
+    "transcriptExcerpt": [
+      "Q: How would you characterise the comments you heard?",
+      "A: Sharp. Public. Not coaching — more like putting someone down in front of others."
+    ],
+    "relatedAllegationIds": [
+      "alg-001",
+      "alg-004"
+    ]
+  },
+  {
+    "id": "int-003",
+    "investigationId": "inv-001",
+    "witnessId": "wit-002",
+    "scheduledAt": "2026-08-26T09:30:00",
+    "status": "scheduled",
+    "interviewer": "Deborah Whitfield",
+    "relatedAllegationIds": [
+      "alg-001",
+      "alg-002",
+      "alg-003"
+    ]
+  },
+  {
+    "id": "int-004",
+    "investigationId": "inv-001",
+    "witnessId": "wit-004",
+    "scheduledAt": "2026-08-19T11:00:00",
+    "status": "rescheduled",
+    "interviewer": "Deborah Whitfield",
+    "notes": "Contractor unavailable; agency proposed 1 September.",
+    "relatedAllegationIds": [
+      "alg-002"
+    ]
+  },
+  {
+    "id": "int-005",
+    "investigationId": "inv-002",
+    "witnessId": "wit-006",
+    "scheduledAt": "2026-07-30T13:00:00",
+    "status": "completed",
+    "interviewer": "Deborah Whitfield",
+    "notes": "Provided documents supporting the criteria-change claim; names two panel members.",
+    "relatedAllegationIds": [
+      "alg-005"
+    ]
+  },
+  {
+    "id": "int-006",
+    "investigationId": "inv-003",
+    "witnessId": "wit-007",
+    "scheduledAt": "2026-05-12T15:00:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Walked through the expense ledger discrepancies line by line.",
+    "relatedAllegationIds": [
+      "alg-006"
+    ]
+  },
+  {
+    "id": "int-007",
+    "investigationId": "inv-005",
+    "witnessId": "wit-008",
+    "scheduledAt": "2026-08-27T09:00:00",
+    "status": "scheduled",
+    "interviewer": "Marcus Chen",
+    "relatedAllegationIds": [
+      "alg-008"
+    ]
+  },
+  {
+    "id": "int-008",
+    "investigationId": "inv-018",
+    "witnessId": "wit-009",
+    "scheduledAt": "2025-11-28T10:45:00",
+    "status": "completed",
+    "interviewer": "Priya Raman",
+    "notes": "Interview conducted with Callum Bexley; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-009"
+    ]
+  },
+  {
+    "id": "int-009",
+    "investigationId": "inv-018",
+    "witnessId": "wit-010",
+    "scheduledAt": "2025-11-17T09:30:00",
+    "status": "completed",
+    "interviewer": "Priya Raman",
+    "notes": "Interview conducted with Elin Menon; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-009"
+    ]
+  },
+  {
+    "id": "int-010",
+    "investigationId": "inv-102",
+    "witnessId": "wit-013",
+    "scheduledAt": "2025-12-18T14:30:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Bram Voss; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-011",
+      "alg-012"
+    ]
+  },
+  {
+    "id": "int-011",
+    "investigationId": "inv-102",
+    "witnessId": "wit-014",
+    "scheduledAt": "2026-02-05T16:45:00",
+    "status": "rescheduled",
+    "interviewer": "Tobias Renner",
+    "relatedAllegationIds": [
+      "alg-011",
+      "alg-012"
+    ]
+  },
+  {
+    "id": "int-012",
+    "investigationId": "inv-103",
+    "witnessId": "wit-015",
+    "scheduledAt": "2026-08-13T13:30:00",
+    "status": "scheduled",
+    "interviewer": "Priya Raman",
+    "relatedAllegationIds": [
+      "alg-013",
+      "alg-014"
+    ]
+  },
+  {
+    "id": "int-013",
+    "investigationId": "inv-103",
+    "witnessId": "wit-016",
+    "scheduledAt": "2026-08-01T13:15:00",
+    "status": "scheduled",
+    "interviewer": "Priya Raman",
+    "relatedAllegationIds": [
+      "alg-013",
+      "alg-014"
+    ]
+  },
+  {
+    "id": "int-014",
+    "investigationId": "inv-103",
+    "witnessId": "wit-017",
+    "scheduledAt": "2026-07-30T11:45:00",
+    "status": "completed",
+    "interviewer": "Priya Raman",
+    "notes": "Interview conducted with Zara Prescott; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-013",
+      "alg-014"
+    ]
+  },
+  {
+    "id": "int-015",
+    "investigationId": "inv-104",
+    "witnessId": "wit-018",
+    "scheduledAt": "2026-09-27T09:00:00",
+    "status": "scheduled",
+    "interviewer": "Deborah Whitfield",
+    "relatedAllegationIds": [
+      "alg-015"
+    ]
+  },
+  {
+    "id": "int-016",
+    "investigationId": "inv-104",
+    "witnessId": "wit-020",
+    "scheduledAt": "2026-08-30T13:30:00",
+    "status": "scheduled",
+    "interviewer": "Deborah Whitfield",
+    "relatedAllegationIds": [
+      "alg-015"
+    ]
+  },
+  {
+    "id": "int-017",
+    "investigationId": "inv-105",
+    "witnessId": "wit-021",
+    "scheduledAt": "2025-12-08T13:00:00",
+    "status": "scheduled",
+    "interviewer": "Elena Vasquez",
+    "relatedAllegationIds": [
+      "alg-016",
+      "alg-017"
+    ]
+  },
+  {
+    "id": "int-018",
+    "investigationId": "inv-105",
+    "witnessId": "wit-022",
+    "scheduledAt": "2025-12-17T11:00:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Zara Voss; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-016",
+      "alg-017"
+    ]
+  },
+  {
+    "id": "int-019",
+    "investigationId": "inv-105",
+    "witnessId": "wit-023",
+    "scheduledAt": "2026-01-10T14:30:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Nia Nkemelu; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-016",
+      "alg-017"
+    ]
+  },
+  {
+    "id": "int-020",
+    "investigationId": "inv-107",
+    "witnessId": "wit-026",
+    "scheduledAt": "2026-08-26T11:15:00",
+    "status": "completed",
+    "interviewer": "Grace Lindqvist",
+    "notes": "Interview conducted with Ines Haddix; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-019",
+      "alg-020"
+    ]
+  },
+  {
+    "id": "int-021",
+    "investigationId": "inv-107",
+    "witnessId": "wit-027",
+    "scheduledAt": "2026-08-06T15:00:00",
+    "status": "completed",
+    "interviewer": "Grace Lindqvist",
+    "notes": "Interview conducted with Lars Rao; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-019",
+      "alg-020"
+    ]
+  },
+  {
+    "id": "int-022",
+    "investigationId": "inv-108",
+    "witnessId": "wit-028",
+    "scheduledAt": "2026-05-05T10:30:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Aisling Vance; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-021"
+    ]
+  },
+  {
+    "id": "int-023",
+    "investigationId": "inv-108",
+    "witnessId": "wit-029",
+    "scheduledAt": "2026-04-09T16:30:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Gideon Doyle; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-021"
+    ]
+  },
+  {
+    "id": "int-024",
+    "investigationId": "inv-109",
+    "witnessId": "wit-030",
+    "scheduledAt": "2026-07-30T13:45:00",
+    "status": "rescheduled",
+    "interviewer": "Tobias Renner",
+    "relatedAllegationIds": [
+      "alg-022"
+    ]
+  },
+  {
+    "id": "int-025",
+    "investigationId": "inv-109",
+    "witnessId": "wit-031",
+    "scheduledAt": "2026-06-18T09:15:00",
+    "status": "scheduled",
+    "interviewer": "Tobias Renner",
+    "relatedAllegationIds": [
+      "alg-022"
+    ]
+  },
+  {
+    "id": "int-026",
+    "investigationId": "inv-110",
+    "witnessId": "wit-032",
+    "scheduledAt": "2026-03-02T11:30:00",
+    "status": "scheduled",
+    "interviewer": "Tobias Renner",
+    "relatedAllegationIds": [
+      "alg-023"
+    ]
+  },
+  {
+    "id": "int-027",
+    "investigationId": "inv-110",
+    "witnessId": "wit-033",
+    "scheduledAt": "2026-03-10T16:30:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Noor Vance; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-023"
+    ]
+  },
+  {
+    "id": "int-028",
+    "investigationId": "inv-111",
+    "witnessId": "wit-034",
+    "scheduledAt": "2025-10-09T13:00:00",
+    "status": "completed",
+    "interviewer": "Samuel Okafor",
+    "notes": "Interview conducted with Ingrid Reyes; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-024",
+      "alg-025"
+    ]
+  },
+  {
+    "id": "int-029",
+    "investigationId": "inv-111",
+    "witnessId": "wit-035",
+    "scheduledAt": "2025-10-23T11:30:00",
+    "status": "completed",
+    "interviewer": "Samuel Okafor",
+    "notes": "Interview conducted with Coen Achebe; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-024",
+      "alg-025"
+    ]
+  },
+  {
+    "id": "int-030",
+    "investigationId": "inv-112",
+    "witnessId": "wit-036",
+    "scheduledAt": "2026-05-07T15:30:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Owen Farrow; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-026",
+      "alg-027"
+    ]
+  },
+  {
+    "id": "int-031",
+    "investigationId": "inv-112",
+    "witnessId": "wit-037",
+    "scheduledAt": "2026-04-27T16:00:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Nia Chinweze; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-026",
+      "alg-027"
+    ]
+  },
+  {
+    "id": "int-032",
+    "investigationId": "inv-113",
+    "witnessId": "wit-038",
+    "scheduledAt": "2026-08-09T14:30:00",
+    "status": "completed",
+    "interviewer": "Deborah Whitfield",
+    "notes": "Interview conducted with Adaeze Vance; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-028",
+      "alg-029"
+    ]
+  },
+  {
+    "id": "int-033",
+    "investigationId": "inv-113",
+    "witnessId": "wit-039",
+    "scheduledAt": "2026-08-18T13:45:00",
+    "status": "scheduled",
+    "interviewer": "Deborah Whitfield",
+    "relatedAllegationIds": [
+      "alg-028",
+      "alg-029"
+    ]
+  },
+  {
+    "id": "int-034",
+    "investigationId": "inv-114",
+    "witnessId": "wit-040",
+    "scheduledAt": "2026-07-15T14:45:00",
+    "status": "completed",
+    "interviewer": "Grace Lindqvist",
+    "notes": "Interview conducted with Mateo Bexley; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-030",
+      "alg-031"
+    ]
+  },
+  {
+    "id": "int-035",
+    "investigationId": "inv-114",
+    "witnessId": "wit-041",
+    "scheduledAt": "2026-06-04T10:30:00",
+    "status": "scheduled",
+    "interviewer": "Grace Lindqvist",
+    "relatedAllegationIds": [
+      "alg-030",
+      "alg-031"
+    ]
+  },
+  {
+    "id": "int-036",
+    "investigationId": "inv-114",
+    "witnessId": "wit-042",
+    "scheduledAt": "2026-07-15T16:45:00",
+    "status": "completed",
+    "interviewer": "Grace Lindqvist",
+    "notes": "Interview conducted with Diego Adeyemi; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-030",
+      "alg-031"
+    ]
+  },
+  {
+    "id": "int-037",
+    "investigationId": "inv-115",
+    "witnessId": "wit-043",
+    "scheduledAt": "2026-01-23T09:15:00",
+    "status": "scheduled",
+    "interviewer": "Anika Desai",
+    "relatedAllegationIds": [
+      "alg-032",
+      "alg-033"
+    ]
+  },
+  {
+    "id": "int-038",
+    "investigationId": "inv-115",
+    "witnessId": "wit-044",
+    "scheduledAt": "2026-01-23T16:00:00",
+    "status": "scheduled",
+    "interviewer": "Anika Desai",
+    "relatedAllegationIds": [
+      "alg-032",
+      "alg-033"
+    ]
+  },
+  {
+    "id": "int-039",
+    "investigationId": "inv-116",
+    "witnessId": "wit-045",
+    "scheduledAt": "2026-02-05T14:15:00",
+    "status": "completed",
+    "interviewer": "Grace Lindqvist",
+    "notes": "Interview conducted with Louis Krantz; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-034"
+    ]
+  },
+  {
+    "id": "int-040",
+    "investigationId": "inv-116",
+    "witnessId": "wit-046",
+    "scheduledAt": "2026-01-21T16:15:00",
+    "status": "completed",
+    "interviewer": "Grace Lindqvist",
+    "notes": "Interview conducted with Yara Doran; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-034"
+    ]
+  },
+  {
+    "id": "int-041",
+    "investigationId": "inv-117",
+    "witnessId": "wit-047",
+    "scheduledAt": "2026-04-08T10:00:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Sylvie Halvorsen; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-035"
+    ]
+  },
+  {
+    "id": "int-042",
+    "investigationId": "inv-117",
+    "witnessId": "wit-048",
+    "scheduledAt": "2026-04-21T13:45:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Ingeborg Fahey; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-035"
+    ]
+  },
+  {
+    "id": "int-043",
+    "investigationId": "inv-117",
+    "witnessId": "wit-049",
+    "scheduledAt": "2026-04-13T13:45:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Diego Doran; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-035"
+    ]
+  },
+  {
+    "id": "int-044",
+    "investigationId": "inv-118",
+    "witnessId": "wit-050",
+    "scheduledAt": "2025-12-01T13:45:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Malik Castellano; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-036"
+    ]
+  },
+  {
+    "id": "int-045",
+    "investigationId": "inv-118",
+    "witnessId": "wit-051",
+    "scheduledAt": "2026-01-01T09:30:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Fatima Prescott; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-036"
+    ]
+  },
+  {
+    "id": "int-046",
+    "investigationId": "inv-119",
+    "witnessId": "wit-052",
+    "scheduledAt": "2026-01-30T15:00:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Ines Fadel; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-037",
+      "alg-038"
+    ]
+  },
+  {
+    "id": "int-047",
+    "investigationId": "inv-119",
+    "witnessId": "wit-053",
+    "scheduledAt": "2026-01-30T14:15:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Malik Halvorsen; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-037",
+      "alg-038"
+    ]
+  },
+  {
+    "id": "int-048",
+    "investigationId": "inv-120",
+    "witnessId": "wit-055",
+    "scheduledAt": "2025-11-30T10:30:00",
+    "status": "scheduled",
+    "interviewer": "Priya Raman",
+    "relatedAllegationIds": [
+      "alg-039"
+    ]
+  },
+  {
+    "id": "int-049",
+    "investigationId": "inv-121",
+    "witnessId": "wit-056",
+    "scheduledAt": "2026-06-21T16:45:00",
+    "status": "scheduled",
+    "interviewer": "Priya Raman",
+    "relatedAllegationIds": [
+      "alg-040",
+      "alg-041"
+    ]
+  },
+  {
+    "id": "int-050",
+    "investigationId": "inv-121",
+    "witnessId": "wit-057",
+    "scheduledAt": "2026-05-17T15:30:00",
+    "status": "scheduled",
+    "interviewer": "Priya Raman",
+    "relatedAllegationIds": [
+      "alg-040",
+      "alg-041"
+    ]
+  },
+  {
+    "id": "int-051",
+    "investigationId": "inv-122",
+    "witnessId": "wit-058",
+    "scheduledAt": "2025-12-13T11:00:00",
+    "status": "scheduled",
+    "interviewer": "Tobias Renner",
+    "relatedAllegationIds": [
+      "alg-042"
+    ]
+  },
+  {
+    "id": "int-052",
+    "investigationId": "inv-122",
+    "witnessId": "wit-059",
+    "scheduledAt": "2026-01-16T10:00:00",
+    "status": "scheduled",
+    "interviewer": "Tobias Renner",
+    "relatedAllegationIds": [
+      "alg-042"
+    ]
+  },
+  {
+    "id": "int-053",
+    "investigationId": "inv-123",
+    "witnessId": "wit-060",
+    "scheduledAt": "2026-02-24T15:45:00",
+    "status": "rescheduled",
+    "interviewer": "Priya Raman",
+    "relatedAllegationIds": [
+      "alg-043"
+    ]
+  },
+  {
+    "id": "int-054",
+    "investigationId": "inv-123",
+    "witnessId": "wit-061",
+    "scheduledAt": "2026-02-08T10:00:00",
+    "status": "rescheduled",
+    "interviewer": "Priya Raman",
+    "relatedAllegationIds": [
+      "alg-043"
+    ]
+  },
+  {
+    "id": "int-055",
+    "investigationId": "inv-124",
+    "witnessId": "wit-062",
+    "scheduledAt": "2026-02-26T11:30:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Ingrid Krantz; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-044",
+      "alg-045"
+    ]
+  },
+  {
+    "id": "int-056",
+    "investigationId": "inv-124",
+    "witnessId": "wit-063",
+    "scheduledAt": "2026-03-24T11:15:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Yuki Haddix; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-044",
+      "alg-045"
+    ]
+  },
+  {
+    "id": "int-057",
+    "investigationId": "inv-125",
+    "witnessId": "wit-064",
+    "scheduledAt": "2026-08-08T13:30:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Kwame Voss; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-046",
+      "alg-047"
+    ]
+  },
+  {
+    "id": "int-058",
+    "investigationId": "inv-125",
+    "witnessId": "wit-065",
+    "scheduledAt": "2026-08-02T15:00:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Nia Farrow; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-046",
+      "alg-047"
+    ]
+  },
+  {
+    "id": "int-059",
+    "investigationId": "inv-125",
+    "witnessId": "wit-066",
+    "scheduledAt": "2026-08-09T10:30:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Nia Rao; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-046",
+      "alg-047"
+    ]
+  },
+  {
+    "id": "int-060",
+    "investigationId": "inv-126",
+    "witnessId": "wit-067",
+    "scheduledAt": "2026-02-18T16:15:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Bianca Prescott; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-048"
+    ]
+  },
+  {
+    "id": "int-061",
+    "investigationId": "inv-126",
+    "witnessId": "wit-068",
+    "scheduledAt": "2026-02-09T10:00:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Coen Solvang; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-048"
+    ]
+  },
+  {
+    "id": "int-062",
+    "investigationId": "inv-126",
+    "witnessId": "wit-069",
+    "scheduledAt": "2026-02-08T15:00:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Rosa Verbeek; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-048"
+    ]
+  },
+  {
+    "id": "int-063",
+    "investigationId": "inv-127",
+    "witnessId": "wit-070",
+    "scheduledAt": "2026-01-05T13:15:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Amara Achebe; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-049"
+    ]
+  },
+  {
+    "id": "int-064",
+    "investigationId": "inv-127",
+    "witnessId": "wit-071",
+    "scheduledAt": "2025-12-21T16:30:00",
+    "status": "scheduled",
+    "interviewer": "Elena Vasquez",
+    "relatedAllegationIds": [
+      "alg-049"
+    ]
+  },
+  {
+    "id": "int-065",
+    "investigationId": "inv-128",
+    "witnessId": "wit-072",
+    "scheduledAt": "2025-12-17T13:00:00",
+    "status": "completed",
+    "interviewer": "Grace Lindqvist",
+    "notes": "Interview conducted with Felix Bexley; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-050"
+    ]
+  },
+  {
+    "id": "int-066",
+    "investigationId": "inv-128",
+    "witnessId": "wit-073",
+    "scheduledAt": "2025-11-30T13:15:00",
+    "status": "completed",
+    "interviewer": "Grace Lindqvist",
+    "notes": "Interview conducted with Nadia Osei; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-050"
+    ]
+  },
+  {
+    "id": "int-067",
+    "investigationId": "inv-129",
+    "witnessId": "wit-074",
+    "scheduledAt": "2025-12-19T13:30:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Lars Farrow; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-051",
+      "alg-052"
+    ]
+  },
+  {
+    "id": "int-068",
+    "investigationId": "inv-129",
+    "witnessId": "wit-075",
+    "scheduledAt": "2025-12-13T15:30:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Kian Fahey; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-051",
+      "alg-052"
+    ]
+  },
+  {
+    "id": "int-069",
+    "investigationId": "inv-130",
+    "witnessId": "wit-076",
+    "scheduledAt": "2025-12-27T11:30:00",
+    "status": "rescheduled",
+    "interviewer": "Tobias Renner",
+    "relatedAllegationIds": [
+      "alg-053",
+      "alg-054"
+    ]
+  },
+  {
+    "id": "int-070",
+    "investigationId": "inv-130",
+    "witnessId": "wit-077",
+    "scheduledAt": "2026-01-18T10:15:00",
+    "status": "rescheduled",
+    "interviewer": "Tobias Renner",
+    "relatedAllegationIds": [
+      "alg-053",
+      "alg-054"
+    ]
+  },
+  {
+    "id": "int-071",
+    "investigationId": "inv-131",
+    "witnessId": "wit-078",
+    "scheduledAt": "2025-11-16T13:30:00",
+    "status": "scheduled",
+    "interviewer": "Samuel Okafor",
+    "relatedAllegationIds": [
+      "alg-055"
+    ]
+  },
+  {
+    "id": "int-072",
+    "investigationId": "inv-131",
+    "witnessId": "wit-079",
+    "scheduledAt": "2025-10-25T15:45:00",
+    "status": "scheduled",
+    "interviewer": "Samuel Okafor",
+    "relatedAllegationIds": [
+      "alg-055"
+    ]
+  },
+  {
+    "id": "int-073",
+    "investigationId": "inv-131",
+    "witnessId": "wit-080",
+    "scheduledAt": "2025-10-28T16:45:00",
+    "status": "rescheduled",
+    "interviewer": "Samuel Okafor",
+    "relatedAllegationIds": [
+      "alg-055"
+    ]
+  },
+  {
+    "id": "int-074",
+    "investigationId": "inv-132",
+    "witnessId": "wit-081",
+    "scheduledAt": "2026-03-03T16:45:00",
+    "status": "scheduled",
+    "interviewer": "Tobias Renner",
+    "relatedAllegationIds": [
+      "alg-056"
+    ]
+  },
+  {
+    "id": "int-075",
+    "investigationId": "inv-133",
+    "witnessId": "wit-084",
+    "scheduledAt": "2026-05-05T14:45:00",
+    "status": "scheduled",
+    "interviewer": "Elena Vasquez",
+    "relatedAllegationIds": [
+      "alg-057",
+      "alg-058"
+    ]
+  },
+  {
+    "id": "int-076",
+    "investigationId": "inv-133",
+    "witnessId": "wit-085",
+    "scheduledAt": "2026-04-12T13:00:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Hassan Bexley; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-057",
+      "alg-058"
+    ]
+  },
+  {
+    "id": "int-077",
+    "investigationId": "inv-133",
+    "witnessId": "wit-086",
+    "scheduledAt": "2026-04-11T10:15:00",
+    "status": "rescheduled",
+    "interviewer": "Elena Vasquez",
+    "relatedAllegationIds": [
+      "alg-057",
+      "alg-058"
+    ]
+  },
+  {
+    "id": "int-078",
+    "investigationId": "inv-134",
+    "witnessId": "wit-088",
+    "scheduledAt": "2026-04-08T14:00:00",
+    "status": "scheduled",
+    "interviewer": "Anika Desai",
+    "relatedAllegationIds": [
+      "alg-059",
+      "alg-060"
+    ]
+  },
+  {
+    "id": "int-079",
+    "investigationId": "inv-135",
+    "witnessId": "wit-090",
+    "scheduledAt": "2026-04-29T14:15:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Felix Okorie; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-061"
+    ]
+  },
+  {
+    "id": "int-080",
+    "investigationId": "inv-135",
+    "witnessId": "wit-091",
+    "scheduledAt": "2026-04-23T09:15:00",
+    "status": "completed",
+    "interviewer": "Tobias Renner",
+    "notes": "Interview conducted with Petra Achebe; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-061"
+    ]
+  },
+  {
+    "id": "int-081",
+    "investigationId": "inv-136",
+    "witnessId": "wit-092",
+    "scheduledAt": "2026-04-02T14:00:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Bianca Lindgren; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-062"
+    ]
+  },
+  {
+    "id": "int-082",
+    "investigationId": "inv-136",
+    "witnessId": "wit-093",
+    "scheduledAt": "2026-04-08T11:45:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Freya Prescott; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-062"
+    ]
+  },
+  {
+    "id": "int-083",
+    "investigationId": "inv-137",
+    "witnessId": "wit-094",
+    "scheduledAt": "2026-03-20T15:00:00",
+    "status": "completed",
+    "interviewer": "Deborah Whitfield",
+    "notes": "Interview conducted with Noor Solheim; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-063",
+      "alg-064"
+    ]
+  },
+  {
+    "id": "int-084",
+    "investigationId": "inv-137",
+    "witnessId": "wit-095",
+    "scheduledAt": "2026-04-14T11:30:00",
+    "status": "completed",
+    "interviewer": "Deborah Whitfield",
+    "notes": "Interview conducted with Rafael Vance; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-063",
+      "alg-064"
+    ]
+  },
+  {
+    "id": "int-085",
+    "investigationId": "inv-137",
+    "witnessId": "wit-096",
+    "scheduledAt": "2026-03-31T16:45:00",
+    "status": "completed",
+    "interviewer": "Deborah Whitfield",
+    "notes": "Interview conducted with Lars Voss; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-063",
+      "alg-064"
+    ]
+  },
+  {
+    "id": "int-086",
+    "investigationId": "inv-138",
+    "witnessId": "wit-097",
+    "scheduledAt": "2025-12-06T14:30:00",
+    "status": "rescheduled",
+    "interviewer": "Deborah Whitfield",
+    "relatedAllegationIds": [
+      "alg-065"
+    ]
+  },
+  {
+    "id": "int-087",
+    "investigationId": "inv-138",
+    "witnessId": "wit-098",
+    "scheduledAt": "2025-11-19T11:45:00",
+    "status": "completed",
+    "interviewer": "Deborah Whitfield",
+    "notes": "Interview conducted with Nils Ito; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-065"
+    ]
+  },
+  {
+    "id": "int-088",
+    "investigationId": "inv-139",
+    "witnessId": "wit-099",
+    "scheduledAt": "2026-08-21T15:00:00",
+    "status": "scheduled",
+    "interviewer": "Priya Raman",
+    "relatedAllegationIds": [
+      "alg-066",
+      "alg-067"
+    ]
+  },
+  {
+    "id": "int-089",
+    "investigationId": "inv-139",
+    "witnessId": "wit-100",
+    "scheduledAt": "2026-09-17T09:00:00",
+    "status": "rescheduled",
+    "interviewer": "Priya Raman",
+    "relatedAllegationIds": [
+      "alg-066",
+      "alg-067"
+    ]
+  },
+  {
+    "id": "int-090",
+    "investigationId": "inv-140",
+    "witnessId": "wit-101",
+    "scheduledAt": "2026-07-24T13:15:00",
+    "status": "completed",
+    "interviewer": "Priya Raman",
+    "notes": "Interview conducted with Mateo Nkemelu; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-068"
+    ]
+  },
+  {
+    "id": "int-091",
+    "investigationId": "inv-140",
+    "witnessId": "wit-102",
+    "scheduledAt": "2026-07-23T16:45:00",
+    "status": "completed",
+    "interviewer": "Priya Raman",
+    "notes": "Interview conducted with Freya Qureshi; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-068"
+    ]
+  },
+  {
+    "id": "int-092",
+    "investigationId": "inv-140",
+    "witnessId": "wit-103",
+    "scheduledAt": "2026-07-21T16:00:00",
+    "status": "completed",
+    "interviewer": "Priya Raman",
+    "notes": "Interview conducted with Wren Fonseca; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-068"
+    ]
+  },
+  {
+    "id": "int-093",
+    "investigationId": "inv-141",
+    "witnessId": "wit-104",
+    "scheduledAt": "2026-08-20T14:15:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Elin Brandt; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-069"
+    ]
+  },
+  {
+    "id": "int-094",
+    "investigationId": "inv-141",
+    "witnessId": "wit-105",
+    "scheduledAt": "2026-08-23T15:30:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Sylvie Devries; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-069"
+    ]
+  },
+  {
+    "id": "int-095",
+    "investigationId": "inv-141",
+    "witnessId": "wit-106",
+    "scheduledAt": "2026-08-05T10:30:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Felix Vance; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-069"
+    ]
+  },
+  {
+    "id": "int-096",
+    "investigationId": "inv-142",
+    "witnessId": "wit-107",
+    "scheduledAt": "2026-06-21T16:30:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Freya Watanabe; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-070"
+    ]
+  },
+  {
+    "id": "int-097",
+    "investigationId": "inv-142",
+    "witnessId": "wit-108",
+    "scheduledAt": "2026-06-23T10:15:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Zara Aasen; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-070"
+    ]
+  },
+  {
+    "id": "int-098",
+    "investigationId": "inv-143",
+    "witnessId": "wit-109",
+    "scheduledAt": "2025-12-07T11:45:00",
+    "status": "completed",
+    "interviewer": "Samuel Okafor",
+    "notes": "Interview conducted with Hassan Nasser; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-071",
+      "alg-072"
+    ]
+  },
+  {
+    "id": "int-099",
+    "investigationId": "inv-143",
+    "witnessId": "wit-110",
+    "scheduledAt": "2025-11-20T09:15:00",
+    "status": "completed",
+    "interviewer": "Samuel Okafor",
+    "notes": "Interview conducted with Tariq Chinweze; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-071",
+      "alg-072"
+    ]
+  },
+  {
+    "id": "int-100",
+    "investigationId": "inv-144",
+    "witnessId": "wit-111",
+    "scheduledAt": "2025-11-04T11:15:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Coen Brandt; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-073"
+    ]
+  },
+  {
+    "id": "int-101",
+    "investigationId": "inv-144",
+    "witnessId": "wit-112",
+    "scheduledAt": "2025-11-07T15:00:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Bianca Fahey; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-073"
+    ]
+  },
+  {
+    "id": "int-102",
+    "investigationId": "inv-145",
+    "witnessId": "wit-113",
+    "scheduledAt": "2026-04-17T09:15:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Petra Solvang; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-074",
+      "alg-075"
+    ]
+  },
+  {
+    "id": "int-103",
+    "investigationId": "inv-145",
+    "witnessId": "wit-114",
+    "scheduledAt": "2026-03-15T14:15:00",
+    "status": "completed",
+    "interviewer": "Elena Vasquez",
+    "notes": "Interview conducted with Xavier Prescott; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-074",
+      "alg-075"
+    ]
+  },
+  {
+    "id": "int-104",
+    "investigationId": "inv-146",
+    "witnessId": "wit-115",
+    "scheduledAt": "2026-02-03T13:00:00",
+    "status": "rescheduled",
+    "interviewer": "Marcus Chen",
+    "relatedAllegationIds": [
+      "alg-076",
+      "alg-077"
+    ]
+  },
+  {
+    "id": "int-105",
+    "investigationId": "inv-146",
+    "witnessId": "wit-116",
+    "scheduledAt": "2026-01-21T14:30:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Freya Ito; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-076",
+      "alg-077"
+    ]
+  },
+  {
+    "id": "int-106",
+    "investigationId": "inv-146",
+    "witnessId": "wit-117",
+    "scheduledAt": "2026-02-26T10:00:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Junko Sandoval; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-076",
+      "alg-077"
+    ]
+  },
+  {
+    "id": "int-107",
+    "investigationId": "inv-147",
+    "witnessId": "wit-118",
+    "scheduledAt": "2026-05-05T16:30:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Kwame Castellano; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-078"
+    ]
+  },
+  {
+    "id": "int-108",
+    "investigationId": "inv-147",
+    "witnessId": "wit-119",
+    "scheduledAt": "2026-05-04T09:15:00",
+    "status": "completed",
+    "interviewer": "Anika Desai",
+    "notes": "Interview conducted with Kwame Brandt; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-078"
+    ]
+  },
+  {
+    "id": "int-109",
+    "investigationId": "inv-148",
+    "witnessId": "wit-120",
+    "scheduledAt": "2026-04-05T09:15:00",
+    "status": "scheduled",
+    "interviewer": "Marcus Chen",
+    "relatedAllegationIds": [
+      "alg-079"
+    ]
+  },
+  {
+    "id": "int-110",
+    "investigationId": "inv-148",
+    "witnessId": "wit-121",
+    "scheduledAt": "2026-03-26T09:00:00",
+    "status": "scheduled",
+    "interviewer": "Marcus Chen",
+    "relatedAllegationIds": [
+      "alg-079"
+    ]
+  },
+  {
+    "id": "int-111",
+    "investigationId": "inv-149",
+    "witnessId": "wit-122",
+    "scheduledAt": "2026-05-27T16:45:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Ravi Kessler; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-080"
+    ]
+  },
+  {
+    "id": "int-112",
+    "investigationId": "inv-149",
+    "witnessId": "wit-123",
+    "scheduledAt": "2026-05-14T09:30:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Kian Verbeek; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-080"
+    ]
+  },
+  {
+    "id": "int-113",
+    "investigationId": "inv-149",
+    "witnessId": "wit-124",
+    "scheduledAt": "2026-05-17T16:30:00",
+    "status": "completed",
+    "interviewer": "Marcus Chen",
+    "notes": "Interview conducted with Priyanka Nasser; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-080"
+    ]
+  },
+  {
+    "id": "int-114",
+    "investigationId": "inv-150",
+    "witnessId": "wit-125",
+    "scheduledAt": "2026-07-04T11:15:00",
+    "status": "completed",
+    "interviewer": "Samuel Okafor",
+    "notes": "Interview conducted with Fatima Chinweze; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-081"
+    ]
+  },
+  {
+    "id": "int-115",
+    "investigationId": "inv-150",
+    "witnessId": "wit-126",
+    "scheduledAt": "2026-07-15T13:00:00",
+    "status": "completed",
+    "interviewer": "Samuel Okafor",
+    "notes": "Interview conducted with Freya Sandoval; account consistent with materials reviewed to date.",
+    "relatedAllegationIds": [
+      "alg-081"
+    ]
+  }
+]

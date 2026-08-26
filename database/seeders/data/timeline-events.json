@@ -1,0 +1,2688 @@
+[
+  {
+    "id": "tl-001",
+    "investigationId": "inv-001",
+    "date": "2026-06-02",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Written complaint filed by Sarah Okafor via the ethics portal; acknowledged same day."
+  },
+  {
+    "id": "tl-002",
+    "investigationId": "inv-001",
+    "date": "2026-06-03",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-001; Deborah Whitfield assigned as investigator."
+  },
+  {
+    "id": "tl-003",
+    "investigationId": "inv-001",
+    "date": "2026-06-05",
+    "type": "meeting",
+    "title": "Scoping meeting with HR and legal",
+    "description": "Agreed scope: conduct from April 2026 onward; interim measures reviewed for both parties."
+  },
+  {
+    "id": "tl-004",
+    "investigationId": "inv-001",
+    "date": "2026-06-10",
+    "type": "evidence",
+    "title": "Incident log provided",
+    "description": "Complainant supplied a dated incident log ahead of her interview.",
+    "relatedEntity": {
+      "type": "evidence",
+      "id": "evd-003",
+      "label": "Complainant incident log"
+    }
+  },
+  {
+    "id": "tl-005",
+    "investigationId": "inv-001",
+    "date": "2026-06-18",
+    "type": "interview",
+    "title": "Interview — Sarah Okafor",
+    "description": "Complainant interview completed; transcript circulated to review folder.",
+    "relatedEntity": {
+      "type": "interview",
+      "id": "int-001",
+      "label": "Interview with Sarah Okafor"
+    }
+  },
+  {
+    "id": "tl-006",
+    "investigationId": "inv-001",
+    "date": "2026-06-24",
+    "type": "interview",
+    "title": "Interview — Priya Nair",
+    "description": "Coworker interview completed; partial corroboration obtained.",
+    "relatedEntity": {
+      "type": "witness",
+      "id": "wit-003",
+      "label": "Priya Nair"
+    }
+  },
+  {
+    "id": "tl-007",
+    "investigationId": "inv-001",
+    "date": "2026-07-01",
+    "type": "evidence",
+    "title": "Access logs requested and received",
+    "description": "IT produced channel access logs relevant to the exclusion allegation.",
+    "relatedEntity": {
+      "type": "evidence",
+      "id": "evd-005",
+      "label": "Project channel access log"
+    }
+  },
+  {
+    "id": "tl-008",
+    "investigationId": "inv-001",
+    "date": "2026-07-15",
+    "type": "correspondence",
+    "title": "Respondent notified",
+    "description": "Respondent formally notified of the allegations and interview date."
+  },
+  {
+    "id": "tl-009",
+    "investigationId": "inv-001",
+    "date": "2026-08-08",
+    "type": "review",
+    "title": "Findings drafted for alg-001",
+    "description": "Draft finding of substantiated recorded for the stand-up comments allegation.",
+    "relatedEntity": {
+      "type": "allegation",
+      "id": "alg-001",
+      "label": "Repeated demeaning comments in stand-ups"
+    }
+  },
+  {
+    "id": "tl-010",
+    "investigationId": "inv-001",
+    "date": "2026-08-19",
+    "type": "milestone",
+    "title": "Entered findings review",
+    "description": "Matter moved to findings review pending respondent interview."
+  },
+  {
+    "id": "tl-011",
+    "investigationId": "inv-002",
+    "date": "2026-07-14",
+    "type": "intake",
+    "title": "Claim received",
+    "description": "Discrimination claim submitted through employee relations."
+  },
+  {
+    "id": "tl-012",
+    "investigationId": "inv-002",
+    "date": "2026-07-30",
+    "type": "interview",
+    "title": "Interview — Tomás Alvarez",
+    "description": "Complainant interview completed; rubric versions collected.",
+    "relatedEntity": {
+      "type": "evidence",
+      "id": "evd-007",
+      "label": "Promotion rubric — two versions"
+    }
+  },
+  {
+    "id": "tl-013",
+    "investigationId": "inv-003",
+    "date": "2026-07-28",
+    "type": "milestone",
+    "title": "Investigation completed",
+    "description": "Final report issued to client; both managers sanctioned per policy."
+  },
+  {
+    "id": "tl-014",
+    "investigationId": "inv-004",
+    "date": "2026-08-10",
+    "type": "intake",
+    "title": "Hotline report received",
+    "description": "Anonymous hotline report regarding vendor selection process."
+  },
+  {
+    "id": "tl-015",
+    "investigationId": "inv-005",
+    "date": "2026-07-28",
+    "type": "intake",
+    "title": "Retaliation complaint filed",
+    "description": "Complaint filed two weeks after the original safety report."
+  },
+  {
+    "id": "tl-016",
+    "investigationId": "inv-018",
+    "date": "2025-11-03",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-017",
+    "investigationId": "inv-018",
+    "date": "2025-11-04",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-018; Priya Raman assigned as investigator."
+  },
+  {
+    "id": "tl-018",
+    "investigationId": "inv-018",
+    "date": "2025-11-08",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-019",
+    "investigationId": "inv-018",
+    "date": "2025-11-28",
+    "type": "interview",
+    "title": "Interview — Callum Bexley",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-020",
+    "investigationId": "inv-018",
+    "date": "2025-11-17",
+    "type": "interview",
+    "title": "Interview — Elin Menon",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-021",
+    "investigationId": "inv-018",
+    "date": "2025-12-22",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Correspondence between parties obtained and logged for review."
+  },
+  {
+    "id": "tl-022",
+    "investigationId": "inv-018",
+    "date": "2026-01-17",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-023",
+    "investigationId": "inv-018",
+    "date": "2026-01-22",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-024",
+    "investigationId": "inv-101",
+    "date": "2026-04-06",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-025",
+    "investigationId": "inv-101",
+    "date": "2026-04-07",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-101; Marcus Chen assigned as investigator."
+  },
+  {
+    "id": "tl-026",
+    "investigationId": "inv-101",
+    "date": "2026-05-26",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Correspondence between parties obtained and logged for review."
+  },
+  {
+    "id": "tl-027",
+    "investigationId": "inv-102",
+    "date": "2025-10-31",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-028",
+    "investigationId": "inv-102",
+    "date": "2025-11-01",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-102; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-029",
+    "investigationId": "inv-102",
+    "date": "2025-11-03",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-030",
+    "investigationId": "inv-102",
+    "date": "2025-12-18",
+    "type": "interview",
+    "title": "Interview — Bram Voss",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-031",
+    "investigationId": "inv-102",
+    "date": "2025-12-09",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Incident log obtained and logged for review."
+  },
+  {
+    "id": "tl-032",
+    "investigationId": "inv-103",
+    "date": "2026-07-04",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-033",
+    "investigationId": "inv-103",
+    "date": "2026-07-05",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-103; Priya Raman assigned as investigator."
+  },
+  {
+    "id": "tl-034",
+    "investigationId": "inv-103",
+    "date": "2026-07-06",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-035",
+    "investigationId": "inv-103",
+    "date": "2026-07-30",
+    "type": "interview",
+    "title": "Interview — Zara Prescott",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-036",
+    "investigationId": "inv-103",
+    "date": "2026-08-16",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Team channel export obtained and logged for review."
+  },
+  {
+    "id": "tl-037",
+    "investigationId": "inv-104",
+    "date": "2026-08-13",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-038",
+    "investigationId": "inv-104",
+    "date": "2026-08-14",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-104; Deborah Whitfield assigned as investigator."
+  },
+  {
+    "id": "tl-039",
+    "investigationId": "inv-104",
+    "date": "2026-08-15",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Incident log obtained and logged for review."
+  },
+  {
+    "id": "tl-040",
+    "investigationId": "inv-105",
+    "date": "2025-11-11",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-041",
+    "investigationId": "inv-105",
+    "date": "2025-11-12",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-105; Elena Vasquez assigned as investigator."
+  },
+  {
+    "id": "tl-042",
+    "investigationId": "inv-105",
+    "date": "2025-11-17",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-043",
+    "investigationId": "inv-105",
+    "date": "2025-12-17",
+    "type": "interview",
+    "title": "Interview — Zara Voss",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-044",
+    "investigationId": "inv-105",
+    "date": "2026-01-10",
+    "type": "interview",
+    "title": "Interview — Nia Nkemelu",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-045",
+    "investigationId": "inv-105",
+    "date": "2025-12-18",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Call recording obtained and logged for review."
+  },
+  {
+    "id": "tl-046",
+    "investigationId": "inv-105",
+    "date": "2026-01-30",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-047",
+    "investigationId": "inv-106",
+    "date": "2025-12-24",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-048",
+    "investigationId": "inv-106",
+    "date": "2025-12-25",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-106; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-049",
+    "investigationId": "inv-106",
+    "date": "2026-01-09",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Team channel export obtained and logged for review."
+  },
+  {
+    "id": "tl-050",
+    "investigationId": "inv-107",
+    "date": "2026-08-01",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-051",
+    "investigationId": "inv-107",
+    "date": "2026-08-02",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-107; Grace Lindqvist assigned as investigator."
+  },
+  {
+    "id": "tl-052",
+    "investigationId": "inv-107",
+    "date": "2026-08-07",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-053",
+    "investigationId": "inv-107",
+    "date": "2026-08-26",
+    "type": "interview",
+    "title": "Interview — Ines Haddix",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-054",
+    "investigationId": "inv-107",
+    "date": "2026-08-06",
+    "type": "interview",
+    "title": "Interview — Lars Rao",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-055",
+    "investigationId": "inv-107",
+    "date": "2026-08-27",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Email thread re allegation obtained and logged for review."
+  },
+  {
+    "id": "tl-056",
+    "investigationId": "inv-107",
+    "date": "2026-08-30",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-057",
+    "investigationId": "inv-107",
+    "date": "2026-08-31",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-058",
+    "investigationId": "inv-108",
+    "date": "2026-03-27",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-059",
+    "investigationId": "inv-108",
+    "date": "2026-03-28",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-108; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-060",
+    "investigationId": "inv-108",
+    "date": "2026-03-30",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-061",
+    "investigationId": "inv-108",
+    "date": "2026-05-05",
+    "type": "interview",
+    "title": "Interview — Aisling Vance",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-062",
+    "investigationId": "inv-108",
+    "date": "2026-04-09",
+    "type": "interview",
+    "title": "Interview — Gideon Doyle",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-063",
+    "investigationId": "inv-108",
+    "date": "2026-05-05",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Call recording obtained and logged for review."
+  },
+  {
+    "id": "tl-064",
+    "investigationId": "inv-108",
+    "date": "2026-05-11",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-065",
+    "investigationId": "inv-109",
+    "date": "2026-06-12",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-066",
+    "investigationId": "inv-109",
+    "date": "2026-06-13",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-109; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-067",
+    "investigationId": "inv-109",
+    "date": "2026-06-14",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-068",
+    "investigationId": "inv-109",
+    "date": "2026-06-14",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Access log report obtained and logged for review."
+  },
+  {
+    "id": "tl-069",
+    "investigationId": "inv-110",
+    "date": "2026-01-27",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-070",
+    "investigationId": "inv-110",
+    "date": "2026-01-28",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-110; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-071",
+    "investigationId": "inv-110",
+    "date": "2026-01-29",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-072",
+    "investigationId": "inv-110",
+    "date": "2026-03-10",
+    "type": "interview",
+    "title": "Interview — Noor Vance",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-073",
+    "investigationId": "inv-110",
+    "date": "2026-03-13",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Team channel export obtained and logged for review."
+  },
+  {
+    "id": "tl-074",
+    "investigationId": "inv-110",
+    "date": "2026-03-21",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-075",
+    "investigationId": "inv-111",
+    "date": "2025-10-03",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-076",
+    "investigationId": "inv-111",
+    "date": "2025-10-04",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-111; Samuel Okafor assigned as investigator."
+  },
+  {
+    "id": "tl-077",
+    "investigationId": "inv-111",
+    "date": "2025-10-06",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-078",
+    "investigationId": "inv-111",
+    "date": "2025-10-09",
+    "type": "interview",
+    "title": "Interview — Ingrid Reyes",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-079",
+    "investigationId": "inv-111",
+    "date": "2025-10-23",
+    "type": "interview",
+    "title": "Interview — Coen Achebe",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-080",
+    "investigationId": "inv-111",
+    "date": "2025-10-29",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Incident log obtained and logged for review."
+  },
+  {
+    "id": "tl-081",
+    "investigationId": "inv-111",
+    "date": "2025-11-14",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-082",
+    "investigationId": "inv-111",
+    "date": "2025-11-15",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-083",
+    "investigationId": "inv-112",
+    "date": "2026-04-20",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-084",
+    "investigationId": "inv-112",
+    "date": "2026-04-21",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-112; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-085",
+    "investigationId": "inv-112",
+    "date": "2026-04-22",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-086",
+    "investigationId": "inv-112",
+    "date": "2026-05-07",
+    "type": "interview",
+    "title": "Interview — Owen Farrow",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-087",
+    "investigationId": "inv-112",
+    "date": "2026-04-27",
+    "type": "interview",
+    "title": "Interview — Nia Chinweze",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-088",
+    "investigationId": "inv-112",
+    "date": "2026-05-27",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Call recording obtained and logged for review."
+  },
+  {
+    "id": "tl-089",
+    "investigationId": "inv-112",
+    "date": "2026-06-02",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-090",
+    "investigationId": "inv-112",
+    "date": "2026-06-04",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-091",
+    "investigationId": "inv-113",
+    "date": "2026-07-18",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-092",
+    "investigationId": "inv-113",
+    "date": "2026-07-19",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-113; Deborah Whitfield assigned as investigator."
+  },
+  {
+    "id": "tl-093",
+    "investigationId": "inv-113",
+    "date": "2026-07-24",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-094",
+    "investigationId": "inv-113",
+    "date": "2026-08-09",
+    "type": "interview",
+    "title": "Interview — Adaeze Vance",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-095",
+    "investigationId": "inv-113",
+    "date": "2026-09-05",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Policy acknowledgement record obtained and logged for review."
+  },
+  {
+    "id": "tl-096",
+    "investigationId": "inv-113",
+    "date": "2026-09-09",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-097",
+    "investigationId": "inv-114",
+    "date": "2026-05-31",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-098",
+    "investigationId": "inv-114",
+    "date": "2026-06-01",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-114; Grace Lindqvist assigned as investigator."
+  },
+  {
+    "id": "tl-099",
+    "investigationId": "inv-114",
+    "date": "2026-06-04",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-100",
+    "investigationId": "inv-114",
+    "date": "2026-07-15",
+    "type": "interview",
+    "title": "Interview — Mateo Bexley",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-101",
+    "investigationId": "inv-114",
+    "date": "2026-07-15",
+    "type": "interview",
+    "title": "Interview — Diego Adeyemi",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-102",
+    "investigationId": "inv-114",
+    "date": "2026-07-21",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Meeting recording obtained and logged for review."
+  },
+  {
+    "id": "tl-103",
+    "investigationId": "inv-114",
+    "date": "2026-07-20",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-104",
+    "investigationId": "inv-115",
+    "date": "2025-12-22",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-105",
+    "investigationId": "inv-115",
+    "date": "2025-12-23",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-115; Anika Desai assigned as investigator."
+  },
+  {
+    "id": "tl-106",
+    "investigationId": "inv-115",
+    "date": "2025-12-25",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Call recording obtained and logged for review."
+  },
+  {
+    "id": "tl-107",
+    "investigationId": "inv-116",
+    "date": "2025-12-25",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-108",
+    "investigationId": "inv-116",
+    "date": "2025-12-26",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-116; Grace Lindqvist assigned as investigator."
+  },
+  {
+    "id": "tl-109",
+    "investigationId": "inv-116",
+    "date": "2025-12-27",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-110",
+    "investigationId": "inv-116",
+    "date": "2026-02-05",
+    "type": "interview",
+    "title": "Interview — Louis Krantz",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-111",
+    "investigationId": "inv-116",
+    "date": "2026-01-21",
+    "type": "interview",
+    "title": "Interview — Yara Doran",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-112",
+    "investigationId": "inv-116",
+    "date": "2026-02-16",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Incident log obtained and logged for review."
+  },
+  {
+    "id": "tl-113",
+    "investigationId": "inv-116",
+    "date": "2026-03-01",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-114",
+    "investigationId": "inv-117",
+    "date": "2026-04-01",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-115",
+    "investigationId": "inv-117",
+    "date": "2026-04-02",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-117; Anika Desai assigned as investigator."
+  },
+  {
+    "id": "tl-116",
+    "investigationId": "inv-117",
+    "date": "2026-04-03",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-117",
+    "investigationId": "inv-117",
+    "date": "2026-04-08",
+    "type": "interview",
+    "title": "Interview — Sylvie Halvorsen",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-118",
+    "investigationId": "inv-117",
+    "date": "2026-04-21",
+    "type": "interview",
+    "title": "Interview — Ingeborg Fahey",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-119",
+    "investigationId": "inv-117",
+    "date": "2026-04-13",
+    "type": "interview",
+    "title": "Interview — Diego Doran",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-120",
+    "investigationId": "inv-117",
+    "date": "2026-04-24",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Financial system extract obtained and logged for review."
+  },
+  {
+    "id": "tl-121",
+    "investigationId": "inv-117",
+    "date": "2026-04-30",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-122",
+    "investigationId": "inv-117",
+    "date": "2026-05-02",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-123",
+    "investigationId": "inv-118",
+    "date": "2025-11-22",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-124",
+    "investigationId": "inv-118",
+    "date": "2025-11-23",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-118; Elena Vasquez assigned as investigator."
+  },
+  {
+    "id": "tl-125",
+    "investigationId": "inv-118",
+    "date": "2025-11-24",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-126",
+    "investigationId": "inv-118",
+    "date": "2025-12-01",
+    "type": "interview",
+    "title": "Interview — Malik Castellano",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-127",
+    "investigationId": "inv-118",
+    "date": "2026-01-01",
+    "type": "interview",
+    "title": "Interview — Fatima Prescott",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-128",
+    "investigationId": "inv-118",
+    "date": "2025-12-02",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Call recording obtained and logged for review."
+  },
+  {
+    "id": "tl-129",
+    "investigationId": "inv-118",
+    "date": "2026-01-16",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-130",
+    "investigationId": "inv-119",
+    "date": "2026-01-11",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-131",
+    "investigationId": "inv-119",
+    "date": "2026-01-12",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-119; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-132",
+    "investigationId": "inv-119",
+    "date": "2026-01-17",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-133",
+    "investigationId": "inv-119",
+    "date": "2026-01-30",
+    "type": "interview",
+    "title": "Interview — Ines Fadel",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-134",
+    "investigationId": "inv-119",
+    "date": "2026-01-30",
+    "type": "interview",
+    "title": "Interview — Malik Halvorsen",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-135",
+    "investigationId": "inv-119",
+    "date": "2026-03-11",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Incident log obtained and logged for review."
+  },
+  {
+    "id": "tl-136",
+    "investigationId": "inv-119",
+    "date": "2026-03-23",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-137",
+    "investigationId": "inv-120",
+    "date": "2025-10-15",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-138",
+    "investigationId": "inv-120",
+    "date": "2025-10-16",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-120; Priya Raman assigned as investigator."
+  },
+  {
+    "id": "tl-139",
+    "investigationId": "inv-120",
+    "date": "2025-11-22",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Team channel export obtained and logged for review."
+  },
+  {
+    "id": "tl-140",
+    "investigationId": "inv-121",
+    "date": "2026-05-11",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-141",
+    "investigationId": "inv-121",
+    "date": "2026-05-12",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-121; Priya Raman assigned as investigator."
+  },
+  {
+    "id": "tl-142",
+    "investigationId": "inv-121",
+    "date": "2026-06-20",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Incident log obtained and logged for review."
+  },
+  {
+    "id": "tl-143",
+    "investigationId": "inv-122",
+    "date": "2025-12-07",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-144",
+    "investigationId": "inv-122",
+    "date": "2025-12-08",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-122; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-145",
+    "investigationId": "inv-122",
+    "date": "2025-12-11",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-146",
+    "investigationId": "inv-122",
+    "date": "2025-12-30",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Access log report obtained and logged for review."
+  },
+  {
+    "id": "tl-147",
+    "investigationId": "inv-122",
+    "date": "2026-01-20",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-148",
+    "investigationId": "inv-123",
+    "date": "2025-12-12",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-149",
+    "investigationId": "inv-123",
+    "date": "2025-12-13",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-123; Priya Raman assigned as investigator."
+  },
+  {
+    "id": "tl-150",
+    "investigationId": "inv-123",
+    "date": "2025-12-17",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-151",
+    "investigationId": "inv-123",
+    "date": "2026-02-13",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Direct message export obtained and logged for review."
+  },
+  {
+    "id": "tl-152",
+    "investigationId": "inv-124",
+    "date": "2026-02-19",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-153",
+    "investigationId": "inv-124",
+    "date": "2026-02-20",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-124; Elena Vasquez assigned as investigator."
+  },
+  {
+    "id": "tl-154",
+    "investigationId": "inv-124",
+    "date": "2026-02-21",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-155",
+    "investigationId": "inv-124",
+    "date": "2026-02-26",
+    "type": "interview",
+    "title": "Interview — Ingrid Krantz",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-156",
+    "investigationId": "inv-124",
+    "date": "2026-03-24",
+    "type": "interview",
+    "title": "Interview — Yuki Haddix",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-157",
+    "investigationId": "inv-124",
+    "date": "2026-03-15",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Correspondence between parties obtained and logged for review."
+  },
+  {
+    "id": "tl-158",
+    "investigationId": "inv-124",
+    "date": "2026-03-22",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-159",
+    "investigationId": "inv-124",
+    "date": "2026-03-24",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-160",
+    "investigationId": "inv-125",
+    "date": "2026-06-17",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-161",
+    "investigationId": "inv-125",
+    "date": "2026-06-18",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-125; Anika Desai assigned as investigator."
+  },
+  {
+    "id": "tl-162",
+    "investigationId": "inv-125",
+    "date": "2026-06-21",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-163",
+    "investigationId": "inv-125",
+    "date": "2026-08-08",
+    "type": "interview",
+    "title": "Interview — Kwame Voss",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-164",
+    "investigationId": "inv-125",
+    "date": "2026-08-02",
+    "type": "interview",
+    "title": "Interview — Nia Farrow",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-165",
+    "investigationId": "inv-125",
+    "date": "2026-08-09",
+    "type": "interview",
+    "title": "Interview — Nia Rao",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-166",
+    "investigationId": "inv-125",
+    "date": "2026-07-23",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Team channel export obtained and logged for review."
+  },
+  {
+    "id": "tl-167",
+    "investigationId": "inv-125",
+    "date": "2026-08-13",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-168",
+    "investigationId": "inv-126",
+    "date": "2026-02-01",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-169",
+    "investigationId": "inv-126",
+    "date": "2026-02-02",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-126; Marcus Chen assigned as investigator."
+  },
+  {
+    "id": "tl-170",
+    "investigationId": "inv-126",
+    "date": "2026-02-05",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-171",
+    "investigationId": "inv-126",
+    "date": "2026-02-18",
+    "type": "interview",
+    "title": "Interview — Bianca Prescott",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-172",
+    "investigationId": "inv-126",
+    "date": "2026-02-09",
+    "type": "interview",
+    "title": "Interview — Coen Solvang",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-173",
+    "investigationId": "inv-126",
+    "date": "2026-02-08",
+    "type": "interview",
+    "title": "Interview — Rosa Verbeek",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-174",
+    "investigationId": "inv-126",
+    "date": "2026-02-18",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Direct message export obtained and logged for review."
+  },
+  {
+    "id": "tl-175",
+    "investigationId": "inv-126",
+    "date": "2026-03-03",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-176",
+    "investigationId": "inv-126",
+    "date": "2026-03-07",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-177",
+    "investigationId": "inv-127",
+    "date": "2025-11-18",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-178",
+    "investigationId": "inv-127",
+    "date": "2025-11-19",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-127; Elena Vasquez assigned as investigator."
+  },
+  {
+    "id": "tl-179",
+    "investigationId": "inv-127",
+    "date": "2025-11-24",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-180",
+    "investigationId": "inv-127",
+    "date": "2026-01-05",
+    "type": "interview",
+    "title": "Interview — Amara Achebe",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-181",
+    "investigationId": "inv-127",
+    "date": "2025-12-12",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Team channel export obtained and logged for review."
+  },
+  {
+    "id": "tl-182",
+    "investigationId": "inv-127",
+    "date": "2026-01-26",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-183",
+    "investigationId": "inv-128",
+    "date": "2025-11-17",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-184",
+    "investigationId": "inv-128",
+    "date": "2025-11-18",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-128; Grace Lindqvist assigned as investigator."
+  },
+  {
+    "id": "tl-185",
+    "investigationId": "inv-128",
+    "date": "2025-11-22",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-186",
+    "investigationId": "inv-128",
+    "date": "2025-12-17",
+    "type": "interview",
+    "title": "Interview — Felix Bexley",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-187",
+    "investigationId": "inv-128",
+    "date": "2025-11-30",
+    "type": "interview",
+    "title": "Interview — Nadia Osei",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-188",
+    "investigationId": "inv-128",
+    "date": "2025-11-20",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Incident log obtained and logged for review."
+  },
+  {
+    "id": "tl-189",
+    "investigationId": "inv-128",
+    "date": "2026-01-06",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-190",
+    "investigationId": "inv-128",
+    "date": "2026-01-09",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-191",
+    "investigationId": "inv-129",
+    "date": "2025-11-27",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-192",
+    "investigationId": "inv-129",
+    "date": "2025-11-28",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-129; Marcus Chen assigned as investigator."
+  },
+  {
+    "id": "tl-193",
+    "investigationId": "inv-129",
+    "date": "2025-12-01",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-194",
+    "investigationId": "inv-129",
+    "date": "2025-12-19",
+    "type": "interview",
+    "title": "Interview — Lars Farrow",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-195",
+    "investigationId": "inv-129",
+    "date": "2025-12-13",
+    "type": "interview",
+    "title": "Interview — Kian Fahey",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-196",
+    "investigationId": "inv-129",
+    "date": "2026-01-15",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Policy acknowledgement record obtained and logged for review."
+  },
+  {
+    "id": "tl-197",
+    "investigationId": "inv-129",
+    "date": "2026-01-21",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-198",
+    "investigationId": "inv-129",
+    "date": "2026-01-25",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-199",
+    "investigationId": "inv-130",
+    "date": "2025-12-16",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-200",
+    "investigationId": "inv-130",
+    "date": "2025-12-17",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-130; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-201",
+    "investigationId": "inv-130",
+    "date": "2025-12-20",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-202",
+    "investigationId": "inv-130",
+    "date": "2026-02-02",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Call recording obtained and logged for review."
+  },
+  {
+    "id": "tl-203",
+    "investigationId": "inv-131",
+    "date": "2025-10-09",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-204",
+    "investigationId": "inv-131",
+    "date": "2025-10-10",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-131; Samuel Okafor assigned as investigator."
+  },
+  {
+    "id": "tl-205",
+    "investigationId": "inv-131",
+    "date": "2025-10-15",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-206",
+    "investigationId": "inv-131",
+    "date": "2025-10-14",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Email thread re allegation obtained and logged for review."
+  },
+  {
+    "id": "tl-207",
+    "investigationId": "inv-132",
+    "date": "2026-02-15",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-208",
+    "investigationId": "inv-132",
+    "date": "2026-02-16",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-132; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-209",
+    "investigationId": "inv-132",
+    "date": "2026-04-06",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Policy acknowledgement record obtained and logged for review."
+  },
+  {
+    "id": "tl-210",
+    "investigationId": "inv-133",
+    "date": "2026-02-26",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-211",
+    "investigationId": "inv-133",
+    "date": "2026-02-27",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-133; Elena Vasquez assigned as investigator."
+  },
+  {
+    "id": "tl-212",
+    "investigationId": "inv-133",
+    "date": "2026-03-01",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-213",
+    "investigationId": "inv-133",
+    "date": "2026-04-12",
+    "type": "interview",
+    "title": "Interview — Hassan Bexley",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-214",
+    "investigationId": "inv-133",
+    "date": "2026-04-01",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Direct message export obtained and logged for review."
+  },
+  {
+    "id": "tl-215",
+    "investigationId": "inv-134",
+    "date": "2026-02-03",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-216",
+    "investigationId": "inv-134",
+    "date": "2026-02-04",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-134; Anika Desai assigned as investigator."
+  },
+  {
+    "id": "tl-217",
+    "investigationId": "inv-134",
+    "date": "2026-03-01",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Policy acknowledgement record obtained and logged for review."
+  },
+  {
+    "id": "tl-218",
+    "investigationId": "inv-135",
+    "date": "2026-03-27",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-219",
+    "investigationId": "inv-135",
+    "date": "2026-03-28",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-135; Tobias Renner assigned as investigator."
+  },
+  {
+    "id": "tl-220",
+    "investigationId": "inv-135",
+    "date": "2026-03-30",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-221",
+    "investigationId": "inv-135",
+    "date": "2026-04-29",
+    "type": "interview",
+    "title": "Interview — Felix Okorie",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-222",
+    "investigationId": "inv-135",
+    "date": "2026-04-23",
+    "type": "interview",
+    "title": "Interview — Petra Achebe",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-223",
+    "investigationId": "inv-135",
+    "date": "2026-03-31",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Call recording obtained and logged for review."
+  },
+  {
+    "id": "tl-224",
+    "investigationId": "inv-135",
+    "date": "2026-05-12",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-225",
+    "investigationId": "inv-136",
+    "date": "2026-02-28",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-226",
+    "investigationId": "inv-136",
+    "date": "2026-03-01",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-136; Elena Vasquez assigned as investigator."
+  },
+  {
+    "id": "tl-227",
+    "investigationId": "inv-136",
+    "date": "2026-03-02",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-228",
+    "investigationId": "inv-136",
+    "date": "2026-04-02",
+    "type": "interview",
+    "title": "Interview — Bianca Lindgren",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-229",
+    "investigationId": "inv-136",
+    "date": "2026-04-08",
+    "type": "interview",
+    "title": "Interview — Freya Prescott",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-230",
+    "investigationId": "inv-136",
+    "date": "2026-03-22",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Meeting recording obtained and logged for review."
+  },
+  {
+    "id": "tl-231",
+    "investigationId": "inv-136",
+    "date": "2026-04-10",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-232",
+    "investigationId": "inv-136",
+    "date": "2026-04-13",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-233",
+    "investigationId": "inv-137",
+    "date": "2026-03-08",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-234",
+    "investigationId": "inv-137",
+    "date": "2026-03-09",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-137; Deborah Whitfield assigned as investigator."
+  },
+  {
+    "id": "tl-235",
+    "investigationId": "inv-137",
+    "date": "2026-03-13",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-236",
+    "investigationId": "inv-137",
+    "date": "2026-03-20",
+    "type": "interview",
+    "title": "Interview — Noor Solheim",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-237",
+    "investigationId": "inv-137",
+    "date": "2026-04-14",
+    "type": "interview",
+    "title": "Interview — Rafael Vance",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-238",
+    "investigationId": "inv-137",
+    "date": "2026-03-31",
+    "type": "interview",
+    "title": "Interview — Lars Voss",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-239",
+    "investigationId": "inv-137",
+    "date": "2026-04-13",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Policy acknowledgement record obtained and logged for review."
+  },
+  {
+    "id": "tl-240",
+    "investigationId": "inv-137",
+    "date": "2026-04-16",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-241",
+    "investigationId": "inv-137",
+    "date": "2026-04-18",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-242",
+    "investigationId": "inv-138",
+    "date": "2025-11-16",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-243",
+    "investigationId": "inv-138",
+    "date": "2025-11-17",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-138; Deborah Whitfield assigned as investigator."
+  },
+  {
+    "id": "tl-244",
+    "investigationId": "inv-138",
+    "date": "2025-11-21",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-245",
+    "investigationId": "inv-138",
+    "date": "2025-11-19",
+    "type": "interview",
+    "title": "Interview — Nils Ito",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-246",
+    "investigationId": "inv-138",
+    "date": "2025-12-21",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Correspondence between parties obtained and logged for review."
+  },
+  {
+    "id": "tl-247",
+    "investigationId": "inv-139",
+    "date": "2026-08-02",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-248",
+    "investigationId": "inv-139",
+    "date": "2026-08-03",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-139; Priya Raman assigned as investigator."
+  },
+  {
+    "id": "tl-249",
+    "investigationId": "inv-139",
+    "date": "2026-08-07",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-250",
+    "investigationId": "inv-139",
+    "date": "2026-08-04",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Email thread re allegation obtained and logged for review."
+  },
+  {
+    "id": "tl-251",
+    "investigationId": "inv-140",
+    "date": "2026-06-26",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-252",
+    "investigationId": "inv-140",
+    "date": "2026-06-27",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-140; Priya Raman assigned as investigator."
+  },
+  {
+    "id": "tl-253",
+    "investigationId": "inv-140",
+    "date": "2026-06-28",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-254",
+    "investigationId": "inv-140",
+    "date": "2026-07-24",
+    "type": "interview",
+    "title": "Interview — Mateo Nkemelu",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-255",
+    "investigationId": "inv-140",
+    "date": "2026-07-23",
+    "type": "interview",
+    "title": "Interview — Freya Qureshi",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-256",
+    "investigationId": "inv-140",
+    "date": "2026-07-21",
+    "type": "interview",
+    "title": "Interview — Wren Fonseca",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-257",
+    "investigationId": "inv-140",
+    "date": "2026-08-09",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Meeting recording obtained and logged for review."
+  },
+  {
+    "id": "tl-258",
+    "investigationId": "inv-140",
+    "date": "2026-08-07",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-259",
+    "investigationId": "inv-140",
+    "date": "2026-08-11",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-260",
+    "investigationId": "inv-141",
+    "date": "2026-07-13",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-261",
+    "investigationId": "inv-141",
+    "date": "2026-07-14",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-141; Anika Desai assigned as investigator."
+  },
+  {
+    "id": "tl-262",
+    "investigationId": "inv-141",
+    "date": "2026-07-17",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-263",
+    "investigationId": "inv-141",
+    "date": "2026-08-20",
+    "type": "interview",
+    "title": "Interview — Elin Brandt",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-264",
+    "investigationId": "inv-141",
+    "date": "2026-08-23",
+    "type": "interview",
+    "title": "Interview — Sylvie Devries",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-265",
+    "investigationId": "inv-141",
+    "date": "2026-08-05",
+    "type": "interview",
+    "title": "Interview — Felix Vance",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-266",
+    "investigationId": "inv-141",
+    "date": "2026-08-27",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Financial system extract obtained and logged for review."
+  },
+  {
+    "id": "tl-267",
+    "investigationId": "inv-141",
+    "date": "2026-08-29",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-268",
+    "investigationId": "inv-142",
+    "date": "2026-05-31",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-269",
+    "investigationId": "inv-142",
+    "date": "2026-06-01",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-142; Marcus Chen assigned as investigator."
+  },
+  {
+    "id": "tl-270",
+    "investigationId": "inv-142",
+    "date": "2026-06-02",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-271",
+    "investigationId": "inv-142",
+    "date": "2026-06-21",
+    "type": "interview",
+    "title": "Interview — Freya Watanabe",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-272",
+    "investigationId": "inv-142",
+    "date": "2026-06-23",
+    "type": "interview",
+    "title": "Interview — Zara Aasen",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-273",
+    "investigationId": "inv-142",
+    "date": "2026-06-23",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Financial system extract obtained and logged for review."
+  },
+  {
+    "id": "tl-274",
+    "investigationId": "inv-142",
+    "date": "2026-06-30",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-275",
+    "investigationId": "inv-142",
+    "date": "2026-07-04",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-276",
+    "investigationId": "inv-143",
+    "date": "2025-10-24",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-277",
+    "investigationId": "inv-143",
+    "date": "2025-10-25",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-143; Samuel Okafor assigned as investigator."
+  },
+  {
+    "id": "tl-278",
+    "investigationId": "inv-143",
+    "date": "2025-10-29",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-279",
+    "investigationId": "inv-143",
+    "date": "2025-12-07",
+    "type": "interview",
+    "title": "Interview — Hassan Nasser",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-280",
+    "investigationId": "inv-143",
+    "date": "2025-11-20",
+    "type": "interview",
+    "title": "Interview — Tariq Chinweze",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-281",
+    "investigationId": "inv-143",
+    "date": "2025-12-21",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Direct message export obtained and logged for review."
+  },
+  {
+    "id": "tl-282",
+    "investigationId": "inv-143",
+    "date": "2025-12-31",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-283",
+    "investigationId": "inv-143",
+    "date": "2026-01-02",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-284",
+    "investigationId": "inv-144",
+    "date": "2025-11-01",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-285",
+    "investigationId": "inv-144",
+    "date": "2025-11-02",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-144; Anika Desai assigned as investigator."
+  },
+  {
+    "id": "tl-286",
+    "investigationId": "inv-144",
+    "date": "2025-11-05",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-287",
+    "investigationId": "inv-144",
+    "date": "2025-11-04",
+    "type": "interview",
+    "title": "Interview — Coen Brandt",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-288",
+    "investigationId": "inv-144",
+    "date": "2025-11-07",
+    "type": "interview",
+    "title": "Interview — Bianca Fahey",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-289",
+    "investigationId": "inv-144",
+    "date": "2025-11-16",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Access log report obtained and logged for review."
+  },
+  {
+    "id": "tl-290",
+    "investigationId": "inv-144",
+    "date": "2025-12-15",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-291",
+    "investigationId": "inv-144",
+    "date": "2025-12-18",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-292",
+    "investigationId": "inv-145",
+    "date": "2026-03-09",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-293",
+    "investigationId": "inv-145",
+    "date": "2026-03-10",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-145; Elena Vasquez assigned as investigator."
+  },
+  {
+    "id": "tl-294",
+    "investigationId": "inv-145",
+    "date": "2026-03-11",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-295",
+    "investigationId": "inv-145",
+    "date": "2026-04-17",
+    "type": "interview",
+    "title": "Interview — Petra Solvang",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-296",
+    "investigationId": "inv-145",
+    "date": "2026-03-15",
+    "type": "interview",
+    "title": "Interview — Xavier Prescott",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-297",
+    "investigationId": "inv-145",
+    "date": "2026-03-22",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Call recording obtained and logged for review."
+  },
+  {
+    "id": "tl-298",
+    "investigationId": "inv-145",
+    "date": "2026-04-19",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-299",
+    "investigationId": "inv-145",
+    "date": "2026-04-23",
+    "type": "milestone",
+    "title": "Investigation closed",
+    "description": "Final report issued and matter closed."
+  },
+  {
+    "id": "tl-300",
+    "investigationId": "inv-146",
+    "date": "2025-12-12",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-301",
+    "investigationId": "inv-146",
+    "date": "2025-12-13",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2025-146; Marcus Chen assigned as investigator."
+  },
+  {
+    "id": "tl-302",
+    "investigationId": "inv-146",
+    "date": "2025-12-16",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-303",
+    "investigationId": "inv-146",
+    "date": "2026-01-21",
+    "type": "interview",
+    "title": "Interview — Freya Ito",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-304",
+    "investigationId": "inv-146",
+    "date": "2026-02-26",
+    "type": "interview",
+    "title": "Interview — Junko Sandoval",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-305",
+    "investigationId": "inv-146",
+    "date": "2026-03-10",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Policy acknowledgement record obtained and logged for review."
+  },
+  {
+    "id": "tl-306",
+    "investigationId": "inv-147",
+    "date": "2026-04-20",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-307",
+    "investigationId": "inv-147",
+    "date": "2026-04-21",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-147; Anika Desai assigned as investigator."
+  },
+  {
+    "id": "tl-308",
+    "investigationId": "inv-147",
+    "date": "2026-04-22",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-309",
+    "investigationId": "inv-147",
+    "date": "2026-05-05",
+    "type": "interview",
+    "title": "Interview — Kwame Castellano",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-310",
+    "investigationId": "inv-147",
+    "date": "2026-05-04",
+    "type": "interview",
+    "title": "Interview — Kwame Brandt",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-311",
+    "investigationId": "inv-147",
+    "date": "2026-06-02",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Direct message export obtained and logged for review."
+  },
+  {
+    "id": "tl-312",
+    "investigationId": "inv-147",
+    "date": "2026-06-01",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-313",
+    "investigationId": "inv-148",
+    "date": "2026-03-19",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-314",
+    "investigationId": "inv-148",
+    "date": "2026-03-20",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-148; Marcus Chen assigned as investigator."
+  },
+  {
+    "id": "tl-315",
+    "investigationId": "inv-148",
+    "date": "2026-03-21",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-316",
+    "investigationId": "inv-148",
+    "date": "2026-03-26",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Call recording obtained and logged for review."
+  },
+  {
+    "id": "tl-317",
+    "investigationId": "inv-148",
+    "date": "2026-05-01",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-318",
+    "investigationId": "inv-149",
+    "date": "2026-04-20",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-319",
+    "investigationId": "inv-149",
+    "date": "2026-04-21",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-149; Marcus Chen assigned as investigator."
+  },
+  {
+    "id": "tl-320",
+    "investigationId": "inv-149",
+    "date": "2026-04-24",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-321",
+    "investigationId": "inv-149",
+    "date": "2026-05-27",
+    "type": "interview",
+    "title": "Interview — Ravi Kessler",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-322",
+    "investigationId": "inv-149",
+    "date": "2026-05-14",
+    "type": "interview",
+    "title": "Interview — Kian Verbeek",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-323",
+    "investigationId": "inv-149",
+    "date": "2026-05-17",
+    "type": "interview",
+    "title": "Interview — Priyanka Nasser",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-324",
+    "investigationId": "inv-149",
+    "date": "2026-06-17",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Incident log obtained and logged for review."
+  },
+  {
+    "id": "tl-325",
+    "investigationId": "inv-149",
+    "date": "2026-06-27",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  },
+  {
+    "id": "tl-326",
+    "investigationId": "inv-150",
+    "date": "2026-05-12",
+    "type": "intake",
+    "title": "Complaint received",
+    "description": "Matter reported and logged for initial review."
+  },
+  {
+    "id": "tl-327",
+    "investigationId": "inv-150",
+    "date": "2026-05-13",
+    "type": "milestone",
+    "title": "Investigation opened",
+    "description": "Matter opened as INV-2026-150; Samuel Okafor assigned as investigator."
+  },
+  {
+    "id": "tl-328",
+    "investigationId": "inv-150",
+    "date": "2026-05-15",
+    "type": "meeting",
+    "title": "Scoping meeting",
+    "description": "Scope and interim measures reviewed with relevant stakeholders."
+  },
+  {
+    "id": "tl-329",
+    "investigationId": "inv-150",
+    "date": "2026-07-04",
+    "type": "interview",
+    "title": "Interview — Fatima Chinweze",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-330",
+    "investigationId": "inv-150",
+    "date": "2026-07-15",
+    "type": "interview",
+    "title": "Interview — Freya Sandoval",
+    "description": "Interview completed and notes filed."
+  },
+  {
+    "id": "tl-331",
+    "investigationId": "inv-150",
+    "date": "2026-06-29",
+    "type": "evidence",
+    "title": "Evidence collected",
+    "description": "Team channel export obtained and logged for review."
+  },
+  {
+    "id": "tl-332",
+    "investigationId": "inv-150",
+    "date": "2026-07-27",
+    "type": "review",
+    "title": "Findings under review",
+    "description": "Preliminary findings drafted pending final sign-off."
+  }
+]

@@ -1,5 +1,6 @@
 import { createBrowserRouter, createMemoryRouter, Navigate } from 'react-router-dom';
 
+import RequireAuth from '~/components/require-auth';
 import AppLayout from '~/layouts/app-layout';
 import Calendar from '~/pages/calendar';
 import ClientPortal from '~/pages/client-portal';
@@ -16,37 +17,44 @@ import Overview from '~/pages/investigation/overview';
 import Reports from '~/pages/investigation/reports';
 import Timeline from '~/pages/investigation/timeline';
 import Investigations from '~/pages/investigations';
+import Login from '~/pages/login';
 import NotFound from '~/pages/not-found';
 import Settings from '~/pages/settings';
 
 export const routes = [
+    { path: '/login', element: <Login /> },
     {
-        path: '/',
-        element: <AppLayout />,
+        element: <RequireAuth />,
         children: [
-            { index: true, element: <Dashboard /> },
-            { path: 'investigations', element: <Investigations /> },
             {
-                path: 'investigations/:id',
-                element: <InvestigationWorkspace />,
+                path: '/',
+                element: <AppLayout />,
                 children: [
-                    { index: true, element: <Navigate to="overview" replace /> },
-                    { path: 'overview', element: <Overview /> },
-                    { path: 'timeline', element: <Timeline /> },
-                    { path: 'interviews', element: <Interviews /> },
-                    { path: 'evidence', element: <Evidence /> },
-                    { path: 'findings', element: <Findings /> },
-                    { path: 'documents', element: <Documents /> },
-                    { path: 'reports', element: <Reports /> },
-                    { path: 'notes', element: <Notes /> },
+                    { index: true, element: <Dashboard /> },
+                    { path: 'investigations', element: <Investigations /> },
+                    {
+                        path: 'investigations/:id',
+                        element: <InvestigationWorkspace />,
+                        children: [
+                            { index: true, element: <Navigate to="overview" replace /> },
+                            { path: 'overview', element: <Overview /> },
+                            { path: 'timeline', element: <Timeline /> },
+                            { path: 'interviews', element: <Interviews /> },
+                            { path: 'evidence', element: <Evidence /> },
+                            { path: 'findings', element: <Findings /> },
+                            { path: 'documents', element: <Documents /> },
+                            { path: 'reports', element: <Reports /> },
+                            { path: 'notes', element: <Notes /> },
+                        ],
+                    },
+                    { path: 'clients', element: <Clients /> },
+                    { path: 'clients/:clientId', element: <ClientPortal /> },
+                    { path: 'calendar', element: <Calendar /> },
+                    { path: 'display-calendar', element: <DisplayCalendar /> },
+                    { path: 'settings', element: <Settings /> },
+                    { path: '*', element: <NotFound /> },
                 ],
             },
-            { path: 'clients', element: <Clients /> },
-            { path: 'clients/:clientId', element: <ClientPortal /> },
-            { path: 'calendar', element: <Calendar /> },
-            { path: 'display-calendar', element: <DisplayCalendar /> },
-            { path: 'settings', element: <Settings /> },
-            { path: '*', element: <NotFound /> },
         ],
     },
 ];

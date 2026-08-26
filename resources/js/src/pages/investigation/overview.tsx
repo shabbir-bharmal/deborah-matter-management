@@ -69,7 +69,7 @@ export default function Overview() {
     ];
 
     const loading = allegations === null || witnesses === null;
-    const currentFindingFor = (allegation: Allegation): FindingOutcome | undefined => savedFindings[allegation.id] ?? allegation.finding;
+    const currentFindingFor = (allegation: Allegation): FindingOutcome | undefined => savedFindings[allegation.id] ?? allegation.finding ?? undefined;
     const relatedAllegationsOf = (witness: Witness) => (allegations ?? []).filter((allegation) => allegation.relatedWitnessIds.includes(witness.id));
 
     return (
