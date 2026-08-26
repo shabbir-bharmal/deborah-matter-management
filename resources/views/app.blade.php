@@ -13,7 +13,7 @@
 
     @routes
     @viteReactRefresh
-    @vite(['resources/js/src/main.tsx', "resources/js/src/pages/dashboard.tsx"])
+    @vite(['resources/js/src/index.css', 'resources/js/src/main.tsx'])
     @inertiaHead
 </head>
 
