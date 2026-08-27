@@ -24,7 +24,7 @@ function portalUser(Client $client): User
 }
 
 it('rejects unauthenticated api requests', function () {
-    $this->getJson('/api/investigations')->assertUnauthorized();
+    $this->getJson('/api/matters')->assertUnauthorized();
 });
 
 it('logs a user in and returns their permissions', function () {
@@ -49,7 +49,7 @@ it('lists every matter for staff', function () {
     Investigation::factory()->count(3)->create();
 
     $this->actingAs(investigator())
-        ->getJson('/api/investigations')
+        ->getJson('/api/matters')
         ->assertOk()
         ->assertJsonCount(3, 'data');
 });
@@ -59,18 +59,18 @@ it('limits a portal user to their own client', function () {
     $own = Investigation::factory()->create(['client_id' => $client->id]);
     $other = Investigation::factory()->create();
 
-    $response = $this->actingAs(portalUser($client))->getJson('/api/investigations')->assertOk();
+    $response = $this->actingAs(portalUser($client))->getJson('/api/matters')->assertOk();
 
     expect($response->json('data.*.id'))->toBe([$own->id]);
 
-    $this->actingAs(portalUser($client))->getJson("/api/investigations/{$other->id}")->assertForbidden();
+    $this->actingAs(portalUser($client))->getJson("/api/matters/{$other->id}")->assertForbidden();
 });
 
 it('returns a matter payload shaped like the SPA types', function () {
     $matter = Investigation::factory()->create();
 
     $this->actingAs(investigator())
-        ->getJson("/api/investigations/{$matter->id}")
+        ->getJson("/api/matters/{$matter->id}")
         ->assertOk()
         ->assertJsonPath('data.referenceNumber', $matter->reference_number)
         ->assertJsonStructure(['data' => ['id', 'referenceNumber', 'title', 'client', 'type', 'status', 'priority', 'investigator', 'openedAt', 'targetCompletionDate', 'description']]);
@@ -110,21 +110,21 @@ it('stores and deletes a matter note', function () {
     $user = investigator();
 
     $noteId = $this->actingAs($user)
-        ->postJson("/api/investigations/{$matter->id}/notes", ['body' => 'Called HR for the roster.'])
+        ->postJson("/api/matters/{$matter->id}/notes", ['body' => 'Called HR for the roster.'])
         ->assertCreated()
         ->assertJsonPath('data.author', $user->name)
         ->json('data.id');
 
-    $this->actingAs($user)->getJson("/api/investigations/{$matter->id}/notes")->assertJsonCount(1, 'data');
+    $this->actingAs($user)->getJson("/api/matters/{$matter->id}/notes")->assertJsonCount(1, 'data');
     $this->actingAs($user)->deleteJson("/api/notes/{$noteId}")->assertNoContent();
-    $this->actingAs($user)->getJson("/api/investigations/{$matter->id}/notes")->assertJsonCount(0, 'data');
+    $this->actingAs($user)->getJson("/api/matters/{$matter->id}/notes")->assertJsonCount(0, 'data');
 });
 
 it('persists the report builder state', function () {
     $matter = Investigation::factory()->create();
 
     $this->actingAs(investigator())
-        ->putJson("/api/investigations/{$matter->id}/report", [
+        ->putJson("/api/matters/{$matter->id}/report", [
             'status' => 'final',
             'title' => 'Final report',
             'includedSections' => ['summary' => true],
@@ -133,7 +133,7 @@ it('persists the report builder state', function () {
         ->assertJsonPath('data.status', 'final');
 
     $this->actingAs(investigator())
-        ->getJson("/api/investigations/{$matter->id}/report")
+        ->getJson("/api/matters/{$matter->id}/report")
         ->assertJsonPath('data.title', 'Final report')
         ->assertJsonPath('data.includedSections.summary', true);
 });

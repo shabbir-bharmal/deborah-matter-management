@@ -33,7 +33,6 @@ Workplace investigation management platform: a **React SPA on a Laravel 12 API**
 - Lint/format: `npm run lint` (ESLint `--fix`), `npm run format` (Prettier), `vendor/bin/pint` for PHP.
 - Typecheck: `npx tsc --noEmit` (covers both apps).
 - Laravel tests: `php artisan test --compact` (Pest 3; in-memory SQLite; `RefreshDatabase` auto-applied to Feature tests). API tests live in `tests/Feature/Api`; they seed `RolePermissionSeeder` and send an `Origin` header so Sanctum treats the request as stateful.
-- E2E: `npm run test:spa` (Playwright). Requires a running, seeded Laravel app; `e2e/auth.setup.ts` signs in once and stores the session for the other specs.
 - No CI and no pre-commit hooks — local verification is the only gate.
 
 ## Auto-managed files (read before editing this file)

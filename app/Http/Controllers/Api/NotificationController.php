@@ -35,7 +35,7 @@ class NotificationController extends Controller
                     'title' => 'Interview '.($interview->status === 'rescheduled' ? 'rescheduled' : 'scheduled').' — '.($interview->witness?->name ?? 'witness'),
                     'description' => $interview->investigation->reference_number.' · '.$interview->scheduled_at->format('j M, H:i'),
                     'date' => $interview->scheduled_at->toIso8601String(),
-                    'href' => "/investigations/{$interview->investigation_id}/interviews",
+                    'href' => "/matters/{$interview->investigation_id}/interviews",
                 ]);
             });
 
@@ -51,7 +51,7 @@ class NotificationController extends Controller
                     'title' => $item->status === 'received' ? 'New evidence awaiting review' : 'Evidence review in progress',
                     'description' => $item->title.' · '.$item->investigation->reference_number,
                     'date' => $item->date->toIso8601String(),
-                    'href' => "/investigations/{$item->investigation_id}/evidence",
+                    'href' => "/matters/{$item->investigation_id}/evidence",
                 ]);
             });
 
@@ -68,7 +68,7 @@ class NotificationController extends Controller
                     'title' => 'Report draft ready',
                     'description' => $document->name.' · '.$document->investigation->reference_number,
                     'date' => $document->created_at->toIso8601String(),
-                    'href' => "/investigations/{$document->investigation_id}/reports",
+                    'href' => "/matters/{$document->investigation_id}/reports",
                 ]);
             });
 
@@ -82,7 +82,7 @@ class NotificationController extends Controller
                     'title' => $matter->reference_number.' update',
                     'description' => $latest->title,
                     'date' => $latest->date->toIso8601String(),
-                    'href' => "/investigations/{$matter->id}/timeline",
+                    'href' => "/matters/{$matter->id}/timeline",
                 ]);
             }
         });

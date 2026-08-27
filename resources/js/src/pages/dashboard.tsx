@@ -181,7 +181,7 @@ export default function Dashboard() {
                         {snapshot.upcomingInterviews.map((interview) => (
                             <Link
                                 key={interview.id}
-                                to={`/matters/${interview.investigationId}`}
+                                to={`/matters/${interview.investigationId}/interviews`}
                                 className="hover:bg-accent flex items-start gap-3 rounded-lg border p-3 transition-colors"
                             >
                                 <CalendarClock className="text-muted-foreground mt-0.5 size-4 shrink-0" />
