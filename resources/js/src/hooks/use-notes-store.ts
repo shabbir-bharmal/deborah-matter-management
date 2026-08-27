@@ -32,7 +32,7 @@ export const useNotesStore = create<NotesStore>()((set) => ({
         }));
     },
     removeNote: async (investigationId, noteId) => {
-        await deleteNote(noteId);
+        await deleteNote(investigationId, noteId);
         set((state) => ({
             byInvestigation: {
                 ...state.byInvestigation,

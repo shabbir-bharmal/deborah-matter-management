@@ -22,6 +22,7 @@ class ClientResource extends JsonResource
             'id' => $this->slug,
             'clientId' => $this->getKey(),
             'name' => $this->name,
+            'contactEmail' => $this->contact_email,
             'matterCount' => (int) ($this->investigations_count ?? 0),
             'activeCount' => (int) ($this->active_investigations_count ?? 0),
         ];

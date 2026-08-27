@@ -47,6 +47,10 @@ Route::get('/matters/{id}', function ($id) {
     return Inertia::render('matter', ['id' => $id]);
 })->name('matters');
 
+Route::get('/admin/{name}', function ($name) {
+    return Inertia::render('admin/users', ['name' => $name]);
+})->name('admin.users');
+
 // Legacy matter URLs — keep old links/bookmarks working.
 Route::redirect('/investigations', '/matters', 301);
 Route::redirect('/investigations/{any}', '/matters/{any}', 301);

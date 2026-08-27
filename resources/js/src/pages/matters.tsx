@@ -1,8 +1,12 @@
-import { AlertTriangle, Briefcase, Flame, Search, Timer } from 'lucide-react';
+import { AlertTriangle, Briefcase, Flame, Plus, Search, Timer } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 
+import { toast } from 'sonner';
+
+import MatterFormDialog from '~/components/matter-form-dialog';
 import { Badge } from '~/components/ui/badge';
+import { Button } from '~/components/ui/button';
 import { Card, CardContent } from '~/components/ui/card';
 import { Input } from '~/components/ui/input';
 import Pagination, { PAGE_SIZES } from '~/components/ui/pagination';
@@ -10,6 +14,7 @@ import { Skeleton } from '~/components/ui/skeleton';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '~/components/ui/table';
 import { PAGE_TEXT } from '~/constants/menuData';
 import { getMatters } from '~/data/selectors';
+import { useCan } from '~/hooks/use-auth';
 import { matterStatusBadgeClass, matterStatusLabels, matterTypeLabels, priorityBadgeClass, priorityLabels } from '~/lib/status';
 import type { Investigation } from '~/types';
 
@@ -51,6 +56,9 @@ export default function Matters() {
     const [matters, setMatters] = useState<Investigation[] | null>(null);
     const [searchParams, setSearchParams] = useSearchParams();
     const navigate = useNavigate();
+    const canCreate = useCan('investigations.create');
+
+    const [formOpen, setFormOpen] = useState(false);
 
     const updateParams = (patch: Record<string, string | undefined>) => {
         const params = new URLSearchParams(searchParams);
@@ -88,6 +96,10 @@ export default function Matters() {
             cancelled = true;
         };
     }, []);
+
+    const reload = () => {
+        getMatters().then(setMatters).catch(() => undefined);
+    };
 
     const visible = useMemo(() => {
         if (!matters) {
@@ -130,10 +142,33 @@ export default function Matters() {
 
     return (
         <div className="space-y-4">
-            <div>
-                <h1 className="text-2xl font-semibold tracking-tight">{TEXT.title}</h1>
-                <p className="text-muted-foreground text-sm">{TEXT.subtitle}</p>
+            <div className="flex items-start justify-between gap-4">
+                <div>
+                    <h1 className="text-2xl font-semibold tracking-tight">{TEXT.title}</h1>
+                    <p className="text-muted-foreground text-sm">{TEXT.subtitle}</p>
+                </div>
+                {canCreate && (
+                    <Button
+                        onClick={() => setFormOpen(true)}
+                        data-testid="new-matter-button"
+                        className="h-9 px-3 md:h-10 md:px-4 lg:h-11 lg:px-8"
+                    >
+                        <Plus className="mr-2 size-4" />
+                        {TEXT.actions.create}
+                    </Button>
+                )}
             </div>
+
+            <MatterFormDialog
+                open={formOpen}
+                onOpenChange={setFormOpen}
+                onSaved={(matter) => {
+                    setFormOpen(false);
+                    toast.success(TEXT.form.created, { description: matter.referenceNumber });
+                    reload();
+                    navigate(`/matters/${matter.id}`);
+                }}
+            />
 
             <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
                 <Kpi icon={Briefcase} label={TEXT.stats.total} value={stats.total} tone="bg-primary/10 text-primary" />

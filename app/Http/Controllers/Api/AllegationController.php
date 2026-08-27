@@ -3,11 +3,14 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreAllegationRequest;
+use App\Http\Requests\UpdateAllegationRequest;
 use App\Http\Resources\AllegationResource;
 use App\Models\Allegation;
 use App\Models\Investigation;
-use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Support\Str;
 
 class AllegationController extends Controller
 {
@@ -18,19 +21,27 @@ class AllegationController extends Controller
         );
     }
 
-    /**
-     * Records the investigator's finding for a single allegation.
-     */
-    public function update(Request $request, Allegation $allegation): AllegationResource
+    public function store(StoreAllegationRequest $request, Investigation $investigation): AllegationResource
     {
-        $data = $request->validate([
-            'finding' => ['nullable', 'in:substantiated,not_substantiated,unsubstantiated,inconclusive'],
-            'findingNotes' => ['nullable', 'string', 'max:5000'],
-            'status' => ['sometimes', 'in:pending,under_review,substantiated,not_substantiated,unfounded'],
+        $data = $request->validated();
+
+        $allegation = $investigation->allegations()->create([
+            'id' => 'alg-'.Str::lower(Str::random(8)),
+            'title' => $data['title'],
+            'description' => $data['description'],
+            'category' => $data['category'],
+            'status' => $data['status'],
         ]);
 
+        return new AllegationResource($allegation->load(['witnesses', 'evidence']));
+    }
+
+    public function update(UpdateAllegationRequest $request, Investigation $investigation, Allegation $allegation): AllegationResource
+    {
+        $data = $request->validated();
+
         $changes = [];
-        foreach (['finding' => 'finding', 'findingNotes' => 'finding_notes', 'status' => 'status'] as $input => $column) {
+        foreach (['title' => 'title', 'description' => 'description', 'category' => 'category', 'status' => 'status', 'finding' => 'finding', 'findingNotes' => 'finding_notes'] as $input => $column) {
             if (array_key_exists($input, $data)) {
                 $changes[$column] = $data[$input];
             }
@@ -39,5 +50,12 @@ class AllegationController extends Controller
         $allegation->update($changes);
 
         return new AllegationResource($allegation->load(['witnesses', 'evidence']));
+    }
+
+    public function destroy(Investigation $investigation, Allegation $allegation): JsonResponse
+    {
+        $allegation->delete();
+
+        return response()->json(status: 204);
     }
 }

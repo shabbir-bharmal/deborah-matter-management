@@ -28,6 +28,7 @@ class InterviewResource extends JsonResource
             'scheduledAt' => $this->scheduled_at->format('Y-m-d\TH:i:s'),
             'status' => $this->status,
             'interviewer' => $this->interviewer?->name ?? 'Unassigned',
+            'interviewerId' => $this->interviewer_id,
             'notes' => $this->notes,
             'transcriptExcerpt' => $this->transcript_excerpt,
             'relatedAllegationIds' => $this->whenLoaded('allegations', fn () => $this->allegations->pluck('id'), []),

@@ -14,6 +14,7 @@ use App\Models\Investigation;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Support\Str;
 
 class ClientController extends Controller
 {
@@ -36,6 +37,67 @@ class ClientController extends Controller
             ->get();
 
         return ClientResource::collection($clients);
+    }
+
+    public function store(Request $request): JsonResponse
+    {
+        $validated = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'contactEmail' => ['nullable', 'email', 'max:255'],
+        ]);
+
+        $client = Client::create([
+            'name' => $validated['name'],
+            'slug' => $this->uniqueSlug($validated['name']),
+            'contact_email' => $validated['contactEmail'] ?? null,
+        ]);
+
+        return (new ClientResource($client->loadCount('investigations')->loadCount(['investigations as active_investigations_count' => fn ($query) => $query->active()])))
+            ->response()
+            ->setStatusCode(201);
+    }
+
+    public function update(Request $request, Client $client): JsonResponse
+    {
+        $validated = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'contactEmail' => ['nullable', 'email', 'max:255'],
+        ]);
+
+        $client->update([
+            'name' => $validated['name'],
+            'slug' => $this->uniqueSlug($validated['name'], $client->id),
+            'contact_email' => $validated['contactEmail'] ?? null,
+        ]);
+
+        return (new ClientResource($client->loadCount('investigations')->loadCount(['investigations as active_investigations_count' => fn ($query) => $query->active()])))
+            ->response();
+    }
+
+    public function destroy(Client $client): JsonResponse
+    {
+        $client->delete();
+
+        return response()->json(status: 204);
+    }
+
+    private function uniqueSlug(string $name, ?int $ignoreClientId = null): string
+    {
+        $baseSlug = Str::slug($name);
+        $slug = $baseSlug;
+        $suffix = 2;
+
+        while (
+            Client::query()
+                ->when($ignoreClientId !== null, fn ($query) => $query->whereKeyNot($ignoreClientId))
+                ->where('slug', $slug)
+                ->exists()
+        ) {
+            $slug = "{$baseSlug}-{$suffix}";
+            $suffix++;
+        }
+
+        return $slug;
     }
 
     /**

@@ -48,7 +48,7 @@ export const useFindingsStore = create<FindingsStore>()((set, get) => ({
         });
 
         try {
-            await saveFinding(allegationId, finding ?? null);
+            await saveFinding(investigationId, allegationId, finding ?? null);
         } catch (error) {
             // Roll back so the UI never shows a finding the server rejected.
             set((state) => ({ byInvestigation: { ...state.byInvestigation, [investigationId]: previous } }));
@@ -67,7 +67,7 @@ export const useFindingsStore = create<FindingsStore>()((set, get) => ({
         }),
     saveNotes: async (investigationId, allegationId) => {
         const entry = entryFor(get(), investigationId);
-        await saveFinding(allegationId, entry.findings[allegationId] ?? null, entry.notes[allegationId] ?? '');
+        await saveFinding(investigationId, allegationId, entry.findings[allegationId] ?? null, entry.notes[allegationId] ?? '');
     },
 }));
 

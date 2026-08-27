@@ -60,18 +60,21 @@ export default function Dashboard() {
             value: snapshot.activeMatterCount,
             icon: ClipboardList,
             to: '/matters?filter=active',
+            tone: 'bg-blue-500/10 text-blue-600 dark:text-blue-400',
         },
         {
             label: PAGE_TEXT.dashboard.stats.completedClosed,
             value: snapshot.completedMatterCount,
             icon: CheckCircle2,
             to: '/matters?filter=completed',
+            tone: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
         },
         {
             label: PAGE_TEXT.dashboard.stats.pastTargetDate,
             value: snapshot.overdueMatterCount,
             icon: AlertTriangle,
             to: '/matters?filter=active',
+            tone: 'bg-amber-500/10 text-amber-600 dark:text-amber-400',
         },
     ];
 
@@ -95,8 +98,8 @@ export default function Dashboard() {
                     <Link key={card.label} to={card.to}>
                         <Card className="transition-shadow hover:shadow-md">
                             <CardContent className="flex items-center gap-4 p-5">
-                                <span className="bg-primary/10 flex size-10 items-center justify-center rounded-lg">
-                                    <card.icon className="text-primary size-5" />
+                                <span className={`flex size-10 items-center justify-center rounded-lg ${card.tone}`}>
+                                    <card.icon className="size-5" />
                                 </span>
                                 <span>
                                     <span className="block text-2xl font-semibold">{card.value}</span>

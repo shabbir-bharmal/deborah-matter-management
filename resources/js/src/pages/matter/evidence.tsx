@@ -1,14 +1,19 @@
-import { FileAudio2, FileImage, FileText, Mail, MessageSquare, ScrollText } from 'lucide-react';
+import { FileAudio2, FileImage, FileText, Mail, MessageSquare, Pencil, ScrollText, Trash2, Plus } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { toast } from 'sonner';
 
+import EvidenceDeleteDialog from '~/components/matter/evidence-delete-dialog';
+import EvidenceFormDialog from '~/components/matter/evidence-form-dialog';
 import RelatedChip from '~/components/matter/related-chip';
 import TabSkeleton from '~/components/matter/tab-skeleton';
 import { Badge } from '~/components/ui/badge';
+import { Button } from '~/components/ui/button';
 import { Card, CardContent } from '~/components/ui/card';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '~/components/ui/dialog';
 import { PAGE_TEXT } from '~/constants/menuData';
 import { getAllegationsByMatter, getEvidenceByMatter } from '~/data/selectors';
+import { useCan } from '~/hooks/use-auth';
 import { useInvestigation } from '~/hooks/use-investigation';
 import { allegationStatusLabels, evidenceStatusBadgeClass, evidenceStatusLabels, evidenceTypeLabels } from '~/lib/status';
 import type { Allegation, Evidence as EvidenceItem, EvidenceType } from '~/types';
@@ -32,6 +37,17 @@ export default function Evidence() {
     const [items, setItems] = useState<EvidenceItem[] | null>(null);
     const [allegations, setAllegations] = useState<Allegation[]>([]);
     const [selected, setSelected] = useState<EvidenceItem | null>(null);
+    const [formOpen, setFormOpen] = useState(false);
+    const [editing, setEditing] = useState<EvidenceItem | null>(null);
+    const [deleting, setDeleting] = useState<EvidenceItem | null>(null);
+
+    const canCreate = useCan('evidence.create');
+    const canUpdate = useCan('evidence.update');
+    const canDelete = useCan('evidence.delete');
+
+    const reload = () => {
+        getEvidenceByMatter(matter.id).then(setItems).catch(() => setItems([]));
+    };
 
     useEffect(() => {
         let cancelled = false;
@@ -64,9 +80,45 @@ export default function Evidence() {
 
     const relatedAllegations = (item: EvidenceItem) => allegations.filter((allegation) => item.relatedAllegationIds.includes(allegation.id));
 
+    const handleSaved = () => {
+        const isEdit = Boolean(editing);
+        setFormOpen(false);
+        setEditing(null);
+        toast.success(isEdit ? PAGE_TEXT.workspace.evidence.form.updated : PAGE_TEXT.workspace.evidence.form.created);
+        reload();
+    };
+
+    const handleDeleted = () => {
+        setDeleting(null);
+        if (selected?.id === deleting?.id) {
+            setSelected(null);
+        }
+        toast.success(PAGE_TEXT.workspace.evidence.deleteDialog.deleted);
+        reload();
+    };
+
+    const openCreate = () => {
+        setEditing(null);
+        setFormOpen(true);
+    };
+
+    const openEdit = (item: EvidenceItem) => {
+        setEditing(item);
+        setFormOpen(true);
+    };
+
     return (
         <div className="space-y-3">
             {!items && <TabSkeleton />}
+            <div className="flex items-center justify-between">
+                <div />
+                {canCreate && items && (
+                    <Button size="sm" onClick={openCreate} className="h-9 px-3 md:h-10 md:px-4 lg:h-11 lg:px-8">
+                        <Plus className="size-4" />
+                        {PAGE_TEXT.workspace.evidence.add}
+                    </Button>
+                )}
+            </div>
             {items && items.length === 0 && (
                 <Card>
                     <CardContent className="text-muted-foreground p-8 text-center text-sm">{PAGE_TEXT.workspace.evidence.empty}</CardContent>
@@ -78,24 +130,53 @@ export default function Evidence() {
                     return (
                         <Card key={item.id} className="hover:bg-accent/50 transition-colors">
                             <CardContent className="p-4">
-                                <button type="button" onClick={() => setSelected(item)} className="w-full text-left">
-                                    <div className="flex items-start gap-3">
-                                        <span className="bg-muted/40 flex size-9 shrink-0 items-center justify-center rounded-lg border">
-                                            <Icon className="text-muted-foreground size-4" />
-                                        </span>
-                                        <div className="min-w-0 flex-1">
-                                            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-                                                <span className="font-medium">{item.title}</span>
-                                                <Badge variant="outline" className={evidenceStatusBadgeClass[item.status]}>
-                                                    {evidenceStatusLabels[item.status]}
-                                                </Badge>
+                                <div className="flex items-start gap-3">
+                                    <button type="button" onClick={() => setSelected(item)} className="min-w-0 flex-1 text-left">
+                                        <div className="flex items-start gap-3">
+                                            <span className="bg-muted/40 flex size-9 shrink-0 items-center justify-center rounded-lg border">
+                                                <Icon className="text-muted-foreground size-4" />
+                                            </span>
+                                            <div className="min-w-0 flex-1">
+                                                <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+                                                    <span className="font-medium">{item.title}</span>
+                                                    <Badge variant="outline" className={evidenceStatusBadgeClass[item.status]}>
+                                                        {evidenceStatusLabels[item.status]}
+                                                    </Badge>
+                                                </div>
+                                                <p className="text-muted-foreground mt-1 text-xs">
+                                                    {evidenceTypeLabels[item.type]} · {item.source} · {formatDate(item.date)}
+                                                </p>
                                             </div>
-                                            <p className="text-muted-foreground mt-1 text-xs">
-                                                {evidenceTypeLabels[item.type]} · {item.source} · {formatDate(item.date)}
-                                            </p>
                                         </div>
-                                    </div>
-                                </button>
+                                    </button>
+                                    {(canUpdate || canDelete) && (
+                                        <div className="flex shrink-0 items-center gap-1">
+                                            {canUpdate && (
+                                                <Button
+                                                    type="button"
+                                                    variant="ghost"
+                                                    size="icon"
+                                                    onClick={() => openEdit(item)}
+                                                    aria-label={`${PAGE_TEXT.workspace.evidence.actions.edit}: ${item.title}`}
+                                                >
+                                                    <Pencil />
+                                                </Button>
+                                            )}
+                                            {canDelete && (
+                                                <Button
+                                                    type="button"
+                                                    variant="ghost"
+                                                    size="icon"
+                                                    onClick={() => setDeleting(item)}
+                                                    aria-label={`${PAGE_TEXT.workspace.evidence.actions.delete}: ${item.title}`}
+                                                    className="text-muted-foreground hover:text-destructive"
+                                                >
+                                                    <Trash2 />
+                                                </Button>
+                                            )}
+                                        </div>
+                                    )}
+                                </div>
                             </CardContent>
                         </Card>
                     );
@@ -160,6 +241,25 @@ export default function Evidence() {
                     )}
                 </DialogContent>
             </Dialog>
+
+            <EvidenceFormDialog
+                open={formOpen}
+                onOpenChange={setFormOpen}
+                matterId={matter.id}
+                evidence={editing}
+                onSaved={() => handleSaved()}
+            />
+            <EvidenceDeleteDialog
+                open={!!deleting}
+                onOpenChange={(open) => {
+                    if (!open) {
+                        setDeleting(null);
+                    }
+                }}
+                matterId={matter.id}
+                evidence={deleting}
+                onDeleted={handleDeleted}
+            />
         </div>
     );
 }

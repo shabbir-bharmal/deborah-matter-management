@@ -17,6 +17,20 @@ class UserController extends Controller
         return UserResource::collection(User::with(['client', 'roles'])->orderBy('name')->get());
     }
 
+    /**
+     * Staff users who can be assigned as the investigator on a matter. Anyone
+     * with investigator or admin role is eligible, regardless of client scope.
+     */
+    public function assignable(): AnonymousResourceCollection
+    {
+        $users = User::with('roles')
+            ->whereHas('roles', fn ($query) => $query->whereIn('name', ['investigator', 'admin']))
+            ->orderBy('name')
+            ->get();
+
+        return UserResource::collection($users);
+    }
+
     public function store(Request $request): UserResource
     {
         $data = $request->validate([

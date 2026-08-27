@@ -21,10 +21,13 @@ export interface Investigation {
     referenceNumber: string;
     title: string;
     client: string;
+    /** Set on API responses; absent from the mock seed datasets. */
+    clientId?: number;
     type: InvestigationType;
     status: InvestigationStatus;
     priority: InvestigationPriority;
     investigator: string;
+    investigatorId?: number | null;
     openedAt: string;
     targetCompletionDate: string;
     completedAt?: string;
@@ -85,6 +88,7 @@ export interface Interview {
     scheduledAt: string;
     status: InterviewStatus;
     interviewer: string;
+    interviewerId?: number | null;
     notes?: string;
     transcriptExcerpt?: string[];
     relatedAllegationIds: string[];
@@ -174,6 +178,7 @@ export interface ClientSummary {
     id: string;
     clientId?: number;
     name: string;
+    contactEmail?: string | null;
     matterCount: number;
     activeCount: number;
 }

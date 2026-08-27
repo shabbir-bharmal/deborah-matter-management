@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UpdateNoteRequest;
 use App\Http\Resources\NoteResource;
 use App\Models\Investigation;
 use App\Models\MatterNote;
@@ -30,7 +31,14 @@ class NoteController extends Controller
         return new NoteResource($note);
     }
 
-    public function destroy(MatterNote $note): JsonResponse
+    public function update(UpdateNoteRequest $request, Investigation $investigation, MatterNote $note): NoteResource
+    {
+        $note->update(['body' => $request->validated()['body']]);
+
+        return new NoteResource($note->fresh());
+    }
+
+    public function destroy(Investigation $investigation, MatterNote $note): JsonResponse
     {
         $note->delete();
 

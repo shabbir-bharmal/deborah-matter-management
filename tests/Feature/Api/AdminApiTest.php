@@ -25,11 +25,84 @@ it('lists users with their roles', function () {
         ->assertJsonCount(1, 'data');
 });
 
+it('creates a client with a unique slug', function () {
+    $this->actingAs(admin())
+        ->postJson('/api/clients', [
+            'name' => 'Acme Holdings',
+            'contactEmail' => 'contact@acme.test',
+        ])
+        ->assertCreated()
+        ->assertJsonPath('data.name', 'Acme Holdings')
+        ->assertJsonPath('data.contactEmail', 'contact@acme.test');
+
+    $this->assertDatabaseHas('clients', [
+        'name' => 'Acme Holdings',
+        'slug' => 'acme-holdings',
+        'contact_email' => 'contact@acme.test',
+    ]);
+});
+
+it('updates a client and refreshes its summary payload', function () {
+    $client = Client::factory()->create([
+        'name' => 'Northwind Logistics',
+        'slug' => 'northwind-logistics',
+        'contact_email' => 'ops@northwind.test',
+    ]);
+
+    $this->actingAs(admin())
+        ->putJson("/api/clients/{$client->slug}", [
+            'name' => 'Northwind Logistics Group',
+            'contactEmail' => 'support@northwind.test',
+        ])
+        ->assertOk()
+        ->assertJsonPath('data.name', 'Northwind Logistics Group')
+        ->assertJsonPath('data.contactEmail', 'support@northwind.test');
+
+    $this->assertDatabaseHas('clients', [
+        'id' => $client->id,
+        'name' => 'Northwind Logistics Group',
+        'slug' => 'northwind-logistics-group',
+        'contact_email' => 'support@northwind.test',
+    ]);
+});
+
+it('deletes a client', function () {
+    $client = Client::factory()->create();
+
+    $this->actingAs(admin())
+        ->deleteJson("/api/clients/{$client->slug}")
+        ->assertNoContent();
+
+    $this->assertDatabaseMissing('clients', ['id' => $client->id]);
+});
+
 it('hides administration from an investigator', function () {
     $user = User::factory()->create()->syncRoles('investigator');
 
     $this->actingAs($user)->getJson('/api/users')->assertForbidden();
     $this->actingAs($user)->getJson('/api/roles')->assertForbidden();
+});
+
+it('lists assignable staff and lets an investigator use it', function () {
+    $investigator = User::factory()->create()->syncRoles('investigator');
+    User::factory()->create()->syncRoles('client');
+
+    $this->actingAs($investigator)
+        ->getJson('/api/users/assignable')
+        ->assertOk()
+        ->assertJsonCount(1, 'data')
+        ->assertJsonPath('data.0.id', $investigator->id);
+});
+
+it('excludes portal users from assignable staff', function () {
+    $staff = User::factory()->create()->syncRoles('admin');
+    User::factory()->create()->syncRoles('client');
+
+    $this->actingAs($staff)
+        ->getJson('/api/users/assignable')
+        ->assertOk()
+        ->assertJsonCount(1, 'data')
+        ->assertJsonPath('data.0.id', $staff->id);
 });
 
 it('creates a portal user bound to a client', function () {
