@@ -5,6 +5,7 @@ namespace App\Http\Resources;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * The SPA gates its navigation and actions on `permissions`, so they ship with
@@ -23,6 +24,8 @@ class UserResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'email' => $this->email,
+            'avatar' => $this->avatar,
+            'avatarUrl' => $this->avatar ? Storage::url($this->avatar) : null,
             'clientId' => $this->client_id,
             'clientSlug' => $this->client?->slug,
             'roles' => $this->getRoleNames()->values(),

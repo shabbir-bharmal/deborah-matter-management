@@ -2,7 +2,7 @@ import { ChevronDown, LogOut, Settings, UserRound } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
-import { Avatar, AvatarFallback } from '~/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar';
 import { Button } from '~/components/ui/button';
 import {
     DropdownMenu,
@@ -49,6 +49,7 @@ export default function ProfileMenu() {
             <DropdownMenuTrigger asChild>
                 <Button variant="ghost" className="gap-2 px-2">
                     <Avatar className="size-8">
+                        {user.avatarUrl ? <AvatarImage src={user.avatarUrl} alt={user.name} /> : null}
                         <AvatarFallback className="bg-primary/10 text-primary text-xs font-semibold">{initials}</AvatarFallback>
                     </Avatar>
                     <span className="hidden text-left leading-tight sm:block">
@@ -65,7 +66,7 @@ export default function ProfileMenu() {
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                    <Link to="/settings" className="cursor-pointer">
+                    <Link to="/profile" className="cursor-pointer">
                         <UserRound className="size-4" /> {COMMON.profileAndPreferences}
                     </Link>
                 </DropdownMenuItem>

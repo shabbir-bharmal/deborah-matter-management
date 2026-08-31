@@ -232,6 +232,8 @@ export interface AuthUser {
     id: number;
     name: string;
     email: string;
+    avatar?: string | null;
+    avatarUrl?: string | null;
     clientId: number | null;
     clientSlug: string | null;
     roles: string[];
@@ -268,4 +270,12 @@ export interface RoleMatrix {
     roles: RoleSummary[];
     /** Every ability defined in the system, used as the matrix columns. */
     permissions: string[];
+}
+
+export interface PermissionSummary {
+    id: number;
+    name: string;
+    module: string;
+    action: string;
+    roles: string[];
 }

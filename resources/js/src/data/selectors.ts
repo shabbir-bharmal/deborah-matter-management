@@ -19,6 +19,7 @@ import type {
     InvestigationReport,
     Interview,
     MatterNote,
+    PermissionSummary,
     RoleMatrix,
     RoleSummary,
     TimelineEvent,
@@ -248,6 +249,10 @@ export function getAuthUser(): Promise<AuthUser> {
     return api.get<AuthUser>('/user');
 }
 
+export function updateProfile(payload: FormData): Promise<AuthUser> {
+    return api.post<AuthUser>('/profile', payload);
+}
+
 /* Administration — user accounts and the role/permission matrix. */
 
 export function getUsers(): Promise<AuthUser[]> {
@@ -275,4 +280,20 @@ export function getRoles(): Promise<RoleMatrix> {
 
 export function updateRolePermissions(roleId: number, permissions: string[]): Promise<RoleSummary> {
     return api.put<RoleSummary>(`/roles/${roleId}`, { permissions });
+}
+
+export function getPermissions(): Promise<PermissionSummary[]> {
+    return api.get<PermissionSummary[]>('/permissions');
+}
+
+export function createPermission(name: string): Promise<PermissionSummary> {
+    return api.post<PermissionSummary>('/permissions', { name });
+}
+
+export function updatePermission(permissionId: number, name: string): Promise<PermissionSummary> {
+    return api.put<PermissionSummary>(`/permissions/${permissionId}`, { name });
+}
+
+export function deletePermission(permissionId: number): Promise<void> {
+    return api.delete(`/permissions/${permissionId}`);
 }

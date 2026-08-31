@@ -27,6 +27,15 @@ const typeIcons: Record<EvidenceType, typeof FileText> = {
     system_report: ScrollText,
 };
 
+const typeStyles: Record<EvidenceType, { icon: string }> = {
+    email: { icon: 'text-sky-600 dark:text-sky-400' },
+    document: { icon: 'text-indigo-600 dark:text-indigo-400' },
+    chat_log: { icon: 'text-violet-600 dark:text-violet-400' },
+    recording: { icon: 'text-emerald-600 dark:text-emerald-400' },
+    photo: { icon: 'text-amber-600 dark:text-amber-400' },
+    system_report: { icon: 'text-rose-600 dark:text-rose-400' },
+};
+
 function formatDate(iso: string) {
     return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 }
@@ -127,6 +136,7 @@ export default function Evidence() {
             <div className="grid gap-3 md:grid-cols-2">
                 {items?.map((item) => {
                     const Icon = typeIcons[item.type];
+                    const styles = typeStyles[item.type];
                     return (
                         <Card key={item.id} className="hover:bg-accent/50 transition-colors">
                             <CardContent className="p-4">
@@ -134,7 +144,7 @@ export default function Evidence() {
                                     <button type="button" onClick={() => setSelected(item)} className="min-w-0 flex-1 text-left">
                                         <div className="flex items-start gap-3">
                                             <span className="bg-muted/40 flex size-9 shrink-0 items-center justify-center rounded-lg border">
-                                                <Icon className="text-muted-foreground size-4" />
+                                                <Icon className={`size-4 ${styles.icon}`} />
                                             </span>
                                             <div className="min-w-0 flex-1">
                                                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
@@ -196,7 +206,7 @@ export default function Evidence() {
                             <div className="bg-muted/30 flex min-h-36 flex-col items-center justify-center gap-2 rounded-lg border border-dashed p-6 text-center">
                                 {(() => {
                                     const Icon = typeIcons[selected.type];
-                                    return <Icon className="text-muted-foreground size-8" />;
+                                    return <Icon className={`size-8 ${typeStyles[selected.type].icon}`} />;
                                 })()}
                                 <p className="text-sm font-medium">{selected.title}</p>
                                 <p className="text-muted-foreground text-xs">{PAGE_TEXT.workspace.evidence.staticPreviewNote}</p>

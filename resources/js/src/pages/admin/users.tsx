@@ -9,9 +9,12 @@ import { Card, CardContent } from '~/components/ui/card';
 import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from '~/components/ui/dialog';
 import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
+import Pagination, { PAGE_SIZES } from '~/components/ui/pagination';
 import { Skeleton } from '~/components/ui/skeleton';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '~/components/ui/table';
 import { ADMIN_TEXT, COMMON } from '~/constants/menuData';
+import { useSearchParams } from 'react-router-dom';
+
 import { createUser, deleteUser, getClients, getRoles, getUsers, updateUser } from '~/data/selectors';
 import { useCan } from '~/hooks/use-auth';
 import { ApiError } from '~/lib/api';
@@ -34,6 +37,7 @@ export default function AdminUsers() {
     const [query, setQuery] = useState('');
     const [editing, setEditing] = useState<AuthUser | null>(null);
     const [dialogOpen, setDialogOpen] = useState(false);
+    const [searchParams, setSearchParams] = useSearchParams();
 
     const canCreate = useCan('users.create');
     const canUpdate = useCan('users.update');
@@ -60,6 +64,46 @@ export default function AdminUsers() {
         const needle = query.trim().toLowerCase();
         return (users ?? []).filter((user) => `${user.name} ${user.email} ${user.roles.join(' ')}`.toLowerCase().includes(needle));
     }, [users, query]);
+
+    const sizeParam = Number(searchParams.get('pageSize'));
+    const pageSize: number = PAGE_SIZES.includes(sizeParam) ? sizeParam : 10;
+
+    const totalCount = visible.length;
+    const totalPages = Math.max(1, Math.ceil(totalCount / pageSize));
+    const requestedPage = Number(searchParams.get('page')) || 1;
+    const page = Math.min(Math.max(1, requestedPage), totalPages);
+
+    const setPage = (value: number) => {
+        const params = new URLSearchParams(searchParams);
+        if (value > 1) {
+            params.set('page', String(value));
+        } else {
+            params.delete('page');
+        }
+        setSearchParams(params);
+    };
+
+    const setPageSize = (size: number) => {
+        const params = new URLSearchParams(searchParams);
+        params.delete('page');
+        if (size !== 10) {
+            params.set('pageSize', String(size));
+        } else {
+            params.delete('pageSize');
+        }
+        setSearchParams(params);
+    };
+
+    const pagedVisible = useMemo(() => visible.slice((page - 1) * pageSize, page * pageSize), [visible, page, pageSize]);
+
+    const handleQueryChange = (value: string) => {
+        setQuery(value);
+        if (searchParams.get('page')) {
+            const params = new URLSearchParams(searchParams);
+            params.delete('page');
+            setSearchParams(params);
+        }
+    };
 
     const openCreate = () => {
         setEditing(null);
@@ -125,7 +169,7 @@ export default function AdminUsers() {
                         <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
                         <Input
                             value={query}
-                            onChange={(event) => setQuery(event.target.value)}
+                            onChange={(event) => handleQueryChange(event.target.value)}
                             placeholder={TEXT.searchPlaceholder}
                             className="pl-9"
                         />
@@ -157,7 +201,7 @@ export default function AdminUsers() {
                             </TableRow>
                         </TableHeader>
                         <TableBody>
-                            {visible.map((user) => (
+                            {pagedVisible.map((user) => (
                                 <TableRow key={user.id}>
                                     <TableCell className="font-medium">{user.name}</TableCell>
                                     <TableCell className="text-muted-foreground text-sm">{user.email}</TableCell>
@@ -194,6 +238,10 @@ export default function AdminUsers() {
                         </TableBody>
                     </Table>
                 </Card>
+            )}
+
+            {users && totalCount > 0 && (
+                <Pagination page={page} pageSize={pageSize} totalCount={totalCount} onPageChange={setPage} onPageSizeChange={setPageSize} />
             )}
 
             <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>

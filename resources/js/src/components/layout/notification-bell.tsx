@@ -16,6 +16,13 @@ const kindIcons: Record<NotificationKind, typeof Bell> = {
     report: FileCheck2,
 };
 
+const kindStyles: Record<NotificationKind, { icon: string }> = {
+    interview: { icon: 'text-sky-600 dark:text-sky-400' },
+    evidence: { icon: 'text-indigo-600 dark:text-indigo-400' },
+    milestone: { icon: 'text-violet-600 dark:text-violet-400' },
+    report: { icon: 'text-emerald-600 dark:text-emerald-400' },
+};
+
 function relativeDate(iso: string): string {
     const target = new Date(iso);
     const today = new Date();
@@ -85,6 +92,7 @@ export default function NotificationBell() {
                 <div className="max-h-80 overflow-y-auto">
                     {notifications?.map((notification) => {
                         const Icon = kindIcons[notification.kind];
+                        const styles = kindStyles[notification.kind];
                         const isUnread = !readIds[notification.id];
                         return (
                             <a
@@ -97,7 +105,7 @@ export default function NotificationBell() {
                                 )}
                             >
                                 <span className="bg-card mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-lg border">
-                                    <Icon className="text-muted-foreground size-4" />
+                                    <Icon className={`size-4 ${styles.icon}`} />
                                 </span>
                                 <span className="min-w-0 flex-1">
                                     <span className="flex items-center gap-2">

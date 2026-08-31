@@ -11,6 +11,7 @@ use App\Http\Controllers\Api\InterviewController;
 use App\Http\Controllers\Api\InvestigationController;
 use App\Http\Controllers\Api\NoteController;
 use App\Http\Controllers\Api\NotificationController;
+use App\Http\Controllers\Api\ProfileController;
 use App\Http\Controllers\Api\ReportController;
 use App\Http\Controllers\Api\RoleController;
 use App\Http\Controllers\Api\TimelineEventController;
@@ -24,6 +25,8 @@ Route::post('login', [AuthController::class, 'login'])->middleware('guest')->nam
 Route::middleware('auth')->group(function () {
     Route::get('user', [AuthController::class, 'user'])->name('api.user');
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
+    Route::post('profile', [ProfileController::class, 'update'])->name('api.profile.update');
+    Route::patch('profile', [ProfileController::class, 'update']);
 
     Route::get('dashboard', DashboardController::class)->middleware('can:dashboard.view');
     Route::get('calendar', CalendarController::class)->middleware('can:calendar.view');
@@ -103,5 +106,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('roles', [RoleController::class, 'index'])->middleware('can:roles.view');
     Route::put('roles/{role}', [RoleController::class, 'update'])->middleware('can:roles.update');
+    Route::get('permissions', [RoleController::class, 'permissions'])->middleware('can:roles.view');
+    Route::post('permissions', [RoleController::class, 'storePermission'])->middleware('can:roles.update');
+    Route::put('permissions/{permission}', [RoleController::class, 'updatePermission'])->middleware('can:roles.update');
+    Route::delete('permissions/{permission}', [RoleController::class, 'destroyPermission'])->middleware('can:roles.update');
 
 });

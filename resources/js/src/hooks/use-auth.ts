@@ -12,6 +12,8 @@ interface AuthStore {
     bootstrap: () => Promise<void>;
     signIn: (email: string, password: string, remember?: boolean) => Promise<void>;
     signOut: () => Promise<void>;
+    setUser: (user: AuthUser | null) => void;
+    refresh: () => Promise<void>;
 }
 
 export const useAuthStore = create<AuthStore>()((set) => ({
@@ -31,6 +33,14 @@ export const useAuthStore = create<AuthStore>()((set) => ({
     signOut: async () => {
         await logoutRequest().catch(() => undefined);
         set({ user: null, status: 'guest' });
+    },
+    setUser: (user) => set({ user }),
+    refresh: async () => {
+        try {
+            set({ user: await getAuthUser() });
+        } catch {
+            // keep existing user on failure
+        }
     },
 }));
 

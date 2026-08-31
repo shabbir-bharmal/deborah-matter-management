@@ -41,15 +41,16 @@ async function request<T>(method: string, path: string, body?: unknown): Promise
     }
 
     const token = readCookie('XSRF-TOKEN');
+    const isFormData = body instanceof FormData;
     const response = await fetch(`/api${path}`, {
         method,
         credentials: 'include',
         headers: {
             Accept: 'application/json',
-            ...(body === undefined ? {} : { 'Content-Type': 'application/json' }),
+            ...(body === undefined || isFormData ? {} : { 'Content-Type': 'application/json' }),
             ...(token ? { 'X-XSRF-TOKEN': decodeURIComponent(token) } : {}),
         },
-        body: body === undefined ? undefined : JSON.stringify(body),
+        body: body === undefined ? undefined : isFormData ? (body as BodyInit) : JSON.stringify(body),
     });
 
     if (response.status === 204) {

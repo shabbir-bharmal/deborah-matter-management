@@ -22,6 +22,7 @@ import Timeline from '~/pages/matter/timeline';
 import Matters from '~/pages/matters';
 import Login from '~/pages/login';
 import NotFound from '~/pages/not-found';
+import Profile from '~/pages/profile';
 import Settings from '~/pages/settings';
 
 export const routes = [
@@ -63,6 +64,7 @@ export const routes = [
                             { path: 'roles', element: <AdminRoles /> },
                         ],
                     },
+                    { path: 'profile', element: <Profile /> },
                     { path: 'settings', element: <Settings /> },
                     { path: '*', element: <NotFound /> },
                 ],

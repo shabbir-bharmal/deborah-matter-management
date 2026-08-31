@@ -45,6 +45,7 @@ function PaginationLink({ className, isActive, size = 'default', onClick, disabl
             variant: isActive ? 'outline' : 'ghost',
             size,
         }),
+        'cursor-pointer',
         className,
     );
 
@@ -178,7 +179,7 @@ export default function PaginationBar({ page, pageSize, totalCount, onPageChange
                     aria-label={PAGE_TEXT.pagination.rowsPerPage}
                     value={pageSize}
                     onChange={(event) => onPageSizeChange(Number(event.target.value))}
-                    className="border-input bg-background h-9 rounded-md border px-2 py-1.5 text-sm"
+                    className="border-input bg-background h-9 cursor-pointer rounded-md border px-2 py-1.5 text-sm"
                 >
                     {PAGE_SIZES.map((size) => (
                         <option key={size} value={size}>

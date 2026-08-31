@@ -30,15 +30,19 @@ class DashboardController extends Controller
         $activeIds = (clone $visible)->active()->pluck('id');
 
         $upcoming = Interview::query()
+            ->select('id', 'investigation_id', 'witness_id', 'scheduled_at')
+            ->with('investigation:reference_number','witness:id,name')
             ->whereIn('investigation_id', $visibleIds)
             ->whereIn('status', Interview::UPCOMING_STATUSES)
             ->whereDate('scheduled_at', '>=', $today)
             ->with(['witness', 'interviewer', 'investigation'])
             ->orderBy('scheduled_at')
-            ->limit(5)
+            ->limit(6)
             ->get();
 
         $recent = TimelineEvent::query()
+            ->select('id', 'investigation_id', 'type', 'title')
+            ->with(['investigation:id,reference_number'])
             ->whereIn('investigation_id', $visibleIds)
             ->with('investigation')
             ->orderByDesc('date')
@@ -53,14 +57,22 @@ class DashboardController extends Controller
                 'statusCounts' => $this->counts($visible, 'status', self::STATUSES),
                 'priorityCounts' => $this->counts((clone $visible)->active(), 'priority', self::PRIORITIES),
                 'upcomingInterviews' => $upcoming->map(fn (Interview $interview) => [
-                    ...(new InterviewResource($interview))->toArray($request),
-                    'investigationReference' => $interview->investigation->reference_number,
-                    'investigationTitle' => $interview->investigation->title,
+                    ...[
+                        'id' => $interview->id,
+                        'investigationId' => $interview->investigation_id,
+                        'witnessName' => $interview->witness?->name,
+                        'scheduledAt' => $interview->scheduled_at->format('Y-m-d\TH:i:s')
+                    ],
+                    'investigationReference' => $interview->investigation?->reference_number,
                 ]),
                 'recentActivity' => $recent->map(fn (TimelineEvent $event) => [
-                    'event' => (new TimelineEventResource($event))->toArray($request),
+                    'event' => [
+                        'id' => $event->id,
+                        'investigationId' => $event->investigation_id,
+                        'title' => $event->title,
+                        'type' => $event->type,
+                    ],
                     'investigationReference' => $event->investigation->reference_number,
-                    'investigationTitle' => $event->investigation->title,
                 ]),
                 'pendingActions' => [
                     [
